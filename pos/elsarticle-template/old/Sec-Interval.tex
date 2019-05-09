@@ -1,0 +1,131 @@
+\section{Identify Uplifts and Impact Interval}
+\label{sec:interval}
+In this section,
+we first introduce the procedure to extract uplift events and stressful intervals from teens' microblogs.
+The uplift events are extracted from microblogs applying LTP natural language processing segmentation and parser models
+\cite{che2008}.
+Stressful intervals are identified using probability based statistical method according to the teen's stressful posting frequency.
+We judge whether each stressful interval is correlated with neighboring uplift events,
+thus to classify all stressful intervals into two sets: SI and U-SI.
+
+\subsection{Uplift Events}
+\emph{Lexicon}.
+We construct our lexicon for six-dimensional uplift events from two sources.
+The basic positive affect words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})\cite{Tausczik2010The}.
+Then we build six uplift event related lexicons by expanding the basic positive words from the data set of teens' microblogs,
+and divide all candidate words into six dimensions corresponding to six types of uplift events,
+containing 452 phrases in \emph{entertainment},
+184 phrases in \emph{family life},
+91 phrases in \emph{friends},
+138 phrases in \emph{romantic},
+299 phrases in \emph{self-recognition} and 273 phrases in \emph{school life}, with totally 2,606 words,
+as shown in Table \ref{tab:keyWords}.
+Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the uplift lexicon.
+
+\emph{Parser relationship}.
+For each post, after word segmentation, we parser current sentence to find its linguistic structure,
+and then match the main linguistic components with uplift event related lexicons in each dimension.
+The parser model in Chinese natural language processing platform \cite{Che2010, che2008} is adopted in this part,
+which identifies the central verb of current sentence first, namely the \emph{act},
+and constructs the relationship between the central verb and corresponding \emph{role} and \emph{objects} components.
+By searching these main elements in uplift event related lexicons,
+we identify the existence and type of any uplift event.
+Due to the sparsity of posts, the \emph{act} might be empty.
+The \emph{descriptions} are collected by searching all nouns, adjectives and adverbs in current post.
+In such way, we extract structured uplift events from teens' microblogs.
+
+\begin{table}
+\centering
+\caption{Examples of topic words for uplift events.}
+\label{tab:keyWords}
+\begin{tabular}{lll}
+\toprule
+Dimension & Example words & Total \\ \midrule
+\emph{entertainment}  & hike, travel, celebrate, dance, swimming, ticket, & 452\\
+& shopping, air ticket, theatre, party, Karaoke, & \\
+& self-driving tour, game, idol, concert, movie, & \\
+\emph{school life}       & reward, come on, progress, scholarship, & 273\\
+				  & admission, winner, diligent, first place, superior, & \\
+				  & hardworking, full mark,  praise, goal, courage, & \\
+\emph{romantic}         &  beloved, favor, guard, anniversary,  concern,  & 138\\
+				  & tender, deep feeling, care, true love, promise, & \\
+				  & cherish, baby, kiss, embrace, dating, reluctant,&\\
+\emph{pear relation}   & listener, company, pour out, make friends with, & 91\\
+				 & friendship, intimate, partner, team-mate,&\\
+\emph{self-cognition} & realize, achieve, applause, fight, exceed, faith, & 299\\
+				 & confidence, belief, positive, active, purposeful, &\\
+\emph{family life}       & harmony, filial, reunite, expecting, responsible, & 184\\
+				& longevity, affable, amiability, family, duty, &\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Impact Interval}
+When an uplift event happens, it can conduct positive impact on stressed teens,
+which may exhibit in multi-perspectives,
+including the length of corresponding stressful interval, the stress intensity and stressful behaviors during the interval.
+Basically, in this part, we identify stressful intervals from timeline thus to support further quantifying the influence of an uplift event.
+Splitting interval is a common time series problem, and various solutions could be referred.
+Here we identify the teen's stressful intervals in three steps.
+In the first step, we extract uplift events, stressor events and filter out candidate intervals after a smoothing process.
+Then, applying the Poisson based statistical method proposed in~\cite{Li2017Analyzing},
+we judge whether each candidate interval is a confidential stressful interval.
+Finally, we divide the stressful intervals into two sets: the SI set and the U-SI set,
+according to its temporal order with neighboring uplift events.
+
+\emph{Smooth stress series}.
+Since a teen's stress series $S=\{s_1, s_2, \cdots, s_n\}$ detected from microblogs (aggrated by day) are discrete points,
+we adopt the loess (local regression using weighted linear least squares and a $2^{nd}$ degree polynomial) method \cite{Cleveland1988Locally} to highlight characteristics of the stress curve.
+In loess method, we need to set the parameter \emph{span},
+which represents the percentage of the selected data points in the whole data set (ranging from 0 to 1),
+and determines the degree of smoothing.
+We discuss the influence of different \emph{span} settings on the result of interval segmentation in the experiment section.
+%to be add 1: interval parameter.
+
+\emph{Select candidate intervals.}
+We filter out candidate stressful intervals on the smoothed stress series $S^{'}=\{s^{'}_1,s^{'}_2,\cdots,s^{'}_n\}$.
+%As illustrated in Figure xx, w
+Let the sub-series $w_{<a,b>} = [s^{'}_a, \cdots, s^{'}_b]$ as a \emph{wave},
+where $s^{'}_v$ $= {vally(w_{<a,b>})}$ is the minimum stress value,
+$s^{'}_p$ $= peak(w_{<a,b>})$ is the maximal stress value during $\{s^{'}_a,\cdots,s^{'}_b\}$,
+and $s^{'}_a \leq s^{'}_{a+1} \leq \cdots \leq s^{'}_p \leq s^{'}_{p+1} \leq \cdots \leq s^{'}_b$.
+A candidate interval $I = <w_1,\cdots, w_i,\cdots, w_m>$ is identified with following rules:
+\begin{itemize}
+\item $s^{'}_1 = 0$, $s^{'}_m = 0$. $\forall s^{'}_j \in \{s^{'}_2,\cdots,s^{'}_{m-1}\}$, $s^{'}_j > 0$.
+\item Let wave $w_i$ be the biggest wave in current candidate interval, with $peak(w_i) = \omega$,
+$\forall $ wave $w_j \in I$, $peak(w_j)<=peak(w_i)$.
+\item For waves $w_k$ before the interval biggest wave $w_i$ , i.e., $\forall w_k \in <w_1,\cdots,w_{i-1}>$,
+$peak(w_{k+1})>=peak(w_k)$, $vally(w_{k+1}) >= peak(w_k)$.
+\item For waves $w_k$ behind the interval biggest wave $w_i$, i.e.,  $w_k \in <w_{i}, \cdots, w_m>$,
+$peak(w_{k+1})<=peak(w_k)$, $vally(w_{k+1}) <= peak(w_k)$.
+\end{itemize}
+
+\emph{Identify stressful intervals.}
+For each candidate interval,
+a Poisson based probability model~\cite{Li2017Analyzing} is adopted to measure how confidently the current interval is a stressful interval.
+Here a teen's stressful posting rate under stress ($\lambda_1$) and normal conditions ($\lambda_0$) are modeled as two independent poisson process:
+\begin{equation}
+Pr[N=n|\lambda_i]=\frac{e^{-\lambda_i T}{(\lambda_i T)}^n}{n!}
+\end{equation}
+where $i\in\{0,1\}$, $n=0,1,\cdots,\infty$.
+We expect that $\lambda_1 > \lambda_0$, and measure the probability as $P(\lambda_1>\lambda_0|N_1, T_1, N_0, T_0)$,
+where $N_1, N_0$ are the number of stressful posts, and $T_1, T_0$ are time duration corresponding to $\lambda_1$ and $\lambda_0$.
+Without loss of generality, we assume a Jeffreys non-informative prior on $\lambda_1$ and $\lambda_0$,
+and infer the posterior distribution $P(\lambda_1|N_1)$ and $P(\lambda_0|N_0)$ according to Bayes Rule.
+Thus for current interval $I_1$ and historical normal interval $I_0$,
+the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ indicates the confidence whether $I_1$ is a stressful interval.
+
+\emph{Intervals impacted by uplift events.}
+In this part, we filter out two sets of stressful intervals: stressful intervals without the impact of uplift events (SI),
+and stressful intervals under the impact of uplift events (U-SI).
+For a detected stressful interval $I = <t_1,\cdots,t_n>$, we consider the temporal order between $I$ and any detected uplift event $u$ happened at time point $t_u$:
+\begin{itemize}
+\item If the uplift event $u$ happens during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the uplift interval $I$ is judged as $I \in SI$.
+\item For the uplift event happening nearby a stressful interval,
+we also consider the probability that it conducts impact on the teen's stressful interval.
+Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e.,
+if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in SI$.
+%The setting of parameter $\xi$ is discussed in experiment section.
+\end{itemize}
+If a stressful interval satisfies none of the above conditions, we classify it into the U-SI set.
+

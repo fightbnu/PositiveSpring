@@ -1,0 +1,9 @@
+%\section{Discussion}
+%\subsection{Limitation and advantage of correlation analysis}
+%\subsection{Exploring the spread of positive power in social networks}
+\section{Conclusion}
+In this paper, we give a deep inside into the restoring impact of uplifts on the real data set of 124 teenagers from three high schools, and correlate the stress restoring patterns with uplift events.
+A two-sample based statistical model is conducted to analyze the stressful behavioral correlation between uplift (U-SI) and non-uplift (SI) stressful intervals from both linguistic and stress intensity perspectives.
+Experimental results show that our method could measure the restoring impact of uplift events in three experimental situations, and obtains high performance (0.0756 MSE, 0.1145 RMSE, 29.27\% MAPE and  0.1015 MAD) on real data set.
+Our research provides guidance for school and parents that which kind of uplift events could help relieve students' overwhelmed stress in both stress prevention and stress early stopping situations.
+Our future work will focus on digging the overlap impact of multiple uplift events in more complex situations, as well as the frequent appearing patterns of uplift events and stressors, thus to provide more accurate analysis and restoring guidance for individual teenagers.

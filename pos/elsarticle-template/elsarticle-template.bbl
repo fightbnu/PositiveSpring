@@ -1,0 +1,172 @@
+\begin{thebibliography}{20}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Association(2018)}]{APA2018}
+\bibinfo{author}{A.~P. Association},
+\newblock \bibinfo{title}{Stress in america: Generation z}
+  (\bibinfo{year}{2018}) \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Nock et~al.(2008)Nock, Borges, Bromet, Cha, Kessler, and
+  Lee}]{Nock2008Suicide}
+\bibinfo{author}{M.~K. Nock}, \bibinfo{author}{G.~Borges},
+  \bibinfo{author}{E.~J. Bromet}, \bibinfo{author}{C.~B. Cha},
+  \bibinfo{author}{R.~C. Kessler}, \bibinfo{author}{S.~Lee},
+\newblock \bibinfo{title}{Suicide and suicidal behavior.},
+\newblock \bibinfo{journal}{Epidemiologic Reviews} \bibinfo{volume}{30}
+  (\bibinfo{year}{2008}) \bibinfo{pages}{133--154}.
+%Type = Article
+\bibitem[{Youth and Center(2019)}]{ChinaTeen2019}
+\bibinfo{author}{C.~Youth}, \bibinfo{author}{C.~R. Center},
+\newblock \bibinfo{title}{Adolescent mental health alarm: nearly 30\% have a
+  risk of depression},
+\newblock \bibinfo{journal}{China Youth News}  (\bibinfo{year}{2019})
+  \bibinfo{pages}{1--2}.
+%Type = Article
+\bibitem[{Susan(1984)}]{Susan1984Stress}
+\bibinfo{author}{F.~P.~D. Susan},
+\newblock \bibinfo{title}{Stress: Appraisal and coping}  (\bibinfo{year}{1984})
+  \bibinfo{pages}{1--460}.
+%Type = Article
+\bibitem[{Cohen et~al.(1984)Cohen, Mcgowan, Fooskas, and
+  Rose}]{Cohen1984Positive}
+\bibinfo{author}{L.~H. Cohen}, \bibinfo{author}{J.~Mcgowan},
+  \bibinfo{author}{S.~Fooskas}, \bibinfo{author}{S.~Rose},
+\newblock \bibinfo{title}{Positive life events and social support and the
+  relationship between life stress and psychological disorder.},
+\newblock \bibinfo{journal}{American Journal of Community Psychology}
+  \bibinfo{volume}{12} (\bibinfo{year}{1984}) \bibinfo{pages}{567--87}.
+%Type = Article
+\bibitem[{Cohen and Hoberman(2010)}]{Cohen2010Positive}
+\bibinfo{author}{S.~Cohen}, \bibinfo{author}{H.~M. Hoberman},
+\newblock \bibinfo{title}{Positive events and social supports as buffers of
+  life change stress},
+\newblock \bibinfo{journal}{Journal of Applied Social Psychology}
+  \bibinfo{volume}{13} (\bibinfo{year}{2010}) \bibinfo{pages}{99--125}.
+%Type = Article
+\bibitem[{Needles and Abramson(1990)}]{Needles1990Positive}
+\bibinfo{author}{D.~J. Needles}, \bibinfo{author}{L.~Y. Abramson},
+\newblock \bibinfo{title}{Positive life events, attributional style, and
+  hopefulness: Testing a model of recovery from depression.},
+\newblock \bibinfo{journal}{Journal of Abnormal Psychology}
+  \bibinfo{volume}{99} (\bibinfo{year}{1990}) \bibinfo{pages}{156}.
+%Type = Misc
+\bibitem[{Vitelli(????)}]{older}
+\bibinfo{author}{R.~Vitelli}, \bibinfo{title}{Hassles, uplifts and growing
+  older},
+  \bibinfo{howpublished}{\url{https://www.psychologytoday.com/blog/media-spotlight/201406/hassles-uplifts-and-growing-older}},
+  ???? \bibinfo{note}{Jun 09, 2014}.
+%Type = Article
+\bibitem[{Doyle et~al.(2003)Doyle, Wolchik, Dawsonmcclure, and
+  Sandler}]{Doyle2003Positive}
+\bibinfo{author}{K.~W. Doyle}, \bibinfo{author}{S.~A. Wolchik},
+  \bibinfo{author}{S.~R. Dawsonmcclure}, \bibinfo{author}{I.~N. Sandler},
+\newblock \bibinfo{title}{Positive events as a stress buffer for children and
+  adolescents in families in transition.},
+\newblock \bibinfo{journal}{Journal of Clinical Child and Adolescent
+  Psychology} \bibinfo{volume}{32} (\bibinfo{year}{2003})
+  \bibinfo{pages}{536--545}.
+%Type = Article
+\bibitem[{Coolidge(2009)}]{Coolidge2009A}
+\bibinfo{author}{F.~L. Coolidge},
+\newblock \bibinfo{title}{A comparison of positive versus negative emotional
+  expression in a written disclosure study among distressed students},
+\newblock \bibinfo{journal}{Journal of Aggression Maltreatment and Trauma}
+  \bibinfo{volume}{18} (\bibinfo{year}{2009}) \bibinfo{pages}{367--381}.
+%Type = Article
+\bibitem[{Jain et~al.(2010)Jain, Mills, Von, Hong, and
+  Dimsdale}]{Jain2010Effects}
+\bibinfo{author}{S.~Jain}, \bibinfo{author}{P.~J. Mills},
+  \bibinfo{author}{K.~R. Von}, \bibinfo{author}{S.~Hong},
+  \bibinfo{author}{J.~E. Dimsdale},
+\newblock \bibinfo{title}{Effects of perceived stress and uplifts on
+  inflammation and coagulability.},
+\newblock \bibinfo{journal}{Psychophysiology} \bibinfo{volume}{44}
+  (\bibinfo{year}{2010}) \bibinfo{pages}{154--160}.
+%Type = Article
+\bibitem[{Caputo et~al.(1998)Caputo, Rudolph, and Morgan}]{Caputo1998Influence}
+\bibinfo{author}{J.~L. Caputo}, \bibinfo{author}{D.~L. Rudolph},
+  \bibinfo{author}{D.~W. Morgan},
+\newblock \bibinfo{title}{Influence of positive life events on blood pressure
+  in adolescents},
+\newblock \bibinfo{journal}{Journal of Behavioral Medicine}
+  \bibinfo{volume}{21} (\bibinfo{year}{1998}) \bibinfo{pages}{115--129}.
+%Type = Article
+\bibitem[{Shahar and Priel(2002)}]{Shahar2002Positive}
+\bibinfo{author}{G.~Shahar}, \bibinfo{author}{B.~Priel},
+\newblock \bibinfo{title}{Positive life events and adolescent emotional
+  distress: In search of protective-interactive processes},
+\newblock \bibinfo{journal}{Journal of Social and Clinical Psychology}
+  \bibinfo{volume}{21} (\bibinfo{year}{2002}) \bibinfo{pages}{645--668}.
+%Type = Inproceedings
+\bibitem[{Xue et~al.(2013)Xue, Li, Feng, Clifford, and Clifton}]{XueUbicomp13}
+\bibinfo{author}{Y.~Xue}, \bibinfo{author}{Q.~Li}, \bibinfo{author}{L.~Feng},
+  \bibinfo{author}{G.~Clifford}, \bibinfo{author}{D.~Clifton},
+\newblock \bibinfo{title}{Towards a micro-blog platform for sensing and easing
+  adolescent psychological pressures},
+\newblock in: \bibinfo{booktitle}{Proc. of Ubicomp},
+  \bibinfo{publisher}{poster}, \bibinfo{year}{2013}.
+%Type = Book
+\bibitem[{Xue et~al.(2014)Xue, Li, Jin, Feng, Clifton, and
+  Clifford}]{Xue2014Detecting}
+\bibinfo{author}{Y.~Xue}, \bibinfo{author}{Q.~Li}, \bibinfo{author}{L.~Jin},
+  \bibinfo{author}{L.~Feng}, \bibinfo{author}{D.~A. Clifton},
+  \bibinfo{author}{G.~D. Clifford}, \bibinfo{title}{Detecting Adolescent
+  Psychological Pressures from Micro-Blog}, \bibinfo{year}{2014}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2015{\natexlab{a}})Li, Huang, Wang, and
+  Feng}]{Li2015Predicting}
+\bibinfo{author}{Y.~Li}, \bibinfo{author}{J.~Huang}, \bibinfo{author}{H.~Wang},
+  \bibinfo{author}{L.~Feng},
+\newblock \bibinfo{title}{Predicting teenager's future stress level from
+  micro-blog},
+\newblock in: \bibinfo{booktitle}{IEEE International Symposium on
+  Computer-Based Medical Systems}, \bibinfo{year}{2015}{\natexlab{a}}, pp.
+  \bibinfo{pages}{208--213}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2015{\natexlab{b}})Li, Feng, and Feng}]{Li2015When}
+\bibinfo{author}{Y.~Li}, \bibinfo{author}{Z.~Feng}, \bibinfo{author}{L.~Feng},
+\newblock \bibinfo{title}{When a teen's stress level comes to the top/bottom: A
+  fuzzy candlestick line based approach on micro-blog},
+\newblock in: \bibinfo{booktitle}{Revised Selected Papers of the International
+  Conference on Smart Health}, \bibinfo{year}{2015}{\natexlab{b}}, pp.
+  \bibinfo{pages}{241--253}.
+%Type = Article
+\bibitem[{Li et~al.(2015{\natexlab{c}})Li, Feng, and Feng}]{Li2015Using}
+\bibinfo{author}{Y.~Li}, \bibinfo{author}{Z.~Feng}, \bibinfo{author}{L.~Feng},
+\newblock \bibinfo{title}{Using candlestick charts to predict adolescent stress
+  trend on micro-blog ?},
+\newblock \bibinfo{journal}{Procedia Computer Science} \bibinfo{volume}{63}
+  (\bibinfo{year}{2015}{\natexlab{c}}) \bibinfo{pages}{221--228}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2017{\natexlab{a}})Li, Zhao, Xue, Jin, and
+  Feng}]{Li2017Exploring}
+\bibinfo{author}{Q.~Li}, \bibinfo{author}{L.~Zhao}, \bibinfo{author}{Y.~Xue},
+  \bibinfo{author}{L.~Jin}, \bibinfo{author}{L.~Feng},
+\newblock \bibinfo{title}{Exploring the impact of co-experiencing stressor
+  events for teens stress forecasting},
+\newblock in: \bibinfo{booktitle}{International Conference on Web Information
+  Systems Engineering}, \bibinfo{year}{2017}{\natexlab{a}}, pp.
+  \bibinfo{pages}{313--328}.
+%Type = Article
+\bibitem[{Li et~al.(2017{\natexlab{b}})Li, Xue, Zhao, Jia, and
+  Feng}]{Li2017Analyzing}
+\bibinfo{author}{Q.~Li}, \bibinfo{author}{Y.~Xue}, \bibinfo{author}{L.~Zhao},
+  \bibinfo{author}{J.~Jia}, \bibinfo{author}{L.~Feng},
+\newblock \bibinfo{title}{Analyzing and identifying teens stressful periods and
+  stressor events from a microblog},
+\newblock \bibinfo{journal}{IEEE Journal of Biomedical and Health Informatics}
+  \bibinfo{volume}{21} (\bibinfo{year}{2017}{\natexlab{b}})
+  \bibinfo{pages}{1434--1448}.
+
+\end{thebibliography}
