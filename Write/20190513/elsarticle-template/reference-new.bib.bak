@@ -1,0 +1,531 @@
+@article{APA2018,
+  title={Stress in America: Generation Z},
+  author={American Psychological Association},
+  pages={1-11},
+  year={2018},
+}
+
+@article{Nock2008Suicide,
+  title={Suicide and suicidal behavior.},
+  author={Nock, M. K. and Borges, G and Bromet, E. J. and Cha, C. B. and Kessler, R. C. and Lee, S},
+  journal={Epidemiologic Reviews},
+  volume={30},
+  number={1},
+  pages={133-154},
+  year={2008},
+}
+
+@article{Susan1984Stress,
+  title={Stress: Appraisal and Coping},
+  author={Susan, Folkman Ph. D},
+  pages={1-460},
+  year={1984},
+}
+
+%----------------
+
+@article{ChinaTeen2019,
+  title={Adolescent mental health alarm: nearly 30\% have a risk of depression},
+  journal={China Youth News},
+  author={China Youth and Children Research Center},
+  pages={1-2},
+  year={2019},
+}
+
+@book{Shumway2006Time,
+  title={Time Series Analysis and Its Applications},
+  author={Shumway, Byroberth. and Stoffer, Davids.},
+  publisher={Springer New York},
+  pages={1079-1079},
+  year={2006},
+}
+
+@article{Schilling1986Multivariate,
+  title={Multivariate Two-Sample Tests Based on Nearest Neighbors},
+  author={Schilling, Markf.},
+  journal={Publications of the American Statistical Association},
+  volume={81},
+  number={395},
+  pages={799-806},
+  year={1986},
+}
+
+@article{Li2017Correlating,
+  title={Correlating Stressor Events for Social Network Based Adolescent Stress Prediction},
+  author={Li, Qi and Zhao, Liang and Xue, Yuanyuan and Jin, Li and Alli, Mostafa and Feng, Ling},
+  year={2017},
+}
+
+@article{Johnson2012Applied,
+  title={Applied Multivariate Statistical Analysis Third Ed},
+  author={Johnson, Richard A. and Wichern, Dean W.},
+  journal={Technometrics},
+  volume={25},
+  number={4},
+  pages={385-386},
+  year={2012},
+}
+
+@article{Cleveland1988Locally,
+  title={Locally Weighted Regression: An Approach to Regression Analysis by Local Fitting},
+  author={Cleveland, Williams. and Devlin, Susanj.},
+  journal={Publications of the American Statistical Association},
+  volume={83},
+  number={403},
+  pages={596-610},
+  year={1988},
+}
+
+@article{Tausczik2010The,
+  title={The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods},
+  author={Tausczik, Yla R. and Pennebaker, James W.},
+  journal={Proc. of {JLSP}},
+  volume={29},
+  number={1},
+  pages={24-54},
+  }
+
+@inproceedings{Che2010,
+  author =       {Che, Wanxiang and Li, Zhenghua and Liu, Ting},
+  title =        {LTP: A Chinese Language Technology Platform},
+  booktitle =    {Proc. of ACL},
+  pages =        {13-16},
+  year =         {2010},
+}
+
+@article{che2008,
+  title={Semantic Role Labeling Using a Grammar-Driven Convolution Tree Kernel},
+  author={Zhang, Min and Che, Wanxiang and Zhou, Guodong and Aw, Aiti and et al.},
+  journal={Audio Speech and Language Processing IEEE Transactions},
+  volume={16},
+  number={7},
+  pages={1315 - 1329},
+  year={2008}
+}
+
+
+@article{hassles,
+  title = {Comparison of Two Modes of Stress Measurement: Daily Hassles and Uplifts versus Major Life Events},
+  author = {Kanner, A.D. and Coyne, J.C. and Schaefer, C. and Lazants, R.},
+  doi = {10.1177/089443939201000402},
+  journal = "Journal of Behavioral Medicine",
+  year ={1981},
+  volume ={4},
+  pages = "1-39"
+}
+
+@article{Jun2008Influence,
+  title={Influence of Life Events and Coping Style on Mental Health in Normal College Students},
+  author={Jun-Sheng, H. U.},
+  journal={Chinese Journal of Clinical Psychology},
+  year={2008},
+}
+
+
+@article{Kanner1981Comparison,
+  title={Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events},
+  author={Kanner, Allen D. and Coyne, James C. and Schaefer, Catherine and Lazarus, Richard S.},
+  journal={Journal of Behavioral Medicine},
+  volume={4},
+  number={1},
+  pages={1},
+  year={1981},
+}
+
+@article{scale1,
+  title={Compilation and Reliability and Validity Assessment of Multidimensional Life Events Rating Questionnaire for Middle School Students},
+  author={Yan, H. U. and Tao, Fang Biao and Pu-Yu, S. U.},
+  journal="Chinese Journal of School Health",
+  year={2010},
+  volume = {February 31},
+  number = {2},
+  pages="146-159",
+}
+
+@article{scale2,
+  title={The Development of the Chinese Adolescent Life Events Checklist},
+  author={Jiang, Guangrong},
+  journal="Chinese Journal of Clinical Psychology",
+  year={2000},
+  volume = {8},
+  number = {1},
+  pages="10-14",
+}
+
+@article{scale3,
+  title={The Development of the Life Stress Rating Scale for Middle School Students},
+  author={Liang Baoyong and Huang Ying},
+  journal="Chinese Mental Health Journal",
+  year={2002},
+  volume = {16},
+  number = {5},
+  pages="313-316",
+}
+
+
+@article{Cohen1984Positive,
+  title={Positive life events and social support and the relationship between life stress and psychological disorder.},
+  author={Cohen, L. H. and Mcgowan, J and Fooskas, S and Rose, S},
+  journal={American Journal of Community Psychology},
+  volume={12},
+  number={5},
+  pages={567-87},
+  year={1984},
+}
+
+@article{Cohen2010Positive,
+  title={Positive Events and Social Supports as Buffers of Life Change Stress},
+  author={Cohen, Sheldon and Hoberman, Harry M.},
+  journal={Journal of Applied Social Psychology},
+  volume={13},
+  number={2},
+  pages={99-125},
+  year={2010},
+}
+
+@article{Needles1990Positive,
+  title={Positive life events, attributional style, and hopefulness: Testing a model of recovery from depression.},
+  author={Needles, Douglas J and Abramson, Lyn Y},
+  journal={Journal of Abnormal Psychology},
+  volume={99},
+  number={2},
+  pages={156},
+  year={1990},
+}
+
+
+@InProceedings{XueUbicomp13,
+  author    = {Y. Xue and Q. Li and L. Feng and G.D. Clifford and D. Clifton},
+title     = {Towards a Micro-Blog Platform for Sensing and Easing Adolescent Psychological Pressures},
+booktitle = {Proc. of Ubicomp},
+  publisher = {poster},
+  year      = {2013},
+  pages     = {},
+}
+
+@book{Xue2014Detecting,
+  title={Detecting Adolescent Psychological Pressures from Micro-Blog},
+  author={Xue, Yuanyuan and Li, Qi and Jin, Li and Feng, Ling and Clifton, David A. and Clifford, Gari D.},
+  pages={83-94},
+  year={2014},
+}
+
+@article{Lin2014User,
+  title={User-level psychological stress detection from social media using deep neural network},
+  author={Lin, Huijie and Jia, Jia and Guo, Quan and Xue, Yuanyuan and Li, Qi and Huang, Jie and Cai, Lianhong and Feng, Ling},
+  pages={507-516},
+  year={2014},
+}
+
+@inproceedings{Li2015Predicting,
+  title={Predicting Teenager's Future Stress Level from Micro-Blog},
+  author={Li, Yiping and Huang, Jing and Wang, Hao and Feng, Ling},
+  booktitle={IEEE  International Symposium on Computer-Based Medical Systems},
+  pages={208-213},
+  year={2015},
+}
+
+@inproceedings{Li2015When,
+  title={When a Teen's Stress Level Comes to the Top/Bottom: A Fuzzy Candlestick Line Based Approach on Micro-Blog},
+  author={Li, Yiping and Feng, Zhuonan and Feng, Ling},
+  booktitle={Revised Selected Papers of the International Conference on Smart Health},
+  pages={241-253},
+  year={2015},
+}
+
+@article{Li2015Using,
+  title={Using Candlestick Charts to Predict Adolescent Stress Trend on Micro-blog ?},
+  author={Li, Yiping and Feng, Zhuonan and Feng, Ling},
+  journal={Procedia Computer Science},
+  volume={63},
+  pages={221-228},
+  year={2015},
+}
+
+
+@article{Li2017Analyzing,
+  title={Analyzing and Identifying Teens Stressful Periods and Stressor Events from a Microblog},
+  author={Li, Q. and Xue, Y. and Zhao, L. and Jia, J. and Feng, L.},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  volume={21},
+  number={5},
+  pages={1434-1448},
+  year={2017},
+}
+
+@inproceedings{Li2017Exploring,
+  title={Exploring the Impact of Co-Experiencing Stressor Events for Teens Stress Forecasting},
+  author={Li, Qi and Zhao, Liang and Xue, Yuanyuan and Jin, Li and Feng, Ling},
+  booktitle={International Conference on Web Information Systems Engineering},
+  pages={313-328},
+  year={2017},
+}
+
+@article{Cohen1984Positive,
+  title={Positive life events and social support and the relationship between life stress and psychological disorder.},
+  author={Cohen, L. H. and Mcgowan, J and Fooskas, S and Rose, S},
+  journal={American Journal of Community Psychology},
+  volume={12},
+  number={5},
+  pages={567-87},
+  year={1984},
+}
+
+@article{Cohen2010Positive,
+  title={Positive Events and Social Supports as Buffers of Life Change Stress},
+  author={Cohen, Sheldon and Hoberman, Harry M.},
+  journal={Journal of Applied Social Psychology},
+  volume={13},
+  number={2},
+  pages={99-125},
+  year={2010},
+}
+
+@article{Susan1984Stress,
+  title={Stress: Appraisal and Coping},
+  author={Susan, Folkman Ph. D},
+  pages={1-460},
+  year={1984},
+}
+
+@article{Nock2008Suicide,
+  title={Suicide and suicidal behavior.},
+  author={Nock, M. K. and Borges, G and Bromet, E. J. and Cha, C. B. and Kessler, R. C. and Lee, S},
+  journal={Epidemiologic Reviews},
+  volume={30},
+  number={1},
+  pages={133-154},
+  year={2008},
+}
+
+@Misc{older,
+  title = {Hassles, Uplifts and Growing Older},
+  author = {Romeo Vitelli}
+  howpublished = {\url{https://www.psychologytoday.com/blog/media-spotlight/201406/hassles-uplifts-and-growing-older}},
+  note = {Jun 09, 2014},
+}
+
+
+@article{Caputo1998Influence,
+  title={Influence of Positive Life Events on Blood Pressure in Adolescents},
+  author={Caputo, Jennifer L. and Rudolph, David L. and Morgan, Don W.},
+  journal={Journal of Behavioral Medicine},
+  volume={21},
+  number={2},
+  pages={115-129},
+  year={1998},
+}
+\cite{Kanner1981Comparison}
+@article{Doyle2003Positive,
+  title={Positive events as a stress buffer for children and adolescents in families in transition.},
+  author={Doyle, K. W. and Wolchik, S. A. and Dawsonmcclure, S. R. and Sandler, I. N.},
+  journal={Journal of Clinical Child and Adolescent Psychology},
+  volume={32},
+  number={4},
+  pages={536-545},
+  year={2003},
+}
+
+@article{Jain2010Effects,
+  title={Effects of perceived stress and uplifts on inflammation and coagulability.},
+  author={Jain, S and Mills, P. J. and Von, Känel R and Hong, S. and Dimsdale, J. E.},
+  journal={Psychophysiology},
+  volume={44},
+  number={1},
+  pages={154-160},
+  year={2010},
+}
+
+@article{Shahar2002Positive,
+  title={Positive Life Events and Adolescent Emotional Distress: In Search of Protective-Interactive Processes},
+  author={Shahar, Golan and Priel, Beatriz},
+  journal={Journal of Social and Clinical Psychology},
+  volume={21},
+  number={6},
+  pages={645-668},
+  year={2002},
+}
+
+@article{Kanner1981Comparison,
+  title={Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events},
+  author={Kanner, Allen D. and Coyne, James C. and Schaefer, Catherine and Lazarus, Richard S.},
+  journal={Journal of Behavioral Medicine},
+  volume={4},
+  number={1},
+  pages={1},
+  year={1981},
+}
+
+@article{Larsson2017Daily,
+  title={Daily uplifts and coping as a buffer against everyday hassles: Relationship with stress reactions over time in military personnel},
+  author={Larsson, Gerry and Ohlsson, Alicia and Berglund, Anna Karin and Nilsson, Sofia},
+  journal={Scandinavian Psychologist},
+  volume={4},
+  year={2017},
+}
+%psychology
+@article{Chang2015Loneliness,
+  title={Loneliness, positive life events, and psychological maladjustment: When good things happen, even lonely people feel better! ¡î},
+  author={Chang, Edward C. and Muyan, Mine and Hirsch, Jameson K.},
+  journal={Personality and Individual Differences},
+  volume={86},
+  pages={150-155},
+  year={2015},
+}
+@article{Folkman1997Positive,
+  title={Positive psychological states and coping with severe stress},
+  author={Folkman, Susan},
+  journal={Social Science and Medicine},
+  volume={45},
+  number={8},
+  pages={1207-21},
+  year={1997},
+}
+@article{Folkman2010Stress,
+  title={Stress, Positive Emotion, and Coping},
+  author={Folkman, Susan and Moskowitz, Judith Tedlie},
+  journal={Current Directions in Psychological Science},
+  volume={9},
+  number={4},
+  pages={115-118},
+  year={2010},
+}
+@article{Ong2006Psychological,
+  title={Psychological resilience, positive emotions, and successful adaptation to stress in later life.},
+  author={Ong, A. D. and Bergeman, C. S. and Bisconti, T. L. and Wallace, K. A.},
+  journal={Journal of Personality and Social Psychology},
+  volume={91},
+  number={4},
+  pages={730-49},
+  year={2006},
+}
+@article{Kanner1981Comparison,
+  title={Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events},
+  author={Kanner, Allen D. and Coyne, James C. and Schaefer, Catherine and Lazarus, Richard S.},
+  journal={Journal of Behavioral Medicine},
+  volume={4},
+  number={1},
+  pages={1-39},
+  year={1981},
+}
+@article{Silva2008The,
+  title={The hassles and uplifts scale},
+  author={Silva, Maria Teresa Araujo and Manriquesaade, Elizabeth Ann and Carvalhal, Layana Guedes and Kameyama, Marcia},
+  journal={Estud.psicol},
+  volume={25},
+  number={1},
+  pages={91-100},
+  year={2008},
+}
+@article{Evan2014Social,
+  title={Social Support and Positive Events as Suicide Resiliency Factors: Examination of Synergistic Buffering Effects},
+  author={Evan M.   Kleiman and John H.   Riskind and Karen E.   Schaefer},
+  journal={Archives of Suicide Research},
+  volume={18},
+  number={2},
+  pages={144-155},
+  year={2014},
+}
+@article{Alden2008Social,
+  title={Social anxiety and the interpretation of positive social events.},
+  author={Alden, L. E. and Taylor, C. T. and Mellings, T. M. and Laposa, J. M.},
+  journal={Journal of Anxiety Disorders},
+  volume={22},
+  number={4},
+  pages={577-90},
+  year={2008},
+}
+
+@article{Mcmillen1998The,
+  title={The Perceived Benefit Scales: Measuring perceived positive life changes after negative events},
+  author={Mcmillen, J. Curtis and Fisher, Rachel H},
+  journal={Social Work Research},
+  volume={22},
+  number={3},
+  pages={173-187},
+  year={1998},
+}
+@article{Bono2013Building,
+  title={Building Positive Resources: Effects of Positive Events and Positive Reflection on Work Stress and Health},
+  author={Bono, Joyce E. and Glomb, Theresa M. and Shen, Winny and Kim, Eugene and Koch, Amanda J.},
+  journal={Academy of Management Journal},
+  volume={56},
+  number={6},
+  pages={1601-1627},
+  year={2013},
+}
+@article{Jun2008Influence,
+  title={Influence of Life Events and Coping Style on Mental Health in Normal College Students},
+  author={Jun-Sheng, H. U.},
+  journal={Chinese Journal of Clinical Psychology},
+  year={2008},
+}
+@article{Needles1990Positive,
+  title={Positive life events, attributional style, and hopefulness: Testing a model of recovery from depression.},
+  author={Needles, Douglas J and Abramson, Lyn Y},
+  journal={Journal of Abnormal Psychology},
+  volume={99},
+  number={2},
+  pages={156},
+  year={1990},
+}
+@article{Coolidge2009A,
+  title={A Comparison of Positive Versus Negative Emotional Expression in a Written Disclosure Study Among Distressed Students},
+  author={Coolidge, Frederick L.},
+  journal={Journal of Aggression Maltreatment and Trauma},
+  volume={18},
+  number={4},
+  pages={367-381},
+  year={2009},
+}
+@article{Santos2013The,
+  title={The role of positive emotion and contributions of positive psychology in depression treatment: systematic review.},
+  author={Santos, V and Paes, F and Pereira, V and Ariascarri¨®n, O and Silva, A. C. and Carta, M. G. and Nardi, A. E. and Machado, S},
+  journal={Clinical Practice and Epidemiology in Mental Health Cp and Emh},
+  volume={9},
+  number={1},
+  pages={221},
+  year={2013},
+}
+%correlation
+@article{Cohen1988Statistical,
+  title={Statistical Power Analysis for the Behavioral Science},
+  author={Cohen, J and Cohen, JE and Cohen, D and Cohen, Jw and Cohen, JC and Adad, J and Cohen, JI and Cohen, J.B and Cohen, JA and Cohen, JG},
+  journal={Technometrics},
+  volume={84},
+  number={334},
+  pages={19¨C74},
+  year={1988},
+}
+@article{C1987The,
+  title={The proof and measurement of association between two things},
+  author={C Spearman},
+  journal={The American journal of psychology},
+  volume={100},
+  number={3-4},
+  pages={441},
+  year={1987},
+}
+@article{Mcleod2011Kendall,
+  title={Kendall: Kendall rank correlation and Mann-Kendall trend test},
+  author={Mcleod, A. I.},
+  year={2011},
+}
+@article{Schilling1986Multivariate,
+  title={Multivariate Two-Sample Tests Based on Nearest Neighbors},
+  author={Schilling, Markf.},
+  journal={Publications of the American Statistical Association},
+  volume={81},
+  number={395},
+  pages={799-806},
+  year={1986},
+}
+
+@article{Sch2006A,
+  title={A Kernel Method for the Two-Sample-Problem},
+  author={Scholkopf, B and Platt, J and Hofmann, T},
+  volume={abs/0805.2368},
+  number={2007},
+  pages={513 - 520},
+  year={2006},
+}
