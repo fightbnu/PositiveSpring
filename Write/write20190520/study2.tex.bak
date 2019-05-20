@@ -1,0 +1,109 @@
+\section{Study2: }
+Based on the observation and psychological theory,
+we conduct our research under the assumption that uplift events can ease teenagers' stress,
+namely the positive restoring impact of uplift events.
+While stressor events stimulate human's stress,
+uplift events bring positive influence and stronger restoring ability to stressed people in various situations with multi-types~\cite{Cohen1984Positive}\cite{Cohen2010Positive}\cite{Needles1990Positive}.
+Taking the three stress curves in Figure~\ref{fig:example} for example,
+comparing the stress curves \emph{a)}, \emph{b)} with \emph{c)},
+when an uplift event (\emph{campus art festival, holiday} here) happens,
+the overall stress intensity during the stressful period is reduced.
+An uplift event might happen before a teen's stress caused by scheduled stressor events (\emph{example a}),
+conducting lasting easing impact;
+Meanwhile, an uplift event might also happen during (\emph{example b}) or at the end of the stressful period,
+which might promote the teen out of current stressful status more quickly.
+To study the restoring impact of an uplift event, we structure its impact from three aspects:
+\begin{itemize}
+\item \textbf{Impact interval of uplifts}.
+To study the impact of uplift events from microblogs,
+two fundamental factors are identifying the exact time when the uplift event happens,
+and the corresponding stressful interval it impacts.
+The temporal order between uplift events and the teen's stress series varies in different situations,
+and its a challenge to match the uplift event to the right stressful interval it actually impacts.
+\item \textbf{Restoring patterns of uplifts}.
+As the restoring impact of uplift events relieves the teen's stress and exhibits in multiple aspects
+(e.g., the changes in posting behavior, linguistic expression, and stress intensity from microblogs),
+it's meaningful to extract the stress-related restoring patterns and describe the restoring impact of uplift events structurally.
+\item \textbf{Quantified impact of uplifts}.
+Different types of uplift events might conduct restoring impact with different intensity.
+In this paper, the ultimate problem we target to solve
+is how to quantify the restoring impact both qualitatively and quantitatively from teenagers microblogs.
+\end{itemize}
+
+Given an uplift event with specific type,
+we consider its restoring impact by comparing the teen's behavioral measures under two situations.
+As illustrated in Figure \ref{fig:SI},
+in the original situation (i.e., sub-series A),
+the teen's stress is caused by a stressor event, lasting for a period,
+and no other intervention (namely, uplift event) occurs.
+We call the set of such stressful intervals as \textbf{SI}.
+In the other comparative situation (i.e., sub-series B),
+the teen's stressful interval caused by the same type of stressor is impacted by an uplift event with type $x$,
+we call the set of such stressful intervals as \textbf{U-SI}.
+Thus the difference under the two situations SI and U-SI could be seen as the restoring impact conducted by the uplift event of type $x$.
+
+Next, we give the formal definition for uplift events and stressor events from the perspective of linguistic structure.
+
+\begin{figure}
+\centering
+\caption{Illustration of SI and U-SI stressful intervals.}
+\includegraphics[width=\linewidth]{figs/UpSeries.eps}
+\label{fig:SI}
+\end{figure}
+\begin{definition}
+\textbf{Uplift event}.
+Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be an uplift event,
+where the element \emph{role} is the subject who performs the \emph{act},
+and \emph{descriptions} are the key words related to $u$.
+According to psychological scales \cite{hassles,Jun2008Influence},
+teenagers' uplift stressors mainly focus on six aspects,
+as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
+'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall u$, $u._{type} \in \mathbb{U}$.
+\end{definition}
+
+\begin{definition}
+\textbf{Stressor event}.
+Similar to stressor event,
+let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
+According to psychological questionnaires \cite{Kanner1981Comparison, scale1, scale2, scale3},
+we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
+'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
+\end{definition}
+
+The examples of teens' microblogs describing uplift events and stressor events are listed in Table \ref{tab:uplifts} and Table \ref{tab:stressors}.
+For the post '\emph{I have so much homework today!!!}', its elements are \emph{role = 'I', act='have', descriptions = 'homework'}, and the \emph{type = 'school life'}.
+For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}', we translate it into \emph{act = 'expecting', description = 'Adult Ceremony'}, and the \emph{type = 'self-cognition'}.
+
+\textbf{Problem}: For an uplift event $u$ with type $U^{'}$,
+a stressor event $e$ with type $S^{'}$,
+let $F$:$(u, U^{'}, e, S^{'}) \rightarrow $ \bm{${A}$}
+(\bm{${A}$} is a multidimensional vector) be the restoring influence of uplift event $u$
+conducted on the stress caused by stressor event $e$.
+We aim to quantify such influence \bm{${A}$} from multiple views.
+
+\paragraph{Correlation analysis for multivariate time series}
+Basic correlation analysis methods on time series focused on univariate data have been well studied.
+As the most widely adopted method,
+the Pearson correlation analysis \cite{Cohen1988Statistical} measures the linear correlation between two variables $X$ and $Y$.
+One inevitable defect is that Pearson correlation is too sensitive to outlier values.
+To overcome such drawback,
+Spearman Rank correlation \cite{C1987The}
+and Kendall Rank correlation \cite{Mcleod2011Kendall}
+are proposed based on Pearson correlation.
+While Pearson correlation estimates linear relationships,
+Spearman correlation estimates monotonic relationships (whether linear or not),
+and are calculated as the Pearson correlation between the rank values of two variables.
+The Kendall correlation mainly assesses the similarity of the orderings of the data when ranked by each of the quantities.
+The above correlation methods are usually used to estimate relationship between single-dimensional variables,
+and cannot be adopted directly in our microblog content based scenario.
+
+For multivariate time series analysis, two-sample based methods are widely adopted.
+Such kind of methods are deduced to check whether two samples come from the same underlying distribution, which is assumed to be statistically unknown.
+Correspondingly, various kernel
+\cite{Sch2006A} and distance-based methods \cite{Schilling1986Multivariate}
+(e.g., the nearest neighbor based method two-sample method) are proposed.
+Scholkopf \emph{et al.} \cite{Sch2006A} proposed to transform the distance between two variables and nearest neighbors into a reproducing kernel Hilbert space (RKHS), and solve the problem using Maximum Mean Discrepancy.
+In work \cite{Schilling1986Multivariate},
+Schilling \emph{et al.} adopted the $r$-nearest neighbor based method to partition two set of event driven time series data.
+The global proportion of the right divided neighbors are calculated to estimate whether there exists statistically difference between the two sets.
+We use the $r$-nearest neighbor based two-sample method in our problem, thus to measure the distance and correlation between two multi-dimension variables.
