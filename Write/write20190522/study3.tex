@@ -1,0 +1,194 @@
+\section{Study3: Quantify the impact of uplift events}
+To quantify the restoring impact of uplift event,
+in this section, we propose to model the impact as the teen's behavioral differences in two cases:
+1) stressful intervals unaffected by uplift events (SI), and 2) stressful intervals impacted by uplift events (U-SI).
+Multiple stress and positive emotion related measures are proposed to describe the correlation between SI and U-SI,
+and we quantify such differences as correlations using a two-sample based statistical method.
+
+\subsection{Restoring Patterns and Behavioral Measures}
+To extract the restoring patterns \bm{${A}$} for each type of uplift events,
+we describe a teen's positive and stressful behavioral measures in SI and U-SI sets from three aspects:
+posting behavior, stress intensity, and linguistic expressions.
+%For an uplift event $u$ with type $U^{'}$,
+%a stressor event $e$ with type $S^{'}$,
+%let $F$:$(u, U^{'}, e, S^{'}) \rightarrow $ \bm{${A}$}
+%(\bm{${A}$} is a multidimensional vector) be the stress-buffering effect of uplift event $u$
+%conducted on the stress caused by stressor event $e$.
+
+\textbf{Posting behavior}.
+Stress could lead to a teen's abnormal posting behaviors,
+reflecting the teen's changes in social engagement activity.
+For each stressful interval,
+we consider three measures of posting behaviors in each time unit (day),
+and present each measure as a corresponding series.
+The first measure is \emph{posting frequency},
+representing the total number of posts per day.
+Research in \cite{Li2017Analyzing} indicates that overwhelmed teens usually tend to post more to express their stress for releasing
+and seeking comfort from friends.
+Further, the second measure \emph{stressful posting frequency} per day
+is based on previous stress detection result and highlights the stressful posts among all posts.
+Similarly, the third measure is the \emph{positive posting frequency}, indicating the number of positive posts per day.
+The forth measure \emph{original frequency} is the number of original posts, which filters out re-tweet and shared posts.
+Compared to forwarded posts, original posts indicate higher probability that teens are talking about themselves.
+Thus for each day in current interval, the teen's posting behavior is represented as a four-dimension vector.
+
+\textbf{Stress intensity}.
+We describe the global stress intensity during a stressful interval through four measures:
+\emph{sequential stress level, length, RMS,} and \emph{peak}.
+Basically, \emph{stress level} per day constructs a sequential measure during a stressful interval,
+recording stress values and fluctuation on each time point.
+The \emph{length} measures the lasting time of current stressful interval.
+As uplift events might conduct impact on overwhelmed teens,
+and postpone the beginning or promote the end of the stressful interval,
+we take the \emph{length} as a factor representing the interval stress intensity.
+To quantify the intensity of fluctuations for stress values,
+we adopt the \emph{RMS} (root mean square) of stress values through the interval as the third measure.
+In addition, the \emph{peak} stress value is also a measure to show the maximal stress value in current interval.
+
+\textbf{Linguistic expressions}.
+We extract the teen's positive and stressful expressions from the content of posts in SI and U-SI sets, respectively.
+The first linguistic measure is the frequency of \emph{positive word},
+which represents the positive emotion in current interval.
+The second measure is the frequency of \emph{uplift event topic words} in six dimensions,
+reflecting the existence of uplift events.
+Another important factor is wether existing \emph{self-mentioned words} (i.e., \emph{'I','we','my'}).
+Self-mentioned words show high probability that the current stressor event and stressful emotion is related to the author,
+rather than the opinion about a public event or life events about others.
+
+Except uplift-related linguistic descriptions, we also take stressful linguistic characters as measures,
+which is opposite with positive measures, while also offers information from the complementary perspective.
+The first stressful linguistic measure is the frequency of \emph{stressor event topic words} in five dimensions,
+which represents how many times the teen mentioned a stressor event,
+indicating the degree of attention for each type of stressor event.
+The frequency of \emph{pressure words} is the second stressful linguistic measure,
+reflecting the degree of general stress emotion during the interval.
+We adopt this measure specifically because in some cases teens post very short tweets with only stressful emotional words,
+where topic-related words are omitted.
+
+Next,
+based on the posting behavior, stress intensity and linguistic measures from both the stressful and positive views,
+we quantify the difference between SI and U-SI sets, thus to measure the impact of uplift events.
+
+\subsection{Quantify the Correlation}
+In our problem,
+there are two sets of stressful intervals to compare:
+the SI set and the U-SI set,
+containing stressful intervals unaffected by uplift events
+and stressful intervals impacted by uplift events, respectively.
+The basic elements in each set are stressful intervals,
+i.e., the sequential stress values in time line,
+which are modeled as multi-dimensional points according to the three groups of measures in section \ref{subsec:pattern}.
+Thus we formulate this comparison problem as finding the correlation between the two sets of multi-dimension points.
+Specifically, we adopt the multivariate two-sample hypothesis testing method
+\cite{Li2017Correlating,Johnson2012Applied} to model such correlation.
+In this two-sample hypothesis test problem,
+the basic idea is judging whether the multi-dimension points (i.e., stressful intervals)
+in set SI and set U-SI are under different statistical distribution.
+Assuming the data points in SI and U-SI are randomly sampled from distribution $F^{(1)}$ and $F^{(2)}$, respectively,
+then the hypothesis is denoted as:
+\begin{equation}
+H_0: F^{(1)} =F^{(2)} \quad versus \quad H_1: F^{(1)} \neq F^{(2)}.
+\end{equation}
+
+Under such hypothesis,
+$H_0$ indicates points in SI and U-SI are under similar distribution,
+while $H_1$ means points in SI and U-SI are under statistically different distributions,
+namely uplift events have conducted obvious restoring impact on current stressed teen.
+Next, we handle this two-sample hypothesis test problem based on both positive and stressful behavioral measures
+(i.e., \emph{posting behavior}, \emph{stress intensity} and \emph{linguisitc expressions}),
+thus to quantify the restoring patterns of uplift events from multi perspectives.
+
+As a classic statistical topic, various algorithms have been proposed to solve the two-sample hypothesis testing problem.
+Since each point in the two sets (SI and U-SI) is depicted in multi-dimensions,
+here we take the KNN (k nearest neighbors) \cite{Schilling1986Multivariate}
+based method to judge the existence of significant difference between SI and U-SI.
+For simplify, we use the symbol $A_1$ to represent set SI,
+and $A_2$ represent set U-SI,
+namely $A_1$ and $A_2$ are two sets composed of stressful intervals.
+In the KNN algorithm,
+for each point $\ell_{x}$ in the two sets $A_1$ and $A_2$,
+we expect its nearest neighbors (\emph{the most similar points}) belonging to the same set of $\ell_x$,
+which indicates the difference between the points in the two cases.
+
+The model derivation process is described in detail in the \ref{mod:mod1} part of the appendix. 
+
+\subsection{Temporal Order}
+\label{sec:temporal}
+To measure the intensity of stress changes in the two sets (SI and U-SI) of intervals,
+for each stressful interval,
+we further quantify its stress intensity by comparing with the front and rear adjacent intervals, respectively.
+For a stressful interval $I = <t_i,t_{i+1},\cdots,t_j>$,
+let $I^{front} = <t_m,\cdots,t_{i-1}>$ be the adjacent interval before $I$,
+and $I^{rear} = <t_{j+1},\cdots,t_n>$ be the rear adjacent interval of $I$.
+The length of $I^{front}$ and $I^{rear}$ are set to $|I|$.
+For the set of stressful intervals $SI$ composed of $<I_1,I_2,\cdots,I_N>$,
+the corresponding sets of adjacent front and rear intervals are denoted as $SI^{front}$ and $SI^{rear}$.
+Similarly, for the set of stressful intervals $U-SI$ = $<UI_1,UI_2,\cdots, UI_M>$ impacted by uplift events,
+the corresponding sets of adjacent front and rear intervals are denoted as $USI^{front}$ and $USI^{rear}$.
+We compare the intensity of stress changes in following four situations,
+where $g(.)$ is the function comparing two sets.
+
+\begin{itemize}
+\item[\textcircled{1}] $g(SI,SI^{front}$) returns if intensive change happens when stressful intervals begin.
+\item[\textcircled{2}] $g(SI,SI^{rear}$) returns if the teen's stress change intensively after the stressful intervals end.
+\item[\textcircled{3}] $g(USI,USI^{front}$) returns if intensive change happens when stressful intervals affected by uplift events appears.
+\item[\textcircled{4}] $g(USI,USI^{rear}$) returns if stress change intensively after stressful intervals affected by uplift events end.
+\end{itemize}
+
+In our problem, taking the comparison between $SI$ and $SI^{rear}$ for example,
+the basic computation element $I_k \in SI \cup SI^{rear}$ in both sets is a multi-dimension interval.
+Here we adopt the t-test method as the intensity computation function $g(.)$.
+The t-test algorithm measures if intensive positive or negative monotonous correlation
+exists between two sample sets.
+The function $g(.) = t_{score}$ $\in$ (-1,1) is represented as:
+
+\begin{equation}
+\small{g(SI,SI^{rear})}= \frac{\mu_{SI}-\mu_{SI^{rear}}}{\sqrt{\frac{(n_1-1)\sigma^2_{SI}+(n_2-1)\sigma^2_{SI^{rear}}}{n_1+n_2-2}(\frac{1}{n_1}-\frac{1}{n_2})}}
+\end{equation}
+where $\mu_{SI}$ and $\mu_{SI^{rear}}$ are the mean stress values of intervals in sets $SI$ and $SI^{rear}$,
+and $\sigma_{SI}$ and $\sigma_{SI^{rear}}$ are the variance stress values of intervals in sets $SI$ and $SI^{rear}$, respectively.
+If $g(SI,SI^{rear})$ $> \alpha$, stress intensity in $SI^{rear}$ show significant decrease compared with $SI$ (monotonic negative effect).
+If $g(SI^{front},SI)$ $< -\alpha$, stress intensity in $SI$ show significant increase compared with $SI^{front}$ (monotonic positive effect).
+Here we adopt $\alpha$ = 1.96, $P$ = 0.025.
+We conduct comparison for above four situations,
+to observe whether the occurrence of uplift events relieve the monotonic negative effect of $g(SI,SI^{rear})$
+and the monotonic positive effect of $g(SI^{front},SI)$.
+{ \footnotesize%\small
+\begin{algorithm}
+  \caption{Identify the restoring impact of uplift events.}
+  %with type $U'$ on stressor event with type $S'$.}
+  \label{alg:quantify}
+  \KwIn{
+  SI: Set of stressful intervals caused by $S'$; \\
+  \quad \quad \quad \, U-SI: Set of stressful intervals affected by $U'$;}
+  \KwOut{Restoring impact of uplift $U'$ on stressor $S'$: \bm{${A}$}}
+  \textbf{Initialize:}  $H_1, H^{front}, H^{rear} = false$;\\
+  \If{$f(SI,USI) >$ $\alpha$} {$H_1 = ture$;}
+  \If{   $g(SI,SI^{rear}$) $> \alpha$ \&\& $g(SI,SI^{rear}$) $> g(USI, USI^{rear}$)}
+  {
+  	$H^{rear} = true;$
+  }
+  \If{$g(SI^{front},SI)$ $< -\alpha$ \&\&  $g(SI,SI^{front}$) $< g(USI, USI^{front}$)}
+  {
+  	$H^{front} = true;$
+  }
+  \Return \bm{${A}$} = $<H_1, H^{front}, H^{rear}>$;
+\end{algorithm}
+}
+
+\subsection{Overall Algorithm}
+The overall pipeline for identifying the restoring impact of uplift events is presented in algorithm \ref{alg:quantify}.
+For an uplift event $u$ with type $U'$,
+a stressor event $e$ with type $S'$,
+the overall algorithm is represented as
+$F: (u, U', e, S')$ $\rightarrow$ \bm{${A}$}.%, where \bm{${A}$} = $<f(.), g^{(front)}(.), g^{(rear)}(.)>$.
+To quantify the restoring impact of uplift events,
+we first extract uplift events and stressful intervals from the teen's microblogs.
+All stressful intervals are classified into two sets:
+the set of stressful intervals affected by uplift events (SI),
+and the set of stressful intervals impacted by uplift events (U-SI).
+To judge if SI are statistically different with U-SI,
+next, the two-sample hypothesis testing method is conducted on the two sets
+with multi positive and stressful measures (posting behavior, stress intensity and linguistic expressions).
+To further judge the monotonous restoring intensity of each type of uplift events,
+the final step comes to comparing SI and U-SI with adjacent intervals, respect to temporal order.

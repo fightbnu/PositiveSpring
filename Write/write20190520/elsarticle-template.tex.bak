@@ -109,7 +109,11 @@ help scheduling positive interventions, and predict future stress.
 \input{literature}
 \input{study1}
 \input{study2}
-\input{result}
+\input{study3}
+\input{study4}
+%\input{result}
+%\input{discussion}
+\input{addition}
 %\bibliographystyle{elsarticle-num-names}
 \bibliographystyle{model1-num-names}
 \bibliography{reference-new}

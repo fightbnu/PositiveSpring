@@ -1,78 +1,4 @@
-\section{Study1: Observation on the stress-relieving ability of school-scheduled uplift events}
-\begin{table}
-\begin{center}
-\caption{Examples of uplift events expressed and extracted from teens' microblogs.}
-\begin{tabular}{l} \hline \rowcolor{gray!40}
-I am really looking forward to the spring outing on Sunday now. \\ \rowcolor{gray!40}
-(Doer:\emph{I}, Act:\emph{looking forward}, Object:\emph{spring outing})\\
-My holiday is finally coming [smile]. \\
-(Doer:\emph{My holiday}, Act:\emph{coming}, Object:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
-First place in my lovely math exam!!! In memory of it.\\ \rowcolor{gray!40}
-Object:\emph{first place, math, exam, memory})\\ %\hline
-You are always here for me like sunshine. \\
-(Doer:\emph{You}, Object:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
-Thanks all my dear friends to take the party for me. Happiest birthday!\\ \rowcolor{gray!40}
-(Doer:\emph{friends}, Act:\emph{thanks}, Object:\emph{party, birthday})\\
-Be yourself. Trust yourself and follow your heart. \\
-(Doer:\emph{yourself}, Act:\emph{trust}, Object:\emph{heart})\\ \rowcolor{gray!40} %\hline
-Feel proud of our play in the Games. Our class is always the family!!!\\ \rowcolor{gray!40}
-(Doer:\emph{Our}, Object:\emph{class, family})\\
-A good film always makes bring comfort and happiness to me.\\
-(Doer:\emph{me}, Act:\emph{bring}, Object:\emph{comfort, happiness})\\ \rowcolor{gray!40}%\hline
-I know my mom is the one who support me forever, no matter \\ \rowcolor{gray!40}
-when and where. (Doer:\emph{mom}, Act:\emph{support})\\ \hline
-\end{tabular}
-\label{tab:uplifts}
-\end{center}
-\end{table}
-%
-%\begin{table}
-%\begin{center}
-%\caption{Examples of stressor events expressed and extracted from teens' microblogs.}
-%\begin{tabular}{l} \hline \rowcolor{gray!40}
-%I don't know how long can I bear the nag.\\ \rowcolor{gray!40}
-%(Doer:\emph{I}, Act:\emph{bear}, Object:\emph{nag})\\ %\hline
-%Parents like to judge everything around me with their emotion.
-%\\(Doer:\emph{parents}, Act:\emph{judge}, Object:\emph{everything})\\ \rowcolor{gray!40}%\hline
-%Hope that my uncle could revive earlier.\\ \rowcolor{gray!40}
-%(Doer:\emph{my uncle}, Act:\emph{revive})\\%\hline
-%Every one betrayed me.
-%\\(Doer:\emph{every one}, Act:\emph{betray}, Object:\emph{me})\\ \rowcolor{gray!40} %\hline
-%I'm too weak to handle such a fierce competition.\\ \rowcolor{gray!40}
-%(Doer:\emph{I}, Act:\emph{too weak to handle}, Object:\emph{competition})\\%\hline
-%I just felt hurt, depressed, self-abased and sad.
-%\\(Doer:\emph{I}, Act:\emph{feel hurt, depressed, self-abased and sad})\\ \rowcolor{gray!40}%\hline
-%My holiday is filled with all kinds of homework.\\ \rowcolor{gray!40}
-%(Doer:\emph{My holiday}, Act:\emph{fill with}, Object:\emph{homework})\\ %\hline
-%Unescapably, it's time to go back to school.
-%\\(Act:\emph{go back}, Object:\emph{school})\\ \rowcolor{gray!40} %\hline
-%When can you be aware of my heart-broken feeling again and again?\\ \rowcolor{gray!40}
-%(Doer:\emph{you}, Act:\emph{be aware of}, Object:\emph{heart-broken feeling})\\ \hline
-%\end{tabular}
-%\label{tab:stressors}
-%\end{center}
-%\end{table}
-
-%\begin{table}
-%\centering
-%\caption{Examples of school scheduled uplift events and stressor events.}
-%\label{tab:example}
-%\begin{tabular}{cccc}
-%\toprule
-%Type & Date	& Work Content	& Grade	\\
-%\midrule
-%\emph{stressor event} & 2014/4/16 & \emph{first day of mid-term exam} & grade1,2\\
-%\emph{uplift event} & 2014/11/5 & \emph{campus art festival} & grade1,2,3\\
-%\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{figure}
-%\centering
-%\caption{Examples of school related stressor events, uplift events and a student's stress fluctuation}
-%\includegraphics[width=\linewidth]{figs/exampleWave.eps}
-%\label{fig:example}
-%\end{figure}
+\section{Study1: Observation on the stress-relieving ability of school scheduled uplift events}
 
 \subsection{Sample}
 We built our dataset based on two sources: 1) the microblogs of students coming from Taicang High School,
@@ -89,6 +15,22 @@ There are 122 stressor events and 75 uplift events in total.
 Here we give the examples of scheduled uplift and stressor events in high school life, as shown in Table~\ref{tab:example}.
 There are 2-3 stressor events and 1-2 uplift event scheduled per month.
 
+\begin{table}[H]
+\caption{\small{Examples of school scheduled uplifts and stressor events.}}
+\label{tab:example}
+\resizebox{.45\textwidth}{9mm}{
+\small{
+\begin{tabular}{cccc}
+\toprule
+Type & Date	& Work Content	& Grade	\\
+\midrule
+\emph{stressor event} & 2014/4/16 & \emph{first day of mid-term exam} & grade1,2\\
+\emph{uplift event} & 2014/11/5 & \emph{campus art festival} & grade1,2,3\\
+\bottomrule
+\end{tabular}
+}
+}
+\end{table}
 
 \emph{Stress detected from microblogs}.
 Since our target is to observe the restoring impact of uplift events for teenagers under stress.
@@ -101,6 +43,13 @@ where the uplift event \emph{campus art festival} was scheduled ahead of the fir
 the uplift event \emph{holiday} happened after the second exam,
 and no scheduled uplift event was found nearby the third exam.
 The current student exhibited differently in above three situations, with the stress lasting for different length and with different intensity.
+\begin{figure}
+\centering
+\caption{Examples of school related stressor events, uplift events and a student's stress fluctuation}
+\includegraphics[width=\linewidth]{figs/exampleWave.eps}
+\label{fig:example}
+\end{figure}
+
 
 To further observe the influence of uplift events for students facing stressor events,
 we statistic all the stressful intervals~\cite{Li2017Analyzing} detected surround the scheduled examinations over the 124 students during their high school career.
@@ -111,6 +60,14 @@ the \emph{accumulated stress}, the \emph{average stress} (per day), the \emph{le
 the \emph{frequency of academic topic words}, and the \emph{ratio of academic stress among all types of stress}.
 For each measure, we calculate the average value over all eligible slides for each student.
 
+\begin{figure}
+\centering
+\caption{Compare students' stress during exam intervals in two situations:
+1) affected by neighboring uplift events (U-SI), 2) no uplift events occurred nearby (SI)}
+\includegraphics[width=\linewidth]{figs/frequency.eps}
+\label{fig:frequency}
+\end{figure}
+
 \subsection{Findings}
 Comparing each measure in scheduled exam slides under the two situations: 1) existing neighbouring uplift events or 2) no neighbouring scheduled uplift events,
 we find that students during exams with neighbouring uplift events exhibit less average stress intensity (both on accumulated stress and average stress),
@@ -119,30 +76,31 @@ Further, we statistic the frequency of academic related topic words for each exa
 and look into the ratio of academic stress among all five types of stress.
 Results in Figure~\ref{fig:frequency} shows that most students talked less about the upcoming or just-finished exams when uplift events happened nearby,
 with lower frequency and lower ratio.
-The stress intensity and type distribution detected from each student's microblogs varies due to personal life experience, posting habits and express styles.
+%The stress intensity and type distribution detected from each student's microblogs varies due to personal life experience, posting habits and express styles.
+%modify1: 上面这句话有用吗
 The statistic result shows clues about the stress-relieving ability of scheduled uplift events,
 and thus helps shape our problem as how to quantify the influence of uplift events,
-thus to provide further guidance for planning campus activities to help relive high school students' psychological stress effectively.
-%
-%\begin{table}[h]
+thus to provide further guidance for planning campus activities to help relive students' stress effectively.
+%\begin{figure}
 %\centering
-%\caption{Examples of academic related topic words.}
-%\label{tab:studyWords}
-%\begin{tabular}{c}
-%\toprule
-%exam, fail, review, score, grade, test paper, rank, pass, math, chemistry\\
-%homework, recite, regress, fall behind, tension, stressed out, physics,\\
-%nervous, mistake, answer, question, puzzle, difficult, lesson, careless, \\
-%\bottomrule
-%\end{tabular}
-%\end{table}
+%\caption{Compare students' stress during exam intervals in two situations:
+%1) affected by neighboring uplift events (U-SI), 2) no uplift events occurred nearby (SI)}
+%\includegraphics[width=\linewidth]{figs/frequency.eps}
+%\label{fig:frequency}
+%\end{figure}
 
-
-\begin{figure}
+\begin{table}[h]
 \centering
-\caption{Compare students' stress during exam intervals in two situations:
-1) affected by neighboring uplift events (U-SI), 2) no uplift events occurred nearby (SI)}
-\includegraphics[width=\linewidth]{figs/frequency.eps}
-\label{fig:frequency}
-\end{figure}
+\caption{\small{Examples of academic related topic words.}}
+\label{tab:studyWords}
+\small{
+\begin{tabular}{c}
+\toprule
+exam, fail, review, score, grade, test paper, rank, pass, math, chemistry\\
+homework, recite, regress, fall behind, tension, stressed out, physics,\\
+nervous, mistake, answer, question, puzzle, difficult, lesson, careless\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 

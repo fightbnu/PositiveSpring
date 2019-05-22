@@ -1,4 +1,4 @@
-\section{Study2: }
+\section{Study2: Find the restoring pattern of uplift events}
 Based on the observation and psychological theory,
 we conduct our research under the assumption that uplift events can ease teenagers' stress,
 namely the positive restoring impact of uplift events.
@@ -50,8 +50,8 @@ Next, we give the formal definition for uplift events and stressor events from t
 \includegraphics[width=\linewidth]{figs/UpSeries.eps}
 \label{fig:SI}
 \end{figure}
-\begin{definition}
-\textbf{Uplift event}.
+%\begin{definition}
+\paragraph{\textbf{Uplift event}}
 Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be an uplift event,
 where the element \emph{role} is the subject who performs the \emph{act},
 and \emph{descriptions} are the key words related to $u$.
@@ -59,7 +59,7 @@ According to psychological scales \cite{hassles,Jun2008Influence},
 teenagers' uplift stressors mainly focus on six aspects,
 as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
 'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall u$, $u._{type} \in \mathbb{U}$.
-\end{definition}
+%\end{definition}
 
 \begin{definition}
 \textbf{Stressor event}.
@@ -80,30 +80,3 @@ let $F$:$(u, U^{'}, e, S^{'}) \rightarrow $ \bm{${A}$}
 (\bm{${A}$} is a multidimensional vector) be the restoring influence of uplift event $u$
 conducted on the stress caused by stressor event $e$.
 We aim to quantify such influence \bm{${A}$} from multiple views.
-
-\paragraph{Correlation analysis for multivariate time series}
-Basic correlation analysis methods on time series focused on univariate data have been well studied.
-As the most widely adopted method,
-the Pearson correlation analysis \cite{Cohen1988Statistical} measures the linear correlation between two variables $X$ and $Y$.
-One inevitable defect is that Pearson correlation is too sensitive to outlier values.
-To overcome such drawback,
-Spearman Rank correlation \cite{C1987The}
-and Kendall Rank correlation \cite{Mcleod2011Kendall}
-are proposed based on Pearson correlation.
-While Pearson correlation estimates linear relationships,
-Spearman correlation estimates monotonic relationships (whether linear or not),
-and are calculated as the Pearson correlation between the rank values of two variables.
-The Kendall correlation mainly assesses the similarity of the orderings of the data when ranked by each of the quantities.
-The above correlation methods are usually used to estimate relationship between single-dimensional variables,
-and cannot be adopted directly in our microblog content based scenario.
-
-For multivariate time series analysis, two-sample based methods are widely adopted.
-Such kind of methods are deduced to check whether two samples come from the same underlying distribution, which is assumed to be statistically unknown.
-Correspondingly, various kernel
-\cite{Sch2006A} and distance-based methods \cite{Schilling1986Multivariate}
-(e.g., the nearest neighbor based method two-sample method) are proposed.
-Scholkopf \emph{et al.} \cite{Sch2006A} proposed to transform the distance between two variables and nearest neighbors into a reproducing kernel Hilbert space (RKHS), and solve the problem using Maximum Mean Discrepancy.
-In work \cite{Schilling1986Multivariate},
-Schilling \emph{et al.} adopted the $r$-nearest neighbor based method to partition two set of event driven time series data.
-The global proportion of the right divided neighbors are calculated to estimate whether there exists statistically difference between the two sets.
-We use the $r$-nearest neighbor based two-sample method in our problem, thus to measure the distance and correlation between two multi-dimension variables.
