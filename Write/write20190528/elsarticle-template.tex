@@ -1,0 +1,137 @@
+\documentclass[5p,times,numbers,authoryear]{elsarticle}
+
+\usepackage{ctex}
+\usepackage{lineno}%,hyperref}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subfigure}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage[justification=centering]{caption}
+\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{bm}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\newtheorem{definition}{Definition}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+\renewcommand{\multirowsetup}{\centering}
+
+\journal{Journal of \LaTeX\ Templates}
+
+\usepackage{appendix}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Assessment of Stress-Buffering Effects of Uplift Events on Adolescents from Microblogs}
+
+\author[mymainaddress]{Qi Li}
+\ead{liqi2018@bnu.edu.cn}
+
+\author[my2address]{Yuanyuan Xue}
+\ead{xue-yy12@mails.tsinghua.edu.cn}
+
+\author[my3address]{Liang Zhao}
+\ead{zhaoliang0415@xjtu.edu.cn}
+
+\author[my2address]{Ling Feng\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Dept. of Computer Science and Technology, Centre for Computational Mental Healthcare Research,
+Tsinghua University, Beijing, China.}
+\ead{fengling@tsinghua.edu.cn}
+
+\address[mymainaddress]{Faculty of Psychology, Beijing Normal University, Beijing, China.}
+\address[my2address]{Dept. of Computer Science and Technology, Tsinghua University, Beijing, China.}
+\address[my3address]{Institute of Social Psychology, Xi'an Jiaotong University, Xi'an, China.}
+
+\begin{abstract}
+As an important concept in psychological theory,
+restoring is an essential process in human's stress coping system.
+Timely and efficient restoring of stress could help teenagers get out of overwhelmed status as soon as possible.
+Previous research has explored the possibility of detecting teenagers' stress series and
+mining the impact of stressor events from social media.
+On the contrary, the research on auto-analyzing the restoring ability of uplift events still calls for more exploration,
+due to the uncertainty and complexity of various restoring situations.
+In this paper,
+we give a deep inside into the stress easing function of uplift events on the real data set of 124 high school students.
+A two-sample based statistical model is conducted to analyze the stressful behavioral correlations
+when uplift events happened to overwhelmed students from multiple perspectives.
+Experimental results show that our method could measure the restoring impact of school scheduled uplift events. % with 69.52\% accuracy,
+%and integrating such impact of uplift events helps reduce the stress prediction errors efficiently (with MSE, RMSE, MAPE and MAD reduced by 49.34\%, 28.81\%, 26.80\% and 42.11\%, respectively).
+Our exploration provides guidance for school and parents that which kind of uplift events could help relieve students' overwhelmed stress in both stress prevention and stress early stopping situations.
+\end{abstract}
+
+\begin{keyword}
+uplift event, restoring, stress, adolescent, microblogs
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+\paragraph{Stress} Life is always full of ups and downs.
+The serious mental health problems caused by stress has become hot issues that are widely concerned around the world.
+According to the newest report of American Psychological Association,
+the youngest adults are most likely of all generations to report poor mental health in America,
+and 91 percent of Gen-Zs between ages 18 and 21 say they have experienced physical or emotional symptom due to stress in the past month compared to 74 percent of adults overall \citep{APA2018}.
+Accumulated stress comes from daily hassles, major stressful events and environmental stressors could drain people's inner resources,
+leading to psychological maladjustment, ranging from depression to suicidal behaviours \citep{Nock2008Suicide}.
+Nowadays more than 30 million Chinese teenagers are suffering from psychological stress,
+and nearly 30\% have a risk of depression \citep{ChinaTeen2019}.
+%1.心理压力问题很严重
+
+\paragraph{Stress-buffering}
+Restoring is an essential process in human's stress coping system \citep{Susan1984Stress} to help get out of overwhelmed status.
+%2.1心理压力缓解的概念
+Traditional psychology research shows that stress-restoring could function through various ways,
+including exercise[xx], self-esteem [xx], changing environments [xx], chatting with friends [xx],
+writing diaries [xx] and so on.
+The specific restoring restoring mode remains to be further explored.
+%2.2 人们探求缓解心理压力的多种途径，但是具体的缓解模式仍有待探索。
+
+With the epidemic of social media among adolescents,
+it provides a new channel for timely and non-invasive exploration of users' mental health status.
+%3.随着社交媒体大数据兴起，为探索用户心理健康状态提供了及时/非侵入的新途径。
+Previous studies have shown that it is feasible and reliable to detect user's psychological stress and stressor events,
+and predict future psychological stress trends through social network data.
+%4.前期研究表明，通过社交网络数据，可以检测心理压力，压力源事件，预测未来心理压力趋势等，是可行的，可靠的。
+However, research on stress-buffering effects of uplift events from social networks still calls for more exploration.
+%5.但是对于积极事件的研究还远远不够
+This article will explore the restoring impact of uplift events from microblogs,
+help scheduling positive interventions, and predict future stress.
+%6.对于积极事件的探索，亟需展开，从而为及时安排心理压力干预，准确预测心理压力的未来发展趋势提供必要信息。
+
+\input{literature}
+\input{study1}
+\input{study2}
+\input{study3}
+\input{study4}
+\input{discussion}
+%\bibliographystyle{elsarticle-num-names}
+\bibliographystyle{model4-names}
+\bibliography{reference-new}
+\input{addition}
+
+\end{document}
+
