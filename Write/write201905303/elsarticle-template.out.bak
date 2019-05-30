@@ -1,0 +1,28 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Literature review}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Restorative function of positive life events.}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Assessment of Stress-buffering Effects of Positive Events}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Sensing adolescent stress from social networks}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Current study}{}% 6
+\BOOKMARK [1][-]{section.4}{Study1: Observation on the stress-relieving ability of school scheduled uplift events}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Sample}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Results}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Study2: Identify Positive Events and the Corresponding Impact Interval from microblogs}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Uplift Events}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Impact Interval of Current Positive Event}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Results}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Study3: Quantify the impact of uplift events}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Restoring Patterns and Behavioral Measures}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Quantify the Correlation}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.3}{Temporal Order}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.4}{Results}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Study4: Integrating the stress-buffering effect into stress prediction}{}% 19
+\BOOKMARK [1][-]{section.8}{Discussion}{}% 20
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 21
+\BOOKMARK [1][-]{appendix.1}{Observe the impact of scheduled positive events: students' stress during exam intervals in two situations}{}% 22
+\BOOKMARK [1][-]{appendix.2}{Algorithm 1: Select candidate intervals impacted by positive events}{}% 23
+\BOOKMARK [1][-]{appendix.3}{Algorithm2: Identify stressful intervals impacted by positive events.}{}% 24
+\BOOKMARK [1][-]{appendix.4}{Algorithm3: judge stressful intervals into SI or U-SI}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Model 1: quantify significant restoring impact conducted by uplift events}{appendix.4}% 26
+\BOOKMARK [1][-]{appendix.5}{Model2: identify the temporal order of stress-restoring impact}{}% 27
+\BOOKMARK [1][-]{appendix.6}{Algorithm4: Overall algorithm}{}% 28
