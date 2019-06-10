@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  30 MAY 2019 17:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  10 JUN 2019 12:01
 entering extended mode
 **elsarticle-template.tex
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.tex
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -78,7 +78,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.spl)
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.spl)
 (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
@@ -1178,7 +1178,7 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count309
 \c@@ppsaveapp=\count310
 )
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.aux)
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.aux)
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 43.
 
@@ -1337,8 +1337,8 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.out)
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.out)
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.out)
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.out)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1404,7 +1404,7 @@ Overfull \hbox (7.66008pt too wide) in paragraph at lines 110--120
 k ([],
  []
 
-(C:\Users\liqi\Desktop\write201905302\literature.tex
+(C:\Users\liqi\Desktop\write20190610\literature.tex
 LaTeX Font Info:    Try loading font information for C19+rm on input line 1.
 
 (C:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
@@ -1436,7 +1436,7 @@ Overfull \hbox (4.3101pt too wide) in paragraph at lines 102--106
 s on stress
  []
 
-[3]) (C:\Users\liqi\Desktop\write201905302\study1.tex
+[3]) (C:\Users\liqi\Desktop\write20190610\study1.tex
 Overfull \hbox (10.66002pt too wide) in paragraph at lines 1--1
 []\OT1/txr/bx/n/10 Study1: Ob-ser-va-tion on the stress-relieving a-bil-i-ty of
  school
@@ -1450,17 +1450,23 @@ Overfull \hbox (0.3101pt too wide) in paragraph at lines 11--24
 
 File: figs/exampleWave.eps Graphic file (type eps)
 <figs/exampleWave.eps> [4]
-Overfull \hbox (1.87003pt too wide) in paragraph at lines 77--85
+Overfull \hbox (1.87003pt too wide) in paragraph at lines 79--89
 \OT1/txr/m/n/10 above t-wo con-di-tion-s: the \OT1/txr/m/it/10 ac-cu-mu-lat-ed 
 stress\OT1/txr/m/n/10 , the \OT1/txr/m/it/10 av-er-age stress
  []
 
 
-Overfull \hbox (5.32004pt too wide) in paragraph at lines 106--133
+Overfull \hbox (5.32004pt too wide) in paragraph at lines 111--120
 \OT1/txr/m/n/10 psy-cho-log-i-cal the-o-ry  ([], []; [],
  []
 
-) (C:\Users\liqi\Desktop\write201905302\study2.tex [5]
+
+Overfull \hbox (0.72008pt too wide) in paragraph at lines 111--120
+\OT1/txr/m/n/10 multi-types. Based on the ob-ser-va-tion re-sult-s, the ul-ti-m
+ate prob-
+ []
+
+) (C:\Users\liqi\Desktop\write20190610\study2.tex [5]
 Overfull \hbox (5.0532pt too wide) in paragraph at lines 13--26
 [][]\OT1/txr/m/it/10 Linguistic struc-ture\OT1/txr/m/n/10 . Let $\OML/txmi/m/it
 /10 u$ \OT1/txr/m/n/10 = $[\OML/txmi/m/it/10 type; \OMS/txsy/m/n/10 f\OML/txmi/
@@ -1473,13 +1479,13 @@ Overfull \hbox (0.16006pt too wide) in paragraph at lines 125--130
  events
  []
 
-[6]) (C:\Users\liqi\Desktop\write201905302\study3.tex [7] [8]
+[6]) (C:\Users\liqi\Desktop\write20190610\study3.tex [7] [8]
 Overfull \hbox (17.91891pt too wide) in paragraph at lines 162--171
  [][] 
  []
 
 File: figs/correlation2.eps Graphic file (type eps)
-<figs/correlation2.eps>) (C:\Users\liqi\Desktop\write201905302\study4.tex
+<figs/correlation2.eps>) (C:\Users\liqi\Desktop\write20190610\study4.tex
 Overfull \hbox (4.82004pt too wide) in paragraph at lines 3--23
 \OT1/txr/m/n/10 grat-ed Mov-ing Av-er-age) al-go-rith-m [] ([]),
  []
@@ -1498,28 +1504,76 @@ File: figs/predictWindow2.eps Graphic file (type eps)
 <figs/predictWindow2.eps>
 File: figs/threshNew.eps Graphic file (type eps)
  <figs/threshNew.eps> [10] [11])
-(C:\Users\liqi\Desktop\write201905302\discussion.tex)
-(C:\Users\liqi\Desktop\write201905302\elsarticle-template.bbl
+(C:\Users\liqi\Desktop\write20190610\discussion.tex
+Overfull \hbox (1.88005pt too wide) in paragraph at lines 12--28
+\OT1/txr/m/n/10 func-tion of pos-i-tive events on ado-les-cents' so-cial net-wo
+rk-s. Pos-
+ []
+
+
+Overfull \hbox (5.58005pt too wide) in paragraph at lines 12--28
+\OT1/txr/m/n/10 com-pre-hen-sive frame-work to au-to-mat-i-cal-ly de-tec-t pos-
+i-tive events
+ []
+
+
+Overfull \hbox (7.89008pt too wide) in paragraph at lines 58--66
+\OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
+r school
+ []
+
+
+Overfull \hbox (3.11005pt too wide) in paragraph at lines 68--73
+\OT1/txr/m/n/10 con-vinc-ing ex-per-i-ments through invit-ing the par-tic-i-pan
+ts to com-
+ []
+
+[12]
+
+Package natbib Warning: Citation `xx' on page 13 undefined on input line 85.
+
+
+Overfull \hbox (5.99005pt too wide) in paragraph at lines 82--95
+\OT1/txr/m/n/10 tor is how per-son-al-i-ty im-pact-s the stress-buffing of pos-
+i-tive events
+ []
+
+
+Overfull \hbox (8.66005pt too wide) in paragraph at lines 82--95
+\OT1/txr/m/n/10 ([], []; [], []), which could
+ []
+
+
+Overfull \hbox (16.4001pt too wide) in paragraph at lines 82--95
+\OT1/txr/m/n/10 fac-tor is the role the so-cial sup-port ([], []; [],
+ []
+
+
+Overfull \hbox (1.15007pt too wide) in paragraph at lines 82--95
+\OT1/txr/m/n/10 turn less phys-i-cal ill-ness and greater well-being. ([],
+ []
+
+) (C:\Users\liqi\Desktop\write20190610\elsarticle-template.bbl
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 57.
- [12]
+
 Underfull \hbox (badness 1275) in paragraph at lines 155--164
 [][]\OT1/txr/m/n/8 Kanner,  A., Coyne,  J., Schae-fer,  C., Lazants,  R..  Com-
 par-i-son
  []
 
-
-Underfull \hbox (badness 1939) in paragraph at lines 317--323
+[13]
+Underfull \hbox (badness 1939) in paragraph at lines 353--359
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--323
+Underfull \hbox (badness 10000) in paragraph at lines 353--359
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-) (C:\Users\liqi\Desktop\write201905302\addition.tex
+) (C:\Users\liqi\Desktop\write20190610\addition.tex
 Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
 []\OT1/txr/bx/n/10 Observe the im-pact of sched-uled pos-i-tive events:
  []
@@ -1531,21 +1585,24 @@ File: omstxr.fd 2000/12/15 v3.1
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
 File: figs/frequency.eps Graphic file (type eps)
- <figs/frequency.eps> [13] [14]
-[15]
+ <figs/frequency.eps> [14] [15]
 Overfull \hbox (6.18059pt too wide) in paragraph at lines 156--157
 [][]$\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 USI; USI[]$\OT1/txr/
 m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
  []
 
+[16]
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 168.
 
 LaTeX Font Info:    Calculating math sizes for size <> on input line 169.
-) [16]
+) [17]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
- (C:\Users\liqi\Desktop\write201905302\elsarticle-template.aux)
+(C:\Users\liqi\Desktop\write20190610\elsarticle-template.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 132.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 
@@ -1555,16 +1612,16 @@ Package rerunfilecheck Warning: File `elsarticle-template.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `elsarticle-template.out':
-(rerunfilecheck)             Before: 609773DE68F6FCA548A7E7E74E379437;10352
-(rerunfilecheck)             After:  7A827A380F849B622278DE62E3602FF2;2330.
+(rerunfilecheck)             Before: DB6E77D3336D660E1B0D32BC46E98F44;10608
+(rerunfilecheck)             After:  C0974A89B7369A43225D4F769C2596D8;2362.
  ) 
 Here is how much of TeX's memory you used:
- 18876 strings out of 495355
- 280491 string characters out of 3183882
- 443442 words of memory out of 3000000
- 21605 multiletter control sequences out of 15000+200000
+ 18889 strings out of 495355
+ 280718 string characters out of 3183882
+ 442904 words of memory out of 3000000
+ 21618 multiletter control sequences out of 15000+200000
  57738 words of font info for 171 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,14n,74p,945b,820s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on elsarticle-template.dvi (16 pages, 247676 bytes).
+Output written on elsarticle-template.dvi (17 pages, 263088 bytes).
