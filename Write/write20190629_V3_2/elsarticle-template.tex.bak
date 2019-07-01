@@ -102,44 +102,41 @@ stress-buffering, positive events, adolescents, microblogs
 
 %stress, positive events. stress-buffering, previous problems/conclusions, social network+advantages
 \section{Introduction}
-\paragraph{Stress}
+%\paragraph{Stress}
 Life is always full of ups and downs.
-Accumulated stress comes from daily hassles, 
+Accumulated stress comes from daily hassles,
 major stressful events and environmental stressors could drain inner resources,
-leading to psychological maladjustment such as depression and suicidal behaviours \citep{Nock2008Suicide}. 
-According to the newest report of American Psychological Association, 
+leading to psychological maladjustment, such as depression and suicidal behaviours \citep{Nock2008Suicide}.
+According to the newest report of American Psychological Association,
 91 percent of youngest adults say they have experienced physical or emotional symptom due to stress in the past month compared to 74 percent of adults overall \citep{APA2018}.
-More than 30 million Chinese teenagers are suffering from psychological stress, 
-and nearly 30\% of them have a risk of depression \citep{ChinaTeen2019}. 
-Stress-induced mental health problems are becoming an important social issue worldwide. 
+More than 30 million Chinese teenagers are suffering from psychological stress,
+and nearly 30\% of them have a risk of depression \citep{ChinaTeen2019}.
+Stress-induced mental health problems are becoming an important social issue worldwide.
 %1.心理压力问题很严重
 
-\paragraph{Positive events and stress-buffering}
+%\paragraph{Positive events and stress-buffering}
 Studies have shown that the occurrence of positive events could conduct exert obvious protective effects on emotional distress~\citep{Cohen1984Positive, Needles1990Positive}, that is, stress-buffering. 
-Stress-buffering is an essential process in human's stress coping system to help get out of overwhelmed status \citep{Susan1984Stress}.
-%2.1心理压力缓解的概念
-Studies have shown that stress-buffering could function through various ways,
-including  social support, positive event, sense of competence, exercise pattern, sense of purpose, and leisure activity \citep{Wheeler1988Identification, Cohen2010Positive}.
+As an essential process in human's stress coping system,
+stress-buffering helps individuals get out of overwhelmed status~\citep{Susan1984Stress,Wheeler1988Identification}.
 %2.2 人们探求缓解心理压力的多种途径
-
-%Among them, positive events are considered exerting obvious protective effects on emotional distress \citep{Cohen1984Positive, Needles1990Positive}. 
-
-The mitigation mechanism of positive events has been well studied in the field of traditional psychology \citep{Shahar2002Positive, Folkman1997Positive, Folkman2010Stress}. 
+The mitigation mechanism of positive events has been well studied in the field of traditional psychology \citep{Shahar2002Positive, Folkman1997Positive, Folkman2010Stress}.
 %2.3 积极事件是缓解压力的重要途经，但是具体的缓解模式仍有待探索。
 
+%and function through various ways,
+%such as positive event, social support, sense of competence, exercise pattern, sense of purpose, and leisure activities \citep{Wheeler1988Identification,Cohen2010Positive}.
 
-\paragraph{Assessment of stress-buffering}  
-Accurately assessing the state of stress-buffering is important for judging the mental health trends of overwhelmed individuals. 
-The assessments in previous studies were mainly conducted through subjective self-reporting, 
+\paragraph{Assessment of stress-buffering}
+Accurately assessing the state of stress-buffering is important for judging the mental health trends of overwhelmed individuals.
+The assessments in previous studies were mainly conducted through subjective self-reporting,
 and was influenced by many factors, such as social appreciation and pressure from measurement scenarios.
-There is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level. 
-At the same time, 
-previous studies has been based on static perspectives, 
-focusing on single measurements of events and psychological state after events, 
+There is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level.
+At the same time,
+previous studies has been based on static perspectives,
+focusing on single measurements of events and psychological state after events,
 while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific methods.
 
 With the epidemic of social media,
-it provides a new channel for timely, 
+it provides a new channel for timely,
 content-rich and non-invasive exploration of adolescents' mental health status in the case of natural exposure.
 %3.随着社交媒体大数据兴起，为探索用户心理健康状态提供了及时/非侵入的新途径。
 Previous studies have shown the feasibility and reliability to sense user's psychological stress and stressor events,

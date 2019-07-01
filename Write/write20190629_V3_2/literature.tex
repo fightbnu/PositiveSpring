@@ -1,5 +1,6 @@
+%要大改: 1）跟元素相关 2）跟假设相关 3）层层递进
 \section{Literature review}
-\subsection{Stress-buffering function of positive life events.}
+\subsection{Theoretic stress-buffering function of positive life events.}
 %1.积极事件保护的三个方面
 Positive life events are conceptualized as exerting a protective effect on emotional distress in psychological literature~\citep{Cohen1984Positive, Needles1990Positive}.
 Many psychological researchers have focused on the restorative function of positive events with respect to physiological, psychological, and social coping resources.
@@ -29,10 +30,7 @@ the experience of positive emotions functions to assist high-resilient individua
 In the survey made by \citep{Santos2013The}, strategies of positive psychology are checked as potentially tools for the prophylaxis and treatment of depression, helping to reduce symptoms and for prevention of relapses.
 Through a three-week longitudinal study,
 \citep{Bono2013Building} examined the correlation between employee stress and health and positive life events, and concluded that naturally occurring positive events are correlated with decreased stress and improved health.
-In view of the above mentioned literature, this article will be based on the following hypothesize:
-\paragraph{\textbf{H1}} Positive events could conduct stress-buffering impact on overwhelmed adolescents.
 
-\vspace{2mm}
 %4. 青少年积极事件：对身心调节作用
 Due to the immature inner status and lack of experience \citep{older},
 young people exhibit more exposure to uplift events compared with adults,
@@ -45,15 +43,9 @@ help restore the capacity for dealing with stress,
 but also have been linked to medical benefits, such as improving mood, serum cortisol levels, and lower levels of inflammation and hyper coagulability \citep{Jain2010Effects}.
 Through examining the relationship between self-reported positive life events and blood pressure in 69 sixth graders,
 researchers found that increased perceptions of positive life events might act as a buffer to elevated blood pressure in adolescents \citep{Caputo1998Influence}.
-Therefore, two research questions are proposed:
 
-\paragraph{\textbf{RQ1}} How to (a) automatically sense the positive events experienced by adolescents in a timely manner,
-and (b) identify the time interval impacted by a particular positive event.
-
-
-\subsection{Assessment of Stress-buffering Effects of Positive Events}
-\paragraph{Measuring the Impact of Uplift Events with traditional psychology scales}
-To measure the impact of uplift events,
+%assessment of stress-buffering
+To assess the impact of uplift events,
 Doyle \emph{et al.} \cite{Kanner1981Comparison} conducted \emph{Hassles and Uplifts Scales},
 and concluded that the assessment of daily hassles and uplifts might be a better approach to the prediction of adaptational outcomes than the usual life events approach.
 Silva \emph{et al.} \cite{Silva2008The} presented the \emph{Hassles \& Uplifts Scale} to assess the reaction to minor every-day events in order to detect subtle mood swings and predict psychological symptoms.
@@ -64,21 +56,12 @@ Specific for college students,
 Jun-Sheng \emph{et al.} \cite{Jun2008Influence} investigated in 282 college students using the \emph{Adolescent Self-Rating Life Events Checklist}, and found that the training of positive coping style is of great benefit to improve the mental health of students.
 Previous exploration for the protective effect of uplift events on adolescents are mostly conducted in psychological area,
 relying on traditional manpower-driven investigation and questionnaire.
+In view of the above mentioned literature, this article will be based on the following hypothesize:
+\paragraph{\textbf{H}} Positive events could conduct stress-buffering impact on overwhelmed adolescents. 
+%H1：规划的积极事件对压力具有缓解作用，使微博压力强度降低，压力持续时间变短
+%H2：规划的积极事件对压力具有缓解作用，使青少年微博对压力主题的谈论减少
 
-The pioneer psychological researches provide us valuable implications and hypothesis.
-However, considering the mitigation effects of different positive events are complex due to the individual difference,
-more in-depth researches are limited by labor cost, and single questionnaire based method.
-If the stress-buffering effect of positive events could be automatically assessed,
-it will be of great significance for predicting the future stress changes under current positive event.
-Thus it is also beneficial for schools and parents
-to arrange positive events at appropriate times to ease and intervene the psychological stress of students.
-Given this, the research question to be solved is:
-
-\paragraph{\textbf{RQ2}} How to (a) find the stress-buffering patterns,
-(b) quantify the impact of different types of positive events,
-and (c) identify the temporal order between positive events and monotonous stress changes from microblogs.
-
-\subsection{Sensing adolescent stress from social networks}
+\subsection{User psychological stress analysis based on social network}
 With the high development of social networks,
 researches explored applying psychological theories into social network based stress mining,
 offering effective tools for adolescent stress sensing.
@@ -92,13 +75,37 @@ Li \emph{et al.} \cite{Li2015Predicting}adopted a series of multi-variant time s
 Taking the linguistic information into consideration,
 Li \emph{et al.} \cite{Li2017Exploring} employed a NARX neural network to predict a teen's future stress level referred to the impact of co-experiencing stressor events of similar companions.
 To find the source of teens' stress, previous work \cite{Li2017Analyzing} developed a frame work to extract stressor events from microblogging content and filter out stressful intervals based on teens' stressful posting rate.
-All above pioneer work focused on the generation and development of teens' stress,
-providing solid basic techniques for broader stress-motivated research from social networks.
-Based on such research background,
-this paper starts from a completely new perspective,
-and focuses on the buffering effect of positive events on stress.
-Thus we push forward the research from how to find stress to the next more meaningful stage: how to deal with stress.
-From this perspective, a research question is formulated:
+%to be add: features [xx][xx][xx]
+Given the scholars, we propose to depict the stress-buffering measures in three aspects, and tested the relationships as:
+
+\paragraph{\textbf{H1}} The stress-buffering function of positive events is correlated with
+a)posting behavior, b)stress intensity and c)microblog linguistic expressions.
+
+Since previous scholars were conducted in a self-report method,
+to utilize the abundant self-exposures in adolescents' microblogs,
+the present study propose to work in a non-invasion way.
+Therefore, two research questions are proposed:
+\paragraph{\textbf{RQ1}} How to (a) automatically sense the positive events experienced by adolescents in a timely manner,
+and (b) identify the time interval impacted by a particular positive event.
+
+%to be add [xx]...%与阶段相关的文献
+To examine the the dynamic process of stress-buffering,
+the present study propose to assess the mitigation effect of positive events
+in different phases, and assume that:
+\paragraph{\textbf{H2}} positive events cause monotonous stress changes in two cases: a) slowing down the increase in stress at the beginning of stressful events,
+and b) promoting the reduction of stress after stressful events.
+
+Given this, the research question to be solved is:
+\paragraph{\textbf{RQ2}} How to (a)quantify the impact of positive events on different types of stress,
+and (b) identify the temporal order between positive events and monotonous stress changes from microblogs.
+
+In addition,
+if the stress-buffering effect of positive events could be automatically assessed,
+it helps to predict the future stress changes more accurately.
+This will benefit schools and parents in arranging positive events at appropriate times to ease and intervene the psychological stress of students.
+Thus we push forward the research from how to find stress to the next stage:
+how to deal with stress.
+From this perspective, a exploration is conducted at the end of the study:
 \paragraph{\textbf{RQ3}} how to predict adolescents' future stress under the mitigation effect of positive events from microblogs?
 Specifically, (a)which stress-buffering pattern contributes the most in stress prediction,
 and (b)influence of different window lengths on stress prediction accuracy
@@ -123,3 +130,10 @@ Last but not least,
 In study 4,
 the present study explores how to predict future stress changes integrating the buffering impact of positive events.
 Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations.
+
+%to be add [xx]...%与压力/积极类型相关的文献
+%Scholars argued about the major stressors for adolescents,
+%and assumed that the stressors are mainly come from school life [xx,xx] and self-cognition [xx,xx].
+%Based on microblogging measures proposed in current study,
+%we target to examine the following hypotheses:
+%\paragraph{\textbf{H3}} positive events conduct the most intensive stress-buffering effects on adolescents' school-life stress.

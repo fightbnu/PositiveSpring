@@ -20,7 +20,7 @@ posting behavior, stress intensity, and linguistic expressions.
 Stress could lead to a teen's abnormal posting behaviors,
 reflecting the teen's changes in social engagement activity.
 For each stressful interval,
-we consider three measures of posting behaviors in each time unit (day),
+we consider four measures of posting behaviors in each time unit (day),
 and present each measure as a corresponding series.
 The first measure is \emph{posting frequency},
 representing the total number of posts per day.
@@ -138,7 +138,7 @@ Here we adopt the t-test method as the intensity computation function,
 to observe whether the occurrence of uplift events relieve the monotonic negative effect and the monotonic positive effect.
 Details are presents in part \ref{mod:mod2} of the appendix.
 
-The overall pipeline for identifying the restoring impact of uplift events is presented in algorithm \ref{alg:alg4}. 
+The overall pipeline for identifying the restoring impact of uplift events is presented in algorithm \ref{alg:alg4}.
 
 %\subsection{Overall Algorithm}
 %The overall pipeline for identifying the restoring impact of uplift events is presented in algorithm \ref{alg:alg4}.

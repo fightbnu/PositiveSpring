@@ -1,5 +1,5 @@
 \section{Literature review}
-\subsection{Restorative function of positive life events.}
+\subsection{Stress-buffering function of positive life events.}
 %1.积极事件保护的三个方面
 Positive life events are conceptualized as exerting a protective effect on emotional distress in psychological literature~\citep{Cohen1984Positive, Needles1990Positive}.
 Many psychological researchers have focused on the restorative function of positive events with respect to physiological, psychological, and social coping resources.
@@ -52,7 +52,7 @@ and (b) identify the time interval impacted by a particular positive event.
 
 
 \subsection{Assessment of Stress-buffering Effects of Positive Events}
-\paragraph{Measuring the Impact of Uplift Events with traditional psychology scales}
+%\paragraph{Measuring the Impact of Uplift Events with traditional psychology scales}
 To measure the impact of uplift events,
 Doyle \emph{et al.} \cite{Kanner1981Comparison} conducted \emph{Hassles and Uplifts Scales},
 and concluded that the assessment of daily hassles and uplifts might be a better approach to the prediction of adaptational outcomes than the usual life events approach.
@@ -72,11 +72,11 @@ If the stress-buffering effect of positive events could be automatically assesse
 it will be of great significance for predicting the future stress changes under current positive event.
 Thus it is also beneficial for schools and parents
 to arrange positive events at appropriate times to ease and intervene the psychological stress of students.
-Given this, the research question to be solved is: 
+Given this, the research question to be solved is:
 
-\paragraph{\textbf{RQ2}} How to (a) find the stress-buffering patterns 
-(b) quantify the impact of different types of positive events, 
-and (c) identify the temporal order between positive events and monotonous stress changes from microblogs. 
+\paragraph{\textbf{RQ2}} How to (a) find the stress-buffering patterns,
+(b) quantify the impact of different types of positive events,
+and (c) identify the temporal order between positive events and monotonous stress changes from microblogs.
 
 \subsection{Sensing adolescent stress from social networks}
 With the high development of social networks,
@@ -100,26 +100,26 @@ and focuses on the buffering effect of positive events on stress.
 Thus we push forward the research from how to find stress to the next more meaningful stage: how to deal with stress.
 From this perspective, a research question is formulated:
 \paragraph{\textbf{RQ3}} how to predict adolescents' future stress under the mitigation effect of positive events from microblogs?
-Specifically, (a)which stress-buffering pattern contributes the most in stress prediction, 
+Specifically, (a)which stress-buffering pattern contributes the most in stress prediction,
 and (b)influence of different window lengths on stress prediction accuracy
 will be taken into consideration.
 
 \section{Current study}
-Given the limitations in the existing literature, 
-this study proposes a complete solution to verify the stress-buffering effect of positive events on overwhelmed adolescents from social network.  
-In study 1, 
+Given the limitations in the existing literature,
+this study proposes a complete solution to verify the stress-buffering effect of positive events on overwhelmed adolescents from social network.
+In study 1,
 a case study is firstly conducted on the microblog dataset of 124 high school students associated with the school's scheduled positive and stressor event list.
-After observing the posting behaviours and contents of stressful teens under the influence of positive events, 
+After observing the posting behaviours and contents of stressful teens under the influence of positive events,
 several hypothesis are conducted to guide the next step research.
-In study 2, 
+In study 2,
 we present the procedure to automatically extract positive events and the corresponding impacted interval from microblogs.
-A Chinese linguistic parser model is applied to extract structural positive events from microblogging content, 
-based on a six-dimensional positive event scale and LIWC lexicons.  
-In study 3, 
+A Chinese linguistic parser model is applied to extract structural positive events from microblogging content,
+based on a six-dimensional positive event scale and LIWC lexicons.
+In study 3,
 to quantify the restoring impact of uplift events,
 we describe a teen's stressful behaviours in three groups of measures (stress intensity, posting behaviour, linguistic),
-and model the impact of positive events as the statistical difference in comparative situations. 
-Last but not least, 
-In study 4, 
-the present study explores how to predict future stress changes integrating the buffering impact of positive events. 
-Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations. 
+and model the impact of positive events as the statistical difference in comparative situations.
+Last but not least,
+In study 4,
+the present study explores how to predict future stress changes integrating the buffering impact of positive events.
+Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations.

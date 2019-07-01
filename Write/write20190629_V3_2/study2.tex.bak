@@ -58,46 +58,6 @@ containing 452 phrases in \emph{entertainment},
 as shown in Table \ref{tab:keyWords}.
 Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the uplift lexicon.
 
-
-
-%example
-The examples of teens' microblogs describing uplift events are listed in Table \ref{tab:uplifts}. % and Table \ref{tab:stressors}.
-%For the post '\emph{I have so much homework today!!!}', its elements are \emph{role = 'I', act='have', descriptions = 'homework'}, and the \emph{type = 'school life'}.
-For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
-we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
-and \emph{type = 'self-cognition'}.
-
-\begin{table}[H]
-\begin{center}
-\caption{\small{Structured extraction of positive events from microblogs.}}
-\small{
-\begin{tabular}{l} \hline \rowcolor{gray!40}
-I am really looking forward to the spring outing on Sunday now. \\ \rowcolor{gray!40}
-(Doer:\emph{I}, Act:\emph{looking forward}, Object:\emph{spring outing})\\
-My holiday is finally coming [smile]. \\
-(Doer:\emph{My holiday}, Act:\emph{coming}, Object:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
-First place in my lovely math exam!!! In memory of it.\\ \rowcolor{gray!40}
-Object:\emph{first place, math, exam, memory})\\ %\hline
-You are always here for me like sunshine. \\
-(Doer:\emph{You}, Object:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
-Thanks all my dear friends taking the party for me. \\ \rowcolor{gray!40}
-Happiest birthday!!!\\ \rowcolor{gray!40}
-(Doer:\emph{friends}, Act:\emph{thanks}, Object:\emph{party, birthday})\\
-%Be yourself. Trust yourself and follow your heart. \\
-%(Doer:\emph{yourself}, Act:\emph{trust}, Object:\emph{heart})\\ \rowcolor{gray!40} %\hline
-%Feel proud of our play in the Games. Our class is always the family!!!\\ \rowcolor{gray!40}
-%(Doer:\emph{Our}, Object:\emph{class, family})\\
-%A good film always makes bring comfort and happiness to me.\\
-%(Doer:\emph{me}, Act:\emph{bring}, Object:\emph{comfort, happiness})\\ \rowcolor{gray!40}%\hline
-I know my mom is the one who support me forever, no matter \\ %\rowcolor{gray!40}
-when and where. (Doer:\emph{mom}, Act:\emph{support})\\ \rowcolor{gray!40}
-Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ \rowcolor{gray!40}
-(act: \emph{expecting}, object:\emph{Adult Ceremony})\\ \hline
-\end{tabular}}
-\label{tab:uplifts}
-\end{center}
-\end{table}
-
 %\begin{table}[H]
 %\begin{center}
 %\caption{\small{Structured extraction of stressor events from microblogs.}}
@@ -160,3 +120,45 @@ Finally, we divide the stressful intervals into two sets: the SI set and the U-S
 according to its temporal order with neighboring uplift events.
 The details are present as Algorithm \ref{alg:alg3} of the appendix.
 
+\subsection{Results}
+%example
+The examples of teens' microblogs describing uplift events are listed in Table \ref{tab:uplifts}. % and Table \ref{tab:stressors}.
+%For the post '\emph{I have so much homework today!!!}', its elements are \emph{role = 'I', act='have', descriptions = 'homework'}, and the \emph{type = 'school life'}.
+For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
+we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
+and \emph{type = 'self-cognition'}. 
+
+To check the performance of uplift event extraction and the validation of our assumption,
+we first identify uplift events and corresponding restoring performance from microblogs,
+and compare the results with scheduled positive events collected from the school's official web site.
+
+\begin{table}[H]
+\begin{center}
+\caption{\small{Structured extraction of positive events from microblogs.}}
+\small{
+\begin{tabular}{l} \hline \rowcolor{gray!40}
+I am really looking forward to the spring outing on Sunday now. \\ \rowcolor{gray!40}
+(Doer:\emph{I}, Act:\emph{looking forward}, Object:\emph{spring outing})\\
+My holiday is finally coming [smile]. \\
+(Doer:\emph{My holiday}, Act:\emph{coming}, Object:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
+First place in my lovely math exam!!! In memory of it.\\ \rowcolor{gray!40}
+Object:\emph{first place, math, exam, memory})\\ %\hline
+You are always here for me like sunshine. \\
+(Doer:\emph{You}, Object:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
+Thanks all my dear friends taking the party for me. \\ \rowcolor{gray!40}
+Happiest birthday!!!\\ \rowcolor{gray!40}
+(Doer:\emph{friends}, Act:\emph{thanks}, Object:\emph{party, birthday})\\
+%Be yourself. Trust yourself and follow your heart. \\
+%(Doer:\emph{yourself}, Act:\emph{trust}, Object:\emph{heart})\\ \rowcolor{gray!40} %\hline
+%Feel proud of our play in the Games. Our class is always the family!!!\\ \rowcolor{gray!40}
+%(Doer:\emph{Our}, Object:\emph{class, family})\\
+%A good film always makes bring comfort and happiness to me.\\
+%(Doer:\emph{me}, Act:\emph{bring}, Object:\emph{comfort, happiness})\\ \rowcolor{gray!40}%\hline
+I know my mom is the one who support me forever, no matter \\ %\rowcolor{gray!40}
+when and where. (Doer:\emph{mom}, Act:\emph{support})\\ \rowcolor{gray!40}
+Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ \rowcolor{gray!40}
+(act: \emph{expecting}, object:\emph{Adult Ceremony})\\ \hline
+\end{tabular}}
+\label{tab:uplifts}
+\end{center}
+\end{table}
