@@ -1,4 +1,4 @@
-\section{Study4: Integrating the stress-buffering effect into stress prediction}
+\section{Exploration: Integrating the stress-buffering effect into stress prediction}
 \paragraph{Stress prediction model}
 To measure the effectiveness of our method for quantifying the restoring impact of uplift events,
 we integrate the impact of uplift events into traditional stress series prediction problem,
@@ -116,7 +116,7 @@ reducing the prediction errors efficiently (with MSE, RMSE, MAPE and MAD reduced
 \end{figure*}
 
 
-\paragraph{Predicting stress under different windows} 
+\paragraph{Predicting stress under different windows}
 We present the prediction result under the impact of uplift events under different lengths of prediction windows,
 ranging from 1 to 10 days, as shown in \ref{fig:length}.
 With the window length increasing,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  4 JUL 2019 16:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  4 JUL 2019 17:27
 entering extended mode
 **elsarticle-template.tex
 
@@ -1545,58 +1545,46 @@ File: figs/predictWindow2.eps Graphic file (type eps)
 File: figs/threshNew.eps Graphic file (type eps)
  <figs/threshNew.eps>)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\discuss
-ion.tex
-Overfull \hbox (8.80008pt too wide) in paragraph at lines 8--23
-[][]\OT1/txr/m/n/10 The present s-tudy gives a deep in-sid-e in-to the stress-b
-uffering
- []
-
-
-Overfull \hbox (12.00005pt too wide) in paragraph at lines 8--23
-\OT1/txr/m/n/10 buffering func-tion of pos-i-tive events, and ex-tend tra-di-ti
-on-al survey-
- []
-
-[12]
-Overfull \hbox (7.89008pt too wide) in paragraph at lines 73--81
+ion.tex [12]
+Overfull \hbox (7.89008pt too wide) in paragraph at lines 94--102
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
  []
 
 
-Overfull \hbox (3.11005pt too wide) in paragraph at lines 83--88
+Overfull \hbox (3.11005pt too wide) in paragraph at lines 104--109
 \OT1/txr/m/n/10 con-vinc-ing ex-per-i-ments through invit-ing the par-tic-i-pan
 ts to com-
  []
 
 
-Overfull \hbox (5.99005pt too wide) in paragraph at lines 97--110
+Overfull \hbox (5.99005pt too wide) in paragraph at lines 118--131
 \OT1/txr/m/n/10 tor is how per-son-al-i-ty im-pact-s the stress-buffing of pos-
 i-tive events
  []
 
 
-Overfull \hbox (8.66005pt too wide) in paragraph at lines 97--110
+Overfull \hbox (8.66005pt too wide) in paragraph at lines 118--131
 \OT1/txr/m/n/10 ([], []; [], []), which could
  []
 
 
-Overfull \hbox (1.15007pt too wide) in paragraph at lines 97--110
+Overfull \hbox (1.15007pt too wide) in paragraph at lines 118--131
 \OT1/txr/m/n/10 turn less phys-i-cal ill-ness and greater well-being. ([],
  []
 
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
-cle-template.bbl
+cle-template.bbl [13]
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 65.
- [13]
+
 Underfull \hbox (badness 1275) in paragraph at lines 163--172
 [][]\OT1/txr/m/n/8 Kanner,  A., Coyne,  J., Schae-fer,  C., Lazants,  R..  Com-
 par-i-son
  []
 
-
+[14]
 Underfull \hbox (badness 1939) in paragraph at lines 370--376
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1607,7 +1595,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--376
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[14])
+)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\additio
 n.tex
 Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
@@ -1631,7 +1619,7 @@ m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
 LaTeX Font Warning: Command \small invalid in math mode on input line 168.
 
 LaTeX Font Info:    Calculating math sizes for size <> on input line 169.
-) [17] [18
+[17]) [18
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
@@ -1648,19 +1636,16 @@ Package rerunfilecheck Warning: File `elsarticle-template.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `elsarticle-template.out':
-(rerunfilecheck)             Before: 59B8B4AD6381CD9A068CB2F6EC4F148E;10928
-(rerunfilecheck)             After:  1C6A16874D48F1FCA3317475E2142C92;2402.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Before: EFC379B7CCB99EDE078A2E1AB776C9A1;10976
+(rerunfilecheck)             After:  EB591F9005969FB5231CFB5EBAE5BCCC;2408.
  ) 
 Here is how much of TeX's memory you used:
  18883 strings out of 495355
  281568 string characters out of 3183882
- 445398 words of memory out of 3000000
+ 445446 words of memory out of 3000000
  21615 multiletter control sequences out of 15000+200000
  55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,1200b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1200b,846s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on elsarticle-template.dvi (18 pages, 282048 bytes).
+Output written on elsarticle-template.dvi (18 pages, 283208 bytes).
