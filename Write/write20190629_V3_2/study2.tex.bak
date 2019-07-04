@@ -1,4 +1,4 @@
-\section{Study2: Identify Positive Events and the Corresponding Impact Interval from microblogs}
+\section{Study1: Identify Positive Events and the Corresponding Impact Interval from microblogs}
 %\subsection{Identify Uplifts and Impact Interval}
 In this section,
 we first introduce the procedure to extract uplift events and stressful intervals from teens' microblogs.
@@ -126,7 +126,7 @@ The examples of teens' microblogs describing uplift events are listed in Table \
 %For the post '\emph{I have so much homework today!!!}', its elements are \emph{role = 'I', act='have', descriptions = 'homework'}, and the \emph{type = 'school life'}.
 For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
 we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
-and \emph{type = 'self-cognition'}. 
+and \emph{type = 'self-cognition'}.
 
 To check the performance of uplift event extraction and the validation of our assumption,
 we first identify uplift events and corresponding restoring performance from microblogs,

@@ -5,11 +5,11 @@
 
 %直接描述findings；按study顺序；这样做有什么创新，好处；其实你想强调的在这里强调就可以。
 \section{Discussion and conclusion}
-The present study gives a deep inside into the stress-buffering function of positive events on adolescents.
+The present study gives a deep inside into the stress-buffering function of positive events.
 %做了啥：首次提出
-We first proposed a comprehensive framework to automatically learn microblogging characteristics, 
-and assess its stress-buffering effects based on  behavioural,
-extending traditional survey-based methods to automatically detection methods based on social network data.
+We first proposed a comprehensive framework to depict and assess stress-buffering characters in behavioural level, 
+analyze the dynamic process of stress-buffering function of positive events, 
+and extend traditional survey-based methods to automatically detection methods based on social network data.
 %findings - 对应 Hypothesis
 Positive events were validated to alleviate the psychological stress of overwhelmed adolescents,
 in particular academic stress and self-cognitive stress.

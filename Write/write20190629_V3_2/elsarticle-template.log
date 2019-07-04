@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.9)  1 JUL 2019 22:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  4 JUL 2019 16:30
 entering extended mode
 **elsarticle-template.tex
 
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -80,8 +80,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -1180,8 +1180,8 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count309
 \c@@ppsaveapp=\count310
 )
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.aux)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.aux)
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 43.
 
@@ -1339,10 +1339,10 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.out)
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.out)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.out)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.out)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1408,8 +1408,8 @@ File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 
 
 ]
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\li
-terature.tex [2]
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\literat
+ure.tex [2]
 Overfull \hbox (0.72005pt too wide) in paragraph at lines 35--46
 \OT1/txr/m/n/10 ado-les-cents ex-pe-ri-enc-ing fam-i-ly tran-si-tion-s ([], [])
 .
@@ -1464,8 +1464,8 @@ s on stress
  []
 
 )
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\st
-udy1.tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\study1.
+tex
 Overfull \hbox (2.08005pt too wide) in paragraph at lines 12--25
 [][]\OT1/txr/m/it/10 School-scheduled pos-i-tive events\OT1/txr/m/n/10 . The li
 st of week-ly sched-
@@ -1491,31 +1491,41 @@ Overfull \hbox (19.44005pt too wide) in paragraph at lines 112--120
  []
 
 [5])
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\st
-udy2.tex
-Overfull \hbox (5.0532pt too wide) in paragraph at lines 13--26
-[][]\OT1/txr/m/it/10 Linguistic struc-ture\OT1/txr/m/n/10 . Let $\OML/txmi/m/it
-/10 u$ \OT1/txr/m/n/10 = $[\OML/txmi/m/it/10 type; \OMS/txsy/m/n/10 f\OML/txmi/
-m/it/10 role; act;$ $descriptions\OMS/txsy/m/n/10 g\OT1/txr/m/n/10 ]$
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\study3.
+tex
+Overfull \hbox (11.50006pt too wide) in paragraph at lines 23--29
+\OT1/txr/m/n/10 pact-ed by u-p-lift events (U-SI). Mul-ti-ple mi-croblog-ging b
+ehavioral-
+ []
+
+
+Overfull \hbox (1.3201pt too wide) in paragraph at lines 92--102
+\OT1/txr/m/n/10 struct-s the re-la-tion-ship be-tween the cen-tral ver-b and co
+r-re-spond-
  []
 
 [6]
-Overfull \hbox (0.16006pt too wide) in paragraph at lines 125--130
+Overfull \hbox (0.16006pt too wide) in paragraph at lines 125--129
 [][]\OT1/txr/m/n/10 The ex-am-ples of teen-s' mi-croblogs de-scrib-ing u-p-lift
  events
  []
 
-)
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\st
-udy3.tex [7] [8]
-Overfull \hbox (17.91891pt too wide) in paragraph at lines 162--171
+[7]
+Overfull \hbox (17.91891pt too wide) in paragraph at lines 241--250
  [][] 
  []
 
+[8]
 File: figs/correlation2.eps Graphic file (type eps)
-<figs/correlation2.eps> [9])
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\st
-udy4.tex
+ <figs/correlation2.eps>
+Overfull \hbox (3.75002pt too wide) in paragraph at lines 297--297
+[]\OT1/txr/bx/n/10 Study2: Test the dy-nam-ic pro-cess of stress-buffering func
+-
+ []
+
+)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\study4.
+tex [9]
 Overfull \hbox (4.82004pt too wide) in paragraph at lines 3--23
 \OT1/txr/m/n/10 grat-ed Mov-ing Av-er-age) al-go-rith-m [] ([]),
  []
@@ -1534,59 +1544,59 @@ File: figs/predictWindow2.eps Graphic file (type eps)
 <figs/predictWindow2.eps> [10] [11]
 File: figs/threshNew.eps Graphic file (type eps)
  <figs/threshNew.eps>)
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\di
-scussion.tex
-Overfull \hbox (8.80008pt too wide) in paragraph at lines 8--24
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\discuss
+ion.tex
+Overfull \hbox (8.80008pt too wide) in paragraph at lines 8--23
 [][]\OT1/txr/m/n/10 The present s-tudy gives a deep in-sid-e in-to the stress-b
 uffering
  []
 
 
-Overfull \hbox (6.66005pt too wide) in paragraph at lines 8--24
-\OT1/txr/m/n/10 of pos-i-tive events could help re-lieve s-tu-dents' over-whelm
-ed stress
+Overfull \hbox (12.00005pt too wide) in paragraph at lines 8--23
+\OT1/txr/m/n/10 buffering func-tion of pos-i-tive events, and ex-tend tra-di-ti
+on-al survey-
  []
 
 [12]
-Overfull \hbox (7.89008pt too wide) in paragraph at lines 72--80
+Overfull \hbox (7.89008pt too wide) in paragraph at lines 73--81
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
  []
 
 
-Overfull \hbox (3.11005pt too wide) in paragraph at lines 82--87
+Overfull \hbox (3.11005pt too wide) in paragraph at lines 83--88
 \OT1/txr/m/n/10 con-vinc-ing ex-per-i-ments through invit-ing the par-tic-i-pan
 ts to com-
  []
 
 
-Overfull \hbox (5.99005pt too wide) in paragraph at lines 96--109
+Overfull \hbox (5.99005pt too wide) in paragraph at lines 97--110
 \OT1/txr/m/n/10 tor is how per-son-al-i-ty im-pact-s the stress-buffing of pos-
 i-tive events
  []
 
 
-Overfull \hbox (8.66005pt too wide) in paragraph at lines 96--109
+Overfull \hbox (8.66005pt too wide) in paragraph at lines 97--110
 \OT1/txr/m/n/10 ([], []; [], []), which could
  []
 
 
-Overfull \hbox (1.15007pt too wide) in paragraph at lines 96--109
+Overfull \hbox (1.15007pt too wide) in paragraph at lines 97--110
 \OT1/txr/m/n/10 turn less phys-i-cal ill-ness and greater well-being. ([],
  []
 
 )
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.bbl [13]
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.bbl
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 65.
-
+ [13]
 Underfull \hbox (badness 1275) in paragraph at lines 163--172
 [][]\OT1/txr/m/n/8 Kanner,  A., Coyne,  J., Schae-fer,  C., Lazants,  R..  Com-
 par-i-son
  []
 
-[14]
+
 Underfull \hbox (badness 1939) in paragraph at lines 370--376
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1597,9 +1607,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--376
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-)
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\ad
-dition.tex
+[14])
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\additio
+n.tex
 Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
 []\OT1/txr/bx/n/10 Observe the im-pact of sched-uled pos-i-tive events:
  []
@@ -1621,14 +1631,14 @@ m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
 LaTeX Font Warning: Command \small invalid in math mode on input line 168.
 
 LaTeX Font Info:    Calculating math sizes for size <> on input line 169.
-[17]) [18
+) [17] [18
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
 
-(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\el
-sarticle-template.aux)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190629_V3_2\elsarti
+cle-template.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 155.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
 
@@ -1638,16 +1648,19 @@ Package rerunfilecheck Warning: File `elsarticle-template.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `elsarticle-template.out':
-(rerunfilecheck)             Before: 5B6514FF3A8B8624C88F9CC772240990;10691
-(rerunfilecheck)             After:  AABB509F47A438EB4B530F1E503FADC1;2416.
+(rerunfilecheck)             Before: 59B8B4AD6381CD9A068CB2F6EC4F148E;10928
+(rerunfilecheck)             After:  1C6A16874D48F1FCA3317475E2142C92;2402.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18887 strings out of 495355
- 281897 string characters out of 3183883
- 447265 words of memory out of 3000000
- 21616 multiletter control sequences out of 15000+200000
+ 18883 strings out of 495355
+ 281568 string characters out of 3183882
+ 445398 words of memory out of 3000000
+ 21615 multiletter control sequences out of 15000+200000
  55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,945b,846s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1200b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on elsarticle-template.dvi (18 pages, 282660 bytes).
+Output written on elsarticle-template.dvi (18 pages, 282048 bytes).

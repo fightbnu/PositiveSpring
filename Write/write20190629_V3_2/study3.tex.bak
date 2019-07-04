@@ -1,4 +1,4 @@
-\section{Study3: Quantify the impact of uplift events}
+\section{Study2: The relationship between the stress-buffering effects of automatically extracted positive events and the characters of microblogs}
 To quantify the restoring impact of uplift event,
 in this section, we propose to model the impact as the teen's behavioral differences in two cases:
 1) stressful intervals unaffected by uplift events (SI), and 2) stressful intervals impacted by uplift events (U-SI).
