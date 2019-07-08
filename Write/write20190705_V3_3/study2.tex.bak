@@ -1,0 +1,164 @@
+\section{Study1: Identify Positive Events and the Corresponding Impact Interval from microblogs}
+%\subsection{Identify Uplifts and Impact Interval}
+In this section,
+we first introduce the procedure to extract uplift events and stressful intervals from teens' microblogs.
+The uplift events are extracted from microblogs applying LTP natural language processing segmentation and parser models
+\cite{che2008}.
+Stressful intervals are identified using probability based statistical method according to the teen's stressful posting frequency.
+We judge whether each stressful interval is correlated with neighboring uplift events,
+thus to classify all stressful intervals into two sets: SI and U-SI.
+
+\subsection{Uplift Events}
+%stressor和uplift的定义，举例
+\emph{Linguistic structure}.
+Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be an uplift event,
+where the element \emph{role} is the subject who performs the \emph{act},
+and \emph{descriptions} are the key words related to $u$.
+According to psychological scales \cite{hassles,Jun2008Influence},
+teens' uplift stressors mainly focus on six aspects,
+as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
+'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall u$, $u._{type} \in \mathbb{U}$.
+Similar to uplift event,
+let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
+According to psychological questionnaires \cite{scale2, scale3, Kanner1981Comparison, scale1},
+we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
+'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
+
+\begin{table*}
+\centering
+\caption{\small{Examples of topic words for uplift events.}}
+\label{tab:keyWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+Dimension & Example words & Total \\ \midrule
+\emph{entertainment}  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+\emph{school life}    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+\emph{romantic}       &  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+\emph{pear relation}  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+\emph{self-cognition} & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+\emph{family life}    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+\emph{Lexicon}.
+We construct our lexicon for six-dimensional uplift events from two sources.
+The basic positive affect words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})\cite{Tausczik2010The}.
+Then we build six uplift event related lexicons by expanding the basic positive words from the data set of teens' microblogs,
+and divide all candidate words into six dimensions corresponding to six types of uplift events,
+containing 452 phrases in \emph{entertainment},
+184 phrases in \emph{family life},
+91 phrases in \emph{friends},
+138 phrases in \emph{romantic},
+299 phrases in \emph{self-recognition} and 273 phrases in \emph{school life}, with totally 2,606 words,
+as shown in Table \ref{tab:keyWords}.
+Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the uplift lexicon.
+
+%\begin{table}[H]
+%\begin{center}
+%\caption{\small{Structured extraction of stressor events from microblogs.}}
+%\small{
+%\begin{tabular}{l} \hline \rowcolor{gray!40}
+%I don't know how long can I bear the nag.\\ \rowcolor{gray!40}
+%(Doer:\emph{I}, Act:\emph{bear}, Object:\emph{nag})\\ %\hline
+%Parents like to judge everything around me with their emotion.
+%\\(Doer:\emph{parents}, Act:\emph{judge}, Object:\emph{everything})\\ \rowcolor{gray!40}
+%%Hope that my mother could revive earlier.\\ \rowcolor{gray!40}
+%%(Doer:\emph{my mother}, Act:\emph{revive})\\%\hline
+%Every one betrayed me. \\ \rowcolor{gray!40}
+%(Doer:\emph{every one}, Act:\emph{betray}, Object:\emph{me})\\ \hline
+%I'm too weak to handle such a fierce competition.\\ %\rowcolor{gray!40}
+%(Doer:\emph{I}, Act:\emph{too weak to handle}, Object:\emph{competition})\\ \rowcolor{gray!40}
+%%I just felt hurt, depressed, self-abased and sad.
+%%\\(Doer:\emph{I}, Act:\emph{feel hurt, depressed, self-abased and sad})\\ \rowcolor{gray!40}%\hline
+%%My holiday is filled with all kinds of homework.\\ \rowcolor{gray!40}
+%%(Doer:\emph{My holiday}, Act:\emph{fill with}, Object:\emph{homework})\\ %\hline
+%%Unescapably, it's time to go back to school.
+%%\\(Act:\emph{go back}, Object:\emph{school})\\ \rowcolor{gray!40} %\hline
+%When can you be aware of my heart-broken feelings?\\\rowcolor{gray!40}
+%(Doer:\emph{you}, Act:\emph{be aware of}, Object:\emph{heart-broken feelings})\\ \hline
+%\end{tabular}
+%}
+%\label{tab:stressors}
+%\end{center}
+%\end{table}
+
+\emph{Parser relationship}.
+For each post, after word segmentation, we parser current sentence to find its linguistic structure,
+and then match the main linguistic components with uplift event related lexicons in each dimension.
+The parser model in Chinese natural language processing platform \cite{Che2010, che2008} is adopted in this part,
+which identifies the central verb of current sentence first, namely the \emph{act},
+and constructs the relationship between the central verb and corresponding \emph{role} and \emph{objects} components.
+By searching these main elements in uplift event related lexicons,
+we identify the existence and type of any uplift event.
+Due to the sparsity of posts, the \emph{act} might be empty.
+The \emph{descriptions} are collected by searching all nouns, adjectives and adverbs in current post.
+In such way, we extract structured uplift events from teens' microblogs.
+
+\subsection{Impact Interval of Current Positive Event}
+Basically, in this part, we identify stressful intervals from time line thus to support further quantifying the influence of an uplift event.
+Splitting interval is a common time series problem, and various solutions could be referred.
+Here we identify the teen's stressful intervals in three steps.
+
+In the first step, we extract uplift events, stressor events and filter out candidate intervals after a smoothing process.
+Since a teen's stress series detected from microblogs are discrete points,
+the loess method \cite{Cleveland1988Locally} is adopted to highlight characteristics of the stress curve.
+The settings of parameter \emph{span} will be discussed in the experiment section,
+which represents the percentage of the selected data points in the whole data set
+and determines the degree of smoothing.
+The details are present as Algorithm \ref{alg:alg1} of the appendix.
+
+In the second step, applying the Poisson based statistical method proposed in~\cite{Li2017Analyzing},
+we judge whether each candidate interval is a confidential stressful interval.
+The details are present as Algorithm \ref{alg:alg2} of the appendix.
+
+Finally, we divide the stressful intervals into two sets: the SI set and the U-SI set,
+according to its temporal order with neighboring uplift events.
+The details are present as Algorithm \ref{alg:alg3} of the appendix.
+
+\subsection{Results}
+%example
+The examples of teens' microblogs describing uplift events are listed in Table \ref{tab:uplifts}. % and Table \ref{tab:stressors}.
+%For the post '\emph{I have so much homework today!!!}', its elements are \emph{role = 'I', act='have', descriptions = 'homework'}, and the \emph{type = 'school life'}.
+For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
+we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
+and \emph{type = 'self-cognition'}.
+
+To check the performance of uplift event extraction and the validation of our assumption,
+we first identify uplift events and corresponding restoring performance from microblogs,
+and compare the results with scheduled positive events collected from the school's official web site.
+
+\begin{table}[H]
+\begin{center}
+\caption{\small{Structured extraction of positive events from microblogs.}}
+\small{
+\begin{tabular}{l} \hline \rowcolor{gray!40}
+I am really looking forward to the spring outing on Sunday now. \\ \rowcolor{gray!40}
+(Doer:\emph{I}, Act:\emph{looking forward}, Object:\emph{spring outing})\\
+My holiday is finally coming [smile]. \\
+(Doer:\emph{My holiday}, Act:\emph{coming}, Object:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
+First place in my lovely math exam!!! In memory of it.\\ \rowcolor{gray!40}
+Object:\emph{first place, math, exam, memory})\\ %\hline
+You are always here for me like sunshine. \\
+(Doer:\emph{You}, Object:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
+Thanks all my dear friends taking the party for me. \\ \rowcolor{gray!40}
+Happiest birthday!!!\\ \rowcolor{gray!40}
+(Doer:\emph{friends}, Act:\emph{thanks}, Object:\emph{party, birthday})\\
+%Be yourself. Trust yourself and follow your heart. \\
+%(Doer:\emph{yourself}, Act:\emph{trust}, Object:\emph{heart})\\ \rowcolor{gray!40} %\hline
+%Feel proud of our play in the Games. Our class is always the family!!!\\ \rowcolor{gray!40}
+%(Doer:\emph{Our}, Object:\emph{class, family})\\
+%A good film always makes bring comfort and happiness to me.\\
+%(Doer:\emph{me}, Act:\emph{bring}, Object:\emph{comfort, happiness})\\ \rowcolor{gray!40}%\hline
+I know my mom is the one who support me forever, no matter \\ %\rowcolor{gray!40}
+when and where. (Doer:\emph{mom}, Act:\emph{support})\\ \rowcolor{gray!40}
+Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ \rowcolor{gray!40}
+(act: \emph{expecting}, object:\emph{Adult Ceremony})\\ \hline
+\end{tabular}}
+\label{tab:uplifts}
+\end{center}
+\end{table}
