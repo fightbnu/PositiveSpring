@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  5 JUL 2019 17:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  8 JUL 2019 10:50
 entering extended mode
 **elsarticle-template.tex
 
@@ -1601,27 +1601,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--376
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190705_V3_3\additio
 n.tex
-Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
+Overfull \hbox (9.05002pt too wide) in paragraph at lines 3--3
 []\OT1/txr/bx/n/10 Observe the im-pact of sched-uled pos-i-tive events:
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 8.
-(C:\CTEX\MiKTeX\tex\latex\txfonts\omstxr.fd
+File: figs/frequency.eps Graphic file (type eps)
+<figs/frequency.eps>
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 18.
+ (C:\CTEX\MiKTeX\tex\latex\txfonts\omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
-File: figs/frequency.eps Graphic file (type eps)
- <figs/frequency.eps> [15] [16]
-Overfull \hbox (6.18059pt too wide) in paragraph at lines 156--157
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 18.
+ [15] [16]
+Overfull \hbox (6.18059pt too wide) in paragraph at lines 160--161
 [][]$\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 USI; USI[]$\OT1/txr/
 m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 168.
+LaTeX Font Warning: Command \small invalid in math mode on input line 172.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 169.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 173.
 ) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
@@ -1642,6 +1643,9 @@ Package rerunfilecheck Info: Checksums for `elsarticle-template.out':
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  18872 strings out of 495355
@@ -1652,4 +1656,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  36i,14n,74p,1200b,847s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on elsarticle-template.dvi (17 pages, 275592 bytes).
+Output written on elsarticle-template.dvi (17 pages, 275596 bytes).

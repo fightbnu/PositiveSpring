@@ -176,43 +176,43 @@ We conduct comparison for above four situations,
 to observe whether the occurrence of uplift events relieve the monotonic negative effect of $g(SI,SI^{rear})$
 and the monotonic positive effect of $g(SI^{front},SI)$.
 
-\section{Algorithm4: Overall algorithm}
-\label{alg:alg4}
-The overall pipeline for identifying the restoring impact of uplift events is presented here.
-1) To quantify the restoring impact of uplift events,
-we first extract uplift events and stressful intervals from the teen's microblogs.
-All stressful intervals are classified into two sets:
-the set of stressful intervals affected by uplift events (SI),
-and the set of stressful intervals impacted by uplift events (U-SI).
-2) To judge if SI are statistically different with U-SI,
-next, the two-sample hypothesis testing method is conducted on the two sets
-with multi positive and stressful measures (posting behavior, stress intensity and linguistic expressions).
-3) To further judge the monotonous restoring intensity of each type of uplift events,
-the final step comes to comparing SI and U-SI with adjacent intervals, respect to temporal order.
-
-For an uplift event $u$ with type $U'$,
-a stressor event $e$ with type $S'$,
-the overall algorithm is represented as
-$F: (u, U', e, S')$ $\rightarrow$ \bm{${A}$}.
-
-{\footnotesize%\small
-\begin{algorithm}
-  \caption{Identify the restoring impact of uplift events.}
-  \label{alg:quantify}
-  \KwIn{
-  SI: Set of stressful intervals caused by $S'$; \\
-  \quad \quad \quad \, U-SI: Set of stressful intervals affected by $U'$;}
-  \KwOut{Restoring impact of uplift $U'$ on stressor $S'$: \bm{${A}$}}
-  \textbf{Initialize:}  $H_1, H^{front}, H^{rear} = false$;\\
-  \If{$f(SI,USI) >$ $\alpha$} {$H_1 = ture$;}
-  \If{   $g(SI,SI^{rear}$) $> \alpha$ \&\& $g(SI,SI^{rear}$) $> g(USI, USI^{rear}$)}
-  {
-  	$H^{rear} = true;$
-  }
-  \If{$g(SI^{front},SI)$ $< -\alpha$ \&\&  $g(SI,SI^{front}$) $< g(USI, USI^{front}$)}
-  {
-  	$H^{front} = true;$
-  }
-  \Return \bm{${A}$} = $<H_1, H^{front}, H^{rear}>$;
-\end{algorithm}
-}
+%\section{Algorithm4: Overall algorithm}
+%\label{alg:alg4}
+%The overall pipeline for identifying the restoring impact of uplift events is presented here.
+%1) To quantify the restoring impact of uplift events,
+%we first extract uplift events and stressful intervals from the teen's microblogs.
+%All stressful intervals are classified into two sets:
+%the set of stressful intervals affected by uplift events (SI),
+%and the set of stressful intervals impacted by uplift events (U-SI).
+%2) To judge if SI are statistically different with U-SI,
+%next, the two-sample hypothesis testing method is conducted on the two sets
+%with multi positive and stressful measures (posting behavior, stress intensity and linguistic expressions).
+%3) To further judge the monotonous restoring intensity of each type of uplift events,
+%the final step comes to comparing SI and U-SI with adjacent intervals, respect to temporal order.
+%
+%For an uplift event $u$ with type $U'$,
+%a stressor event $e$ with type $S'$,
+%the overall algorithm is represented as
+%$F: (u, U', e, S')$ $\rightarrow$ \bm{${A}$}.
+%
+%{\footnotesize%\small
+%\begin{algorithm}
+%  \caption{Identify the restoring impact of uplift events.}
+%  \label{alg:quantify}
+%  \KwIn{
+%  SI: Set of stressful intervals caused by $S'$; \\
+%  \quad \quad \quad \, U-SI: Set of stressful intervals affected by $U'$;}
+%  \KwOut{Restoring impact of uplift $U'$ on stressor $S'$: \bm{${A}$}}
+%  \textbf{Initialize:}  $H_1, H^{front}, H^{rear} = false$;\\
+%  \If{$f(SI,USI) >$ $\alpha$} {$H_1 = ture$;}
+%  \If{   $g(SI,SI^{rear}$) $> \alpha$ \&\& $g(SI,SI^{rear}$) $> g(USI, USI^{rear}$)}
+%  {
+%  	$H^{rear} = true;$
+%  }
+%  \If{$g(SI^{front},SI)$ $< -\alpha$ \&\&  $g(SI,SI^{front}$) $< g(USI, USI^{front}$)}
+%  {
+%  	$H^{front} = true;$
+%  }
+%  \Return \bm{${A}$} = $<H_1, H^{front}, H^{rear}>$;
+%\end{algorithm}
+%}
