@@ -79,6 +79,7 @@ In such way, we extract structured positive events from teens' microblogs.
 We identify stressful intervals from time line thus to support further quantifying the influence of an positive event.
 Splitting interval is a common time series problem, and various solutions could be referred.
 Here we identify the teen's stressful intervals in three steps.
+
 In the first step, we extract positive events, stressor events and filter out candidate intervals after a smoothing process.
 Since a teen's stress series detected from microblogs are discrete points,
 the loess method \cite{Cleveland1988Locally} is adopted to highlight characteristics of the stress curve.
@@ -92,6 +93,11 @@ The details are present as Algorithm \ref{alg:alg2} of the appendix.
 Finally, we divide the stressful intervals into two sets: the SI set and the U-SI set,
 according to its temporal order with neighboring positive events.
 The details are present as Algorithm \ref{alg:alg3} of the appendix.
+
+The examples of teens' microblogs describing positive events are listed in Table \ref{tab:uplifts}.
+For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
+we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
+and \emph{type = 'self-cognition'}.
 
 \begin{table}[H]
 \begin{center}
@@ -118,14 +124,9 @@ Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ \rowcolor{gray!40}
 \end{center}
 \end{table}
 
-The examples of teens' microblogs describing positive events are listed in Table \ref{tab:uplifts}.
-For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
-we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
-and \emph{type = 'self-cognition'}.
 To check the performance of positive event extraction and the validation of our assumption,
 we first identify positive events and corresponding restoring performance from microblogs,
 and compare the results with scheduled positive events collected from the school's official web site.
-
 
 \subsection{Measures}
 \label{subsec:pattern}
@@ -234,12 +235,12 @@ The model derivation process is described in detail in the \ref{mod:mod1} part o
 \begin{center}
 \caption{\small{Quantify the impact of scheduled positive school events using KTS and baseline method ($^1$KTS denotes the knn-based two sample method adopted in this research.).}}
 \label{tab:schedule}
-\resizebox{.48\textwidth}{13mm}{
+\resizebox{.5\textwidth}{15mm}{
 \small{
-\begin{tabular}{lccccc}
+\begin{tabular}{lccccc} 
 \toprule
 &	\emph{Practical}	&	         	&	\emph{New year}	&	\emph{Sports}	&	\emph{}	\\
-&	\emph{activity}	&	\emph{Holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{All}	\\
+&	\emph{activity}	&	\emph{Holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{All}	\\ 
 \midrule
 Size of U-SI	&	219 	&	339 	&	235 	&	226 	&	1,019 	\\
 Pearson         &54.52\%	&	78.39\%	&	63.39\%	&	58.74\%	&	69.52\% \\
@@ -337,6 +338,13 @@ to observe whether the occurrence of positive events relieve the monotonic negat
 Details are presents in part \ref{mod:mod2} of the appendix.
 %The overall pipeline for identifying the restoring impact of  events is presented in algorithm \ref{alg:alg4}.
 
+\begin{figure}[H]
+\centering
+\caption{Correlation towards each types of stressor events}
+\includegraphics[width=\linewidth]{figs/correlation2.eps}%figs/correlation.eps
+\label{fig:correlation}
+\end{figure}
+
 \subsection{Result}
 \paragraph{Monotonous stress changes caused by positive events}
 Further more,
@@ -354,10 +362,3 @@ both the ratio of intensive stress increase in \emph{front$ \rightarrow$ I}
 and the ratio of intensive stress decrease in \emph{I $\rightarrow$ rear} are decreased,
 showing the effectiveness of the two sample method for quantifying the impact of positive events,
 and the rationality of the assumption that positive events could help ease stress of overwhelmed teens.
-
-\begin{figure}[H]
-\centering
-\caption{Correlation towards each types of stressor events}
-\includegraphics[width=\linewidth]{figs/correlation2.eps}%figs/correlation.eps
-\label{fig:correlation}
-\end{figure}

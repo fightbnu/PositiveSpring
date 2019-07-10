@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  10 JUL 2019 21:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  10 JUL 2019 21:45
 entering extended mode
 **main.tex
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.tex
@@ -1397,11 +1397,6 @@ Overfull \hbox (8.32005pt too wide) in paragraph at lines 116--125
 []\OT1/txr/m/n/10 , []; [], []; [], []),
  []
 
-
-Overfull \hbox (13.77008pt too wide) in paragraph at lines 134--145
-\OT1/txr/m/n/10 ([], []; [], []; [], []; [], []).
- []
-
 [1
 
 
@@ -1449,15 +1444,9 @@ Overfull \hbox (8.47008pt too wide) in paragraph at lines 75--78
 hanges
  []
 
-
-Overfull \hbox (4.3101pt too wide) in paragraph at lines 95--99
-\OT1/txr/m/n/10 pre-dic-tion, and (b)influence of d-if-fer-en-t win-dow length-
-s on stress
- []
-
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\1pilotstu
-dy.tex [3]
+dy.tex
 Overfull \hbox (2.08005pt too wide) in paragraph at lines 12--25
 [][]\OT1/txr/m/it/10 School-scheduled pos-i-tive events\OT1/txr/m/n/10 . The li
 st of week-ly sched-
@@ -1469,8 +1458,9 @@ Overfull \hbox (0.3101pt too wide) in paragraph at lines 12--25
 7)
  []
 
+[3]
 File: figs/exampleWave.eps Graphic file (type eps)
-<figs/exampleWave.eps>
+ <figs/exampleWave.eps>
 Overfull \hbox (1.87003pt too wide) in paragraph at lines 80--90
 \OT1/txr/m/n/10 above t-wo con-di-tion-s: the \OT1/txr/m/it/10 ac-cu-mu-lat-ed 
 stress\OT1/txr/m/n/10 , the \OT1/txr/m/it/10 av-er-age stress
@@ -1490,30 +1480,19 @@ r-re-spond-
  []
 
 [5]
-Overfull \hbox (9.76006pt too wide) in paragraph at lines 97--101
+Overfull \hbox (9.76006pt too wide) in paragraph at lines 121--128
 [][]\OT1/txr/m/n/10 The ex-am-ples of teen-s' mi-croblogs de-scrib-ing pos-i-ti
 ve events
  []
 
-
-Overfull \hbox (1.66008pt too wide) in paragraph at lines 127--130
-\OT1/txr/m/n/10 the val-i-da-tion of our as-sump-tion, we first i-den-ti-fy pos
--i-tive events
- []
-
 [6]
-Overfull \hbox (1.49007pt too wide) in paragraph at lines 177--186
+Overfull \hbox (1.49007pt too wide) in paragraph at lines 176--185
 [][]\OT1/txr/m/n/10 Except positive-related lin-guis-tic de-scrip-tion-s, we al
 -so take
  []
 
 [7]
-Overfull \hbox (9.00946pt too wide) in paragraph at lines 238--256
- [][] 
- []
-
-
-Overfull \hbox (3.75002pt too wide) in paragraph at lines 331--331
+Overfull \hbox (3.75002pt too wide) in paragraph at lines 330--330
 []\OT1/txr/bx/n/10 Study2: Test the dy-nam-ic pro-cess of stress-buffering func
 -
  []
@@ -1563,32 +1542,32 @@ par-i-son
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 383--389
+Underfull \hbox (badness 1939) in paragraph at lines 365--371
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--389
+Underfull \hbox (badness 10000) in paragraph at lines 365--371
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[11])
+)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\appendix.
 tex
 Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
 []\OT1/txr/bx/n/10 Observe the im-pact of sched-uled pos-i-tive events:
  []
 
-File: figs/frequency.eps Graphic file (type eps)
-<figs/frequency.eps>
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 28.
- (C:\CTEX\MiKTeX\tex\latex\txfonts\omstxr.fd
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 8.
+(C:\CTEX\MiKTeX\tex\latex\txfonts\omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 28.
- [12] [13]
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
+File: figs/frequency.eps Graphic file (type eps)
+ <figs/frequency.eps> [11] [12]
+[13]
 Overfull \hbox (6.18059pt too wide) in paragraph at lines 161--162
 [][]$\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 USI; USI[]$\OT1/txr/
 m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
@@ -1605,7 +1584,9 @@ Overfull \hbox (1.29259pt too wide) in paragraph at lines 174--183
 $
  []
 
-) [14]
+) [14
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
 
@@ -1625,12 +1606,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 18854 strings out of 495355
- 280792 string characters out of 3183882
- 435947 words of memory out of 3000000
- 21592 multiletter control sequences out of 15000+200000
+ 18848 strings out of 495355
+ 280681 string characters out of 3183882
+ 436844 words of memory out of 3000000
+ 21586 multiletter control sequences out of 15000+200000
  55424 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,1185b,856s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1185b,799s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (14 pages, 243440 bytes).
+Output written on main.dvi (14 pages, 237536 bytes).

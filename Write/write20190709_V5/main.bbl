@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{49}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -233,32 +233,14 @@
 \newblock In: \bibinfo{booktitle}{International Conference on Web Information
   Systems Engineering}. \bibinfo{year}{2017}{\natexlab{c}}. p.
   \bibinfo{pages}{313--328}.
-%Type = Article
-\bibitem[{Li et~al.(2015{\natexlab{a}})Li, Feng and Feng}]{Li2015Using}
-\bibinfo{author}{Li\xfnm[ Y.]}, \bibinfo{author}{Feng\xfnm[ Z.]},
-  \bibinfo{author}{Feng\xfnm[ L.]}.
-\newblock \bibinfo{title}{Using candlestick charts to predict adolescent stress
-  trend on micro-blog ?}
-\newblock \bibinfo{journal}{Procedia Computer Science}
-  \bibinfo{year}{2015}{\natexlab{a}};\bibinfo{volume}{63}:\bibinfo{pages}{221--228}.
 %Type = Inproceedings
-\bibitem[{Li et~al.(2015{\natexlab{b}})Li, Feng and Feng}]{Li2015When}
-\bibinfo{author}{Li\xfnm[ Y.]}, \bibinfo{author}{Feng\xfnm[ Z.]},
-  \bibinfo{author}{Feng\xfnm[ L.]}.
-\newblock \bibinfo{title}{When a teen's stress level comes to the top/bottom: A
-  fuzzy candlestick line based approach on micro-blog}.
-\newblock In: \bibinfo{booktitle}{Revised Selected Papers of the International
-  Conference on Smart Health}. \bibinfo{year}{2015}{\natexlab{b}}. p.
-  \bibinfo{pages}{241--253}.
-%Type = Inproceedings
-\bibitem[{Li et~al.(2015{\natexlab{c}})Li, Huang, Wang and
-  Feng}]{Li2015Predicting}
+\bibitem[{Li et~al.(2015)Li, Huang, Wang and Feng}]{Li2015Predicting}
 \bibinfo{author}{Li\xfnm[ Y.]}, \bibinfo{author}{Huang\xfnm[ J.]},
   \bibinfo{author}{Wang\xfnm[ H.]}, \bibinfo{author}{Feng\xfnm[ L.]}.
 \newblock \bibinfo{title}{Predicting teenager's future stress level from
   micro-blog}.
 \newblock In: \bibinfo{booktitle}{IEEE International Symposium on
-  Computer-Based Medical Systems}. \bibinfo{year}{2015}{\natexlab{c}}. p.
+  Computer-Based Medical Systems}. \bibinfo{year}{2015}. p.
   \bibinfo{pages}{208--213}.
 %Type = Article
 \bibitem[{Lin et~al.(2014)Lin, Jia, Guo, Xue, Li, Huang, Cai and

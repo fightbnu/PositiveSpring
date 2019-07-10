@@ -1,5 +1,22 @@
 \appendix
 \section{Observe the impact of scheduled positive events: students' stress during exam intervals in two situations}
+\begin{figure}
+\centering
+\caption{Compare students' stress during exam intervals in two situations:
+1) affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI)}
+\includegraphics[width=0.85\linewidth]{figs/frequency.eps}
+\label{fig:frequency}
+\end{figure}
+
+To further observe the influence of positive events for students facing stressor events,
+we statistic all the stressful intervals~\cite{Li2017Analyzing} detected surround the scheduled examinations over the 124 students during their high school career.
+For each student, we divide all his/her stressful intervals into two sets:
+1) stressful intervals under the influence of neighbouring positive events (e.g., \emph{Halloween activity}), and 2) independent stressful intervals.
+Figure~\ref{fig:frequency} shows five measures of each student during the above two conditions:
+the \emph{accumulated stress}, the \emph{average stress} (per day), the \emph{length of stressful intervals},
+the \emph{frequency of academic topic words}, and the \emph{ratio of academic stress among all types of stress}.
+For each measure, we calculate the average value over all eligible slides for each student.
+
 \begin{table*}
 \begin{center}
 \caption{\small{Algorithm 1: Select candidate stress intervals impacted by positive events.}}
@@ -13,35 +30,12 @@ A candidate interval $I = <w_1,\cdots, w_i,\cdots, w_m>$ is identified with foll
 \end{center}
 \end{table*}
 
-\begin{figure}
-\centering
-\caption{Compare students' stress during exam intervals in two situations:
-1) affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI)}
-\includegraphics[width=0.8\linewidth]{figs/frequency.eps}
-\label{fig:frequency}
-\end{figure}
-
-To further observe the influence of positive events for students facing stressor events,
-we statistic all the stressful intervals~\cite{Li2017Analyzing} detected surround the scheduled examinations over the 124 students during their high school career.
-For each student, we divide all his/her stressful intervals into two sets:
-1) stressful intervals under the influence of neighbouring positive events (e.g., \emph{Halloween activity}), and 2) independent stressful intervals.
-Figure~\ref{fig:frequency} shows five measures of each student during the above two conditions:
-the \emph{accumulated stress}, the \emph{average stress} (per day), the \emph{length of stressful intervals},
-the \emph{frequency of academic topic words}, and the \emph{ratio of academic stress among all types of stress}.
-For each measure, we calculate the average value over all eligible slides for each student.
-
-
-
 \section{Algorithm 1: Select candidate intervals impacted by positive events}
 \label{alg:alg1}
 Let the sub-series $w_{<a,b>} = [s^{'}_a, \cdots, s^{'}_b]$ as a \emph{wave},
 where $s^{'}_v$ $= {vally(w_{<a,b>})}$ is the minimum stress value,
 $s^{'}_p$ $= peak(w_{<a,b>})$ is the maximal stress value during $\{s^{'}_a,\cdots,s^{'}_b\}$,
 and $s^{'}_a \leq s^{'}_{a+1} \leq \cdots \leq s^{'}_p \leq s^{'}_{p+1} \leq \cdots \leq s^{'}_b$.
-
-
-
-
 
 \section{Algorithm2: Identify stressful intervals impacted by positive events.}
 \label{alg:alg2}
@@ -58,6 +52,7 @@ Without loss of generality, we assume a Jeffreys non-informative prior on $\lamb
 and infer the posterior distribution $P(\lambda_1|N_1)$ and $P(\lambda_0|N_0)$ according to Bayes Rule.
 Thus for current interval $I_1$ and historical normal interval $I_0$,
 the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ indicates the confidence whether $I_1$ is a stressful interval.
+
 
 \section{Algorithm3: judge stressful intervals into SI or U-SI}
 \label{alg:alg3}
