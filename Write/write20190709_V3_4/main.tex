@@ -1,0 +1,164 @@
+\documentclass[5p,times,numbers,authoryear]{elsarticle}
+
+\usepackage{ctex}
+\usepackage{lineno}%,hyperref}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subfigure}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage[justification=centering]{caption}
+\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{bm}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\newtheorem{definition}{Definition}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+\renewcommand{\multirowsetup}{\centering}
+
+\journal{Journal of \LaTeX\ Templates}
+
+\usepackage{appendix}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Assessing Stress-Buffering Effects of Positive Events from Adolescents' Microblogs}
+
+%\author[mymainaddress]{Qi Li}
+%\ead{liqi2018@bnu.edu.cn}
+%
+%\author[my2address]{Yuanyuan Xue}
+%\ead{xue-yy12@mails.tsinghua.edu.cn}
+%
+%\author[my3address]{Liang Zhao}
+%\ead{zhaoliang0415@xjtu.edu.cn}
+%
+%\author[my2address]{Ling Feng\corref{mycorrespondingauthor}}
+%\cortext[mycorrespondingauthor]{Dept. of Computer Science and Technology, Centre for Computational Mental Healthcare Research,
+%Tsinghua University, Beijing, China.}
+%\ead{fengling@tsinghua.edu.cn}
+%
+%\address[mymainaddress]{Faculty of Psychology, Beijing Normal University, Beijing, China.}
+%\address[my2address]{Dept. of Computer Science and Technology, Tsinghua University, Beijing, China.}
+%\address[my3address]{Institute of Social Psychology, Xi'an Jiaotong University, Xi'an, China.}
+
+\begin{abstract}
+Studies have shown that the occurrence of positive events could conduct stress-buffering effects.
+The characteristics and process of stress-buffering play key roles in understanding the mental health status of stressed individuals.
+%1.主观自陈
+Scholars conducted assessments of stress-buffering mainly through subjective self-reporting.
+However, the stress-buffering characteristics at individual behavioral level remains to be explored.
+%2.静态视觉
+The dynamic process of stress-buffering was also difficult to track through static, one-time survey-based measurements.
+%social network
+As social networks penetrate into people’s lives,
+users tend to reveal various emotional and behavioral characteristics in microblogs.
+%problems 1)表现 2)动态过程
+So, how to automatically observe user's behavioral characteristics of stress-buffering
+and capture the dynamic process of stress-buffering through microblogs?
+%本文解决两个问题：
+The current study provided solutions to the above problems.
+We tested the relationship between positive events and stressed individual's microblogging behaviors,
+and proposed an automatical analysis framework instead of self-reporting methods based on the microblog data set of 500 high school students.
+The stress-buffering process was further quantified from a dynamic perspective.
+Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations.
+The theoretical and practical implications, limitations of this study and future work are discussed.
+\end{abstract}
+
+\begin{keyword}
+stress-buffering, positive events, adolescents, microblogs
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+Life is always full of ups and downs.
+Accumulated stress comes from daily hassles,
+major stressful events and environmental stressors could drain inner resources,
+leading to psychological maladjustment, such as depression and suicidal behaviours \citep{Nock2008Suicide}.
+According to the newest report of American Psychological Association,
+91 percent of youngest adults say they have experienced physical or emotional symptom due to stress in the past month compared to 74 percent of adults overall \citep{APA2018}.
+More than 30 million Chinese teenagers are suffering from psychological stress,
+and nearly 30\% of them have a risk of depression \citep{ChinaTeen2019}.
+Stress-induced mental health problems are becoming an important social issue worldwide.
+%1.心理压力问题很严重
+
+Studies have found that the occurrence of positive events could conduct exert obvious protective effects on emotional distress, that is, \emph{stress-buffering} ~\citep{Cohen1984Positive, Folkman1997Positive, Needles1990Positive, Folkman2010Stress, Shahar2002Positive}.
+As an essential process in human's stress coping system,
+stress-buffering helps individuals get out of overwhelmed status ~\citep{Susan1984Stress,Wheeler1988Identification,Cohen2010Positive}.
+Thus, accurately assessing the state of stress-buffering is important for judging the mental health trends of overwhelmed individuals.
+%2.积极事件可以缓解心理压力。
+
+Assessing people's stress-buffering status was not a trivial task.
+Previous assessments of stress-buffering were mainly conducted through subjective self-reporting \citep{Kanner1981Comparison, Alden2008Social, Mcmillen1998The, Jun2008Influence},
+which was influenced by many factors, such as social appreciation and pressure from measurement scenarios.
+However, there is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level.
+At the same time,
+previous studies has been based on static perspectives,
+focusing on single measurements of positive events and psychological state after events \citep{Chang2015Loneliness, Evan2014Social, Santos2013The},
+while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific methods.
+%3.已有方法存在的确定。
+
+%%1.主观自陈
+%The assessment of stress-buffering in previous studies was mainly conducted through subjective self-reporting, and was influenced by many factors, such as social appreciation and pressure from measurement scenarios.
+%However, there is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level.
+%%2.静态视觉
+%At the same time,
+%previous studies has been based on static perspectives,
+%focusing on single measurements of events and psychological state after events, while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific method.
+
+As the social media is becoming deeply woven into our daily life,
+an increasing number of natural self-disclosures are taking place,
+thus providing a new channel for timely,
+content-rich and non-invasive exploration of adolescents' mental health status.
+%4.随着社交媒体大数据兴起，为探索用户心理健康状态提供了及时/非侵入的新途径。
+Previous studies have shown the feasibility and reliability to sense user's psychological stress and stressor events,
+and predict future development of stress through social network \citep{Li2015Predicting, Xue2014Detecting, Lin2014User, Li2017Analyzing}.
+%5.前期研究表明，通过社交网络数据，可以检测心理压力，压力源事件，预测未来心理压力趋势等，是可行的，可靠的。
+The current study aims to contribute to this growing area of interdisciplinary  research by examining
+the potential relationship between positive events and adolescent's microblogging behaviors,
+and track the stress-buffering process in a dynamic perspective from microblogs.
+
+
+\input{literature}
+\input{1pilotstudy}
+%\input{study2}
+\input{2study_1_2}
+\input{3exploration}
+\input{discussion}
+%\bibliographystyle{elsarticle-num-names}
+\bibliographystyle{model4-names}
+\bibliography{reference-new}
+\input{appendix}
+
+\end{document}
+
+%The mitigation mechanism of positive events has been well studied in the field of traditional psychology \citep{Shahar2002Positive, Folkman1997Positive, Folkman2010Stress}.
+%2.3 积极事件的发生可以缓解压力。
+%2.2 人们探求缓解心理压力的多种途径
+%and function through various ways,
+%such as positive event, social support, sense of competence, exercise pattern, sense of purpose, and leisure activities \citep{Wheeler1988Identification,Cohen2010Positive}.
