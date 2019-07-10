@@ -65,31 +65,29 @@
 %\address[my3address]{Institute of Social Psychology, Xi'an Jiaotong University, Xi'an, China.}
 
 \begin{abstract}
-Studies have shown that the occurrence of positive events could conduct stress-buffering functions.
-Mastering the process and characteristics of stress-buffering is necessary to understand the mental health status of overwhelmed individuals.
+Studies have shown that the occurrence of positive events could conduct stress-buffering effects.
+The characteristics and process of stress-buffering play key roles in understanding the mental health status of stressed individuals. 
 %1.主观自陈
-The assessment of stress-buffering in previous studies was mainly conducted through subjective self-reporting, and was influenced by many factors, such as social appreciation and pressure from measurement scenarios.
-However, there is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level.
+Scholars conducted assessments of stress-buffering mainly through subjective self-reporting. 
+However, the stress-buffering characteristics at individual behavioral level remains to be explored. 
 %2.静态视觉
-At the same time,
-previous studies has been based on static perspectives,
-focusing on single measurements of events and psychological state after events, while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific method.
+In addition, 
+previous research relied on static, one-time measurements, 
+while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific methods. 
 %social network
-With the widespread use of social networks, users often exhibit natural self-discipline and rich behavioral characteristics.
+As social networks penetrate into people’s lives, 
+users tend to reveal various emotional and behavioral characteristics in microblogs. 
 %problems 1)表现 2)动态过程
-So, what is the potential link between the stress-buffering function of positive events and the user's microblogging behaviors?
-How to automatically observe the behavioral characteristics of stress-buffering through microblogs,
-and further capture the dynamic process of stress-buffering?
+So, how to automatically observe user's behavioral characteristics of stress-buffering 
+and capture the dynamic process of stress-buffering through microblogs? 
 %本文解决两个问题：
-This study provided two solutions to the above two problems.
-We first tested the potential relationship between positive events and individual's microblogging behaviors,
+This study provided solutions to the above problems. 
+We first tested the potential relationship between positive events and stressed individual's microblogging behaviors,
 in order to replace the subjective self-reported assessment method.
-Further, based on the microblog sequence,
-this paper studied the dynamic perspective of the stress-buffering process,
-rather than a static investigation.
+Furthermore, 
+we studied user's stress-buffering process from a dynamic perspective based on microblogs data set. 
 We conduct our study on the data set of 500 high school students.
 Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations.
-
 \end{abstract}
 
 \begin{keyword}
@@ -127,6 +125,14 @@ previous studies has been based on static perspectives,
 focusing on single measurements of positive events and psychological state after events \citep{Chang2015Loneliness, Evan2014Social, Santos2013The},
 while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific methods.
 %3.已有方法存在的确定。
+
+%%1.主观自陈
+%The assessment of stress-buffering in previous studies was mainly conducted through subjective self-reporting, and was influenced by many factors, such as social appreciation and pressure from measurement scenarios.
+%However, there is a lack of research on the stress-buffering characteristics that individuals actually exhibit at the behavioral level.
+%%2.静态视觉
+%At the same time,
+%previous studies has been based on static perspectives,
+%focusing on single measurements of events and psychological state after events, while the dynamic process of stress-buffering was difficult to track due to the lack of effective scientific method.
 
 As the social media is becoming deeply woven into our daily life,
 an increasing number of natural self-disclosures are taking place,
