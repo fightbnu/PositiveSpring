@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Literature review}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Stress-buffering function of positive life events.}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Assessing stress-buffering function of positive events}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Measures and stress analysis based on social network}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Current study}{}% 6
+\BOOKMARK [1][-]{section.4}{Pilot study: Observation on the stress-buffering function of school scheduled positive events}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Participants}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Measures}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Method}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Results}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Study1: The relationship between the stress-buffering effects of automatically extracted positive events and the characters of microblogs}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Positive events automatically extracted from microblogs}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Measures}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.3}{Method}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.4}{Results}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Study2: Test the dynamic process of stress-buffering function from adolescents' microblogs}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{Method}{section.6}% 18
+\BOOKMARK [2][-]{subsection.6.2}{Result}{section.6}% 19
+\BOOKMARK [1][-]{section.7}{Discussion and conclusion}{}% 20
+\BOOKMARK [1][-]{section.8}{Limitations and future work}{}% 21
+\BOOKMARK [1][-]{appendix.1}{Observe the impact of scheduled positive events: students' stress during exam intervals in two situations}{}% 22
+\BOOKMARK [1][-]{appendix.2}{Algorithm 1: Select candidate intervals impacted by positive events}{}% 23
+\BOOKMARK [1][-]{appendix.3}{Algorithm2: Identify stressful intervals impacted by positive events.}{}% 24
+\BOOKMARK [1][-]{appendix.4}{Algorithm3: judge stressful intervals into SI or U-SI}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Model 1: quantify significant restoring impact conducted by positive events}{appendix.4}% 26
+\BOOKMARK [1][-]{appendix.5}{Model2: identify the temporal order of stress-restoring impact}{}% 27
