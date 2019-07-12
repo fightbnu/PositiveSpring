@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  10 JUL 2019 21:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  12 JUL 2019 10:35
 entering extended mode
 **main.tex
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.tex
+
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.te
+x
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -78,8 +80,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.spl)
-(C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.sp
+l) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -1178,11 +1180,12 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count309
 \c@@ppsaveapp=\count310
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.aux)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.au
+x)
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 43.
 
-(C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
+ (C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 43.
@@ -1336,13 +1339,15 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.out)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.out)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.ou
+t)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.ou
+t)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
+ (C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
 File: standard.bdg 2008/12/29 4.8.2
 )
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
@@ -1401,8 +1406,8 @@ Overfull \hbox (8.32005pt too wide) in paragraph at lines 116--125
 
 
 ]
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\literatur
-e.tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\literat
+ure.tex
 Overfull \hbox (7.0101pt too wide) in paragraph at lines 4--22
 \OT1/txr/m/n/10 spec-t to phys-i-o-log-i-cal, psy-cho-log-i-cal, and so-cial co
 p-ing re-sources
@@ -1445,8 +1450,8 @@ hanges
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\1pilotstu
-dy.tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\1pilots
+tudy.tex
 Overfull \hbox (2.08005pt too wide) in paragraph at lines 12--25
 [][]\OT1/txr/m/it/10 School-scheduled pos-i-tive events\OT1/txr/m/n/10 . The li
 st of week-ly sched-
@@ -1472,8 +1477,8 @@ Overfull \hbox (19.44005pt too wide) in paragraph at lines 112--120
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\2study_1_
-2.tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\2study_
+1_2.tex
 Overfull \hbox (1.3201pt too wide) in paragraph at lines 67--77
 \OT1/txr/m/n/10 struct-s the re-la-tion-ship be-tween the cen-tral ver-b and co
 r-re-spond-
@@ -1499,8 +1504,8 @@ Overfull \hbox (3.75002pt too wide) in paragraph at lines 330--330
 
 File: figs/correlation2.eps Graphic file (type eps)
 <figs/correlation2.eps>)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\discussio
-n.tex [8] [9]
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\discuss
+ion.tex [8] [9]
 Overfull \hbox (7.89008pt too wide) in paragraph at lines 95--103
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
@@ -1529,8 +1534,8 @@ Overfull \hbox (1.15007pt too wide) in paragraph at lines 119--132
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.bbl
-[10]
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.bb
+l [10]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 169.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
@@ -1553,8 +1558,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--371
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\appendix.
-tex
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\appendi
+x.tex
 Overfull \hbox (9.05002pt too wide) in paragraph at lines 2--2
 []\OT1/txr/bx/n/10 Observe the im-pact of sched-uled pos-i-tive events:
  []
@@ -1590,9 +1595,11 @@ $
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190709_V5\main.aux)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190712_V5_1\main.au
+x)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 158.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+
 
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -1601,17 +1608,14 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: 3D087E9F0A3B6CFB3A8E187C52EEB58E;10384
 (rerunfilecheck)             After:  D742B590D8EF02F7250EC4AAEE88CD7B;2314.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  18848 strings out of 495355
- 280681 string characters out of 3183882
- 436844 words of memory out of 3000000
+ 280731 string characters out of 3183882
+ 436860 words of memory out of 3000000
  21586 multiletter control sequences out of 15000+200000
  55424 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,14n,74p,1185b,799s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (14 pages, 237536 bytes).
+Output written on main.dvi (14 pages, 237840 bytes).
