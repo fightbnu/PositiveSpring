@@ -1,0 +1,34 @@
+自变量：积极事件：X（自变量->社交网络post）
+因变量：压力：Y
+
+A1：
+假设都写在一起（因此, 联系比较紧密；）
+assumption1,2,3
+research question 1, 2
+
+A2：
+存在哪些问题;
+
+A3:
+H1就不显示写了；但是还是写在前头；
+
+research question
+1,2,3
+
+实验情景;
+
+current
+positive和stress达成了一致的认同：
+但是都是self-report
+现在想通过大数据来...
+
+pilot study（有没有必要，有没有方法合在一起）
+
+study1
+第一步证实了方法有效性;（反过来，验证了H1，先站住脚）
+延伸出了一些理论贡献；
+
+道德
+qq,量表,bebavior
+
+cyber,humans,systems
