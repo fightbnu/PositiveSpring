@@ -1,0 +1,5 @@
+xaxis={'School life','Romantic','Peer','Self-cognition','Family life'};
+set(gca,'XTick',1:5,'XTickLabel',xaxis);
+
+legendMeas={'Stress correlation','Linguistic correlation','Post correlation'};
+legend(legendMeas,'Location','NorthWest');
