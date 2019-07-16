@@ -92,7 +92,7 @@ and the length of stress slides are relatively shorter.
 \centering
 \caption{Compare students' stress during exam intervals in two situations:
 1) intervals affected by neighboring positive events (USI), 2) no positive events occurred nearby (SI)}
-\includegraphics[width=0.9\linewidth]{figs/obnew.eps}
+\includegraphics[width=0.8\linewidth]{figs/obnew-color.eps}
 \label{fig:frequency}
 \end{figure}
 
