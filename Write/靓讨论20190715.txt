@@ -32,3 +32,6 @@ study1
 qq,量表,bebavior
 
 cyber,humans,systems
+
+
+25个固定的mac地址;
