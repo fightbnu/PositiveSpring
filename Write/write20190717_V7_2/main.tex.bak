@@ -44,8 +44,8 @@
 
 \begin{frontmatter}
 
-\title{Stress-Buffering Pattern of Positive Events on Microblog Platform: 
-An Exploratory Study}
+\title{Stress-Buffering Pattern of Positive Events on Adolescents: \\
+An Exploratory Study based on Social Networks}
 
 %\author[mymainaddress]{Qi Li}
 
@@ -68,26 +68,27 @@ An Exploratory Study}
 %\address[my3address]{Institute of Social Psychology, Xi'an Jiaotong University, Xi'an, China.}
 
 \begin{abstract}
-Studies have shown that the occurrence of positive events could conduct stress-buffering effects.
-The characteristics and process of stress-buffering play key roles in understanding the mental health status of stressed individuals.
-%1.主观自陈
-Scholars conducted assessments of stress-buffering mainly through subjective self-reporting.
-However, the stress-buffering characteristics at individual behavioral level remains to be explored.
-%2.静态视觉
-The dynamic process of stress-buffering was also difficult to track through static, one-time survey-based measurements.
-%social network
-As social networks penetrate into people’s lives,
-users tend to reveal various emotional and behavioral characteristics in microblogs.
-%problems 1)表现 2)动态过程
-So, how to automatically observe user's behavioral characteristics of stress-buffering
-and capture the dynamic process of stress-buffering through microblogs?
-%本文解决两个问题：
-The current study provided solutions to the above problems.
-We tested the relationship between positive events and stressed individual's microblogging behaviors,
-and proposed an automatical analysis framework instead of self-reporting methods based on the microblog data set of 500 high school students.
-The stress-buffering process was further quantified from a dynamic perspective.
-Our exploration provides guidance for school and parents that which kind of positive events could help relieve adolescent' stress in both stress prevention and stress early stopping situations.
-The theoretical and practical implications, limitations of this study and future work are discussed.
+Stress is viewed as the leading cause of public mental health issues. 
+Positive events, however, could act as a buffer against stress. 
+%1.主观自陈 %2.静态视觉
+Since the stress-buffering effect of positive events was examined mainly through subjective self-reporting, 
+continuous tracking research on individual behavioral levels still remains to be explored. 
+In this study, 
+We collected microblogs (n=29,232) from a high school student group (n=500) 
+to examine the relationship 
+between positive events and stress-buffering through both the microblog content and behavioral characteristics. 
+Through a pilot study, 
+we found that the stress-buffering pattern of school scheduled positive events (n=259) 
+was manifested in the reduction in stress intensity (78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress), 
+the shorter duration of stress intervals (23.30\%),
+and talking less about academic words (84.65\% reduction in frequency, 89.53\% reduction in ratio) from microblogs. 
+
+Our exploration could provide guidance for school and parents 
+that which kind of positive events could help relieve adolescent' stress 
+in both stress prevention and stress early stopping situations.
+
+This study could inform the use of social networking sites to reach and track the mental status of adolescents under stress. 
+The theoretical and practical implications, limitations of this study and future work were discussed. 
 \end{abstract}
 
 \begin{keyword}

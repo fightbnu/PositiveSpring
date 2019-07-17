@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  17 JUL 2019 19:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  17 JUL 2019 22:48
 entering extended mode
 **main.tex
 
@@ -1356,56 +1356,63 @@ File: extended.enc 2008/12/29 4.8.2
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-LaTeX Font Info:    Try loading font information for C19+rm on input line 80.
-
-(C:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
-File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
-)
-Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
- family 'def' instead. on input line 80.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 102.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 106.
 
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 102.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 106.
 
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+LaTeX Font Info:    Try loading font information for U+msa on input line 106.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+LaTeX Font Info:    Try loading font information for U+msb on input line 106.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 102.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 106.
 
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (2.49008pt too wide) in paragraph at lines 103--113
+Overfull \hbox (2.49008pt too wide) in paragraph at lines 107--117
 \OT1/txr/m/n/10 30% of them have a risk of de-pres-sion ([], []).
  []
 
 
-Overfull \hbox (4.88005pt too wide) in paragraph at lines 114--119
+Overfull \hbox (4.88005pt too wide) in paragraph at lines 118--123
 \OT1/txr/m/n/10 get out of over-whelmed s-ta-tus  ([], []; [],
  []
 
 
-Overfull \hbox (8.32005pt too wide) in paragraph at lines 120--129
-[]\OT1/txr/m/n/10 , []; [], []; [], []),
+Overfull \hbox (1.08005pt too wide) in paragraph at lines 124--133
+[][]\OT1/txr/m/n/10 However, as-sess-ing peo-ple's stress-buffering s-ta-tus wa
+s not
  []
 
-[1
+
+Overfull \hbox (9.27007pt too wide) in paragraph at lines 124--133
+\OT1/txr/m/n/10 main-ly con-duct-ed through sub-jec-tive self-reporting ([],
+ []
+
+
+Overfull \hbox (10.27005pt too wide) in paragraph at lines 124--133
+[]\OT1/txr/m/n/10 ; [], []; [], []; [],
+ []
+
+LaTeX Font Info:    Try loading font information for C19+rm on input line 133.
+(C:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
+File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
+) [1
 
 
 ]
@@ -1444,13 +1451,9 @@ Overfull \hbox (0.3101pt too wide) in paragraph at lines 29--42
 
 [3]
 File: figs/exampleWave.eps Graphic file (type eps)
- <figs/exampleWave.eps>
+ <figs/exampleWave.eps> [4]
 File: figs/obnew-color.eps Graphic file (type eps)
  <figs/obnew-color.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4]
 Overfull \hbox (19.44005pt too wide) in paragraph at lines 142--150
 \OT1/txr/m/n/10 the psy-cho-log-i-cal the-o-ry  ([], []; [],
  []
@@ -1480,13 +1483,13 @@ Overfull \hbox (1.49007pt too wide) in paragraph at lines 154--163
 
 [7]
 File: figs/box3.eps Graphic file (type eps)
- <figs/box3.eps>
+ <figs/box3.eps> [8]
 Overfull \hbox (3.75002pt too wide) in paragraph at lines 291--291
 []\OT1/txr/bx/n/10 Study3: Test the dy-nam-ic pro-cess of stress-buffering func
 -
  []
 
-[8])
+)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190717_V7_2\discuss
 ion.tex [9]
 Overfull \hbox (7.89008pt too wide) in paragraph at lines 95--103
@@ -1516,9 +1519,11 @@ Overfull \hbox (1.15007pt too wide) in paragraph at lines 119--132
 \OT1/txr/m/n/10 turn less phys-i-cal ill-ness and greater well-being. ([],
  []
 
-)
+[10])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190717_V7_2\main.bb
-l [10]
+l
+Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
+ family 'def' instead. on input line 65.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 169.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
@@ -1529,7 +1534,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 163--172
 par-i-son
  []
 
-
+[11]
 Underfull \hbox (badness 1939) in paragraph at lines 365--371
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1553,7 +1558,7 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
- [11] [12]
+ [12]
 Overfull \hbox (14.07002pt too wide) in paragraph at lines 118--118
 []\OT1/txr/bx/n/10 Identifying the tem-po-ral or-der of stress-buffering
  []
@@ -1564,25 +1569,28 @@ Overfull \hbox (6.18059pt too wide) in paragraph at lines 134--135
 m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
  []
 
+[13]
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 146.
 
 LaTeX Font Info:    Calculating math sizes for size <> on input line 147.
 )
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 147--161
+Overfull \hbox (1.29259pt too wide) in paragraph at lines 147--165
 \OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
 \OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
 $
  []
 
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+[14
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190717_V7_2\main.au
 x)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -1595,14 +1603,17 @@ Package rerunfilecheck Info: Checksums for `main.out':
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18847 strings out of 495355
- 280713 string characters out of 3183882
- 438074 words of memory out of 3000000
- 21585 multiletter control sequences out of 15000+200000
- 55424 words of font info for 164 fonts, out of 3000000 for 9000
+ 18844 strings out of 495355
+ 280666 string characters out of 3183882
+ 428871 words of memory out of 3000000
+ 21582 multiletter control sequences out of 15000+200000
+ 55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,1185b,792s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1185b,834s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (13 pages, 231564 bytes).
+Output written on main.dvi (14 pages, 232180 bytes).
