@@ -1,4 +1,4 @@
-\section{Study1: A pilot study on the stress-buffering function of school scheduled positive events}
+\section{Study1: A pilot study on the stress-buffering pattern of school scheduled positive events}
 \label{sec:study1}
 \subsection{Participants}
 We built our dataset based on two sources: 1) the microblogs of students coming from Taicang High School,
@@ -85,13 +85,8 @@ For each measure, we calculate the average value over all eligible slides for ea
 Comparing each measure in scheduled exam slides under the two situations:
 1) existing neighbouring positive events (USI) or 2) no neighbouring scheduled positive events (SI),
 we found that students during exams with neighbouring positive events exhibited less average stress intensity
-(78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress) 
-and shorter duration of stress intervals (23.30\% reduction). 
-
-
-and talking less about academic words (84.65\% reduction in frequency, 89.53\% reduction in ratio) on micro-blog.
-
-
+(78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress)
+and shorter duration of stress intervals (23.30\% reduction).
 
 \begin{figure}[h]
 \centering
@@ -142,7 +137,7 @@ Further, we statistic the frequency of academic related topic words for each exa
 (as listed in Table \ref{tab:studyWords}),
 and look into the ratio of academic stress among all five types of stress.
 Results in Figure~\ref{fig:frequency} shows that most students talked less about the upcoming or just-finished exams when positive events happened nearby,
-with lower frequency and lower ratio.
+with lower frequency (84.65\% reduction) and lower ratio (89.53\% reduction).
 
 The statistic result shows clues about the stress-buffering function of scheduled positive events,
 which are constant with the psychological theory ~\citep{Cohen1984Positive, Cohen2010Positive, Needles1990Positive},

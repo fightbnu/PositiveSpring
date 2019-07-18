@@ -12,17 +12,16 @@ The characteristics of stress-buffering are not only manifested in self-reported
 but also in behavioral level in social network.
 %理论的创新：检验了积极事件的发生与压力状态下的青少年发布微博行为、微博内容及压力变化之间的潜在关联关系，并验证了积极事件的压力缓解作用分别体现在减缓前期的压力升高和加速后期的压力降低两方面。（研究结果）
 We examined the potential relationship between the occurrence of positive events and the posting behaviors,
-microblog contents and stress changing patterns on over whelmed adolescents,
+microblog contents and stress changing patterns on stressed adolescents,
 and verified that the stress-buffering effects of positive events are reflected in
 both slowing down stress increase at early stage,
-and prompting the stress reduction at the later stage.
+and prompting the stress reduction at the later stage. 
 %第二，本文实现了方法上的创新。本研究搭建了一个完整的技术框架，实现了1）基于微博数据自动抽取积极事件及用户行为变量，2）基于网络行为，量化当前积极事件缓解下的微博行为模式，3）建构模型实时监测青少年的压力缓解进程。
 Second, this study implements the innovation of methods.
 Through building a complete technical framework,
 we realized
 1) automatic extraction of positive events and user behavior measures from microblogs,
-2) quantification of relationships between stress-buffering of positive events and microblogging measures,
-and 3) real-time model monitoring the stress-buffering process in adolescents.
+2) quantification of relationships between stress-buffering of positive events and microblogging measures.
 %第三，重大现实意义：一方面实现了基于微博公开数据源，对青少年的压力缓解进程做出及时、连续监测，可用于评估青少年个体的抗压性；另一方面，可对学校和家长何时安排何种积极事件以缓解青少年压力提供辅助建议。
 Third, this article shows great practical significance.
 On the one hand, it realized timely and continuous monitoring of the stress-buffering process of adolescents based on public social network data sources, which can be used to assess the stress resistance of adolescents;
@@ -131,15 +130,3 @@ which in turn associated with reduced stress, and in turn less physical illness 
 The corresponding experimental design, and the online-offline complementary verification methods will be the key challenges in the future work.
 
 %后续结合线上线下会更准确。但是大数据量下难以执行，有效的自动标记方法需要更多的探索。
-\begin{table*}[h]
-\begin{center}
-\caption{\small{Algorithm 1: Select candidate stress intervals impacted by positive events.}}
-\begin{tabular}{l} \hline
-A candidate interval $I = <w_1,\cdots, w_i,\cdots, w_m>$ is identified with following rules:\\
-\textcircled{1} $s^{'}_1 = 0$, $s^{'}_m = 0$. $\forall s^{'}_j \in \{s^{'}_2,\cdots,s^{'}_{m-1}\}$, $s^{'}_j > 0$.\\
-\textcircled{2} Let $w_i$ be the biggest wave in current candidate interval, with $peak(w_i) = \omega$, $\forall $ wave $w_j \in I$, $peak(w_j)<=peak(w_i)$.\\
-\textcircled{3} For $w_k$ before the interval biggest wave $w_i$ , i.e., $\forall w_k \in <w_1,\cdots,w_{i-1}>$, $peak(w_{k+1})>=peak(w_k)$, $vally(w_{k+1}) >= peak(w_k)$.\\
-\textcircled{4} For $w_k$ behind the interval biggest wave $w_i$, i.e.,  $w_k \in <w_{i}, \cdots, w_m>$, $peak(w_{k+1})<=peak(w_k)$, $vally(w_{k+1}) <= peak(w_k)$.\\\hline
-\end{tabular}
-\end{center}
-\end{table*}

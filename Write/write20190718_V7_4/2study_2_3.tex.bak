@@ -165,6 +165,13 @@ Next,
 based on the posting behavior, stress intensity and linguistic measures from both the stressful and positive views,
 we quantify the difference between SI and U-SI sets, thus to measure the impact of positive events.
 
+\begin{figure*}
+\centering
+\caption{Correlation towards each types of stressor events}
+\includegraphics[width=0.8\linewidth]{figs/BOX.eps}%figs/correlation2.eps
+\label{fig:correlation}
+\end{figure*}
+
 \subsection{Method}
 In our problem,
 there are two sets of stressful intervals to compare:
@@ -216,7 +223,7 @@ For each of the four scheduled positive events,
 we quantify the restoring impact and temporal order
 based on corresponding SI and U-SI interval sets of the 124 students.
 Table \ref{tab:schedule} shows the experimental results,
-where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant restoring impact are detected for the four specific scheduled positive events, respectively, with the total accuracy to 69.52\%. 
+where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant restoring impact are detected for the four specific scheduled positive events, respectively, with the total accuracy to 69.52\%.
 We adopt the commonly used Pearson correlation algorithms to compare with the two sample statistical method in this study.
 The Euclidean metric is used to calculate the distance between two $n$ dimension points $X$ and $Y$.
 Experimental results show that our knn-based two sample method (denoted as \emph{KTS}) outperforms the baseline method
@@ -268,12 +275,12 @@ I $\rightarrow$ rear  &	0.7589 	&	0.7840 	&	0.7463 	&	0.7905 	&	0.7813 	&	0.8261
 \end{table*}
 
 The correlation of positive events towards five types of stressor events
-are shown using box-plot in Figure \ref{fig:correlation}. 
+are shown using box-plot in Figure \ref{fig:correlation}.
 The stress-buffering pattern of positive events
 was closely correlated with posting behavior (80.65\%, n=100, SD=1.96),
 stress change mode (67.74\%, n=84, SD=2.04) and microblog linguistic expressions (74.19\%, n=92, SD=2.07).
-The positive events conduct most intensive stress-buffering impact in 'peer relationship',
-followed by 'family life' and 'school life' dimensions.
+Positive events conduct most intensive stress-buffering impact in 'family life' (83.87\%, n=104, SD=2.72),
+followed by 'peer relationships' (71.77\%, n=89, SD=4.04) and 'school life' (67.74\%, n=84, SD=2.71) dimensions.
 In addition,
 the correlation between the stress-buffering of positive events
 and adolescents' stress in 'family life'
@@ -283,13 +290,11 @@ While the correlation values in 'peer relation'
 exhibit the highest 75th percentile and the lowest 25th percentile,
 showing a relatively random and unstable stress-buffering impact.
 
-\begin{figure}[H]
-\centering
-\caption{Correlation towards each types of stressor events}
-\includegraphics[width=0.85\linewidth]{figs/box3.eps}%figs/correlation2.eps
-\label{fig:correlation}
-\end{figure}
-
+%     school life	romantic	peer relationship	self-cognition	family life
+%      40	60	35	59	20
+%n     84	64	89	65	104
+%SD    2.713	1.728	4.035	1.845	2.721
+%ratio 0.6774	0.5161	0.7177	0.5242	0.8387
 \section{Study3: Test the dynamic process of stress-buffering function from adolescents' microblogs}
 \subsection{Method}
 \label{sec:temporal}

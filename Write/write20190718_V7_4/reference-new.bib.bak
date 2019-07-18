@@ -372,38 +372,6 @@ journal = {Computers in Human Behavior},
 
 
 %----------------
-@inproceedings{DBLP:conf/apweb/Zhao0XLF16,
-  author    = {Liang Zhao and
-               Hao Wang and
-               Yuanyuan Xue and
-               Qi Li and
-               Ling Feng},
-  title     = {Psychological Stress Detection from Online Shopping},
-  booktitle = {Web Technologies and Applications},
-  pages     = {431--443},
-  year      = {2016}
-}
-
-
-@inproceedings{DBLP:conf/dasfaa/JinXLF16,
-  author    = {Li Jin and
-               Yuanyuan Xue and
-               Qi Li and
-               Ling Feng},
-  title     = {Integrating Human Mobility and Social Media for Adolescent Psychological
-               Stress Detection},
-  booktitle = {Database Systems for Advanced Applications},
-  pages     = {367--382},
-  year      = {2016}
-}
-
-@book{Liang2015Teenagers,
-  title={Teenagers¡¯ Stress Detection Based on Time-Sensitive Micro-blog Comment/Response Actions},
-  author={Liang, Zhao and Jia, Jia and Ling, Feng},
-  year={2015},
-}
-
-
 @article{Li2017Correlating,
   title={Correlating Stressor Events for Social Network Based Adolescent Stress Prediction},
   author={Li, Qi and Zhao, Liang and Xue, Yuanyuan and Jin, Li and Alli, Mostafa and Feng, Ling},
