@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  18 JUL 2019 22:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  19 JUL 2019 11:44
 entering extended mode
 **main.tex
 
@@ -1462,32 +1462,27 @@ Overfull \hbox (4.08005pt too wide) in paragraph at lines 44--56
 [2])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\1pilots
 tudy.tex
-Overfull \hbox (0.65005pt too wide) in paragraph at lines 31--46
-[][]\OT1/txr/m/it/10 Scheduled school pos-i-tive events\OT1/txr/m/n/10 . The li
-st of week-ly sched-
- []
-
-
-Overfull \hbox (0.3101pt too wide) in paragraph at lines 31--46
-\OT1/txr/m/n/10 uled school events (from Febru-ary 1st, 2012 to Au-gust 1st 201
-7)
- []
-
 File: figs/exampleWave.eps Graphic file (type eps)
-<figs/exampleWave.eps> [3]
+ <figs/exampleWave.eps> [3]
 File: figs/obnew-color.eps Graphic file (type eps)
  <figs/obnew-color.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (19.44005pt too wide) in paragraph at lines 142--150
-\OT1/txr/m/n/10 the psy-cho-log-i-cal the-o-ry  ([], []; [],
- []
-
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\2study_
-2_3.tex [4]
+2_3.tex
+Overfull \hbox (5.32004pt too wide) in paragraph at lines 137--1
+\OT1/txr/m/n/10 psy-cho-log-i-cal the-o-ry  ([], []; [],
+ []
+
+
+Overfull \hbox (10.87003pt too wide) in paragraph at lines 2--2
+\OT1/txr/bx/n/10 au-to-mat-i-cal-ly ex-tract-ed pos-i-tive events and mi-croblo
+g char-
+ []
+
+[4]
 Overfull \hbox (1.3201pt too wide) in paragraph at lines 47--57
 \OT1/txr/m/n/10 struct-s the re-la-tion-ship be-tween the cen-tral ver-b and co
 r-re-spond-
@@ -1499,18 +1494,18 @@ Overfull \hbox (9.76006pt too wide) in paragraph at lines 58--65
 ve events
  []
 
+
+LaTeX Warning: Reference `alg:alg3' on page 5 undefined on input line 107.
+
 [5]
-
-LaTeX Warning: Reference `alg:alg3' on page 6 undefined on input line 107.
-
-[6]
 Overfull \hbox (1.49007pt too wide) in paragraph at lines 155--164
 [][]\OT1/txr/m/n/10 Except positive-related lin-guis-tic de-scrip-tion-s, we al
 -so take
  []
 
+[6]
 File: figs/BOX.eps Graphic file (type eps)
-<figs/BOX.eps> [7]
+ <figs/BOX.eps>
 Overfull \hbox (5.54007pt too wide) in paragraph at lines 278--293
 \OT1/txr/m/n/10 post-ing be-hav-ior (80.65%, n=100, S-D=1.96), stress change mo
 d-
@@ -1522,7 +1517,7 @@ Overfull \hbox (5.55005pt too wide) in paragraph at lines 278--293
 , n=104,
  []
 
-
+[7]
 Overfull \hbox (3.75002pt too wide) in paragraph at lines 299--299
 []\OT1/txr/bx/n/10 Study3: Test the dy-nam-ic pro-cess of stress-buffering func
 -
@@ -1530,7 +1525,7 @@ Overfull \hbox (3.75002pt too wide) in paragraph at lines 299--299
 
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\discuss
-ion.tex [8] [9]
+ion.tex [8]
 Overfull \hbox (7.89008pt too wide) in paragraph at lines 77--85
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
@@ -1542,7 +1537,7 @@ Overfull \hbox (3.11005pt too wide) in paragraph at lines 87--92
 ts to com-
  []
 
-
+[9]
 Overfull \hbox (5.99005pt too wide) in paragraph at lines 101--114
 \OT1/txr/m/n/10 tor is how per-son-al-i-ty im-pact-s the stress-buffing of pos-
 i-tive events
@@ -1563,7 +1558,6 @@ Overfull \hbox (1.15007pt too wide) in paragraph at lines 101--114
 l
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 65.
- [10]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 177.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
@@ -1574,7 +1568,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 171--180
 par-i-son
  []
 
-
+[10]
 Underfull \hbox (badness 1939) in paragraph at lines 388--394
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1635,22 +1629,19 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DCE805B442DD45DBD804D4ED18F70965;9494
-(rerunfilecheck)             After:  EF060A4BA049B2068FB469F42812158C;2195.
+(rerunfilecheck)             Before: 165BD9834C32520D283EC8DDA61DF33C;9398
+(rerunfilecheck)             After:  C41585C6044317CB73EEF8C7D67BD8EF;2183.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  19134 strings out of 495355
  285634 string characters out of 3183882
- 441873 words of memory out of 3000000
+ 441771 words of memory out of 3000000
  21868 multiletter control sequences out of 15000+200000
  55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,1185b,804s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1089b,818s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (13 pages, 231660 bytes).
+Output written on main.dvi (13 pages, 231044 bytes).

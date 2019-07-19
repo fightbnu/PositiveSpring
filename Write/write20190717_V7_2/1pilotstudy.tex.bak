@@ -8,21 +8,6 @@ We filtered out 124 active students according to their posting frequency from ov
 and collected their microblogs throughout the whole high school career. Totally 29,232 microblogs are collected in this research,
 where 236 microblogs per student on average, 1,387 microblogs maximally and 104 posts minimally.
 
-\subsection{Measures}
-\emph{School-scheduled positive events}.
-The list of weekly scheduled school events (from February 1st, 2012 to August 1st 2017) are collected from the school's official website
-\footnote{http://stg.tcedu.com.cn/col/col82722/index.html}, with detailed event description and grade involved in the event.
-There are 122 stressor events and 75 positive events in total.
-Here we give the examples of scheduled positive and stressor events in high school life, as shown in Table~\ref{tab:example}.
-Comparing the stress curves \emph{a)}, \emph{b)} with \emph{c)},
-when an positive event (\emph{campus art festival, holiday} here) happens,
-the overall stress intensity during the stressful period is reduced.
-An positive event might happen before a teen's stress caused by scheduled stressor events (\emph{example a}),
-conducting lasting easing impact;
-Meanwhile, an positive event might also happen during (\emph{example b}) or at the end of the stressful period,
-which might promote the teen out of current stressful status more quickly.
-There are 2-3 stressor events and 1-2 positive event scheduled per month in current study.
-
 \begin{table}[H]
 \caption{\small{Examples of school scheduled positive and stressor events.}}
 \label{tab:example}
@@ -40,12 +25,20 @@ Type & Date	& Content	& Grade	\\
 }
 \end{table}
 
-\begin{figure}
-\centering
-\caption{Examples of school related stressor events, positive events and a student's stress fluctuation}
-\includegraphics[width=\linewidth]{figs/exampleWave.eps}
-\label{fig:example}
-\end{figure}
+\subsection{Measures}
+\emph{School-scheduled positive events}.
+The list of weekly scheduled school events (from February 1st, 2012 to August 1st 2017) are collected from the school's official website
+\footnote{http://stg.tcedu.com.cn/col/col82722/index.html}, with detailed event description and grade involved in the event.
+There are 122 stressor events and 75 positive events in total.
+Here we give the examples of scheduled positive and stressor events in high school life, as shown in Table~\ref{tab:example}.
+Comparing the stress curves \emph{a)}, \emph{b)} with \emph{c)},
+when an positive event (\emph{campus art festival, holiday} here) happens,
+the overall stress intensity during the stressful period is reduced.
+An positive event might happen before a teen's stress caused by scheduled stressor events (\emph{example a}),
+conducting lasting easing impact;
+Meanwhile, an positive event might also happen during (\emph{example b}) or at the end of the stressful period,
+which might promote the teen out of current stressful status more quickly.
+There are 2-3 stressor events and 1-2 positive event scheduled per month in current study.
 
 \emph{Stress detected from microblogs}.
 Since our target is to observe the restoring impact of positive events for teenagers under stress,
@@ -59,6 +52,13 @@ where the positive event \emph{campus art festival} was scheduled ahead of the f
 the positive event \emph{holiday} happened after the second exam,
 and no scheduled positive event was found nearby the third exam.
 The current student exhibited differently in above three situations, with the stress lasting for different length and with different intensity.
+
+\begin{figure}[H]
+\centering
+\caption{Examples of school related stressor events, positive events and a student's stress fluctuation}
+\includegraphics[width=\linewidth]{figs/exampleWave.eps}
+\label{fig:example}
+\end{figure}
 
 \subsection{Method}
 To further observe the influence of positive events for students facing stressor events,
@@ -96,6 +96,7 @@ and the length of stress slides are relatively shorter.
 \label{fig:frequency}
 \end{figure}
 
+
 \begin{table}[h]
 \centering
 \caption{\small{Examples of academic topic words from microblogs.}}
@@ -110,6 +111,27 @@ nervous, mistake, question, puzzle, difficult, lesson, careless\\
 \end{tabular}
 }
 \end{table}
+
+\begin{table*}
+\centering
+\caption{\small{Examples of topic words for positive events.}}
+\label{tab:keyWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+Dimension & Example words & Total \\ \midrule
+\emph{entertainment}  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+\emph{school life}    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+\emph{romantic}       &  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+\emph{pear relation}  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+\emph{self-cognition} & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+\emph{family life}    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}
 
 Further, we statistic the frequency of academic related topic words for each exam slide
 (as listed in Table \ref{tab:studyWords}),
