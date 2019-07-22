@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  19 JUL 2019 11:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.9)  20 JUL 2019 10:40
 entering extended mode
 **main.tex
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.te
-x
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -80,8 +80,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.sp
-l) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -1188,8 +1188,8 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count310
 \c@@ppsaveapp=\count311
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.au
-x)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.aux)
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 44.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 44.
 
@@ -1347,10 +1347,10 @@ LaTeX Info: Redefining \ref on input line 44.
 LaTeX Info: Redefining \pageref on input line 44.
 LaTeX Info: Redefining \nameref on input line 44.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.ou
-t)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.ou
-t)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.out)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.out)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1430,8 +1430,8 @@ File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 
 
 ]
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\literat
-ure.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\li
+terature.tex
 Overfull \hbox (4.01006pt too wide) in paragraph at lines 4--12
 \OT1/txr/m/n/10 sors  ([], []; [], []), with
  []
@@ -1460,8 +1460,8 @@ Overfull \hbox (4.08005pt too wide) in paragraph at lines 44--56
  []
 
 [2])
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\1pilots
-tudy.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\1p
+ilotstudy.tex
 File: figs/exampleWave.eps Graphic file (type eps)
  <figs/exampleWave.eps> [3]
 File: figs/obnew-color.eps Graphic file (type eps)
@@ -1470,8 +1470,8 @@ File: figs/obnew-color.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\2study_
-2_3.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\2s
+tudy_2_3.tex
 Overfull \hbox (5.32004pt too wide) in paragraph at lines 137--1
 \OT1/txr/m/n/10 psy-cho-log-i-cal the-o-ry  ([], []; [],
  []
@@ -1524,8 +1524,8 @@ Overfull \hbox (3.75002pt too wide) in paragraph at lines 299--299
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\discuss
-ion.tex [8]
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\di
+scussion.tex [8]
 Overfull \hbox (7.89008pt too wide) in paragraph at lines 77--85
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
@@ -1554,8 +1554,8 @@ Overfull \hbox (1.15007pt too wide) in paragraph at lines 101--114
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.bb
-l
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.bbl
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 65.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 177.
@@ -1580,8 +1580,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--394
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\appendi
-x.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ap
+pendix.tex
 Overfull \hbox (3.55002pt too wide) in paragraph at lines 2--2
 []\OT1/txr/bx/n/10 Identifying stress-ful in-ter-val-s im-pact-ed by pos-
  []
@@ -1618,8 +1618,8 @@ $
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.au
-x)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\ma
+in.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 158.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 
@@ -1637,11 +1637,11 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  19134 strings out of 495355
- 285634 string characters out of 3183882
- 441771 words of memory out of 3000000
+ 285759 string characters out of 3183883
+ 441811 words of memory out of 3000000
  21868 multiletter control sequences out of 15000+200000
  55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,14n,74p,1089b,818s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (13 pages, 231044 bytes).
+Output written on main.dvi (13 pages, 231804 bytes).
