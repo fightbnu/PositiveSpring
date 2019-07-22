@@ -1,51 +1,43 @@
-
-\section{Study2: The relationship between the stress-buffering effects of automatically extracted positive events and the characters of microblogs}
-In this section,
-we propose to model the impact as the teen's behavioral differences in two cases:
-1) stressful intervals unaffected by positive events (SI),
-and 2) stressful intervals impacted by positive events (U-SI).
-Multiple microblogging behavioral-level measures are tested to describe the correlation between SI and U-SI,
-based on the hypothesis H1.
-
+\section{Study2: relationship between stress-buffering effect of automatically extracted positive events and microblog characteristics}
 
 \subsection{Positive events automatically extracted from microblogs}
-Because of the scheduled school events in study 1 are limited to our study,
-next we first introduce the procedure to extract positive events and its intervals from teens' microblogs,
-thus to extend our study to all types of positive events exposed in microblogs.
-Our automatically extraction accuracy are verified in part xx, by comparing extracted academic positive events with the scheduled school events in coincident time intervals.
+Since the events in the above studies are scheduled and known,
+in this part we will first introduce the procedure to extract positive event and its intervals from microblogs, 
+thus to extend our study to various types of positive events expressed in microblogs. 
+Our automatically extraction accuracy is verified 
+by comparing extracted positive events with scheduled school events in coincident time intervals. 
+
+\paragraph{Linguistic structure}
+Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be a positive event,
+where the element \emph{role} is the subject who performs the \emph{act},
+and \emph{descriptions} are the key words related to $u$.
+According to psychological scales \citep{hassles,Jun2008Influence},
+adolescents' positive events mainly focus on six aspects,
+as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
+'pear relation', 'self-cognition', 'romantic'}$\}$.
+% $\forall u$, $u._{type} \in \mathbb{U}$. 
+%Similar to positive event,
+%let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
+%According to psychological questionnaires \cite{scale2, scale3, Kanner1981Comparison, scale1},
+%we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
+%'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
 
 \paragraph{Lexicon}
-We construct our lexicon for six-dimensional positive events from two sources.
-The basic positive affect words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})\cite{Tausczik2010The}.
-Then we build six positive event related lexicons by expanding the basic positive words from the data set of teens' microblogs,
-and divide all candidate words into six dimensions corresponding to six types of positive events,
-containing 452 phrases in \emph{entertainment},
+We constructed our lexicon for six-dimensional positive events from two sources. 
+The basic positive words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})~\citep{Tausczik2010The}. 
+Then we built six topic lexicons by expanding basic positive words from adolescent microblogs, 
+containing 452 phrases in \emph{entertainment}, 
 184 phrases in \emph{family life},
 91 phrases in \emph{friends},
 138 phrases in \emph{romantic},
-299 phrases in \emph{self-recognition} and 273 phrases in \emph{school life}, with totally 2,606 words,
-as shown in Table \ref{tab:keyWords}.
-Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the positive lexicon.
-
-\paragraph{Linguistic structure}
-Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be an positive event,
-where the element \emph{role} is the subject who performs the \emph{act},
-and \emph{descriptions} are the key words related to $u$.
-According to psychological scales \cite{hassles,Jun2008Influence},
-teens' positive events mainly focus on six aspects,
-as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
-'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall u$, $u._{type} \in \mathbb{U}$.
-Similar to positive event,
-let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
-According to psychological questionnaires \cite{scale2, scale3, Kanner1981Comparison, scale1},
-we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
-'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
-
+299 phrases in \emph{self-recognition} and 273 phrases in \emph{school life}, with totally 2,606 words, 
+as shown in table \ref{tab:keyWords}. 
+Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the positive lexicon. 
 
 \paragraph{Parser relationship}
-For each post, after word segmentation, we parser current sentence to find its linguistic structure,
-and then match the main linguistic components with positive event related lexicons in each dimension.
-The parser model in Chinese natural language processing platform \cite{Che2010, che2008} is adopted in this part,
+For each post, after word segmentation, we parser current sentence to find its linguistic structure, 
+and then match the main linguistic components with positive topic lexicon in each dimension.
+The parser model in Chinese natural language processing platform \citep{Che2010, che2008} is adopted in this part,
 which identifies the central verb of current sentence first, namely the \emph{act},
 and constructs the relationship between the central verb and corresponding \emph{role} and \emph{objects} components.
 By searching these main elements in positive event related lexicons,
@@ -60,7 +52,7 @@ we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
 and \emph{type = 'self-cognition'}.
 To check the performance of positive event extraction and the validation of our assumption,
 we first identify positive events and corresponding restoring performance from microblogs,
-and compare the results with scheduled positive events collected from the school's official web site.
+and compare the results with scheduled positive events collected from the school's official web site. 
 
 \begin{table}
 \begin{center}
@@ -106,7 +98,7 @@ according to its temporal order with neighboring positive events.
 The details are present as Algorithm \ref{alg:alg3} of the appendix.
 
 \subsection{Measures}
-\label{subsec:pattern}
+
 To extract the restoring patterns \bm{${A}$} for each type of positive events,
 we describe a teen's positive and stressful behavioral measures in SI and U-SI sets from three aspects:
 posting behavior, stress intensity, and linguistic expressions.
@@ -238,8 +230,8 @@ and total improvement to 6\%.
 \small{
 \begin{tabular}{lccccc}
 \toprule
-&	\emph{Practical}	&	         	&	\emph{New year}	&	\emph{Sports}	&	\emph{}	\\
-&	\emph{activity}	&	\emph{Holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{All}	\\
+&	\emph{practical}	&	         	&	\emph{new year}	&	\emph{sports}	&	\emph{}	\\
+&	\emph{activity}	&	\emph{holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{all}	\\
 \midrule
 Size of U-SI	&	219 	&	339 	&	235 	&	226 	&	1,019 	\\
 Pearson         &55.65\%	&	70.97\%	&	56.45\%	&	54.84\%	&	65.32\% \\

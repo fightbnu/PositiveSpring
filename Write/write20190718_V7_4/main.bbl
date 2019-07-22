@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{49}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -25,13 +25,6 @@
 \bibinfo{author}{APA\xfnm[]}.
 \newblock \bibinfo{title}{Stress in america: Generation z}
   \bibinfo{year}{2018};:\bibinfo{pages}{1--11}.
-%Type = Article
-\bibitem[{Baoyong and Ying(2002)}]{scale3}
-\bibinfo{author}{Baoyong\xfnm[ L.]}, \bibinfo{author}{Ying\xfnm[ H.]}.
-\newblock \bibinfo{title}{The development of the life stress rating scale for
-  middle school students}.
-\newblock \bibinfo{journal}{Chinese Mental Health Journal}
-  \bibinfo{year}{2002};\bibinfo{volume}{16}(\bibinfo{number}{5}):\bibinfo{pages}{313--316}.
 %Type = Article
 \bibitem[{Blachnio et~al.(2016)Blachnio, Przepiorka, Balakier and
   Boruch}]{BLACHNIO2016664}
@@ -137,13 +130,6 @@
   inflammation and coagulability.}
 \newblock \bibinfo{journal}{Psychophysiology}
   \bibinfo{year}{2010};\bibinfo{volume}{44}(\bibinfo{number}{1}):\bibinfo{pages}{154--160}.
-%Type = Article
-\bibitem[{Jiang(2000)}]{scale2}
-\bibinfo{author}{Jiang\xfnm[ G.]}.
-\newblock \bibinfo{title}{The development of the chinese adolescent life events
-  checklist}.
-\newblock \bibinfo{journal}{Chinese Journal of Clinical Psychology}
-  \bibinfo{year}{2000};\bibinfo{volume}{8}(\bibinfo{number}{1}):\bibinfo{pages}{10--14}.
 %Type = Inproceedings
 \bibitem[{Jin et~al.(2016)Jin, Xue, Li and Feng}]{DBLP:conf/dasfaa/JinXLF16}
 \bibinfo{author}{Jin\xfnm[ L.]}, \bibinfo{author}{Xue\xfnm[ Y.]},
@@ -415,33 +401,12 @@
 \newblock \bibinfo{title}{Detecting Adolescent Psychological Pressures from
   Micro-Blog}, \bibinfo{year}{2014}.
 %Type = Article
-\bibitem[{Yan et~al.(2010)Yan, Tao and Pu-Yu}]{scale1}
-\bibinfo{author}{Yan\xfnm[ H.U.]}, \bibinfo{author}{Tao\xfnm[ F.B.]},
-  \bibinfo{author}{Pu-Yu\xfnm[ S.U.]}.
-\newblock \bibinfo{title}{Compilation and reliability and validity assessment
-  of multidimensional life events rating questionnaire for middle school
-  students}.
-\newblock \bibinfo{journal}{Chinese Journal of School Health}
-  \bibinfo{year}{2010};\bibinfo{volume}{February
-  31}(\bibinfo{number}{2}):\bibinfo{pages}{146--159}.
-%Type = Article
 \bibitem[{Youth and Center(2019)}]{ChinaTeen2019}
 \bibinfo{author}{Youth\xfnm[ C.]}, \bibinfo{author}{Center\xfnm[ C.R.]}.
 \newblock \bibinfo{title}{Adolescent mental health alarm: nearly 30\% have a
   risk of depression}.
 \newblock \bibinfo{journal}{China Youth News}
   \bibinfo{year}{2019};:\bibinfo{pages}{1--2}.
-%Type = Article
-\bibitem[{Zhang et~al.(2008)Zhang, Che, Zhou, Aw and et~al.}]{che2008}
-\bibinfo{author}{Zhang\xfnm[ M.]}, \bibinfo{author}{Che\xfnm[ W.]},
-  \bibinfo{author}{Zhou\xfnm[ G.]}, \bibinfo{author}{Aw\xfnm[ A.]},
-  \bibinfo{author}{et~al.\xfnm[]}.
-\newblock \bibinfo{title}{Semantic role labeling using a grammar-driven
-  convolution tree kernel}.
-\newblock \bibinfo{journal}{Audio Speech and Language Processing IEEE
-  Transactions}
-  \bibinfo{year}{2008};\bibinfo{volume}{16}(\bibinfo{number}{7}):\bibinfo{pages}{1315
-  -- 1329}.
 %Type = Inproceedings
 \bibitem[{Zhao et~al.(2016)Zhao, Wang, Xue, Li and
   Feng}]{DBLP:conf/apweb/Zhao0XLF16}

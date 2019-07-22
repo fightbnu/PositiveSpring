@@ -1,65 +1,58 @@
 \section{Study2: relationship between stress-buffering effect of automatically extracted positive events and microblog characteristics}
-\label{partstudy2}
-In this section, 
-we first extracted positive events from microblogs. 
-Multiple microblog content and behavioral measures are examined to depict the stress-buffering pattern of positive events based on hypothesis H1. 
-The effect of positive events is modeled as adolescents' behavioral differences in two cases: 
-1) stressful intervals unaffected by positive events (SI),
-and 2) stressful intervals impacted by positive events (U-SI). 
 
 \subsection{Positive events automatically extracted from microblogs}
-Because of the scheduled school events in study 1 are limited to our study,
-next we first introduce the procedure to extract positive events and its intervals from teens' microblogs,
-thus to extend our study to all types of positive events exposed in microblogs.
-Our automatically extraction accuracy are verified in part xx, by comparing extracted academic positive events with the scheduled school events in coincident time intervals.
-
-\paragraph{Lexicon}
-We construct our lexicon for six-dimensional positive events from two sources.
-The basic positive affect words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})\cite{Tausczik2010The}.
-Then we build six positive event related lexicons by expanding the basic positive words from the data set of teens' microblogs,
-and divide all candidate words into six dimensions corresponding to six types of positive events,
-containing 452 phrases in \emph{entertainment},
-184 phrases in \emph{family life},
-91 phrases in \emph{friends},
-138 phrases in \emph{romantic},
-299 phrases in \emph{self-recognition} and 273 phrases in \emph{school life}, with totally 2,606 words,
-as shown in Table \ref{tab:keyWords}.
-Additionally, we label \emph{role} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the positive lexicon.
+Since events in study 1 are scheduled and limited,
+in this part we first introduce the procedure to extract positive event and its intervals from microblogs,
+thus to extend our study to various types of positive events expressed in microblogs.
+%Our automatically extraction accuracy was verified
+%by comparing extracted positive events with scheduled school events in coincident time intervals.
 
 \paragraph{Linguistic structure}
-Let $u$ = $[type,\{role, act,$ $descriptions\}]$ be an positive event,
-where the element \emph{role} is the subject who performs the \emph{act},
+Let $u$ = $[type,\{doer, act,$ $description\}]$ be a positive event,
+where the element \emph{doer} is the subject who performs the \emph{act},
 and \emph{descriptions} are the key words related to $u$.
-According to psychological scales \cite{hassles,Jun2008Influence},
-teens' positive events mainly focus on six aspects,
-as $\mathbb{U} =\{$ \emph{entertainment', 'school life', 'family life',
-'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall u$, $u._{type} \in \mathbb{U}$.
-Similar to positive event,
-let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
-According to psychological questionnaires \cite{scale2, scale3, Kanner1981Comparison, scale1},
-we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
-'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
+According to psychological scales \citep{hassles,Jun2008Influence},
+adolescents' positive events mainly focus on six aspects,
+as $\mathbb{U} =\{$ 'entertainment', 'school life', 'romantic', 'pear relationship', 'self-cognition', 'family life'$\}$.
+% $\forall u$, $u._{type} \in \mathbb{U}$.
+%Similar to positive event,
+%let $e$ = $[type,\{role, act,$ $descriptions\}]$ be a stressor event.
+%According to psychological questionnaires \cite{scale2, scale3, Kanner1981Comparison, scale1},
+%we classify stressor events into five types, as $\mathbb{S}=\{$ \emph{'school life', 'family life',
+%'pear relation', 'self-cognition', 'romantic'}$\}$, $\forall e$, $e._{type} \in \mathbb{S}$.
 
+\paragraph{Lexicon}
+We constructed our lexicon for six-dimensional positive events from two sources.
+The basic positive words are selected from the psychological lexicon SC-LIWC (e.g., \emph{expectation}, \emph{joy}, \emph{love} and \emph{surprise})~\citep{Tausczik2010The}.
+Then we built six topic lexicons by expanding basic positive words from adolescent microblogs,
+containing 452 phrases in 'entertainment',
+273 phrases in 'school life',
+138 phrases in 'romantic',
+91 phrases in 'peer relationship',
+299 phrases in 'self-recognition' and 184 phrases in 'family life', with totally 2,606 phrases,
+as examples shown in table \ref{tab:keyWords}.
+Additionally, we labeled \emph{doer} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in the positive lexicon.
 
 \paragraph{Parser relationship}
-For each post, after word segmentation, we parser current sentence to find its linguistic structure,
-and then match the main linguistic components with positive event related lexicons in each dimension.
-The parser model in Chinese natural language processing platform \cite{Che2010, che2008} is adopted in this part,
-which identifies the central verb of current sentence first, namely the \emph{act},
-and constructs the relationship between the central verb and corresponding \emph{role} and \emph{objects} components.
+For each post, after word segmentation, we parsed current sentence to find its linguistic structure,
+and then matched the main linguistic components with positive topic lexicon in each dimension.
+The parser model in Chinese natural language processing platform \citep{Che2010} was adopted in this part,
+which identified the central verb of current sentence first, namely the \emph{act},
+and constructed the relationship between the central verb and corresponding \emph{doer} and \emph{description} components.
 By searching these main elements in positive event related lexicons,
-we identify the existence and type of any positive event.
-Due to the sparsity of posts, the \emph{act} might be empty.
-The \emph{descriptions} are collected by searching all nouns, adjectives and adverbs in current post.
-In such way, we extract structured positive events from teens' microblogs.
+we identified the existence and type of positive events.
+Due to the sparsity of posts, \emph{act} might be empty.
+\emph{Descriptions} were collected by searching all nouns, adjectives and adverbs.
+In such way, we extracted structured positive events from microblogs.
 
-The examples of teens' microblogs describing positive events are listed in Table \ref{tab:uplifts}.
-For the post '\emph{Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~}',
-we translate it into \emph{act = 'expecting', object = 'Adult Ceremony'},
-and \emph{type = 'self-cognition'}.
-To check the performance of positive event extraction and the validation of our assumption,
-we first identify positive events and corresponding restoring performance from microblogs,
-and compare the results with scheduled positive events collected from the school's official web site.
+Examples of adolescents' microblogs describing positive events are listed in table \ref{tab:uplifts}.
+For the post 'Thanks all my dear friends hosting the party. Happiest birthday!!!',
+we translated it into \emph{doer='friends', act = 'expecting', description = 'party'},
+and \emph{type = 'entertainment'}.
+To check the accuracy of positive event extraction,
+in study 3,
+we identified positive events and its corresponding stress-buffering effect from microblogs,
+and compared the results with positive events in school planning.
 
 \begin{table}
 \begin{center}
@@ -67,45 +60,37 @@ and compare the results with scheduled positive events collected from the school
 \small{
 \begin{tabular}{l} \hline \rowcolor{gray!40}
 I am really looking forward to the spring outing on Sunday now. \\ \rowcolor{gray!40}
-(Doer:\emph{I}, Act:\emph{looking forward}, Object:\emph{spring outing})\\
+(doer:\emph{I}, act:\emph{looking forward}, description:\emph{spring outing})\\
 My holiday is finally coming [smile]. \\
-(Doer:\emph{My holiday}, Act:\emph{coming}, Object:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
+(doer:\emph{My holiday}, act:\emph{coming}, description:\emph{[smile]})\\ \rowcolor{gray!40}%\hline
 First place in my lovely math exam!!! In memory of it.\\ \rowcolor{gray!40}
-Object:\emph{first place, math, exam, memory})\\ %\hline
+description:\emph{first place, math, exam, memory})\\ %\hline
 You are always here for me like sunshine. \\
-(Doer:\emph{You}, Object:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
-Thanks all my dear friends taking the party for me. \\ \rowcolor{gray!40}
+(doer:\emph{You}, description:\emph{sunshine})\\ \rowcolor{gray!40} %\hline
+Thanks all my dear friends hosting the party.
 Happiest birthday!!!\\ \rowcolor{gray!40}
-(Doer:\emph{friends}, Act:\emph{thanks}, Object:\emph{party, birthday})\\
+(doer:\emph{friends}, act:\emph{thanks}, description:\emph{party, birthday})\\
 I know my mom is the one who support me forever, no matter \\
-when and where. (Doer:\emph{mom}, Act:\emph{support})\\ \rowcolor{gray!40}
+when and where. (doer:\emph{mom}, act:\emph{support})\\ \rowcolor{gray!40}
 Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ \rowcolor{gray!40}
-(act: \emph{expecting}, object:\emph{Adult Ceremony})\\ \hline
+(act: \emph{expecting}, description:\emph{Adult Ceremony})\\ \hline
 \end{tabular}}
 \label{tab:uplifts}
 \end{center}
 \end{table}
 
-\paragraph{Impact Interval of Current Positive Event}
-We identify stressful intervals from time line thus to support further quantifying the influence of an positive event.
-Splitting interval is a common time series problem, and various solutions could be referred.
-Here we identify the teen's stressful intervals in three steps.
-In the first step, we extract positive events, stressor events and filter out candidate intervals after a smoothing process.
-Since a teen's stress series detected from microblogs are discrete points,
-the loess method \cite{Cleveland1988Locally} is adopted to highlight characteristics of the stress curve.
-The settings of parameter \emph{span} will be discussed in the experiment section,
-which represents the percentage of the selected data points in the whole data set
-and determines the degree of smoothing.
-The details are present as Algorithm \ref{alg:alg1} of the appendix.
-In the second step, applying the Poisson based statistical method proposed in~\cite{Li2017Analyzing},
-we judge whether each candidate interval is a confidential stressful interval.
-The details are present as Algorithm \ref{alg:alg2} of the appendix.
-Finally, we divide the stressful intervals into two sets: the SI set and the U-SI set,
-according to its temporal order with neighboring positive events.
-The details are present as Algorithm \ref{alg:alg3} of the appendix.
-
+\paragraph{Impact Interval of Positive Event}
+Next, we identified the impact interval of each positive event thus to further study its stress-buffering pattern.
+Splitting interval is a common time series problem, and here we identified the target interval in three steps.
+In the first step, we extracted positive events, stressor events~\citep{Li2017Analyzing} and filtered out candidate intervals after a smoothing process.
+Since the stress series detected from microblogs were discrete points,
+the loess method was adopted to highlight characteristics of the stress curve (see \ref{alg:alg1}).
+In the second step, applying the Poisson based statistical method~\citep{Li2017Analyzing},
+we judged whether each candidate interval was a confidential stressful interval.
+Finally, we divided the stressful intervals into two sets: the SI set and the U-SI set,
+according to its temporal order with neighboring positive events (see \ref{alg:alg2}).
 \subsection{Measures}
-\label{subsec:pattern}
+
 To extract the restoring patterns \bm{${A}$} for each type of positive events,
 we describe a teen's positive and stressful behavioral measures in SI and U-SI sets from three aspects:
 posting behavior, stress intensity, and linguistic expressions.
@@ -237,8 +222,8 @@ and total improvement to 6\%.
 \small{
 \begin{tabular}{lccccc}
 \toprule
-&	\emph{Practical}	&	         	&	\emph{New year}	&	\emph{Sports}	&	\emph{}	\\
-&	\emph{activity}	&	\emph{Holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{All}	\\
+&	\emph{practical}	&	         	&	\emph{new year}	&	\emph{sports}	&	\emph{}	\\
+&	\emph{activity}	&	\emph{holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{all}	\\
 \midrule
 Size of U-SI	&	219 	&	339 	&	235 	&	226 	&	1,019 	\\
 Pearson         &55.65\%	&	70.97\%	&	56.45\%	&	54.84\%	&	65.32\% \\

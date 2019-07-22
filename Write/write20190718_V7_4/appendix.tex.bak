@@ -39,14 +39,12 @@ the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ 
 Next, we filter out two sets of stressful intervals: stressful intervals without the impact of positive events (SI),
 and stressful intervals under the impact of positive events (U-SI).
 For a detected stressful interval $I = <t_1,\cdots,t_n>$, we consider the temporal order between $I$ and any detected positive event $u$ happened at time point $t_u$:
-\begin{itemize}
-\item If the positive event $u$ happens during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ is judged as $I \in SI$.
-\item For the positive event happening nearby a stressful interval,
+\paragraph{1)} If the positive event $u$ happens during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ is judged as $I \in SI$.
+\paragraph{2)} For the positive event happening nearby a stressful interval,
 we also consider the probability that it conducts impact on the teen's stressful interval.
 Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e.,
 if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in SI$.
-%The setting of parameter $\xi$ is discussed in experiment section.
-\end{itemize}
+
 If a stressful interval satisfies none of the above conditions, we classify it into the U-SI set.
 
 \section{Modeling the significant restoring impact conducted by positive events}
