@@ -1,0 +1,110 @@
+
+\section{Discussion and conclusion}
+The main contribution of the present study lies in the following three aspects.
+%第一，验证和拓展了以往研究的结果。不只是在主观感受上，还表现在个体的行为上
+First, we validated and expanded the theoretical results of previous studies.
+The characteristics of stress-buffering were not only manifested in self-reported subjective feelings,
+but also in behavioral level in social networks.
+%理论的创新：检验了积极事件的发生与压力状态下的青少年发布微博行为、微博内容及压力变化之间的潜在关联关系，并验证了积极事件的压力缓解作用分别体现在减缓前期的压力升高和加速后期的压力降低两方面。（研究结果）
+We examined the potential relationship between the occurrence of positive events and the posting behaviors,
+microblog contents and stress changing patterns on stressed adolescents,
+and verified that
+positive events buffered monotonous stress changes at both the early and late stages.
+%第二，本文实现了方法上的创新。本研究搭建了一个完整的技术框架，实现了1）基于微博数据自动抽取积极事件及用户行为变量，2）基于网络行为，量化当前积极事件缓解下的微博行为模式，3）建构模型实时监测青少年的压力缓解进程。
+Second, this study implements the innovation of methods.
+Through building a complete technical framework,
+we realized
+1) automatic extraction of positive events and user behavior measures from microblogs,
+and 2) quantification of relationships between stress-buffering of positive events and microblogging measures.
+%第三，重大现实意义：一方面实现了基于微博公开数据源，对青少年的压力缓解进程做出及时、连续监测，可用于评估青少年个体的抗压性；另一方面，可对学校和家长何时安排何种积极事件以缓解青少年压力提供辅助建议。
+Third, this article shows great practical significance.
+It realized timely and continuous monitoring of the stress-buffering process of adolescents based on public social network data sources, which can be used to assess the stress resistance of adolescents;
+on the other hand, it can provide supplementary advice to schools and parents about 'When to arrange positive events to ease stress of adolescents'.
+
+%2
+There were three groups of results in this work.
+The first group of findings relates to the Hypothesis 1, which assumes positive events can conduct stress-buffering effects on adolescents.
+In study 1, the scheduled school events with exact time intervals and the microblogs posted by 124 students are collected and statistically analyzed.
+Results showed that when positive events are scheduled neighboring stressful events,
+students exhibits less stress intensity and shorter stressful time intervals from their microblogs.
+In response to the stressor event of exam,
+the study found that most students talked less about the upcoming or just-finished exams when positive events happened nearby,
+with lower frequency and lower ratio.
+The results substantiated previous studies reporting the protective effect of positive events on adolescents~\citep{Cohen2010Positive,Shahar2002Positive} using laboratory methods.
+Based on this, this article carried out more in-depth follow-up studies.
+
+The second groups of results are presented in study 2,
+displaying the structural extracting results of positive events from adolescents' microblogs.
+This study applied positive event topic lexicons into a well developed Chinese parser models for short text~\cite{Che2010},
+and allowed the existence of partially missing semantics during the process of structurally extracting.
+Further, inspired by the poisson-based abnormal interval detection method \cite{Li2017Analyzing},
+we considered various situations
+when positive events occurred at different times in or nearby a stressful interval.
+This study provided a complete solution for automatically detecting positive events based on microblog semantics,
+which are totally different from traditional questionnaire methods,
+enabling timely, fraud-proof and continuous detection.
+
+The third groups of results in study 3 directly relates to the stress-buffering patterns of positive events.
+In order to eliminate the possible errors in the previous positive event detection and avoid false overlays,
+we first used four scheduled positive events to verify significant stress-buffering effects.
+Results showed the event \emph{holiday} exhibits the highest proportion of significant stress-buffering.
+However, this conclusion is questionable because the frequency of the above four events is different and may affect the experimental results.
+Next, the correlation between three stress-buffering patterns
+and five types of stress events are test.
+The most intensive stress-buffering impacts are shown in 'school life' and 'peer relationship' dimensions.
+\emph{Posting behavior} exhibits most significant correlations among three patterns.
+This resonated with the study \cite{BLACHNIO2016664,Disclosure} suggesting
+that users who shared important, bad health news on Facebook had a higher level of stress.
+%3
+%The fourth groups of results should be considered as exploratory and application.
+%In study4,
+%this study integrated the impact of positive events into traditional stress prediction problem,
+%and verified whether the stress-buffering patterns of positive events could help improve the prediction performance.
+%Results showed the effectiveness our solution in quantifying the stress-buffering function of positive events during the process of dealing with stress.
+
+This article proposed a novel perspective for stress prevention and easing,
+and demonstrated how to predict adolescents' future stress buffered by different types of positive events.
+Since more complex situations are simplified in our first step exploration,
+the goals are still salient in stress-buffering researches from social network.
+
+\section{Limitations and future work}
+
+This study has a number of limitations.
+% 1) study 1 的数据观察忽略了个人事件
+First, it used the microblog data set collected from the social network of high school students,
+and choose the scheduled positive/stressor school events as the ground truth in the case study.
+This could be seen as a relative rude verification method,
+because individual events (i.e., 'lost love', or 'received a birthday present') may also have an impact,
+except for events planned by the school.
+Therefore, the data observation in the first study are not 100\% rigorous and need further verification.
+
+% 2) 从侧面证明了stress-buffering
+Second, this paper validate the stress-buffering impact of positive events according to the improved stress prediction accuracy indirectly.
+At best, it conducts some self-validation in various perspectives of algorithm.
+We need to conduct more convincing experiments
+through inviting the participants to complete related scales (e.g., positive and stressor scales),
+thus to find the direct verification for such findings.
+
+% 3) 未考虑叠加影响
+Finally, this study treats positive events as independent existence and studies the impact of each event separately,
+which ignores the additive and collective effects of multiple positive events at the same time.
+Thus, our future research may investigate the overlap effects of multiple positive events,
+as well as the frequent co-appearing patterns of different types of positive events and stressor events,
+thus to provide more accurate stress-buffering and restoring guidance for individual adolescents.
+
+%: 1) personality, 2) social support
+Based on current research implications,
+more factors could help analyze the stress restoring patterns among adolescents more comprehensively in future research.
+Specifically, one factor is how personality impacts the stress-buffing of positive events \citep{personality1,personality2},
+which could be captured from the social media contents.
+Another key factor is the role the social support \citep{socialSupport1, socialSupport2} in social networks plays.
+This factor leaves clues in the messages under each post,
+and the behaviors (i.e., retweet, the like numbers) of friends.
+%social support
+\citep{socialSupport1} showed
+number of Facebook friends associated with stronger perceptions of social support,
+which in turn associated with reduced stress, and in turn less physical illness and greater well-being.
+\citep{socialSupport2} indicated that experiencing important life events can have a long term deleterious impact on subjective well-being, which could be partially abated by receiving social support from Facebook friends.
+The corresponding experimental design, and the online-offline complementary verification methods will be the key challenges in the future work.
+
+%后续结合线上线下会更准确。但是大数据量下难以执行，有效的自动标记方法需要更多的探索。
