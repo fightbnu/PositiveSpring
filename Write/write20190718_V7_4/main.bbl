@@ -66,14 +66,6 @@
 \newblock In: \bibinfo{booktitle}{Proc. of ACL}. \bibinfo{year}{2010}. p.
   \bibinfo{pages}{13--16}.
 %Type = Article
-\bibitem[{Cleveland and Devlin(1988)}]{Cleveland1988Locally}
-\bibinfo{author}{Cleveland\xfnm[ W.]}, \bibinfo{author}{Devlin\xfnm[ S.]}.
-\newblock \bibinfo{title}{Locally weighted regression: An approach to
-  regression analysis by local fitting}.
-\newblock \bibinfo{journal}{Publications of the American Statistical
-  Association}
-  \bibinfo{year}{1988};\bibinfo{volume}{83}(\bibinfo{number}{403}):\bibinfo{pages}{596--610}.
-%Type = Article
 \bibitem[{Cohen et~al.(1984)Cohen, Mcgowan, Fooskas and
   Rose}]{Cohen1984Positive}
 \bibinfo{author}{Cohen\xfnm[ L.H.]}, \bibinfo{author}{Mcgowan\xfnm[ J.]},
@@ -198,6 +190,14 @@
 \newblock \bibinfo{journal}{Computers in Human Behavior}
   \bibinfo{year}{2014};\bibinfo{volume}{39}:\bibinfo{pages}{246--253}.
 \newblock \DOIprefix\doi{10.1016/j.chb.2014.07.021}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2014)Li, Ritter, Cardie and Hovy}]{Li2014Major}
+\bibinfo{author}{Li\xfnm[ J.]}, \bibinfo{author}{Ritter\xfnm[ A.]},
+  \bibinfo{author}{Cardie\xfnm[ C.]}, \bibinfo{author}{Hovy\xfnm[ E.]}.
+\newblock \bibinfo{title}{Major life event extraction from twitter based on
+  congratulations/condolences speech acts}.
+\newblock In: \bibinfo{booktitle}{Conference on Empirical Methods in Natural
+  Language Processing}. \bibinfo{year}{2014}. .
 %Type = Article
 \bibitem[{Li et~al.(2017{\natexlab{a}})Li, Xue, Zhao, Jia and
   Feng}]{Li2017Analyzing}

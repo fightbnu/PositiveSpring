@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  22 JUL 2019 13:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.4.26)  22 JUL 2019 19:09
 entering extended mode
 **main.tex
 
@@ -1483,49 +1483,33 @@ g char-
  []
 
 [4]
-Overfull \hbox (27.95009pt too wide) in paragraph at lines 83--92
-\OT1/txr/m/n/10 croblogs were dis-crete points, the loess method ([],
- []
-
-
-Overfull \hbox (1.4701pt too wide) in paragraph at lines 83--92
-[]\OT1/txr/m/n/10 ) was adopt-ed to high-light char-ac-ter-is-tic-s of the stre
-ss curve
+Overfull \hbox (1.0401pt too wide) in paragraph at lines 83--92
+\OT1/txr/m/n/10 In the sec-ond step, ap-ply-ing the Pois-son based s-ta-tis-ti-
+cal method
  []
 
 [5]
-Overfull \hbox (1.49007pt too wide) in paragraph at lines 138--147
-[][]\OT1/txr/m/n/10 Except positive-related lin-guis-tic de-scrip-tion-s, we al
--so take
- []
-
 File: figs/BOX.eps Graphic file (type eps)
-<figs/BOX.eps>
-
-LaTeX Warning: Reference `subsec:pattern' on page 6 undefined on input line 167
-.
-
-[6]
-Overfull \hbox (5.54007pt too wide) in paragraph at lines 261--276
-\OT1/txr/m/n/10 post-ing be-hav-ior (80.65%, n=100, S-D=1.96), stress change mo
-d-
+ <figs/BOX.eps> [6]
+Overfull \hbox (2.23009pt too wide) in paragraph at lines 217--225
+\OT1/txr/m/n/10 78.39%, 63.39%, 58.74% sig-nif-i-can-t stress-buffering ef-fec-
+t were
  []
 
 
-Overfull \hbox (5.55005pt too wide) in paragraph at lines 261--276
-\OT1/txr/m/n/10 in-ten-sive stress-buffering im-pact in 'fam-i-ly life' (83.87%
-, n=104,
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 232--247
+ [][][] 
  []
 
-[7]
-Overfull \hbox (3.75002pt too wide) in paragraph at lines 282--282
-[]\OT1/txr/bx/n/10 Study3: Test the dy-nam-ic pro-cess of stress-buffering func
--
- []
-
-)
+[7])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\discuss
-ion.tex [8]
+ion.tex
+Overfull \hbox (6.76007pt too wide) in paragraph at lines 273--5
+\OT1/txr/m/n/10 shown in ta-ble [][][][][][]. The \OT1/txr/m/it/10 ra-tio of in
+-ter-val-s \OT1/txr/m/n/10 de-tect-ed with monotonous
+ []
+
+[8]
 Overfull \hbox (7.89008pt too wide) in paragraph at lines 77--85
 \OT1/txr/m/n/10 school s-tu-dents, and choose the sched-uled pos-i-tive/stresso
 r school
@@ -1553,22 +1537,23 @@ Overfull \hbox (1.15007pt too wide) in paragraph at lines 101--114
 \OT1/txr/m/n/10 turn less phys-i-cal ill-ness and greater well-being. ([],
  []
 
-[9])
+)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\main.bb
 l
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 58.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 163.
+ [9]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 155.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1275) in paragraph at lines 157--166
+Underfull \hbox (badness 1275) in paragraph at lines 149--158
 [][]\OT1/txr/m/n/8 Kanner,  A., Coyne,  J., Schae-fer,  C., Lazants,  R..  Com-
 par-i-son
  []
 
-[10]
+
 Underfull \hbox (badness 1939) in paragraph at lines 374--380
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1579,7 +1564,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--380
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-)
+[10])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\Write\write20190718_V7_4\appendi
 x.tex
 Overfull \hbox (3.55002pt too wide) in paragraph at lines 2--2
@@ -1592,32 +1577,35 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 8.
- [11]
-Overfull \hbox (14.07002pt too wide) in paragraph at lines 118--118
+
+Overfull \hbox (1.40904pt too wide) in paragraph at lines 63--66
+[][]\OT1/txr/m/n/10 For point $\OML/txmi/m/it/10 `[]$ \OT1/txr/m/n/10 with post
+-ing be-hav-ior ma-trix $[]$, stress change
+ []
+
+[11]
+Overfull \hbox (14.07002pt too wide) in paragraph at lines 117--117
 []\OT1/txr/bx/n/10 Identifying the tem-po-ral or-der of stress-buffering
  []
 
 
-Overfull \hbox (6.18059pt too wide) in paragraph at lines 134--135
+Overfull \hbox (6.18059pt too wide) in paragraph at lines 133--134
 [][]$\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 USI; USI[]$\OT1/txr/
 m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
  []
 
-[12]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 146.
+LaTeX Font Warning: Command \small invalid in math mode on input line 145.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 147.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 146.
 )
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 147--157
+Overfull \hbox (1.29259pt too wide) in paragraph at lines 146--157
 \OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
 \OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
 $
  []
 
-[13
-
-]
+[12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
 
@@ -1632,19 +1620,16 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 1505459195EC7A48FBA81C54ED2A81A8;9398
-(rerunfilecheck)             After:  25E777C4D92CD2AC09D5F23E84AE49C9;2183.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 9A43CB59F5C778BBA40159AC65562E7B;9174
+(rerunfilecheck)             After:  2EFC61074BDD01F7AB7B6BC0DE2F794C;2155.
  ) 
 Here is how much of TeX's memory you used:
- 19120 strings out of 495355
- 285441 string characters out of 3183882
- 438411 words of memory out of 3000000
- 21854 multiletter control sequences out of 15000+200000
+ 19119 strings out of 495355
+ 285394 string characters out of 3183882
+ 439339 words of memory out of 3000000
+ 21853 multiletter control sequences out of 15000+200000
  55158 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,1089b,838s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,1089b,852s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (13 pages, 222472 bytes).
+Output written on main.dvi (12 pages, 218772 bytes).

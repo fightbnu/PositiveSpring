@@ -4,6 +4,7 @@ Database file #1: reference-new.bib
 `journal' is a missing field, not a string, for entry APA2018
 while executing---line 1676 of file model4-names.bst
 Warning--empty journal in APA2018
+Warning--empty pages in Li2014Major
 `journal' is a missing field, not a string, for entry Li2017Correlating
 while executing---line 1676 of file model4-names.bst
 Warning--empty journal in Li2017Correlating
