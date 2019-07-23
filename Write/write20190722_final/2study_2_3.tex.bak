@@ -97,7 +97,7 @@ We examined the relationship
 between positive events and stress-buffering pattern through three groups of measures:
 posting behavior, stress intensity, and linguistic expressions.
 
-\textbf{Posting behavior}.
+\textbf{Posting behaviors}.
 Stress could lead to abnormal posting behaviors,
 reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
 In this study,
@@ -146,9 +146,9 @@ we quantified the difference between SI and U-SI sets, thus to track the stress-
 
 \begin{figure*}
 \centering
+\includegraphics[width=0.9\linewidth]{figs/BOX3.eps}%figs/correlation2.eps
 \caption{Stress-buffering pattern of positive events. Figure a) shows correlation of each microblog measure,
 and figure b) shows stress-buffering effect on five dimensions of stress. 'KTS' means KNN-based correlation method.}
-\includegraphics[width=0.9\linewidth]{figs/BOX3.eps}%figs/correlation2.eps
 \label{fig:correlation}
 \end{figure*}
 

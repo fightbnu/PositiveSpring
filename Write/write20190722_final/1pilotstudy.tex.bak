@@ -11,7 +11,6 @@ where 236 microblogs per student on average, 1,387 microblogs maximally and 104 
 To protect the privacy, all usernames were anonymized during the experiment.
 
 \begin{table}[H]
-\caption{\small{Examples of school scheduled positive and stressor events.}}
 \label{tab:example}
 \resizebox{.45\textwidth}{9mm}{
 \small{
@@ -24,6 +23,7 @@ positive event & 2014/11/5 & \emph{campus art festival} & grade1,2,3\\
 \bottomrule
 \end{tabular}
 }
+\caption{\small{Examples of school scheduled positive and stressor events.}}
 }
 \end{table}
 
@@ -119,7 +119,7 @@ nervous, mistake, question, puzzle, difficult, lesson, careless\\
 \small{
 \begin{tabular}{lll}
 \toprule
-Dimension & Example words & Total \\ \midrule
+dimension & example words & total \\ \midrule
 \emph{entertainment}  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
                       & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
 \emph{school life}    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
@@ -140,6 +140,7 @@ indicating the reliability and feasibility of the microblog data set.
 However,
 this is an observation based on specific scheduled events,
 and cannot satisfy the need for automatic, timely, and continuous perception of stress-buffering process.
-Therefore, next, we will propose a framework to automatically detect positive events and its impact interval in study 2.
-Based on this, this paper will examine whether the stress-buffering effect of the automatically extracted positive events
-is related to adolescents' microblog content and behavioral characteristics.
+Therefore, next, in study 2 we will propose a framework to automatically detect positive events and its impact interval.
+Based on this,
+the relationship between stress-buffering effect of automatically extracted positive events and
+microblog characteristics will be examined.

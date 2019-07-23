@@ -45,8 +45,8 @@
 
 \begin{frontmatter}
 
-\title{Stress-Buffering Pattern of Positive Events on Adolescents: \\
-An Exploratory Study based on Social Networks}
+%\title{Stress-Buffering Pattern of Positive Events on Adolescents: \\
+%An Exploratory Study based on Social Networks}
 
 %\author[mymainaddress]{Qi Li}
 
@@ -84,13 +84,13 @@ was manifested in both the reduction of stress intensity,
 the shorter duration of stress intervals,
 and talking less about academic words on micro-blog.
 %result2
-The hypothetical tests for stress-buffering pattern and monotonic effect of stress changes
-were further conducted based on automatical extracted positive events (n=1,914) from microblogs.
+Hypothetical tests for stress-buffering pattern and monotonic effect of stress changes
+were further conducted based on automatical extracted positive events (n=1,914) from microblogs. 
 The stress-buffering pattern of positive events
-was closely correlated with posting behaviors (80.65\%, SD=1.96),
-stress change mode (67.74\%, SD=2.04) and microblog linguistic expressions (74.19\%, SD=2.07).
-Positive events conduct most intensive stress-buffering impact in 'family life' (83.87\%,SD=2.72),
-followed by 'peer relationships' (71.77\%, SD=4.04) and 'school life' (67.74\%, SD=2.71) dimensions.
+was closely correlated with posting behavior (ratio = 80.65\%, SD=1.96),
+stress change mode (ratio = 67.74\%, SD=2.04) and microblog linguistic expressions (ratio = 74.19\%, SD=2.07). 
+Positive events conducted most intensive stress-buffering impact on 'family life' (ratio = 83.87\%, SD=2.72),
+followed by 'peer relationships' (ratio = 71.77\%, SD=4.04) and 'school life' (ratio = 67.74\%, SD=2.71) dimensions. 
 %restul3
 Positive events buffered monotonous stress changes at both the early (11.88\% reduction) and late stages (5.88\% reduction).
 This study could inform the use of social network to reach and track the mental status transition of adolescents under stress.
@@ -98,7 +98,7 @@ The theoretical and practical implications, limitations of this study and future
 \end{abstract}
 
 \begin{keyword}
-stress-buffering, positive events, adolescents, microblogs
+stress-buffering, positive events, microblogs, adolescents
 \end{keyword}
 
 \end{frontmatter}
@@ -153,6 +153,20 @@ from adolescents' microblog content and behavioral characteristics.
 %\bibliographystyle{elsarticle-num-names}
 \bibliographystyle{model4-names}
 \bibliography{reference-new}
+
+\begin{table*}
+\begin{center}
+\caption{\small{Algorithm 1: Selecting candidate stressful intervals impacted by positive events.}}
+\begin{tabular}{l} \hline
+A candidate interval $I = <w_1,\cdots, w_i,\cdots, w_m>$ is identified with following rules:\\
+\textcircled{1} $s^{'}_1 = 0$, $s^{'}_m = 0$. $\forall s^{'}_j \in \{s^{'}_2,\cdots,s^{'}_{m-1}\}$, $s^{'}_j > 0$.\\
+\textcircled{2} Let $w_i$ be the biggest wave in current candidate interval, with $peak(w_i) = \omega$, $\forall $ wave $w_j \in I$, $peak(w_j)<=peak(w_i)$.\\
+\textcircled{3} For $w_k$ before the interval biggest wave $w_i$ , i.e., $\forall w_k \in <w_1,\cdots,w_{i-1}>$, $peak(w_{k+1})>=peak(w_k)$, $vally(w_{k+1}) >= peak(w_k)$.\\
+\textcircled{4} For $w_k$ behind the interval biggest wave $w_i$, i.e.,  $w_k \in <w_{i}, \cdots, w_m>$, $peak(w_{k+1})<=peak(w_k)$, $vally(w_{k+1}) <= peak(w_k)$.\\\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
 \input{appendix}
 
 \end{document}
