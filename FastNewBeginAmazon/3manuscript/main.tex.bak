@@ -128,7 +128,7 @@ from adolescents' microblog content and behavioral characteristics.
 \input{1pilotstudy}
 %\input{study2}
 \input{2study_2_3}
-\input{3exploration}
+%\input{3exploration}
 \input{discussion}
 %\bibliographystyle{elsarticle-num-names}
 \bibliographystyle{model4-names}

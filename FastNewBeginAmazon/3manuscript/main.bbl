@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -348,6 +348,11 @@
   associations between self-esteem and online social networking behaviour?}
 \newblock \bibinfo{journal}{Computers in Human Behavior}
   \bibinfo{year}{2019};\bibinfo{volume}{91}:\bibinfo{pages}{17--23}.
+%Type = Book
+\bibitem[{Shumway and Stoffer(2006)}]{Shumway2006Time}
+\bibinfo{author}{Shumway\xfnm[ B.]}, \bibinfo{author}{Stoffer\xfnm[ D.]}.
+\newblock \bibinfo{title}{Time Series Analysis and Its Applications}.
+\newblock \bibinfo{publisher}{Springer New York}, \bibinfo{year}{2006}.
 %Type = Article
 \bibitem[{Susan(1984)}]{Susan1984Stress}
 \bibinfo{author}{Susan\xfnm[ F.P.D.]}.
