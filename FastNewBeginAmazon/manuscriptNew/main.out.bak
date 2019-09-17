@@ -1,27 +1,22 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Literature review}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Stress-buffering function of positive life events}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Assessing the stress-buffering effect of positive events}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Measures and stress analysis based on social network}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Current study}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Study1: a pilot study on the stress-buffering pattern of school scheduled positive events}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Data collection}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Measures}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Method}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.4}{Results}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Study2: relationship between stress-buffering effect of automatically extracted positive events and microblog characteristics}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Positive events automatically extracted from microblogs}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Measures}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.3}{Method}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.4}{Results}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Study3: Testing the monotonous stress changes of stress-buffering from adolescents' microblogs}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Method}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Result}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Exploratory study: Integrating the stress-buffering effect into stress prediction}{}% 20
-\BOOKMARK [1][-]{section.7}{Discussion and conclusion}{}% 21
-\BOOKMARK [1][-]{section.8}{Limitations and future work}{}% 22
-\BOOKMARK [1][-]{appendix.1}{Identifying stressful intervals impacted by positive events}{}% 23
-\BOOKMARK [2][-]{subsection.1.1}{Selecting candidate intervals impacted by positive events}{appendix.1}% 24
-\BOOKMARK [2][-]{subsection.1.2}{Dividing intervals into U-SI set or SI set}{appendix.1}% 25
-\BOOKMARK [1][-]{appendix.2}{Modeling the stress-buffering pattern of positive events}{}% 26
-\BOOKMARK [1][-]{appendix.3}{Identifying the monotonous stress changes of stress-buffering}{}% 27
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Stress-buffering Function of Positive Events}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Measures and Stress Analysis from Social Networks}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Correlation Analysis Models for Multivariate Time Series}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Data Observation: A Pilot Study on the Stress-buffering Effect of School Scheduled Positive Events}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Results}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Literature Review}{}% 8
+\BOOKMARK [1][-]{section.5}{Framework}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Discovery of Positive Events from Microblogs}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Relationship Between Positive Events and Adolescents' Stress-buffering Behaviors from Microblogs}{section.5}% 11
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Topic}{subsection.5.2}% 12
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Stress}{subsection.5.2}% 13
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Positive and Stressful Emotions}{subsection.5.2}% 14
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Posting Behaviors}{subsection.5.2}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Modeling the Stress-buffering Impact of Positive Events}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Integrating the Stress-buffering Impact into Stress Prediction}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Experiment and Evaluation}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Setup and Metrics}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Stress Buffering}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.3}{Stress Prediction}{section.6}% 21
+\BOOKMARK [1][-]{section.7}{Reference}{}% 22

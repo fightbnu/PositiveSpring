@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{38}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -26,14 +26,6 @@
 \newblock \bibinfo{title}{Stress in america: Generation z}
   \bibinfo{year}{2018};:\bibinfo{pages}{1--11}.
 %Type = Article
-\bibitem[{Blachnio et~al.(2016)Blachnio, Przepiorka, Balakier and
-  Boruch}]{BLACHNIO2016664}
-\bibinfo{author}{Blachnio\xfnm[ A.]}, \bibinfo{author}{Przepiorka\xfnm[ A.]},
-  \bibinfo{author}{Balakier\xfnm[ E.]}, \bibinfo{author}{Boruch\xfnm[ W.]}.
-\newblock \bibinfo{title}{Who discloses the most on facebook?}
-\newblock \bibinfo{journal}{Computers in Human Behavior}
-  \bibinfo{year}{2016};\bibinfo{volume}{55}:\bibinfo{pages}{664 -- 667}.
-%Type = Article
 \bibitem[{Bono et~al.(2013)Bono, Glomb, Shen, Kim and Koch}]{Bono2013Building}
 \bibinfo{author}{Bono\xfnm[ J.E.]}, \bibinfo{author}{Glomb\xfnm[ T.M.]},
   \bibinfo{author}{Shen\xfnm[ W.]}, \bibinfo{author}{Kim\xfnm[ E.]},
@@ -58,13 +50,18 @@
   maladjustment: When good things happen, even lonely people feel better! ¡î}.
 \newblock \bibinfo{journal}{Personality and Individual Differences}
   \bibinfo{year}{2015};\bibinfo{volume}{86}:\bibinfo{pages}{150--155}.
-%Type = Inproceedings
-\bibitem[{Che et~al.(2010)Che, Li and Liu}]{Che2010}
-\bibinfo{author}{Che\xfnm[ W.]}, \bibinfo{author}{Li\xfnm[ Z.]},
-  \bibinfo{author}{Liu\xfnm[ T.]}.
-\newblock \bibinfo{title}{Ltp: A chinese language technology platform}.
-\newblock In: \bibinfo{booktitle}{Proc. of ACL}. \bibinfo{year}{2010}. p.
-  \bibinfo{pages}{13--16}.
+%Type = Article
+\bibitem[{Cohen et~al.(1988)Cohen, Cohen, Cohen, Cohen, Cohen, Adad, Cohen,
+  Cohen, Cohen and Cohen}]{Cohen1988Statistical}
+\bibinfo{author}{Cohen\xfnm[ J.]}, \bibinfo{author}{Cohen\xfnm[ J.]},
+  \bibinfo{author}{Cohen\xfnm[ D.]}, \bibinfo{author}{Cohen\xfnm[ J.]},
+  \bibinfo{author}{Cohen\xfnm[ J.]}, \bibinfo{author}{Adad\xfnm[ J.]},
+  \bibinfo{author}{Cohen\xfnm[ J.]}, \bibinfo{author}{Cohen\xfnm[ J.]},
+  \bibinfo{author}{Cohen\xfnm[ J.]}, \bibinfo{author}{Cohen\xfnm[ J.]}.
+\newblock \bibinfo{title}{Statistical power analysis for the behavioral
+  science}.
+\newblock \bibinfo{journal}{Technometrics}
+  \bibinfo{year}{1988};\bibinfo{volume}{84}(\bibinfo{number}{334}):\bibinfo{pages}{19¨C74}.
 %Type = Article
 \bibitem[{Cohen et~al.(1984)Cohen, Mcgowan, Fooskas and
   Rose}]{Cohen1984Positive}
@@ -100,13 +97,6 @@
   Psychology}
   \bibinfo{year}{2003};\bibinfo{volume}{32}(\bibinfo{number}{4}):\bibinfo{pages}{536--545}.
 %Type = Article
-\bibitem[{Folkman(1997)}]{Folkman1997Positive}
-\bibinfo{author}{Folkman\xfnm[ S.]}.
-\newblock \bibinfo{title}{Positive psychological states and coping with severe
-  stress}.
-\newblock \bibinfo{journal}{Social Science and Medicine}
-  \bibinfo{year}{1997};\bibinfo{volume}{45}(\bibinfo{number}{8}):\bibinfo{pages}{1207--21}.
-%Type = Article
 \bibitem[{Folkman and Moskowitz(2010)}]{Folkman2010Stress}
 \bibinfo{author}{Folkman\xfnm[ S.]}, \bibinfo{author}{Moskowitz\xfnm[ J.T.]}.
 \newblock \bibinfo{title}{Stress, positive emotion, and coping}.
@@ -131,12 +121,6 @@
 \newblock In: \bibinfo{booktitle}{Database Systems for Advanced Applications}.
   \bibinfo{year}{2016}. p. \bibinfo{pages}{367--382}.
 %Type = Article
-\bibitem[{Johnson and Wichern(2012)}]{Johnson2012Applied}
-\bibinfo{author}{Johnson\xfnm[ R.A.]}, \bibinfo{author}{Wichern\xfnm[ D.W.]}.
-\newblock \bibinfo{title}{Applied multivariate statistical analysis third ed}.
-\newblock \bibinfo{journal}{Technometrics}
-  \bibinfo{year}{2012};\bibinfo{volume}{25}(\bibinfo{number}{4}):\bibinfo{pages}{385--386}.
-%Type = Article
 \bibitem[{Jun-Sheng(2008)}]{Jun2008Influence}
 \bibinfo{author}{Jun-Sheng\xfnm[ H.U.]}.
 \newblock \bibinfo{title}{Influence of life events and coping style on mental
@@ -144,24 +128,14 @@
 \newblock \bibinfo{journal}{Chinese Journal of Clinical Psychology}
   \bibinfo{year}{2008};.
 %Type = Article
-\bibitem[{Kanner et~al.(1981{\natexlab{a}})Kanner, Coyne, Schaefer and
-  Lazants}]{hassles}
-\bibinfo{author}{Kanner\xfnm[ A.]}, \bibinfo{author}{Coyne\xfnm[ J.]},
-  \bibinfo{author}{Schaefer\xfnm[ C.]}, \bibinfo{author}{Lazants\xfnm[ R.]}.
-\newblock \bibinfo{title}{Comparison of two modes of stress measurement: Daily
-  hassles and uplifts versus major life events}.
-\newblock \bibinfo{journal}{Journal of Behavioral Medicine}
-  \bibinfo{year}{1981}{\natexlab{a}};\bibinfo{volume}{4}:\bibinfo{pages}{1--39}.
-\newblock \DOIprefix\doi{10.1177/089443939201000402}.
-%Type = Article
-\bibitem[{Kanner et~al.(1981{\natexlab{b}})Kanner, Coyne, Schaefer and
+\bibitem[{Kanner et~al.(1981)Kanner, Coyne, Schaefer and
   Lazarus}]{Kanner1981Comparison}
 \bibinfo{author}{Kanner\xfnm[ A.D.]}, \bibinfo{author}{Coyne\xfnm[ J.C.]},
   \bibinfo{author}{Schaefer\xfnm[ C.]}, \bibinfo{author}{Lazarus\xfnm[ R.S.]}.
 \newblock \bibinfo{title}{Comparison of two modes of stress measurement: Daily
   hassles and uplifts versus major life events}.
 \newblock \bibinfo{journal}{Journal of Behavioral Medicine}
-  \bibinfo{year}{1981}{\natexlab{b}};\bibinfo{volume}{4}(\bibinfo{number}{1}):\bibinfo{pages}{1}.
+  \bibinfo{year}{1981};\bibinfo{volume}{4}(\bibinfo{number}{1}):\bibinfo{pages}{1}.
 %Type = Article
 \bibitem[{Kleiman et~al.(2014)Kleiman, Riskind and Schaefer}]{Evan2014Social}
 \bibinfo{author}{Kleiman\xfnm[ E.M.]}, \bibinfo{author}{Riskind\xfnm[ J.H.]},
@@ -170,34 +144,6 @@
   resiliency factors: Examination of synergistic buffering effects}.
 \newblock \bibinfo{journal}{Archives of Suicide Research}
   \bibinfo{year}{2014};\bibinfo{volume}{18}(\bibinfo{number}{2}):\bibinfo{pages}{144--155}.
-%Type = Article
-\bibitem[{L~Bevan et~al.(2015)L~Bevan, B~Cummings, Kubiniec, Mogannam, Price
-  and Todd}]{socialSupport2}
-\bibinfo{author}{L~Bevan\xfnm[ J.]}, \bibinfo{author}{B~Cummings\xfnm[ M.]},
-  \bibinfo{author}{Kubiniec\xfnm[ A.]}, \bibinfo{author}{Mogannam\xfnm[ M.]},
-  \bibinfo{author}{Price\xfnm[ M.]}, \bibinfo{author}{Todd\xfnm[ R.]}.
-\newblock \bibinfo{title}{How are important life events disclosed on facebook?
-  relationships with likelihood of sharing and privacy}.
-\newblock \bibinfo{journal}{Cyberpsychology, behavior and social networking}
-  \bibinfo{year}{2015};\bibinfo{volume}{18}:\bibinfo{pages}{8--12}.
-\newblock \DOIprefix\doi{10.1089/cyber.2014.0373}.
-%Type = Article
-\bibitem[{L.~Bevan et~al.(2014)L.~Bevan, Gomez and Sparks}]{Disclosure}
-\bibinfo{author}{L.~Bevan\xfnm[ J.]}, \bibinfo{author}{Gomez\xfnm[ R.]},
-  \bibinfo{author}{Sparks\xfnm[ L.]}.
-\newblock \bibinfo{title}{Disclosures about important life events on facebook:
-  Relationships with stress and quality of life}.
-\newblock \bibinfo{journal}{Computers in Human Behavior}
-  \bibinfo{year}{2014};\bibinfo{volume}{39}:\bibinfo{pages}{246--253}.
-\newblock \DOIprefix\doi{10.1016/j.chb.2014.07.021}.
-%Type = Inproceedings
-\bibitem[{Li et~al.(2014)Li, Ritter, Cardie and Hovy}]{Li2014Major}
-\bibinfo{author}{Li\xfnm[ J.]}, \bibinfo{author}{Ritter\xfnm[ A.]},
-  \bibinfo{author}{Cardie\xfnm[ C.]}, \bibinfo{author}{Hovy\xfnm[ E.]}.
-\newblock \bibinfo{title}{Major life event extraction from twitter based on
-  congratulations/condolences speech acts}.
-\newblock In: \bibinfo{booktitle}{Conference on Empirical Methods in Natural
-  Language Processing}. \bibinfo{year}{2014}. .
 %Type = Article
 \bibitem[{Li et~al.(2017{\natexlab{a}})Li, Xue, Zhao, Jia and
   Feng}]{Li2017Analyzing}
@@ -208,16 +154,8 @@
   stressor events from a microblog}.
 \newblock \bibinfo{journal}{IEEE Journal of Biomedical and Health Informatics}
   \bibinfo{year}{2017}{\natexlab{a}};\bibinfo{volume}{21}(\bibinfo{number}{5}):\bibinfo{pages}{1434--1448}.
-%Type = Article
-\bibitem[{Li et~al.(2017{\natexlab{b}})Li, Zhao, Xue, Jin, Alli and
-  Feng}]{Li2017Correlating}
-\bibinfo{author}{Li\xfnm[ Q.]}, \bibinfo{author}{Zhao\xfnm[ L.]},
-  \bibinfo{author}{Xue\xfnm[ Y.]}, \bibinfo{author}{Jin\xfnm[ L.]},
-  \bibinfo{author}{Alli\xfnm[ M.]}, \bibinfo{author}{Feng\xfnm[ L.]}.
-\newblock \bibinfo{title}{Correlating stressor events for social network based
-  adolescent stress prediction} \bibinfo{year}{2017}{\natexlab{b}};.
 %Type = Inproceedings
-\bibitem[{Li et~al.(2017{\natexlab{c}})Li, Zhao, Xue, Jin and
+\bibitem[{Li et~al.(2017{\natexlab{b}})Li, Zhao, Xue, Jin and
   Feng}]{Li2017Exploring}
 \bibinfo{author}{Li\xfnm[ Q.]}, \bibinfo{author}{Zhao\xfnm[ L.]},
   \bibinfo{author}{Xue\xfnm[ Y.]}, \bibinfo{author}{Jin\xfnm[ L.]},
@@ -225,7 +163,7 @@
 \newblock \bibinfo{title}{Exploring the impact of co-experiencing stressor
   events for teens stress forecasting}.
 \newblock In: \bibinfo{booktitle}{International Conference on Web Information
-  Systems Engineering}. \bibinfo{year}{2017}{\natexlab{c}}. p.
+  Systems Engineering}. \bibinfo{year}{2017}{\natexlab{b}}. p.
   \bibinfo{pages}{313--328}.
 %Type = Article
 \bibitem[{Li et~al.(2015{\natexlab{a}})Li, Feng and Feng}]{Li2015Using}
@@ -271,22 +209,17 @@
   media using deep neural network}
   \bibinfo{year}{2014};:\bibinfo{pages}{507--516}.
 %Type = Article
+\bibitem[{Mcleod(2011)}]{Mcleod2011Kendall}
+\bibinfo{author}{Mcleod\xfnm[ A.I.]}.
+\newblock \bibinfo{title}{Kendall: Kendall rank correlation and mann-kendall
+  trend test} \bibinfo{year}{2011};.
+%Type = Article
 \bibitem[{Mcmillen and Fisher(1998)}]{Mcmillen1998The}
 \bibinfo{author}{Mcmillen\xfnm[ J.C.]}, \bibinfo{author}{Fisher\xfnm[ R.H.]}.
 \newblock \bibinfo{title}{The perceived benefit scales: Measuring perceived
   positive life changes after negative events}.
 \newblock \bibinfo{journal}{Social Work Research}
   \bibinfo{year}{1998};\bibinfo{volume}{22}(\bibinfo{number}{3}):\bibinfo{pages}{173--187}.
-%Type = Article
-\bibitem[{Nabi et~al.(2013)Nabi, Prestin and So}]{socialSupport1}
-\bibinfo{author}{Nabi\xfnm[ R.]}, \bibinfo{author}{Prestin\xfnm[ A.]},
-  \bibinfo{author}{So\xfnm[ J.]}.
-\newblock \bibinfo{title}{Facebook friends with (health) benefits? exploring
-  social network site use and perceptions of social support, stress, and
-  well-being}.
-\newblock \bibinfo{journal}{Cyberpsychology, behavior and social networking}
-  \bibinfo{year}{2013};\bibinfo{volume}{16}.
-\newblock \DOIprefix\doi{10.1089/cyber.2012.0521}.
 %Type = Article
 \bibitem[{Needles and Abramson(1990)}]{Needles1990Positive}
 \bibinfo{author}{Needles\xfnm[ D.J.]}, \bibinfo{author}{Abramson\xfnm[ L.Y.]}.
@@ -335,6 +268,13 @@
   Association}
   \bibinfo{year}{1986};\bibinfo{volume}{81}(\bibinfo{number}{395}):\bibinfo{pages}{799--806}.
 %Type = Article
+\bibitem[{Scholkopf et~al.(2006)Scholkopf, Platt and Hofmann}]{Sch2006A}
+\bibinfo{author}{Scholkopf\xfnm[ B.]}, \bibinfo{author}{Platt\xfnm[ J.]},
+  \bibinfo{author}{Hofmann\xfnm[ T.]}.
+\newblock \bibinfo{title}{A kernel method for the two-sample-problem}
+  \bibinfo{year}{2006};\bibinfo{volume}{abs/0805.2368}(\bibinfo{number}{2007}):\bibinfo{pages}{513
+  -- 520}.
+%Type = Article
 \bibitem[{Shahar and Priel(2002)}]{Shahar2002Positive}
 \bibinfo{author}{Shahar\xfnm[ G.]}, \bibinfo{author}{Priel\xfnm[ B.]}.
 \newblock \bibinfo{title}{Positive life events and adolescent emotional
@@ -342,38 +282,12 @@
 \newblock \bibinfo{journal}{Journal of Social and Clinical Psychology}
   \bibinfo{year}{2002};\bibinfo{volume}{21}(\bibinfo{number}{6}):\bibinfo{pages}{645--668}.
 %Type = Article
-\bibitem[{Shchebetenko(2019)}]{personality2}
-\bibinfo{author}{Shchebetenko\xfnm[ S.]}.
-\newblock \bibinfo{title}{Do personality characteristics explain the
-  associations between self-esteem and online social networking behaviour?}
-\newblock \bibinfo{journal}{Computers in Human Behavior}
-  \bibinfo{year}{2019};\bibinfo{volume}{91}:\bibinfo{pages}{17--23}.
-%Type = Book
-\bibitem[{Shumway and Stoffer(2006)}]{Shumway2006Time}
-\bibinfo{author}{Shumway\xfnm[ B.]}, \bibinfo{author}{Stoffer\xfnm[ D.]}.
-\newblock \bibinfo{title}{Time Series Analysis and Its Applications}.
-\newblock \bibinfo{publisher}{Springer New York}, \bibinfo{year}{2006}.
-%Type = Article
-\bibitem[{Susan(1984)}]{Susan1984Stress}
-\bibinfo{author}{Susan\xfnm[ F.P.D.]}.
-\newblock \bibinfo{title}{Stress: Appraisal and coping}
-  \bibinfo{year}{1984};:\bibinfo{pages}{1--460}.
-%Type = Article
-\bibitem[{Tausczik and Pennebaker()}]{Tausczik2010The}
-\bibinfo{author}{Tausczik\xfnm[ Y.R.]}, \bibinfo{author}{Pennebaker\xfnm[
-  J.W.]}.
-\newblock \bibinfo{title}{The psychological meaning of words: Liwc and
-  computerized text analysis methods}.
-\newblock \bibinfo{journal}{Proc of {JLSP}}
-  ;\bibinfo{volume}{29}(\bibinfo{number}{1}):\bibinfo{pages}{24--54}.
-%Type = Article
-\bibitem[{Twomey and O'~Reilly(2017)}]{personality1}
-\bibinfo{author}{Twomey\xfnm[ C.]}, \bibinfo{author}{O'~Reilly\xfnm[ G.]}.
-\newblock \bibinfo{title}{Associations of self-presentation on facebook with
-  mental health and personality variables: A systematic review}.
-\newblock \bibinfo{journal}{Cyberpsychology, Behavior, and Social Networking}
-  \bibinfo{year}{2017};\bibinfo{volume}{20}:\bibinfo{pages}{587--595}.
-\newblock \DOIprefix\doi{10.1089/cyber.2017.0247}.
+\bibitem[{Spearman(1987)}]{C1987The}
+\bibinfo{author}{Spearman\xfnm[ C.]}.
+\newblock \bibinfo{title}{The proof and measurement of association between two
+  things}.
+\newblock \bibinfo{journal}{The American journal of psychology}
+  \bibinfo{year}{1987};\bibinfo{volume}{100}(\bibinfo{number}{3-4}):\bibinfo{pages}{441}.
 %Type = Misc
 \bibitem[{Vitelli(2014)}]{older}
 \bibinfo{author}{Vitelli\xfnm[ R.]}.
@@ -381,12 +295,6 @@
 \newblock
   \bibinfo{howpublished}{\url{https://www.psychologytoday.com/blog/media-spotlight/201406/hassles-uplifts-and-growing-older}};
   \bibinfo{year}{2014}.
-%Type = Article
-\bibitem[{Wheeler and Frank(1988)}]{Wheeler1988Identification}
-\bibinfo{author}{Wheeler\xfnm[ R.J.]}, \bibinfo{author}{Frank\xfnm[ M.A.]}.
-\newblock \bibinfo{title}{Identification of stress buffers}.
-\newblock \bibinfo{journal}{Behavioral Medicine}
-  \bibinfo{year}{1988};\bibinfo{volume}{14}(\bibinfo{number}{2}):\bibinfo{pages}{78--89}.
 %Type = Inproceedings
 \bibitem[{Xue et~al.(2013)Xue, Li, Feng, Clifford and Clifton}]{XueUbicomp13}
 \bibinfo{author}{Xue\xfnm[ Y.]}, \bibinfo{author}{Li\xfnm[ Q.]},
