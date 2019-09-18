@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  17 SEP 2019 18:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  18 SEP 2019 17:58
 entering extended mode
 **main.tex
 
@@ -1401,18 +1401,8 @@ e
  []
 
 
-Overfull \hbox (23.08005pt too wide) in paragraph at lines 25--35
-\OT1/txr/m/n/10 ([], []), Per-ceived Ben-e-fit S-cales ([],
- []
-
-
-Overfull \hbox (5.91005pt too wide) in paragraph at lines 25--35
-[]\OT1/txr/m/n/10 ), In-ter-pre-ta-tion of Pos-i-tive Events S-cale ([], [])
- []
-
-
-Overfull \hbox (11.40009pt too wide) in paragraph at lines 25--35
-[]\OT1/txr/m/n/10 , []; [], []; [], [],[],[], [],[]), through
+Overfull \hbox (7.57005pt too wide) in paragraph at lines 25--35
+\OT1/txr/m/n/10 S-cale ([], []) and Ado-les-cen-t Self-Rating Life Events
  []
 
 LaTeX Font Info:    Try loading font information for C19+rm on input line 35.
@@ -1422,38 +1412,16 @@ File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 
 
 ]
-Overfull \hbox (4.64001pt too wide) in paragraph at lines 37--40
-\OT1/txr/m/n/10 stress-buffering..... The sub-jec-tive self-report in-ves-ti-ga
--tion-s were
+Overfull \hbox (0.16008pt too wide) in paragraph at lines 48--56
+\OT1/txr/m/n/10 in-for-ma-tion, ex-ist-ing microblog-based re-search-es stopped
+ at the
  []
 
 
-Overfull \hbox (2.80005pt too wide) in paragraph at lines 78--91
-\OT1/txr/m/n/10 stress change mod-e, lin-guis-tic ex-pres-sion-s). The stress-b
-uffering
+Overfull \hbox (10.61005pt too wide) in paragraph at lines 57--68
+\OT1/txr/m/n/10 mi-croblog-ging con-tent and be-hav-iors, we dis-cov-er stress-
+buffering
  []
-
-
-LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 97.
-
-
-LaTeX Warning: Reference `sec:obs' on page 2 undefined on input line 98.
-
-
-LaTeX Warning: Reference `sec:problem' on page 2 undefined on input line 99.
-
-
-LaTeX Warning: Reference `sec:interval' on page 2 undefined on input line 100.
-
-
-LaTeX Warning: Reference `sec:impact' on page 2 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec:experiment' on page 2 undefined on input line 103
-.
-
-
-LaTeX Warning: Reference `sec:conclude' on page 2 undefined on input line 104.
 
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
@@ -1521,13 +1489,11 @@ Overfull \hbox (1.53004pt too wide) in paragraph at lines 2--9
 om-ing from Taicang High
  []
 
+[4]
 File: figs/exampleWave.eps Graphic file (type eps)
-<figs/exampleWave.eps> [4]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ <figs/exampleWave.eps>
 File: figs/obnew-color.eps Graphic file (type eps)
-<figs/obnew-color.eps>
+ <figs/obnew-color.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1575,17 +1541,14 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: 5251CBABE2751D0767FAEC02D326CDC4;6903
 (rerunfilecheck)             After:  F6781B7E21D0984B6D07F35C246E0C8B;1764.
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 18934 strings out of 495355
- 282516 string characters out of 3183882
- 424682 words of memory out of 3000000
- 21684 multiletter control sequences out of 15000+200000
+ 18927 strings out of 495355
+ 282425 string characters out of 3183882
+ 426700 words of memory out of 3000000
+ 21677 multiletter control sequences out of 15000+200000
  36308 words of font info for 109 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,74p,872b,753s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,74p,872b,746s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (7 pages, 116676 bytes).
+Output written on main.dvi (7 pages, 118000 bytes).

@@ -23,55 +23,39 @@ Thus, tracking the state of stress-buffering is important for understanding the 
 %------------
 
 \emph{Existing solutions}:
-Previous studies have been focusing on conducting measurement of positive events and stress-buffering state after events through questionnaires,
-including Hassles \& Uplifts Scales~~\citep{Kanner1981Comparison},
+Previous studies have been focusing on conducting measurement of positive events and stress-buffering state after events through questionnaires, i.e.,
+Hassles \& Uplifts Scales~~\citep{Kanner1981Comparison},
 Perceived Benefit Scales~~~~~\citep{Mcmillen1998The},
 Interpretation of Positive Events Scale~\citep{Alden2008Social}
 and Adolescent Self-Rating Life Events Checklist~~~\citep{Jun2008Influence}.
 Recent scholars have demonstrated the feasibility to sense and predict users' stress from social networks~\citep{XueUbicomp13,Xue2014Detecting,Lin2014User,Li2015When,Li2015Predicting,Li2015Using,
-Li2017Analyzing,Li2017Exploring}
+Li2017Analyzing,Li2017Exploring},
 through content (linguistic text, emoticons, pictures)
 and behavioral (abnormal posting time, comment/response actions) measures.
 
 %静态的; 行为和内容是自发的，避免干扰;
+If we view the aforementioned studies on positive events as static sensing of stress-buffering, 
+this study approaches the problem from the dynamic process of stress-buffering 
+and aims at a solution under the hypothesis that 
 %-cause, period
 %-dynamic, behavioral
-If we view the aforementioned studies on positive events as static sensing of stress-buffering,
-this study approaches the problem from the dynamic process of stress-buffering
-and aims at a solution considering adolescents' both microblogging content and behavioral levels
-under the hypothesis that the moment in which a positive event occur is related to stress-buffering effects.
-Since the subjective self-report investigations are susceptible to many factors,
-such as social appreciation and pressures from measurement scenarios,
-microblogging characteristics at the behavioral level are objective expressions that can assist content characteristics.
+Since the subjective self-report investigations were susceptible to many factors, 
+such as social appreciation and pressure from measurement scenarios, 
+
 
 %1)stress与positive重叠，是双向的，所看到的并非看到的;for example2)是从感知到coping，也可以进一步预测
-Another difference from the previous studies lies in that,
-despite the unique advantages of social networks over the survey methods
-in offering self-expressed content and behavioral information,
-existing microblog-based researches stopped at the analysis of stress,
-and none went further to capture positive events that may play a key role in adolescents' stress coping mechanism.
-For example, it is hiking tomorrow that buffers the stress of losing the exam today.
-Understanding stress-buffering patterns of positive events
-is helpful in predicting and guiding stressful adolescents coping with stress.
+Another difference from the previous work lies in that ..
 
 \emph{Our work}:
-To this end,
-this paper proposes to study adolescent stress in a dual perspective of stress generation and stress-buffering,
-and view it as the superposition effect of stressors and positive events.
-By investigating the connection between positive events and stress changes
-reflected through adolescents' microblogging content and behaviors,
-we discover stress-buffering patterns of positive events and further predict future stress under such mitigation.
-%say nothing
-Exploiting stress-buffering effects of positive events
-is also advantageous in handling the confusing situation
-whether an adolescent who doesn't express stressful information from microblogs is actually under stress.
+To this end, the current study aims to examine the potential relationship between positive events and its stress-buffering pattern from adolescents' microblog content and behavioral characteristics.
+We aim to continually mine the restoring impact of positive events leveraging abundant data source from microblogs,
+to further provide guidance for school and parents that when and which kind of positive events could help relieve students' overwhelmed stress in both stress prevention and stress early stopping situations.
 
 However, capturing the stress-buffering process of positive events is not a trivial task.
 Two fundamental challenges need to be addressed:
 1) What is the latent connection between positive events and adolescents' stress-buffering reflections from microblogs?
 2) What is counted as a stressful period buffered by a positive event?
 %原来的不算问题，要灵魂，而非技术！！！。原来问题是：a 和 b之间的correlation到底是什么?怎样算一个区间?提取规则是什么?
-%发生时刻与缓解有怎样的关联;correlation到底是怎样的?如何把positive和stress的混合效果分离开，如果没有讲怎么办;
 %1)How to extract uplift events from microblogs and identify corresponding impact interval?
 %The impact of uplift events is highlighted when the teen is under stress, with various relative temporal order.
 %Extracting such scenarios from teen's messy microblogs is the first and basic challenge for further analysis.
@@ -88,7 +72,7 @@ After observing the posting behaviors and contents of stressed students under th
 several implications were discussed to guide the next step research.
 
 %1
-We follow the categorization of adolescents' positive events from six dimensions (....),
+In the study, we follow the categorization of adolescents' positive events from six dimensions (....),
 and stressor events from five dimensions (.....) widely adopted.
 %structure of a positive event
 We extract uplift events and the corresponding impacted interval from microblogs.
