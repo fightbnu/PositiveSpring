@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  18 SEP 2019 17:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  19 SEP 2019 17:43
 entering extended mode
 **main.tex
 
@@ -1484,7 +1484,7 @@ Overfull \hbox (2.24005pt too wide) in paragraph at lines 86--1
  []
 
 
-Overfull \hbox (1.53004pt too wide) in paragraph at lines 2--9
+Overfull \hbox (1.53004pt too wide) in paragraph at lines 2--8
  []\OT1/txr/m/it/10 Microblogs.[] []\OT1/txr/m/n/10 Mi-croblogs of s-tu-dents c
 om-ing from Taicang High
  []
@@ -1498,40 +1498,82 @@ File: figs/obnew-color.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-Overfull \hbox (14.87006pt too wide) in paragraph at lines 95--95
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
+\4frame.tex
+Overfull \hbox (8.50008pt too wide) in paragraph at lines 3--20
+\OT1/txr/m/n/10 word-s re-lat-ed to $\OML/txmi/m/it/10 u$\OT1/txr/m/n/10 . Ac-c
+ord-ing to psy-cho-log-i-cal s-cales ([],
+ []
+
+[5]
+Overfull \hbox (2.14006pt too wide) in paragraph at lines 43--56
+[][]\OT1/txr/m/n/10 Positive events were i-den-ti-fied through Chi-nese nat-u-r
+al lan-
+ []
+
+[6]
+Overfull \hbox (14.87006pt too wide) in paragraph at lines 120--120
 []\OT1/txr/m/it/10 Relationship Be-tween Pos-i-tive Events and Ado-les-cents' S
 tress-
  []
 
+[7]
 
+LaTeX Warning: Reference `measures' on page 8 undefined on input line 182.
+
+
+LaTeX Warning: Reference `mod:mod1' on page 8 undefined on input line 207.
+
+)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.bbl [5]
+\5experiment.tex
+File: figs/BOX3.eps Graphic file (type eps)
+ <figs/BOX3.eps>
+Overfull \hbox (2.23009pt too wide) in paragraph at lines 45--53
+\OT1/txr/m/n/10 78.39%, 63.39%, 58.74% sig-nif-i-can-t stress-buffering ef-fec-
+t were
+ []
+
+[8]
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 60--75
+ [][][] 
+ []
+
+)
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
+\main.bbl
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 50.
- [6]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 296.
+ [9]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 152.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1939) in paragraph at lines 293--299
+Underfull \hbox (badness 1275) in paragraph at lines 146--155
+[][]\OT1/txr/m/n/8 Kanner,  A., Coyne,  J., Schae-fer,  C., Lazants,  R..  Com-
+par-i-son
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 340--346
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--299
+Underfull \hbox (badness 10000) in paragraph at lines 340--346
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+) [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
 \main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -1539,16 +1581,19 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 5251CBABE2751D0767FAEC02D326CDC4;6903
-(rerunfilecheck)             After:  F6781B7E21D0984B6D07F35C246E0C8B;1764.
+(rerunfilecheck)             Before: 830CC96166E471B8551F0FEB5C4D1C44;7527
+(rerunfilecheck)             After:  C7F36531B3ABE58EF2DE0BECEB5A0B42;1959.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 18927 strings out of 495355
- 282425 string characters out of 3183882
- 426700 words of memory out of 3000000
- 21677 multiletter control sequences out of 15000+200000
+ 18963 strings out of 495355
+ 283352 string characters out of 3183882
+ 429316 words of memory out of 3000000
+ 21706 multiletter control sequences out of 15000+200000
  36308 words of font info for 109 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,74p,872b,746s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,74p,872b,765s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (7 pages, 118000 bytes).
+Output written on main.dvi (10 pages, 154992 bytes).

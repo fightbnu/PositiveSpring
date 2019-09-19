@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -50,6 +50,13 @@
   maladjustment: When good things happen, even lonely people feel better! ¡î}.
 \newblock \bibinfo{journal}{Personality and Individual Differences}
   \bibinfo{year}{2015};\bibinfo{volume}{86}:\bibinfo{pages}{150--155}.
+%Type = Inproceedings
+\bibitem[{Che et~al.(2010)Che, Li and Liu}]{Che2010}
+\bibinfo{author}{Che\xfnm[ W.]}, \bibinfo{author}{Li\xfnm[ Z.]},
+  \bibinfo{author}{Liu\xfnm[ T.]}.
+\newblock \bibinfo{title}{Ltp: A chinese language technology platform}.
+\newblock In: \bibinfo{booktitle}{Proc. of ACL}. \bibinfo{year}{2010}. p.
+  \bibinfo{pages}{13--16}.
 %Type = Article
 \bibitem[{Cohen et~al.(1988)Cohen, Cohen, Cohen, Cohen, Cohen, Adad, Cohen,
   Cohen, Cohen and Cohen}]{Cohen1988Statistical}
@@ -121,6 +128,12 @@
 \newblock In: \bibinfo{booktitle}{Database Systems for Advanced Applications}.
   \bibinfo{year}{2016}. p. \bibinfo{pages}{367--382}.
 %Type = Article
+\bibitem[{Johnson and Wichern(2012)}]{Johnson2012Applied}
+\bibinfo{author}{Johnson\xfnm[ R.A.]}, \bibinfo{author}{Wichern\xfnm[ D.W.]}.
+\newblock \bibinfo{title}{Applied multivariate statistical analysis third ed}.
+\newblock \bibinfo{journal}{Technometrics}
+  \bibinfo{year}{2012};\bibinfo{volume}{25}(\bibinfo{number}{4}):\bibinfo{pages}{385--386}.
+%Type = Article
 \bibitem[{Jun-Sheng(2008)}]{Jun2008Influence}
 \bibinfo{author}{Jun-Sheng\xfnm[ H.U.]}.
 \newblock \bibinfo{title}{Influence of life events and coping style on mental
@@ -128,14 +141,24 @@
 \newblock \bibinfo{journal}{Chinese Journal of Clinical Psychology}
   \bibinfo{year}{2008};.
 %Type = Article
-\bibitem[{Kanner et~al.(1981)Kanner, Coyne, Schaefer and
+\bibitem[{Kanner et~al.(1981{\natexlab{a}})Kanner, Coyne, Schaefer and
+  Lazants}]{hassles}
+\bibinfo{author}{Kanner\xfnm[ A.]}, \bibinfo{author}{Coyne\xfnm[ J.]},
+  \bibinfo{author}{Schaefer\xfnm[ C.]}, \bibinfo{author}{Lazants\xfnm[ R.]}.
+\newblock \bibinfo{title}{Comparison of two modes of stress measurement: Daily
+  hassles and uplifts versus major life events}.
+\newblock \bibinfo{journal}{Journal of Behavioral Medicine}
+  \bibinfo{year}{1981}{\natexlab{a}};\bibinfo{volume}{4}:\bibinfo{pages}{1--39}.
+\newblock \DOIprefix\doi{10.1177/089443939201000402}.
+%Type = Article
+\bibitem[{Kanner et~al.(1981{\natexlab{b}})Kanner, Coyne, Schaefer and
   Lazarus}]{Kanner1981Comparison}
 \bibinfo{author}{Kanner\xfnm[ A.D.]}, \bibinfo{author}{Coyne\xfnm[ J.C.]},
   \bibinfo{author}{Schaefer\xfnm[ C.]}, \bibinfo{author}{Lazarus\xfnm[ R.S.]}.
 \newblock \bibinfo{title}{Comparison of two modes of stress measurement: Daily
   hassles and uplifts versus major life events}.
 \newblock \bibinfo{journal}{Journal of Behavioral Medicine}
-  \bibinfo{year}{1981};\bibinfo{volume}{4}(\bibinfo{number}{1}):\bibinfo{pages}{1}.
+  \bibinfo{year}{1981}{\natexlab{b}};\bibinfo{volume}{4}(\bibinfo{number}{1}):\bibinfo{pages}{1}.
 %Type = Article
 \bibitem[{Kleiman et~al.(2014)Kleiman, Riskind and Schaefer}]{Evan2014Social}
 \bibinfo{author}{Kleiman\xfnm[ E.M.]}, \bibinfo{author}{Riskind\xfnm[ J.H.]},
@@ -144,6 +167,14 @@
   resiliency factors: Examination of synergistic buffering effects}.
 \newblock \bibinfo{journal}{Archives of Suicide Research}
   \bibinfo{year}{2014};\bibinfo{volume}{18}(\bibinfo{number}{2}):\bibinfo{pages}{144--155}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2014)Li, Ritter, Cardie and Hovy}]{Li2014Major}
+\bibinfo{author}{Li\xfnm[ J.]}, \bibinfo{author}{Ritter\xfnm[ A.]},
+  \bibinfo{author}{Cardie\xfnm[ C.]}, \bibinfo{author}{Hovy\xfnm[ E.]}.
+\newblock \bibinfo{title}{Major life event extraction from twitter based on
+  congratulations/condolences speech acts}.
+\newblock In: \bibinfo{booktitle}{Conference on Empirical Methods in Natural
+  Language Processing}. \bibinfo{year}{2014}. .
 %Type = Article
 \bibitem[{Li et~al.(2017{\natexlab{a}})Li, Xue, Zhao, Jia and
   Feng}]{Li2017Analyzing}
@@ -154,8 +185,16 @@
   stressor events from a microblog}.
 \newblock \bibinfo{journal}{IEEE Journal of Biomedical and Health Informatics}
   \bibinfo{year}{2017}{\natexlab{a}};\bibinfo{volume}{21}(\bibinfo{number}{5}):\bibinfo{pages}{1434--1448}.
+%Type = Article
+\bibitem[{Li et~al.(2017{\natexlab{b}})Li, Zhao, Xue, Jin, Alli and
+  Feng}]{Li2017Correlating}
+\bibinfo{author}{Li\xfnm[ Q.]}, \bibinfo{author}{Zhao\xfnm[ L.]},
+  \bibinfo{author}{Xue\xfnm[ Y.]}, \bibinfo{author}{Jin\xfnm[ L.]},
+  \bibinfo{author}{Alli\xfnm[ M.]}, \bibinfo{author}{Feng\xfnm[ L.]}.
+\newblock \bibinfo{title}{Correlating stressor events for social network based
+  adolescent stress prediction} \bibinfo{year}{2017}{\natexlab{b}};.
 %Type = Inproceedings
-\bibitem[{Li et~al.(2017{\natexlab{b}})Li, Zhao, Xue, Jin and
+\bibitem[{Li et~al.(2017{\natexlab{c}})Li, Zhao, Xue, Jin and
   Feng}]{Li2017Exploring}
 \bibinfo{author}{Li\xfnm[ Q.]}, \bibinfo{author}{Zhao\xfnm[ L.]},
   \bibinfo{author}{Xue\xfnm[ Y.]}, \bibinfo{author}{Jin\xfnm[ L.]},
@@ -163,7 +202,7 @@
 \newblock \bibinfo{title}{Exploring the impact of co-experiencing stressor
   events for teens stress forecasting}.
 \newblock In: \bibinfo{booktitle}{International Conference on Web Information
-  Systems Engineering}. \bibinfo{year}{2017}{\natexlab{b}}. p.
+  Systems Engineering}. \bibinfo{year}{2017}{\natexlab{c}}. p.
   \bibinfo{pages}{313--328}.
 %Type = Article
 \bibitem[{Li et~al.(2015{\natexlab{a}})Li, Feng and Feng}]{Li2015Using}
@@ -288,6 +327,14 @@
   things}.
 \newblock \bibinfo{journal}{The American journal of psychology}
   \bibinfo{year}{1987};\bibinfo{volume}{100}(\bibinfo{number}{3-4}):\bibinfo{pages}{441}.
+%Type = Article
+\bibitem[{Tausczik and Pennebaker()}]{Tausczik2010The}
+\bibinfo{author}{Tausczik\xfnm[ Y.R.]}, \bibinfo{author}{Pennebaker\xfnm[
+  J.W.]}.
+\newblock \bibinfo{title}{The psychological meaning of words: Liwc and
+  computerized text analysis methods}.
+\newblock \bibinfo{journal}{Proc of {JLSP}}
+  ;\bibinfo{volume}{29}(\bibinfo{number}{1}):\bibinfo{pages}{24--54}.
 %Type = Misc
 \bibitem[{Vitelli(2014)}]{older}
 \bibinfo{author}{Vitelli\xfnm[ R.]}.

@@ -1,0 +1,122 @@
+\section{Framework}
+\subsection{Discovery of Positive Events from Microblogs}
+We first introduce the procedure to extract positive event and its intervals from microblogs, 
+thus to extend our study to various types of positive events. 
+Let $u$ = $[type,\{doer, act,$ $description\}]$ be a positive event,
+where the element \emph{doer} is the subject who performs the \emph{act},
+and \emph{descriptions} are the key words related to $u$.
+According to psychological scales \citep{Jun2008Influence,hassles},
+adolescent positive events mainly focus on six dimensions, 
+as $\mathbb{U} =\{$ 'entertainment', 'school life', 'romantic', 'pear relationship', 'self-cognition', 'family life'$\}$. We constructed our lexicon for six-dimensional positive events from two sources. 
+The basic positive words are selected from the psychological lexicon C-LIWC (e.g., expectation, joy, love and surprise)~\citep{Tausczik2010The}. 
+Then we built six topic lexicons by expanding basic positive words from adolescent microblogs,
+containing 452 phrases in 'entertainment',
+273 phrases in 'school life',
+138 phrases in 'romantic',
+91 phrases in 'peer relationship',
+299 phrases in 'self-recognition' and 184 phrases in 'family life', with totally 2,606 phrases,
+as examples shown in table \ref{tab:topicWords}.
+Additionally, we labeled \emph{doer} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in positive lexicons.
+
+\begin{table*}
+\centering
+\caption{\small{Topic words of six-dimensional positive events.}}
+\label{tab:topicWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+dimension & example words & total \\ \midrule
+entertainment  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+school life    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+romantic       &  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+pear relation  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+self-cognition & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+family life    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+\paragraph{Linguistic parser model} 
+Positive events were identified through Chinese natural language processing platform \citep{Che2010}. 
+For each post, after word segmentation, we parsed each sentence to find its linguistic structure, 
+and then matched the main linguistic components with positive topic lexicons in each dimension. 
+The linguistic parser model was applied to identify the central verb of current sentence, namely the \emph{act}. 
+It constructed the relationship between the central verb and corresponding \emph{doer} and \emph{description} elements.
+By searching these elements in positive topic lexicons, 
+the existence of positive events were identified. 
+Due to the sparsity of posts, the element \emph{act} might be empty.
+\emph{Descriptions} were collected by searching all nouns, adjectives and adverbs. 
+Examples of positive events extracted from adolescents' microblogs are listed in table \ref{tab:uplifts}.
+For the post 'Thanks all my dear friends hosting the party. Happiest birthday!!!', 
+it was processed as \emph{doer='friends', act = 'expecting', description = 'party'}, 
+and \emph{type = 'entertainment'}. 
+
+\begin{table}
+\begin{center}
+\caption{\small{Extracted positive events from microblogs.}}
+\small{
+\begin{tabular}{|l|} \hline
+I am really looking forward to the spring outing on Sunday now. \\
+(doer:\emph{I}, act:\emph{looking forward}, description:\emph{spring outing})\\\hline
+My holiday is finally coming [smile]. \\
+(doer:\emph{My holiday}, act:\emph{coming}, description:\emph{[smile]})\\\hline
+First place in my lovely math exam!!! In memory of it.\\
+(description:\emph{first place, math, exam, memory})\\\hline
+You are always here for me like sunshine. \\
+(doer:\emph{You}, description:\emph{sunshine})\\\hline
+Thanks all my dear friends hosting the party.
+Happiest birthday!!!\\
+(doer:\emph{friends}, act:\emph{thanks}, description:\emph{party, birthday})\\\hline
+I know my mom is the one who support me forever, no matter \\
+when and where. (doer:\emph{mom}, act:\emph{support})\\ \hline
+Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\ 
+(act: \emph{expecting}, description:\emph{Adult Ceremony})\\\hline
+\end{tabular}}
+\label{tab:uplifts}
+\end{center}
+\end{table}
+
+\paragraph{Impact Intervals of Positive Events}
+We followed and extended work~\citep{Li2017Analyzing} to identify the impact interval of each positive event to further study its stress-buffering pattern.
+Splitting interval is a common time series problem, and here we identified the target interval in three steps. 
+Step1. Identify candidate intervals. We extracted positive events, stressor events and filtered out candidate intervals after a smoothing process.
+For each candidate interval, 
+we set its length to more than 3 days and a maximum gap of 1 day between two neighboured stressed days. 
+Since the stress series detected from microblogs were discrete points, 
+the loess method was adopted to highlight characteristics of the stress curve. 
+Step2. Judge stressful intervals through hypothesis testing. 
+For each candidate interval, 
+a Poisson based probability model was adopted to measure how confidently the current interval was a stressful interval. 
+Here the stressful posting rates under stress $\lambda_1$ and normal conditions $\lambda_0$ were modeled as two independent poisson process: 
+\begin{equation}
+Pr[N=n|\lambda_i]=\frac{e^{-\lambda_i T}{(\lambda_i T)}^n}{n!}
+\end{equation}
+where $i\in\{0,1\}$, $n=0,1,\cdots,\infty$. 
+We expected that $\lambda_1 > \lambda_0$, and measured the probability as $P(\lambda_1>\lambda_0|N_1, T_1, N_0, T_0)$,
+where $N_1, N_0$ are the number of stressful posts, and $T_1, T_0$ are time duration corresponding to $\lambda_1$ and $\lambda_0$.
+Without loss of generality, we assume a Jeffreys non-informative prior on $\lambda_1$ and $\lambda_0$,
+and inferred the posterior distribution $P(\lambda_1|N_1)$ and $P(\lambda_0|N_0)$ according to Bayes Rule.
+Thus for current interval $I_1$ and historical normal interval $I_0$, 
+the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ indicated the confidence 
+whether $I_1$ was a stressful interval.
+Step 3. Divided stressful intervals into SI set and U-SI set in temporal order. 
+For a detected stressful interval $I = <t_1,\cdots,t_n>$, we considered the temporal order between $I$ and any detected positive event $u$ happening at time point $t_u$: 
+\paragraph{1)} If the positive event $u$ happened during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ was judged as $I \in U-SI$.
+\paragraph{2)} If the positive event happened nearby a stressful interval, 
+considering the probability that it conducted impact on current stressful interval.
+Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e., 
+if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in U-SI$.
+If a stressful interval satisfies none of the above conditions, we classify it into the SI set.
+
+\subsection{Relationship Between Positive Events and Adolescents' Stress-buffering Behaviors from Microblogs}
+%加前后
+\subsubsection{Topic}
+%加结果
+\subsubsection{Stress}
+\subsubsection{Positive and Stressful Emotions}
+\subsubsection{Posting Behaviors}
+\subsection{Modeling the Stress-buffering Impact of Positive Events}
+\subsection{Integrating the Stress-buffering Impact into Stress Prediction}
