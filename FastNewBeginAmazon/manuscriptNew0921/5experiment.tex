@@ -1,3 +1,6 @@
+
+\section{Experiment and Evaluation}
+%\subsection{Stress-buffering Pattern of scheduled positive events}
 \label{sec:experiment}
 \begin{figure*}
 \centering
@@ -30,13 +33,10 @@ I $\rightarrow$ rear  &	75.89\% &	78.40\% &	74.63\% 	&79.05\%   &78.13\%    &82.
 \end{center}
 \end{table*}
 
-\section{Experiment and Evaluation}
-\subsection{Stress-buffering Pattern of scheduled positive events}
 Basically, we focused on four scheduled positive events:
 \emph{practical activity}, \emph{holiday}, \emph{new year party} and \emph{sports meeting}.
 For each of the four scheduled positive events,
 we quantified the stress-buffering effect based on corresponding SI and U-SI interval sets of the 124 students.
-
 Table \ref{tab:schedule} shows the experimental results,
 where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant stress-buffering effect were detected for the four specific scheduled positive events,
 with the total ratio to 69.52\% ($\alpha$ =1.96 for p=0.025).
@@ -45,21 +45,6 @@ The Euclidean metric was used to calculate the distance between two $n$ dimensio
 Experimental results show that our KNN-based two sample method (denoted as KTS) outperformed the baseline method
 with the best improvement in \emph{new year party} to 10.94\%,
 and total improvement to 6.00\%.
-
-The correlation of positive events a) in each group of microblog measure
-and b) towards five dimensions of stress
-were shown in box-plots \ref{fig:correlation}.
-The stress-buffering pattern of positive events
-was closely correlated with posting behavior (ratio = 80.65\%, n=100, SD=1.96),
-stress change mode (ratio = 67.74\%, n=84, SD=2.04) and microblog linguistic expressions (ratio = 74.19\%, n=92, SD=2.07).
-Positive events conducted most intensive stress-buffering impact on 'family life' (ratio = 83.87\%, n=104, SD=2.72),
-followed by 'peer relationships' (ratio = 71.77\%, n=89, SD=4.04) and 'school life' (ratio = 67.74\%, n=84, SD=2.71) dimensions.
-The correlation values in 'peer relation'
-exhibited the highest 75th percentile while the lowest 25th percentile,
-showing a relatively random and unstable stress-buffering effect on this dimension.
-Comparing the hypothesis test results on scheduled positive events (ratio = 69.52\%)
-and automatically extracted positive events (ratio = 74.21\%),
-the result indicated the feasibility of automatically extracting positive events from microblogs.
 
 \begin{table}[H]
 \begin{center}
@@ -82,19 +67,21 @@ KTS             &54.52\%	&	78.39\%	&	63.39\%	&	58.74\%	&	69.52\% \\
 \end{center}
 \end{table}
 
-\subsection{Stress Prediction}
-We integrate the impact of positive events into stress prediction.
-The experimental set contains 1,914 stressful intervals under the impact of positive events (U-SI).
-As shown in Table \ref{tab:forecast},
-the original prediction result using only SVARIMA method
-achieves 0.1281 MSE, 0.3579 RMSE, 0.3604 MAPE and 0.1482 MAD ($L = 7$, $\alpha = 0.5$).
-Then we integrate the impact of each type of positive events into stress prediction.
-Specifically, for positive with obvious restoring impact (under the L\&S\&P pattern),
-the average stress level during historical restoring intervals are integrated to modify the result,
-with adjusting the parameter $\alpha$ (details see \ref{sec:parameter}).
-After the modification,
-the prediction performance achieves 0.0649 MSE,	0.2548 RMSE, 0.2638 MAPE and 0.0858 MAD,
-reducing the prediction errors efficiently (with MSE, RMSE, MAPE and MAD reduced by 49.34\%, 28.81\%, 26.80\% and 42.11\%, respectively).
+
+The correlation of positive events a) in each group of microblog measure
+and b) towards five dimensions of stress
+were shown in box-plots \ref{fig:correlation}.
+The stress-buffering pattern of positive events
+was closely correlated with posting behavior (ratio = 80.65\%, n=100, SD=1.96),
+stress change mode (ratio = 67.74\%, n=84, SD=2.04) and microblog linguistic expressions (ratio = 74.19\%, n=92, SD=2.07).
+Positive events conducted most intensive stress-buffering impact on 'family life' (ratio = 83.87\%, n=104, SD=2.72),
+followed by 'peer relationships' (ratio = 71.77\%, n=89, SD=4.04) and 'school life' (ratio = 67.74\%, n=84, SD=2.71) dimensions.
+The correlation values in 'peer relation'
+exhibited the highest 75th percentile while the lowest 25th percentile,
+showing a relatively random and unstable stress-buffering effect on this dimension.
+Comparing the hypothesis test results on scheduled positive events (ratio = 69.52\%)
+and automatically extracted positive events (ratio = 74.21\%),
+the result indicated the feasibility of automatically extracting positive events from microblogs.
 
 \begin{table*}
 \caption{Compare the stress forecast performance under three stress-buffering measures of positive events.}
@@ -168,7 +155,71 @@ All
 \label{tab:forecast}
 \end{table*}
 
-\paragraph{Predicting stress under different windows}
+
+
+Further more,
+to verify the monotonous stress changes when an positive event impacts a stressful interval,
+for each stressful interval in SI and U-SI,
+we quantify its stress intensity by comparing with the front and rear adjacent intervals, respectively.
+Here four situations were considered and compared,
+as shown in table \ref{tab:fontrear}. 
+The \emph{ratio of intervals} detected with monotonous increase from the \emph{front interval} to \emph{stressful interval} (denoted as \emph{front$ \rightarrow$ I}),
+and monotonous decrease from the \emph{stressful interval} to the \emph{rear interval} (denoted as \emph{I $\rightarrow$ rear}) were listed.
+Under the effect of positive events,
+the ratio of intensive stress increase in \emph{front$ \rightarrow$ I} was decreased from 78.51\% to 70.17\%;
+and the ratio of intensive stress decrease in \emph{I $\rightarrow$ rear} was decreased from 79.55\% to 75.13\%.
+The most obvious monotonous decrease in \emph{front$ \rightarrow$ I} were conducted by positive events in family life dimension (12.89\% reduction);
+and the most obvious monotonous decrease in \emph{front$ \rightarrow$ I} were also conducted by positive events in family life dimension (6.65\% reduction).
+The experimental results indicated the effectiveness of the two sample method for quantifying the effect of positive events,
+and the rationality of the assumption that positive events could help ease stress of overwhelmed teens.
+
+
+
+
+\subsection{Stress Prediction Under Stress-buffering Effects}
+1) Stress prediction model.
+To measure the effectiveness of our method for quantifying the restoring impact of positive events,
+we integrate the impact of positive events into traditional stress series prediction problem,
+and verify whether the restoring pattern of positive events could help improve the prediction performance.
+Here we choose the SVARIMA (Seasonal Autoregressive Integrated Moving Average) algorithm,
+which is proved to be suitable for teens' linear stress prediction problem \citep{Shumway2006Time, Li2015Predicting},
+due to the seasonality and non-stationarity of teens' stress series.
+The basic stress prediction is conducted using SVARIMA approach,
+in the set of stressful intervals impacted by positive events (U-SI).
+Since stressor events cause the fluctuation of stress series from normal states,
+%and the simple series prediction method is difficult to handle such exception.
+to eliminate the interference,
+we simply consider the prediction problem in those stressful intervals rather than randomly picked out stress series.
+The impact of positive events are utilized as adjust values to modify the stress prediction result.
+Four metrics are adopted to measure the stress forecasting problem,
+where \emph{MSE}, \emph{RMSE} and \emph{MAD} measure absolute errors and \emph{MAPE} measures relative errors.
+For all real stress value $\overline{s_i}$ and predicted stress value $s_i$ in predicting sequence $<s_1,\cdots,s_n>$,
+$MSE = \frac{1}{n}\sum_{i\in[1,n]}(s_i-\overline{s_i})^2$,
+$RMSE = \frac{1}{n}\sqrt{\sum_{i\in[1,n]}(s_i-\overline{s_i})^2}$,
+$MAD = \frac{1}{n}\sum_{i\in[1,n]}|s_i-\overline{s_i}|$,
+and $MAPE = \frac{1}{n}\sum_{i\in[1,n]}{|s_i-\overline{s_i}|/s_i}$.
+
+We integrate the impact of positive events into stress prediction.
+The experimental set contains 1,914 stressful intervals under the impact of positive events (U-SI).
+As shown in Table \ref{tab:forecast},
+the original prediction result using only SVARIMA method
+achieves 0.1281 MSE, 0.3579 RMSE, 0.3604 MAPE and 0.1482 MAD ($L = 7$, $\alpha = 0.5$).
+Then we integrate the impact of each type of positive events into stress prediction.
+Specifically, for positive with obvious restoring impact (under the L\&S\&P pattern),
+the average stress level during historical restoring intervals are integrated to modify the result,
+with adjusting the parameter $\alpha$ (details see \ref{sec:parameter}).
+After the modification,
+the prediction performance achieves 0.0649 MSE,	0.2548 RMSE, 0.2638 MAPE and 0.0858 MAD,
+reducing the prediction errors efficiently (with MSE, RMSE, MAPE and MAD reduced by 49.34\%, 28.81\%, 26.80\% and 42.11\%, respectively).
+
+\begin{figure*}
+\centering
+\caption{Teens' stress forecast performance under different lengths of predicting windows.}
+\includegraphics[width=\linewidth]{figs/predictWindow2.eps}
+\label{fig:length}
+\end{figure*}
+
+2) Predicting stress under different windows.
 We present the prediction result under the impact of positive events under different lengths of prediction windows,
 ranging from 1 to 10 days, as shown in \ref{fig:length}.
 With the window length increasing,
@@ -184,14 +235,7 @@ On the other side,
 stress coming from school life is the most common stress in the student group,
 with relative stable periodicity and high frequency.
 
-\begin{figure*}
-\centering
-\caption{Teens' stress forecast performance under different lengths of predicting windows.}
-\includegraphics[width=\linewidth]{figs/predictWindow2.eps}
-\label{fig:length}
-\end{figure*}
-
-\paragraph{Contribution of each restoring measure}
+3) Contribution of each restoring measure.
 We conduct experiments with different restoring patterns included respectively to show
 its contribution to the impact of positive events during prediction.
 Four groups of situations are considered here, as shown in Table \ref{tab:forecast},
@@ -210,26 +254,26 @@ Results show that the correlation in the L\&S\&P pattern outperforms other patte
 (0.0649 MSE, 0.2548 RMSE, 0.2638 MAPE and 0.0858 MAD),
 showing the effectiveness of considering all the three correlations.
 
-\paragraph{Parameter settings}
-\label{sec:parameter}
+4) Parameter settings.
 The parameter $\alpha$ is adjusted when integrate the impact of positive events into stress prediction.
 For each of the four groups of restoring patterns,
 we adjust $\alpha$ in the effect of $\alpha \times L$.
 We calculate the corresponding prediction result for each teen respectively,
 and show the result of the whole testing group using the averaging performance.
 Figure \ref{fig:thresh} shows the changing trend under the L\&S\&P pattern.
-...
-\begin{figure}[H]
-\centering
-\caption{Stress forecast performance under the L\&S\&P pattern of positive events.}
-\includegraphics[width=0.9\linewidth]{figs/threshNew.eps}
-\label{fig:thresh}
-\end{figure}
 The prediction error decreases first and then increases,
 and the best performance is achieved when $\alpha$ is nearby 0.52,
 with 0.0649 MSE, 0.2548 RMSE, 0.2638 MAPE and 0.0858 MAD as the average performance of the whole experimental data set.
 Multiple methods for integrating the impact of positive event into stress prediction could be adopted.
 In this paper we adopt the simple one to verify the effectiveness of our model in quantifying the impact of positive events,
 and the setting of parameter $\alpha$ could be changed due to different individuals and data sets.
+
+\begin{figure}[H]
+\centering
+\caption{Stress forecast performance under the L\&S\&P pattern of positive events.}
+\includegraphics[width=0.9\linewidth]{figs/threshNew.eps}
+\label{fig:thresh}
+\end{figure}
+
 
 

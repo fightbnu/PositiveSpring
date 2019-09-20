@@ -3,8 +3,7 @@ We first introduce the procedure to extract positive event and its intervals fro
 Based on this,
 we present a statistical model to depict
 the connection between positive events and adolescents' stress-buffering patterns through three groups of content and behavioral measures.
-Finally, a none-liner time series model was proposed
-to combine stress-buffering patterns into future stress prediction.
+%Finally, a none-liner time series model was proposed to combine stress-buffering patterns into future stress prediction.
 \subsection{Discovery of Positive Events from Microblogs}
 \label{sec:frame1}
 Let $u$ = $[type,\{doer, act,$ $description\}]$ be a positive event,
@@ -176,7 +175,7 @@ based on the above measures,
 we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
 
 
-\subsubsection{Modeling the Stress-buffering Impact of Positive Events}
+\subsubsection{Statistical Model of Stress-buffering Effects}
 In our problem,
 there were two sets of stressful intervals to compare:
 the SI set and the U-SI set,
@@ -275,8 +274,11 @@ Thus we judge whether the positive events have conducted significant restoring i
 if $f(SI,USI)=(nr)^{1/2}(T_{r,n}-\mu_{r})/{\mu_r}^2>\alpha$ ($\alpha = 1.96$ for $P=0.025$),
 then the hypothesis $H_1$ is true.
 
-\subsubsection{Identifying the monotonous stress changes of stress-buffering}
-\label{mod:mod2}
+\subsubsection{Monotonous Model of Stress-buffering}
+To verify the monotonous stress changes at both the early and late stress-buffering stages,
+for each stressful interval in SI (n=2,582) and U-SI (n=1,914),
+we compared its stress intensity with the front and rear adjacent intervals using t-test method.
+
 For a stressful interval $I = <t_i,t_{i+1},\cdots,t_j>$,
 let $I^{front} = <t_m,\cdots,t_{i-1}>$ be the adjacent interval before $I$,
 and $I^{rear} = <t_{j+1},\cdots,t_n>$ be the rear adjacent interval of $I$.
@@ -286,14 +288,11 @@ the corresponding sets of adjacent front and rear intervals are denoted as $SI^{
 Similarly, for the set of stressful intervals $USI$ = $<UI_1,UI_2,\cdots, UI_M>$ impacted by positive events,
 the corresponding sets of adjacent front and rear intervals are denoted as $USI^{front}$ and $USI^{rear}$.
 We compare the intensity of stress changes in following four situations,
-where $g(.)$ is the function comparing two sets.
-
-\begin{itemize}
-\item[\textcircled{1}] $g(SI,SI^{front}$) returns if intensive change happens when stressful intervals begin.
-\item[\textcircled{2}] $g(SI,SI^{rear}$) returns if stress changes intensively after the stressful intervals end.
-\item[\textcircled{3}] $g(USI,USI^{front}$) returns if intensive change happens when stressful intervals affected by positive events appears.
-\item[\textcircled{4}] $g(USI,USI^{rear}$) returns if stress changes intensively after stressful intervals affected by positive events end.
-\end{itemize}
+where $g(.)$ is the function comparing two sets: \\
+1) $g(SI,SI^{front}$) returns if intensive change happens when stressful intervals begin.\\
+2) $g(SI,SI^{rear}$) returns if stress changes intensively after the stressful intervals end.\\
+3) $g(USI,USI^{front}$) returns if intensive change happens when stressful intervals affected by positive events appears.\\
+4) $g(USI,USI^{rear}$) returns if stress changes intensively after stressful intervals affected by positive events end.
 
 In our problem, taking the comparison between $SI$ and $SI^{rear}$ for example,
 the basic computation element $I_k \in SI \cup SI^{rear}$ in both sets is a multi-dimension interval.
@@ -313,25 +312,3 @@ Here we adopt $\alpha$ = 1.96, $P$ = 0.025.
 We conduct comparison for above four situations,
 to observe whether the occurrence of positive events relieve the monotonic negative effect of $g(SI,SI^{rear})$
 and the monotonic positive effect of $g(SI^{front},SI)$.
-
-\subsection{Stress Prediction Model Integrating Stress-buffering Effects}
-To measure the effectiveness of our method for quantifying the restoring impact of positive events,
-we integrate the impact of positive events into traditional stress series prediction problem,
-and verify whether the restoring pattern of positive events could help improve the prediction performance.
-Here we choose the SVARIMA (Seasonal Autoregressive Integrated Moving Average) algorithm \cite{Shumway2006Time},
-which is proved to be suitable for teens' linear stress prediction problem \cite{Li2015Predicting},
-due to the seasonality and non-stationarity of teens' stress series.
-The basic stress prediction is conducted using SVARIMA approach,
-in the set of stressful intervals impacted by positive events (U-SI).
-Since stressor events cause the fluctuation of stress series from normal states,
-%and the simple series prediction method is difficult to handle such exception.
-to eliminate the interference,
-we simply consider the prediction problem in those stressful intervals rather than randomly picked out stress series.
-The impact of positive events are utilized as adjust values to modify the stress prediction result.
-Four metrics are adopted to measure the stress forecasting problem,
-where \emph{MSE}, \emph{RMSE} and \emph{MAD} measure absolute errors and \emph{MAPE} measures relative errors.
-%For all real stress value $\overline{s_i}$ and predicted stress value $s_i$ in predicting sequence $<s_1,\cdots,s_n>$,
-%$MSE = \frac{1}{n}\sum_{i\in[1,n]}(s_i-\overline{s_i})^2$,
-%$RMSE = \frac{1}{n}\sqrt{\sum_{i\in[1,n]}(s_i-\overline{s_i})^2}$,
-%$MAD = \frac{1}{n}\sum_{i\in[1,n]}|s_i-\overline{s_i}|$,
-%and $MAPE = \frac{1}{n}\sum_{i\in[1,n]}{|s_i-\overline{s_i}|/s_i}$.

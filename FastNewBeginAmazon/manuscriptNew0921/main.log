@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  20 SEP 2019 16:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  20 SEP 2019 18:19
 entering extended mode
 **main.tex
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.tex
+0921\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -81,7 +81,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@@sep=\skip44
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+0921\main.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -1189,7 +1189,7 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsaveapp=\count311
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.aux)
+0921\main.aux)
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 43.
 
@@ -1348,9 +1348,9 @@ LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.out)
+0921\main.out)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.out)
+0921\main.out)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1365,7 +1365,7 @@ File: extended.enc 2008/12/29 4.8.2
 File: extended.chr 2008/12/29 4.8.2
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\1introduction.tex
+0921\1introduction.tex
 LaTeX Font Info:    Try loading font information for U+txmia on input line 1.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
@@ -1428,7 +1428,7 @@ LaTeX Warning: Reference `sec:predict' on page 2 undefined on input line 114.
 
 [2])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\2literature.tex
+0921\2literature.tex
 Overfull \hbox (18.38005pt too wide) in paragraph at lines 5--14
 \OT1/txr/m/n/10 resilient in-di-vid-u-al-s to re-cov-er ef-fec-tive-ly from dai
 -ly stress. Through
@@ -1480,7 +1480,7 @@ Overfull \hbox (1.05011pt too wide) in paragraph at lines 49--70
 
 [3])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\3pilot.tex
+0921\3pilot.tex
 Overfull \hbox (2.24005pt too wide) in paragraph at lines 87--1
 \OT1/txr/m/n/10 mum Mean Dis-crep-an-cy. ([], []) adopt-ed the $\OML/txmi/m/it/
 10 r$\OT1/txr/m/n/10 -nearest
@@ -1503,94 +1503,83 @@ Overfull \hbox (6.8301pt too wide) in paragraph at lines 91--111
 File: figs/obnew-color.eps Graphic file (type eps)
 <figs/obnew-color.eps> [5])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\4frame.tex
-Overfull \hbox (3.31007pt too wide) in paragraph at lines 2--8
-\OT1/txr/m/n/10 liner time se-ries mod-el was pro-posed to com-bine stress-buff
-ering
- []
-
-
-Overfull \hbox (14.37944pt too wide) in paragraph at lines 10--25
+0921\4frame.tex
+Overfull \hbox (14.37944pt too wide) in paragraph at lines 9--24
 \OT1/txr/m/n/10 LIWC (ex-pec-ta-tion, joy, love, sur-prise) ([]).
  []
 
 
-Overfull \hbox (2.14006pt too wide) in paragraph at lines 48--61
+Overfull \hbox (2.14006pt too wide) in paragraph at lines 47--60
 [][]\OT1/txr/m/n/10 Positive events were i-den-ti-fied through Chi-nese nat-u-r
 al lan-
  []
 
 [6]
-Overfull \hbox (14.87006pt too wide) in paragraph at lines 125--125
+Overfull \hbox (14.87006pt too wide) in paragraph at lines 124--124
 []\OT1/txr/m/it/10 Relationship Be-tween Pos-i-tive Events and Ado-les-cents' S
 tress-
  []
 
 [7]
 
-LaTeX Warning: Reference `measures' on page 8 undefined on input line 186.
+LaTeX Warning: Reference `measures' on page 8 undefined on input line 185.
 
 
-LaTeX Warning: Reference `mod:mod1' on page 8 undefined on input line 211.
+LaTeX Warning: Reference `mod:mod1' on page 8 undefined on input line 210.
 
 
-Overfull \hbox (1.40904pt too wide) in paragraph at lines 225--228
+Overfull \hbox (1.40904pt too wide) in paragraph at lines 224--227
 [][]\OT1/txr/m/n/10 For point $\OML/txmi/m/it/10 `[]$ \OT1/txr/m/n/10 with post
 -ing be-hav-ior ma-trix $[]$, stress change
  []
 
 [8]
-Overfull \hbox (16.01001pt too wide) in paragraph at lines 278--278
-[]\OT1/txr/m/it/10 Identifying the monotonous stress changes of stress-bufferin
-g 
+Overfull \hbox (3.06062pt too wide) in paragraph at lines 282--296
+\OT1/txr/m/n/10 1) $\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; S
+I[]$\OT1/txr/m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when stress-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 292.
 
-(C:\CTEX\MiKTeX\tex\latex\txfonts\omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
+LaTeX Font Warning: Command \small invalid in math mode on input line 305.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 306.
 )
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 292.
-
-Overfull \hbox (6.18059pt too wide) in paragraph at lines 294--295
-[][]$\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 USI; USI[]$\OT1/txr/
-m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 306.
-
-LaTeX Font Info:    Calculating math sizes for size <> on input line 307.
-
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 307--316
+(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
+0921\5experiment.tex
+Overfull \hbox (1.29259pt too wide) in paragraph at lines 306--1
 \OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
 \OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
 $
  []
 
-)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\5experiment.tex
 File: figs/BOX3.eps Graphic file (type eps)
- <figs/BOX3.eps> [9]
-Overfull \hbox (0.98392pt too wide) in paragraph at lines 15--30
+<figs/BOX3.eps>
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 18--33
  [][][] 
  []
 
-
-Overfull \hbox (2.23009pt too wide) in paragraph at lines 40--48
-\OT1/txr/m/n/10 78.39%, 63.39%, 58.74% sig-nif-i-can-t stress-buffering ef-fec-
-t were
+[9]
+Overfull \hbox (5.0801pt too wide) in paragraph at lines 160--175
+[][]\OT1/txr/m/n/10 Further more, to ver-i-fy the monotonous stress changes whe
+n
  []
 
 [10]
+
+LaTeX Warning: Reference `sec:parameter' on page 11 undefined on input line 210
+.
+
 File: figs/predictWindow2.eps Graphic file (type eps)
- <figs/predictWindow2.eps>
+<figs/predictWindow2.eps> [11]
+
+LaTeX Warning: Reference `sec:parameter' on page 12 undefined on input line 251
+.
+
+[12]
 File: figs/threshNew.eps Graphic file (type eps)
- <figs/threshNew.eps> [11] [12])
+ <figs/threshNew.eps>)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\6conclude.tex
+0921\6conclude.tex
 Overfull \hbox (1.6301pt too wide) in paragraph at lines 58--68
 \OT1/txr/m/n/10 mi-croblog da-ta set col-lect-ed from so-cial net-work-s of hig
 h school
@@ -1598,7 +1587,7 @@ h school
 
 [13])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.bbl
+0921\main.bbl
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 58.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 160.
@@ -1627,7 +1616,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\manuscriptNew
-\main.aux)
+0921\main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 97.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 
@@ -1637,19 +1626,22 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0A8A77ED6FFC4E07EC0A6FD71DDE90B1;7552
-(rerunfilecheck)             After:  58A37E2918DA25D64A75CF0558B579FC;1798.
+(rerunfilecheck)             Before: E9F4E4D191E30968B73722914DE0B7BE;6498
+(rerunfilecheck)             After:  3EF4B99CF8217439D291A0FBF5EBEC17;1579.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 19085 strings out of 495355
- 285343 string characters out of 3183882
- 441649 words of memory out of 3000000
- 21816 multiletter control sequences out of 15000+200000
+ 19056 strings out of 495355
+ 285036 string characters out of 3183882
+ 443380 words of memory out of 3000000
+ 21790 multiletter control sequences out of 15000+200000
  54848 words of font info for 163 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,872b,805s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,872b,785s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (15 pages, 209416 bytes).
+Output written on main.dvi (15 pages, 210168 bytes).
