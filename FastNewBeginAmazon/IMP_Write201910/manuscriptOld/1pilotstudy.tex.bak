@@ -1,0 +1,147 @@
+\section{Data Collection}
+\label{sec:study1}
+%\subsection{Data collection}
+We built our dataset based on two sources: 1) the microblogs of students coming from Taicang High School,
+collected from January 1st, 2012 to February 1st, 2015;
+and 2) list of scheduled school events, with exact start and end time.
+We filtered out 124 active students according to their posting frequency from over 500 students,
+and collected their microblogs throughout the whole high school career.
+Totally 29,232 microblogs were collected in this research,
+where 236 microblogs per student on average, 1,387 microblogs maximally and 104 posts minimally.
+To protect the privacy, all usernames were anonymized during the experiment.
+
+\begin{table}[H]
+\caption{\small{Examples of school scheduled positive and stressor events.}}
+\label{tab:example}
+\resizebox{.45\textwidth}{9mm}{
+\small{
+\begin{tabular}{cccc}
+\toprule
+Type & Date	& Content	& Grade	\\
+\midrule
+stressor event & 2014/4/16 & \emph{first day of mid-term exam} & grade1,2\\
+positive event & 2014/11/5 & \emph{campus art festival} & grade1,2,3\\
+\bottomrule
+\end{tabular}
+}
+}
+\end{table}
+
+%\subsection{Measures}
+\emph{Scheduled positive events}.
+The list of weekly scheduled school events (from February 1st, 2012 to August 1st 2017) were collected from the school's official website
+\footnote{http://stg.tcedu.com.cn/col/col82722/index.html},
+with detailed event description and grade involved in the event.
+There were 122 stressor events and 75 positive events in total.
+Examples of scheduled positive and stressor events in high school life are listed shown in Table~\ref{tab:example}.
+There were 2-3 stressor events and 1-2 positive event scheduled per month in current study.
+Figure~\ref{fig:example} shows three examples of a student's stress fluctuation during three mid-term exams,
+where the positive event \emph{campus art festival} was scheduled ahead of the first exam (\emph{example a}),
+the positive event \emph{holiday} happened after the second exam (\emph{example b}),
+and no scheduled positive event was found nearby the third exam (\emph{example c}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figs/exampleWave.eps}
+\caption{\small{Examples of school scheduled positive events, stressful events, and a student's stress fluctuation}}
+\label{fig:example}
+\end{figure}
+
+\emph{Stress detected from microblogs}.
+Since our target was to track the stress-buffering effect of positive events for students under stress,
+based on previous research~\cite{XueUbicomp13},
+we detected the stress level (ranging from 0 to 5) for each post.
+For each student,
+the stress during each day was aggregated by calculating the average stress of all posts.
+The positive level (0-5) of each post was identified based on the frequency of positive words (details are presented in study 2).
+
+%\subsection{Method}
+\section{Study1: a pilot study on the stress-buffering pattern of school scheduled positive events}
+To further observe the effect of positive events on stressed students,
+we collected all stressful intervals surround the scheduled exams over the 124 students during their high school career
+applying the interval detection method in ~\citep{Li2017Analyzing}.
+For each student, we divided all the stressful intervals into two sets:
+1) In the original sets, stress was caused by a stressor event, lasting for a period,
+and no other intervention (namely, positive event) occured.
+We called the set of such stressful intervals as \textbf{SI};
+2) In the other comparative sets,
+the stressful interval was impacted by a positive event,
+we called the set of such stressful intervals as \textbf{U-SI}.
+Thus the difference under the two situations (sets) could be seen as the stress-buffering effect
+conducted by the positive event.
+we identified 518 exam related stressful intervals (SI)
+and 259 stressful intervals impacted by four typical scheduled positive events (U-SI)
+('practical activity', 'new year party', 'holiday', 'sports meeting') from the students' microblogs.
+Five measures during the above two conditions were considered:
+the \emph{accumulated stress}, the \emph{average stress} (per day), the \emph{length of stressful intervals},
+the \emph{frequency of academic topic words}, and the \emph{ratio of academic stress among all types of stress}.
+The average value of each measure over all eligible slides was calculated.
+
+\subsection{Results}
+As shown in figure~\ref{fig:frequency},
+comparing each measure of scheduled exam intervals under the two situations:
+1) existing neighbouring positive events (U-SI) or 2) no neighbouring scheduled positive events (SI),
+we found that students during exams with neighbouring positive events exhibited less average stress intensity
+(78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress)
+and shorter duration of stress intervals (23.30\% reduction).
+Further, the frequency of academic topic words (table \ref{tab:studyWords} for examples)
+and the ratio of academic stress in each interval were calculated.
+Results in figure~\ref{fig:frequency} shows that most students talked less about the upcoming or just-finished exams when positive events happened nearby,
+with lower frequency (84.65\% reduction) and lower ratio (89.53\% reduction).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{figs/obnew-color.eps}
+\caption{\small{Comparing students' stress during exam intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI)}}
+\label{fig:frequency}
+\end{figure}
+
+
+\begin{table}[h]
+\centering
+\caption{\small{Examples of academic topic words from microblogs.}}
+\label{tab:studyWords}
+\small{
+\begin{tabular}{c}
+\toprule
+exam, fail, review, score, test paper, rank, pass, math, chemistry\\
+homework, regress, fall behind, tension, stressed out, physics,\\
+nervous, mistake, question, puzzle, difficult, lesson, careless\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table*}
+\centering
+\caption{\small{Examples of topic words for positive events.}}
+\label{tab:keyWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+dimension & example words & total \\ \midrule
+\emph{entertainment}  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+\emph{school life}    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+\emph{romantic}       &  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+\emph{pear relation}  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+\emph{self-cognition} & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+\emph{family life}    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+
+The statistic result shows clues about the stress-buffering effect of scheduled positive events,
+which is constant with the psychological theory ~\citep{Cohen1984Positive, Cohen2010Positive, Needles1990Positive},
+indicating the reliability and feasibility of the microblog data set.
+However,
+this is an observation based on specific scheduled events,
+and cannot satisfy the need for automatic, timely, and continuous perception of stress-buffering process.
+Therefore, next, in study 2 we will propose a framework to automatically detect positive events and its impact interval.
+Based on this,
+the relationship between stress-buffering effect of automatically extracted positive events and
+microblog characteristics will be examined.

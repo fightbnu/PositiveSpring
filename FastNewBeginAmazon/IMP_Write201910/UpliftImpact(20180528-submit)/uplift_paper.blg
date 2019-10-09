@@ -1,0 +1,44 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: uplift_paper.aux
+The style file: IEEEtran.bst
+Database file #1: reference-LiQi.bib
+Repeated entry---line 230 of file reference-LiQi.bib
+ : @article{Cohen1984Positive
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 240 of file reference-LiQi.bib
+ : @article{Cohen2010Positive
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 315 of file reference-LiQi.bib
+ : @article{Kanner1981Comparison
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 368 of file reference-LiQi.bib
+ : @article{Kanner1981Comparison
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 423 of file reference-LiQi.bib
+ : @article{Jun2008Influence
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 429 of file reference-LiQi.bib
+ : @article{Needles1990Positive
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 480 of file reference-LiQi.bib
+ : @article{Schilling1986Multivariate
+ :                                   ,
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Susan1984Stress
+Warning--missing publisher in Xue2014Detecting
+Warning--empty journal in Lin2014User
+Warning--empty journal in Mcleod2011Kendall
+Warning--empty journal in Sch2006A
+Warning--empty year in Tausczik2010The
+Warning--empty journal in Li2017Correlating
+
+Done.
+(There were 7 error messages)

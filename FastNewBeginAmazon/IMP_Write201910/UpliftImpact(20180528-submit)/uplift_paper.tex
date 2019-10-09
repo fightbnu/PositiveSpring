@@ -1,0 +1,107 @@
+\documentclass[10pt, journal]{IEEEtran}%,compsoc
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subfigure}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage[justification=centering]{caption}
+\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{xcolor}
+%\usepackage{multirow}
+%\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{bm}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+\usepackage{Cite}
+
+\ifCLASSINFOpdf
+
+\else
+
+\fi
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+\newtheorem{definition}{Definition}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+\renewcommand{\multirowsetup}{\centering}
+
+\begin{document}
+
+\title{Analyzing the Restoring Impact of Uplift Events on Overwhelmed Teenagers via Microblogs}
+
+\author{Qi~Li,~Yuanyuan~Xue,~Liang~Zhao~and~Ling~Feng~\IEEEmembership{Senior~Member,~IEEE}
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem
+\hspace{-0.3cm}$^1$Dept. of Computer Science and Technology,
+Centre for Computational Mental Healthcare Research, Institute of Data Science,
+Tsinghua University, Beijing, China;\protect\\
+$^2$Institute of Social Psychology, Xi'an Jiaotong University, Xi'an, China.\protect\\
+E-mail: \{liqi13,xue-yy12\}@mails.tsinghua.edu.cn,\{fengling\}@tsinghua.edu.cn,
+\{zhaoliang0415\}@xjtu.edu.cn,
+}}
+
+\IEEEtitleabstractindextext{
+\begin{abstract}
+As an important concept in psychological theory,
+restoring is an essential process in human's stress coping system.
+Timely and efficient restoring of stress could help teenagers get out of overwhelmed status as soon as possible.
+Previous research has explored the possibility of detecting teenagers' stress series and
+mining the impact of stressor events from social media.
+On the contrary, the research on auto-analyzing the restoring ability of uplift events still calls for more exploration,
+due to the uncertainty and complexity of various restoring situations.
+In this paper,
+we give a deep inside into the stress easing function of uplift events on the real data set of 124 high school students.
+A two-sample based statistical model is conducted to analyze the stressful behavioral correlations
+when uplift events happened to overwhelmed students from multiple perspectives.
+Experimental results show that our method could measure the restoring impact of school scheduled uplift events with 69.52\% accuracy, 
+and integrating such impact of uplift events helps reduce the stress prediction errors efficiently (with MSE, RMSE, MAPE and MAD reduced by 49.34\%, 28.81\%, 26.80\% and 42.11\%, respectively). 
+Our exploration provides guidance for school and parents that which kind of uplift events could help relieve students' overwhelmed stress in both stress prevention and stress early stopping situations.
+\end{abstract}
+
+\begin{IEEEkeywords}
+uplift event, stressor event, teenagers, microblogs
+\end{IEEEkeywords}
+}
+
+\maketitle.
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\input{Sec-Introduction}
+\input{Sec-RelatedWork}
+\input{Sec-Observation}
+\input{Sec-Problem}
+\input{Sec-Interval}
+\input{Sec-Impact}
+\input{Sec-Experiment}
+\input{Sec-Discussion}
+%\section*{Acknowledgments}
+%here acknowledgments
+
+\bibliographystyle{IEEEtran}
+\bibliography{reference-LiQi} %IEEEabrv,sample
+\end{document}
+
+

@@ -1,0 +1,158 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subfigure}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage[justification=centering]{caption}
+\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+%\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  %\usepackage[nocompress]{cite}
+%\Else
+%  % Normal Ieee
+\usepackage{Cite}
+%\Fi
+
+\ifCLASSINFOpdf
+
+\else
+
+\fi
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+%\newcommand\tabhead[1]{\small\textbf{#1}}
+%\newtheorem{definition}{\bf Definition}
+\newtheorem{definition}{Definition}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+\renewcommand{\multirowsetup}{\centering}
+
+\begin{document}
+
+\title{Analyzing and Identifying Teens Stressful Periods and Stressor Events from a Microblog}
+
+\author{Qi~Li,~Yuanyuan~Xue,~Liang~Zhao,~Jia~Jia~and~Ling~Feng~\IEEEmembership{Senior~Member,~IEEE}% <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Dept. of Computer Science and Technology,
+Centre for Computational Mental Healthcare Research, Institute of Data Science,
+Tsinghua University, China.\protect\\
+E-mail: \{liqi13,xue-yy12,jing-zhao11\}@mails.tsinghua.edu.cn, \{jjia,fengling\}@tsinghua.edu.cn
+}}
+
+
+%\thanks{Manuscript received April 19, 2005; revised September 17, 2014.}}
+
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~13, No.~9, September~2014}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+Increased health problems among adolescents caused by psychological stress have aroused worldwide attention.
+Long-standing stress without targeted assistance and guidance
+negatively impacts the healthy growth of adolescents, threatening the future development of our society.
+So far, research focused on detecting adolescent psychological stress revealed from each individual post on microblogs.
+However, beyond stressful moments, identifying teens stressful periods
+and stressor events that trigger each stressful period
+is more desirable to understand the stress from appearance to essence.
+In this paper, we define the problem of identifying teens stressful periods and stressor events from the open social
+media microblog.
+Starting from a case study of adolescents' posting behaviors during stressful school events,
+we build a poisson-based probability model for the
+correlation between stressor events and stressful posting behaviors through a series
+of posts on Tencent Weibo (referred to as the microblog throughout the paper).
+With the model, we discover teen's maximal stressful periods and
+further extract details of possible stressor events that cause the stressful periods.
+We generalize and present the extracted stressor events
+in a hierarchy based on common stress dimensions and event types.
+Taking 122 scheduled stressful study-related events in a high school
+as the ground truth, we test the approach on 124 students' posts from
+January 1, 2012 to February 1, 2015,
+and obtain some promising experimental results: (stressful periods: \emph{recall} 0.761, \emph{precision} 0.737, and $F_1$-\emph{measure} 0.734) and
+(top-3 stressor events: \emph{recall} 0.763, \emph{precision} 0.756, and $F_1$-\emph{measure} 0.759).
+The most prominent stressor events extracted
+are in the \emph{self-cognition} domain, followed by the
+\emph{school life} domain. This conforms to the adolescent psychological investigation result
+that problems in school life usually accompanied with teens inner cognition problems.
+Compared with the state-of-art top-1 personal life event detection approach, our stressor event detection method
+is 13.72\% higher in \emph{precision}, 19.18\% higher in \emph{recall}, and 16.50\% higher in $F_1$-\emph{measure},
+demonstrating the effectiveness of our proposed framework.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Adolescent, microblog, stressful period, stressor event.
+\end{IEEEkeywords}}
+
+\maketitle.
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+\input{Sec1-Introduction}
+\input{Sec2-RelatedWork}
+\input{Sec3-CaseStudy}
+\input{Sec4-Framework}
+\input{Sec5-Performance}
+\input{Sec6-Discussion}
+\input{Sec7-Conclusion}
+
+\section*{Acknowledgments}
+
+The authors would like to thank anonymous reviewers for the constructive comments and suggestions, enabling the great improvement of the manuscript.
+The work is funded by National Natural Science Foundation of China (61373022, 61532015, 71473146).
+
+%  \section*{Acknowledgment}
+%\fi
+%
+%The authors would like to thank...
+%\ifCLASSOPTIONcaptionsoff
+%  \newpage
+%\fi
+%
+%\begin{thebibliography}{1}
+%
+%\bibitem{IEEEhowto:kopka}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\end{thebibliography}
+%
+%
+%\begin{IEEEbiography}{Michael Shell}
+%Biography text here.
+%\end{IEEEbiography}
+%
+%\begin{IEEEbiographynophoto}{John Doe}
+%Biography text here.
+%\end{IEEEbiographynophoto}
+%
+%\begin{IEEEbiographynophoto}{Jane Doe}
+%Biography text here.
+%\end{IEEEbiographynophoto}
+
+%\bibliographystyle{acm-sigchi}
+\bibliographystyle{IEEEtran}
+\bibliography{reference-LiQi} %IEEEabrv,sample
+\end{document}
+
+

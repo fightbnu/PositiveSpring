@@ -1,0 +1,210 @@
+\section{Framework}
+\subsection{Discovery of Positive Events from Microblogs}
+We first introduce the procedure to extract positive event and its intervals from microblogs,
+thus to extend our study to various types of positive events.
+Let $u$ = $[type,\{doer, act,$ $description\}]$ be a positive event,
+where the element \emph{doer} is the subject who performs the \emph{act},
+and \emph{descriptions} are the key words related to $u$.
+According to psychological scales \citep{Jun2008Influence,hassles},
+adolescent positive events mainly focus on six dimensions,
+as $\mathbb{U} =\{$ 'entertainment', 'school life', 'romantic', 'pear relationship', 'self-cognition', 'family life'$\}$. We constructed our lexicon for six-dimensional positive events from two sources.
+The basic positive words are selected from the psychological lexicon C-LIWC (e.g., expectation, joy, love and surprise)~\citep{Tausczik2010The}.
+Then we built six topic lexicons by expanding basic positive words from adolescent microblogs,
+containing 452 phrases in 'entertainment',
+273 phrases in 'school life',
+138 phrases in 'romantic',
+91 phrases in 'peer relationship',
+299 phrases in 'self-recognition' and 184 phrases in 'family life', with totally 2,606 phrases,
+as examples shown in table \ref{tab:topicWords}.
+Additionally, we labeled \emph{doer} words (i.e., \emph{teacher}, \emph{mother}, \emph{I, we}) in positive lexicons.
+
+\begin{table*}
+\centering
+\caption{\small{Topic words of six-dimensional positive events.}}
+\label{tab:topicWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+dimension & example words & total \\ \midrule
+entertainment  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+school life    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+romantic       &  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+pear relation  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+self-cognition & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+family life    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+\subsubsection{Linguistic Parser Model}
+Positive events were identified through Chinese natural language processing platform \citep{Che2010}.
+For each post, after word segmentation, we parsed each sentence to find its linguistic structure,
+and then matched the main linguistic components with positive topic lexicons in each dimension.
+The linguistic parser model was applied to identify the central verb of current sentence, namely the \emph{act}.
+It constructed the relationship between the central verb and corresponding \emph{doer} and \emph{description} elements.
+By searching these elements in positive topic lexicons,
+the existence of positive events were identified.
+Due to the sparsity of posts, the element \emph{act} might be empty.
+\emph{Descriptions} were collected by searching all nouns, adjectives and adverbs.
+Examples of positive events extracted from adolescents' microblogs are listed in table \ref{tab:uplifts}.
+For the post 'Thanks all my dear friends hosting the party. Happiest birthday!!!',
+it was processed as \emph{doer='friends', act = 'expecting', description = 'party'},
+and \emph{type = 'entertainment'}.
+
+\begin{table}
+\begin{center}
+\caption{\small{Extracted positive events from microblogs.}}
+\small{
+\begin{tabular}{|l|} \hline
+I am really looking forward to the spring outing on Sunday now. \\
+(doer:\emph{I}, act:\emph{looking forward}, description:\emph{spring outing})\\\hline
+My holiday is finally coming [smile]. \\
+(doer:\emph{My holiday}, act:\emph{coming}, description:\emph{[smile]})\\\hline
+First place in my lovely math exam!!! In memory of it.\\
+(description:\emph{first place, math, exam, memory})\\\hline
+You are always here for me like sunshine. \\
+(doer:\emph{You}, description:\emph{sunshine})\\\hline
+Thanks all my dear friends hosting the party.
+Happiest birthday!!!\\
+(doer:\emph{friends}, act:\emph{thanks}, description:\emph{party, birthday})\\\hline
+I know my mom is the one who support me forever, no matter \\
+when and where. (doer:\emph{mom}, act:\emph{support})\\ \hline
+Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\
+(act: \emph{expecting}, description:\emph{Adult Ceremony})\\\hline
+\end{tabular}}
+\label{tab:uplifts}
+\end{center}
+\end{table}
+
+\subsubsection{Impact Intervals of Positive Events}
+We followed and extended ~\citep{Li2017Analyzing} to identify the impact interval of each positive event to further study its stress-buffering pattern.
+Splitting interval is a common time series problem, and here we identified the target interval in three steps.
+
+Step1:
+Extracted positive events, stressor events and filtered out candidate intervals.
+For each candidate interval,
+we set its length to more than 3 days and a maximum gap of 1 day between two neighboured stressed days.
+Since the stress series detected from microblogs were discrete points,
+loess method was adopted to highlight characteristics of the stress curve.
+
+Step2: Judged stressful intervals through hypothesis testing.
+A Poisson based probability model was adopted to measure how confidently the current interval was a stressful interval.
+Here the stressful posting rates under stress $\lambda_1$ and normal conditions $\lambda_0$ were modeled as two independent poisson process:
+\begin{equation}
+Pr[N=n|\lambda_i]=\frac{e^{-\lambda_i T}{(\lambda_i T)}^n}{n!}
+\end{equation}
+where $i\in\{0,1\}$, $n=0,1,\cdots,\infty$.
+We expected that $\lambda_1 > \lambda_0$, and measured the probability as $P(\lambda_1>\lambda_0|N_1, T_1, N_0, T_0)$,
+where $N_1, N_0$ are the number of stressful posts, and $T_1, T_0$ are time duration corresponding to $\lambda_1$ and $\lambda_0$.
+Without loss of generality, we assume a Jeffreys non-informative prior on $\lambda_1$ and $\lambda_0$,
+and inferred the posterior distribution $P(\lambda_1|N_1)$ and $P(\lambda_0|N_0)$ according to Bayes Rule.
+Thus for current interval $I_1$ and historical normal interval $I_0$,
+the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ indicated the confidence
+whether $I_1$ was a stressful interval.
+
+Step 3: Divided stressful intervals into SI set and U-SI set in temporal order.
+For a detected stressful interval $I = <t_1,\cdots,t_n>$, we considered the temporal order between $I$ and any detected positive event $u$ happening at time point $t_u$ in three cases:
+1) If the positive event $u$ happened during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ was judged as $I \in U-SI$.
+2) If the positive event happened nearby a stressful interval,
+considering the probability that it conducted impact on current stressful interval.
+Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e.,
+if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in U-SI$.
+If a stressful interval satisfies none of the above conditions, we classify it into the SI set.
+3) Other stressful intervals were divided into U-SI set.
+
+%M1: 理清楚各measure怎算，由此划分3块or4块
+%M2: 是否有必要合并之前的详细的描述(累赘不)
+\subsection{Relationship Between Positive Events and Adolescents' Stress-buffering Behaviors from Microblogs}
+%加前后视角
+%加结果
+We examined the relationship
+between positive events and stress-buffering pattern through three groups of measures:
+posting behavior, stress intensity, and linguistic expressions.
+%Linguistic expressions
+\subsubsection{Topic}
+Positive and stressful expressions were extracted from the post content.
+The first linguistic measure was the frequency of \emph{positive word},
+which represented the positive emotion in current interval.
+The second measure was the frequency of \emph{positive event topic words} in six dimensions,
+reflecting the existence of positive events.
+\citep{Li2014Major} showed that self-mentioned words showed high probability that the current stressor event was related to the author,
+rather than the opinion about a public event or life events about others.
+Another important factor was wether existing \emph{self-mentioned words} (i.e., \emph{'I','we','my'}).
+Except positive-related linguistic descriptions, we also took stressful linguistic characters as measures,
+while also offered information from the complementary perspective.
+The frequency of \emph{stressor event topic words} in five dimensions represented the degree of attention for each type of stressor event.
+The frequency of \emph{pressure words} reflected the degree of general stress emotion during the interval.
+\subsubsection{Positive and Stressful Emotions}
+%new
+\subsubsection{Posting behaviors} 
+Stress could lead to abnormal posting behaviors,
+reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
+In this study,
+we considered four measures of posting behaviors in each time unit (day),
+and presented each measure as a corresponding series.
+The first measure was \emph{posting frequency},
+representing the total number of posts per day.
+Research in \cite{Li2017Analyzing} indicated that overwhelmed adolescents tended to post more to express their stress for releasing
+and seeking comfort from friends.
+The second measure \emph{stressful posting frequency} per day
+was based on existing stress detection result and highlights the stressful posts among all posts.
+The third measure was the \emph{positive posting frequency}, indicating the number of positive posts per day.
+The forth measure \emph{original frequency} was the number of original posts, which filters out re-tweet and shared posts.
+Compared to forwarded posts, original posts indicated higher probability that users were talking about themselves.
+Thus in each interval, user's posting behavior was represented as a four-dimension vector.
+
+\subsubsection{Stress change mode}.
+The global stress change mode during a stressful interval was depicted through four measures:
+\emph{sequential stress level, length, RMS,} and \emph{peak}.
+Basically, \emph{stress level} per day constructed a sequential measure during a stressful interval,
+recording stress values and fluctuation on each time point.
+As positive events might conduct impact on stressed adolescents,
+and postpone the beginning or promote the end of a stressful interval,
+we took \emph{length} as the second factor representing the interval stress change mode.
+To quantify the intensity of stress fluctuations,
+\emph{RMS} (root mean square) of stress values through the interval was adopted  as the third measure.
+\emph{Peak} value was adopted as the forth measure to show the maximal stress value in current interval.
+
+Next,
+based on the above measures,
+we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
+
+\subsection{Method}
+In our problem,
+there were two sets of stressful intervals to compare:
+the SI set and the U-SI set,
+containing stressful intervals not affected by positive events
+and stressful intervals impacted by positive events, respectively.
+The basic elements in each set were stressful intervals.
+Each interval was modeled as a multi-dimensional vector according to the three groups of measures in section ~\ref{measures}.
+Thus we formulated this comparison problem as finding the correlation between the two sets of multi-dimension points.
+Specifically, we adopted the multivariate two-sample hypothesis testing method
+\cite{Li2017Correlating,Johnson2012Applied} to model such correlation.
+In this two-sample hypothesis test problem,
+the basic idea is judging whether the multi-dimension points (i.e., stressful intervals)
+in set SI and set U-SI were under different statistical distribution.
+Assuming the data points in SI and U-SI were randomly sampled from distribution $F$ and $G$, respectively,
+then the hypothesis was denoted as:
+\begin{equation}
+H_0: F = G \quad versus \quad H_1: F \neq G.
+\end{equation}
+
+Under such hypothesis,
+$H_0$ indicates points in SI and U-SI were under similar distribution,
+while $H_1$ means points in SI and U-SI were under statistically different distributions,
+namely positive events conducted obvious stress-buffering effect on current user.
+Since each point in the two sets (SI and U-SI) was depicted in multi-dimensions,
+here we took the KNN (K-Nearest Neighbor) \cite{Schilling1986Multivariate}
+based method to judge the existence of significant difference between SI and U-SI.
+For simplify, we used the symbol $A_1$ to represent set SI,
+and $A_2$ represent set U-SI.
+In the KNN algorithm,
+for each point $\ell_{x}$ in the two sets $A_1$ and $A_2$,
+we expected its nearest neighbors (\emph{the most similar points}) belonging to the same set of $\ell_x$.
+The model derivation process was presented in ~\ref{mod:mod1}.
+
+\subsection{Modeling the Stress-buffering Impact of Positive Events}
+\subsection{Integrating the Stress-buffering Impact into Stress Prediction}
