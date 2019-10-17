@@ -126,6 +126,96 @@ If a stressful interval satisfies none of the above conditions, we classify it i
 \label{sec:frame2}
 %加前后视角
 %加结果
+In our problem,
+there were two sets of stressful intervals to compare:
+the SI set and the U-SI set.
+We formulated this comparison problem as finding the correlation between the two sets of multi-dimension points.
+Each interval was modeled as a multi-dimensional vector according to the three groups of measures.
+Specifically, we adopted the multivariate two-sample hypothesis testing method
+\cite{Li2017Correlating,Johnson2012Applied} to model such correlation.
+In this two-sample hypothesis test problem,
+the basic idea is judging whether the multi-dimension points (i.e., stressful intervals)
+in set SI and set U-SI were under different statistical distribution.
+Assuming the data points in SI and U-SI were randomly sampled from distribution $F$ and $G$, respectively,
+then the hypothesis was denoted as:
+\begin{equation}
+H_0: F = G \quad versus \quad H_1: F \neq G.
+\end{equation}
+
+\subsubsection{Statistical Model of Stress-buffering}
+
+Under such hypothesis,
+$H_0$ indicated points in SI and U-SI were under similar distribution,
+while $H_1$ means points in SI and U-SI were under statistically different distributions,
+namely positive events conducted obvious stress-buffering effect on current user.
+Since each point in the two sets (SI and U-SI) was depicted in multi-dimensions,
+here we took the KNN (K-Nearest Neighbor) based method \cite{Schilling1986Multivariate}
+to judge the existence of significant difference between SI and U-SI.
+For simplify, we used the symbol $A_1$ to represent set SI,
+and $A_2$ represent set U-SI.
+For each point $\ell_{x}$ in the two sets $A_1$ and $A_2$,
+we expected its nearest neighbors (\emph{the most similar points}) belonging to the same set of $\ell_x$.
+
+Three groups of behavioral measures (posting behavior,
+stress change mode and linguistic expressions)
+were indicated as \bm{${<D_p}$},\bm{${D_s}$},\bm{${D_l>}$}, respectively.
+The Euclidean distance was adopted to calculate the distance of structured points in $A_1$ and $A_2$.
+For each point $\ell x \in A=A_1\bigcup A_2$,
+let $NN_r(\ell_x,A)$ be the function to find the $r-$th nearest neighbor of $\ell_x$.
+Specifically, three sub-functions of $NN_r(.)$ are defined as $PNN_r(.)$, $SNN_r(.)$ and $LNN_r(.)$,
+corresponding to user's linguistic expressions, stress change modes and posting behaviors in each stressful interval.
+For point $\ell_x$ with linguistic expression matrix \bm{${D_l^x}$}, posting behavior matrix \bm{${D_p^x}$}
+and stress change mode matrix \bm{${D_s^x}$},
+the $r$-th nearest neighbor of $\ell_x$ in each measure was denoted as:
+\begin{equation}
+\begin{aligned}
+& PNN_r(\ell_x,A)
+= \{y | min\{||\textbf{D}_p^x-\textbf{D}_p^y ||_2\}, y\in(A/\ell_x)\} &\\
+& SNN_r(\ell_x,A)
+= \{z | min\{||\textbf{D}_s^x-\textbf{D}_s^z ||_2\}, z\in(A/\ell_x)\} \\
+& LNN_r(\ell_x,A)
+= \{w | min\{||\textbf{D}_l^x-\textbf{D}_l^w ||_2\}, w\in(A/\ell_x)\} &
+ \end{aligned}
+ \end{equation}
+The $r$-th nearest neighbor considering all three groups of measures was denoted as:
+\begin{align}
+&NN_r(\ell_x,A) = \{v | min\{a \times ||\textbf{D}_p^x-\textbf{D}_p^v||_2+\\
+&b \times ||\textbf{D}_s^x-\textbf{D}_s^v||_2+
+c \times ||\textbf{D}_l^x-\textbf{D}_l^v||_2\}, v\in(A/\ell_x) \}
+\end{align}
+In this study, we set $a = b = c = 1/3$.
+Next, let $I_r(\ell_x,A1,A2)$ be the function denoting whether the $r$-th nearest neighbor was in the same set with $\ell_x$:
+\begin{equation}
+I_r(\ell_x,A_1,A_2) =
+\left\{ \begin{array}{ll}
+1, \quad if \ell_x \in A_i  \&\& NN_r(\ell_x,A)\in A_i,\\
+0, \quad otherwise
+\end{array}
+\right.
+\end{equation}
+Let $T_{r,n}$ denote the proportion that pairs containing two points from the same set among all pairs formed by $\ell_x \in A$
+and its $k$ nearest neighbors:
+\begin{equation}
+T_{k,n}= \frac{1}{n\times k}\sum_{i=1}^{n}\sum_{j=1}^{k}I_j(x,A_1,A_2)
+\end{equation}
+The value of $T_{k,n}$ showed how differently the points in the two testing sets (SI and U-SI) performed.
+If the value of $T_{r,n}$ was close to $1$,
+it could be shown that the two underlying distributions $F$ and $G$ for $SI$ and U-SI were significantly different,
+indicating current positive events conducted obvious stress-buffering impact on the teens' stress series.
+Let $\lambda_1=|A_1|$ and $\lambda_2=|A_2|$, the statistic value $Z$ was denoted as:
+\begin{align}
+&Z=(nr)^{1/2}(T_{r,n}-\mu_{r})/\sigma_{r}\\
+&\mu_r=(\lambda_1)^2+(\lambda_2)^2\\
+&{\sigma_r}^2=\lambda_1\lambda_2+4{\lambda_1}^2{\lambda_2}^2
+\end{align}
+where $\mu_r$ was the expectation and ${\sigma_r}^2$ was the variance of $Z$.
+Based on hypothesis test theory \cite{Johnson2012Applied},
+when the size of the testing set ($\lambda_1$ and $\lambda_2$) were large enough,
+$Z$ obeys a standard Gaussian distribution.
+Thus we judged whether the positive events conducted significant stress buffering impact on the teen's stress series as follows:
+if $f(SI,USI)=(nr)^{1/2}(T_{r,n}-\mu_{r})/{\mu_r}^2>\alpha$ ($\alpha = 1.96$ for $P=0.025$),
+then the hypothesis $H_1$ was true.
+
 %Linguistic expressions
 \subsubsection{Measures}
 \paragraph{Linguistic expressions}
@@ -237,94 +327,7 @@ Figure \ref{fig:stress1,fig:stress2} exhibits eight stress change modes during S
 \label{fig:stress2}
 \end{figure}
 
-\subsubsection{Statistical Model of Stress-buffering Effects}
-In our problem,
-there were two sets of stressful intervals to compare:
-the SI set and the U-SI set.
-We formulated this comparison problem as finding the correlation between the two sets of multi-dimension points.
-Each interval was modeled as a multi-dimensional vector according to the three groups of measures.
-Specifically, we adopted the multivariate two-sample hypothesis testing method
-\cite{Li2017Correlating,Johnson2012Applied} to model such correlation.
-In this two-sample hypothesis test problem,
-the basic idea is judging whether the multi-dimension points (i.e., stressful intervals)
-in set SI and set U-SI were under different statistical distribution.
-Assuming the data points in SI and U-SI were randomly sampled from distribution $F$ and $G$, respectively,
-then the hypothesis was denoted as:
-\begin{equation}
-H_0: F = G \quad versus \quad H_1: F \neq G.
-\end{equation}
 
-Under such hypothesis,
-$H_0$ indicated points in SI and U-SI were under similar distribution,
-while $H_1$ means points in SI and U-SI were under statistically different distributions,
-namely positive events conducted obvious stress-buffering effect on current user.
-Since each point in the two sets (SI and U-SI) was depicted in multi-dimensions,
-here we took the KNN (K-Nearest Neighbor) based method \cite{Schilling1986Multivariate}
-to judge the existence of significant difference between SI and U-SI.
-For simplify, we used the symbol $A_1$ to represent set SI,
-and $A_2$ represent set U-SI.
-For each point $\ell_{x}$ in the two sets $A_1$ and $A_2$,
-we expected its nearest neighbors (\emph{the most similar points}) belonging to the same set of $\ell_x$.
-
-Three groups of behavioral measures (posting behavior,
-stress change mode and linguistic expressions)
-were indicated as \bm{${<D_p}$},\bm{${D_s}$},\bm{${D_l>}$}, respectively.
-The Euclidean distance was adopted to calculate the distance of structured points in $A_1$ and $A_2$.
-For each point $\ell x \in A=A_1\bigcup A_2$,
-let $NN_r(\ell_x,A)$ be the function to find the $r-$th nearest neighbor of $\ell_x$.
-Specifically, three sub-functions of $NN_r(.)$ are defined as $PNN_r(.)$, $SNN_r(.)$ and $LNN_r(.)$,
-corresponding to user's linguistic expressions, stress change modes and posting behaviors in each stressful interval.
-For point $\ell_x$ with linguistic expression matrix \bm{${D_l^x}$}, posting behavior matrix \bm{${D_p^x}$}
-and stress change mode matrix \bm{${D_s^x}$},
-the $r$-th nearest neighbor of $\ell_x$ in each measure was denoted as:
-\begin{equation}
-\begin{aligned}
-& PNN_r(\ell_x,A)
-= \{y | min\{||\textbf{D}_p^x-\textbf{D}_p^y ||_2\}, y\in(A/\ell_x)\} &\\
-& SNN_r(\ell_x,A)
-= \{z | min\{||\textbf{D}_s^x-\textbf{D}_s^z ||_2\}, z\in(A/\ell_x)\} \\
-& LNN_r(\ell_x,A)
-= \{w | min\{||\textbf{D}_l^x-\textbf{D}_l^w ||_2\}, w\in(A/\ell_x)\} &
- \end{aligned}
- \end{equation}
-The $r$-th nearest neighbor considering all three groups of measures was denoted as:
-\begin{align}
-&NN_r(\ell_x,A) = \{v | min\{a \times ||\textbf{D}_p^x-\textbf{D}_p^v||_2+\\
-&b \times ||\textbf{D}_s^x-\textbf{D}_s^v||_2+
-c \times ||\textbf{D}_l^x-\textbf{D}_l^v||_2\}, v\in(A/\ell_x) \}
-\end{align}
-In this study, we set $a = b = c = 1/3$.
-Next, let $I_r(\ell_x,A1,A2)$ be the function denoting whether the $r$-th nearest neighbor was in the same set with $\ell_x$:
-\begin{equation}
-I_r(\ell_x,A_1,A_2) =
-\left\{ \begin{array}{ll}
-1, \quad if \ell_x \in A_i  \&\& NN_r(\ell_x,A)\in A_i,\\
-0, \quad otherwise
-\end{array}
-\right.
-\end{equation}
-Let $T_{r,n}$ denote the proportion that pairs containing two points from the same set among all pairs formed by $\ell_x \in A$
-and its $k$ nearest neighbors:
-\begin{equation}
-T_{k,n}= \frac{1}{n\times k}\sum_{i=1}^{n}\sum_{j=1}^{k}I_j(x,A_1,A_2)
-\end{equation}
-The value of $T_{k,n}$ showed how differently the points in the two testing sets (SI and U-SI) performed.
-If the value of $T_{r,n}$ was close to $1$,
-it could be shown that the two underlying distributions $F$ and $G$ for $SI$ and U-SI were significantly different,
-indicating current positive events conducted obvious stress-buffering impact on the teens' stress series.
-Let $\lambda_1=|A_1|$ and $\lambda_2=|A_2|$, the statistic value $Z$ was denoted as:
-\begin{align}
-&Z=(nr)^{1/2}(T_{r,n}-\mu_{r})/\sigma_{r}\\
-&\mu_r=(\lambda_1)^2+(\lambda_2)^2\\
-&{\sigma_r}^2=\lambda_1\lambda_2+4{\lambda_1}^2{\lambda_2}^2
-\end{align}
-where $\mu_r$ was the expectation and ${\sigma_r}^2$ was the variance of $Z$.
-Based on hypothesis test theory \cite{Johnson2012Applied},
-when the size of the testing set ($\lambda_1$ and $\lambda_2$) were large enough,
-$Z$ obeys a standard Gaussian distribution.
-Thus we judged whether the positive events conducted significant stress buffering impact on the teen's stress series as follows:
-if $f(SI,USI)=(nr)^{1/2}(T_{r,n}-\mu_{r})/{\mu_r}^2>\alpha$ ($\alpha = 1.96$ for $P=0.025$),
-then the hypothesis $H_1$ was true.
 
 \subsubsection{Monotonous Model of Stress-buffering}
 To verify the monotonous stress changes at both the early and late stress-buffering stages,
@@ -363,3 +366,4 @@ Here we adopt $\alpha$ = 1.96, $P$ = 0.025.
 We conduct comparison for above four situations,
 to observe whether the occurrence of positive events relieve the monotonic negative effect of $g(SI,SI^{rear})$
 and the monotonic positive effect of $g(SI^{front},SI)$.
+
