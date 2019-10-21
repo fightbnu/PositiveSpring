@@ -126,85 +126,6 @@ If a stressful interval satisfies none of the above conditions, we classify it i
 \label{sec:frame2}
 %加前后视角
 %加结果
-%Linguistic expressions
-\subsubsection{Measures}
-\paragraph{Linguistic expressions}
-Positive and stressful expressions were extracted from the post content.
-The first linguistic measure was the frequency of \emph{positive emotional words},
-which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons ~\citep{Tausczik2010The}.
-The second measure was the frequency of \emph{positive event topic words} in six dimensions,
-reflecting the existence of positive events (see table \ref{tab:topicWords} for examples).
-Another important factor was wether existing \emph{self-mentioned words} (i.e., \emph{'I','we','my'}).
-\citep{Li2014Major} showed that self-mentioned words exhibited high probability that the current event
-was related to the author,
-rather than the opinion about a public event or life events about others.
-In addition to positive-related linguistic descriptions,
-the frequency of \emph{stressor event topic words} in five dimensions
-were adopted to represent the degree of attention for each type of stressor event.
-The frequency of \emph{stressful emotional words}, based on four categories (anger, anxiety, hate, sad) of LICW lexicons, represented general stressful emotion during the interval.
-For each student, we identified positive events in six dimensions applying the parser model in section \ref{sec:frame1}, and corresponding intervals based on algorithm in section \ref{subsec:interval}.
-For intervals in two groups U-SI and SI,
-Figure xx shows the distribution of above five measures in U-SI and SI.
-
-%all, positive, stressful
-\paragraph{Posting behaviors}
-Stress could lead to abnormal posting behaviors,
-reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
-We considered three measures of posting behaviors in each time unit (day).
-The first measure was \emph{posting frequency},
-representing the total number of posts per day.
-Research in \cite{Li2017Analyzing} indicated that overwhelmed adolescents tended to post more to express their stress for releasing and seeking comfort from friends.
-The second measure was the \emph{positive posting frequency}, indicating the number of positive posts per day.
-The third measure \emph{stressful posting frequency} per day highlighted the stressful posts among all posts.
-Figure xx shows the distribution of above three measures in U-SI and SI, respectively.
-%The forth measure \emph{original frequency} was the number of original posts,
-%which filtered out re-tweet and shared posts.
-%Compared to forwarded posts, original posts indicated higher probability that users were talking about themselves.
-%Thus in each interval, user's posting behavior was represented as a four-dimension vector.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
-\caption{\small{Comparing topic words of five types of stressor events during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:stopic}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/utopic.eps}
-\caption{\small{Comparing topic words of six types of positive events during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:utopic}
-\end{figure}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/topicAll.eps}
-\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:topicAll}
-\end{figure}
-
-\paragraph{Stress change modes}
-Inspired by the pilot study,
-the global stress change modes during a stressful interval were depicted through four measures:
-\emph{sequential stress level, length of stressful interval, RMS value,} and \emph{maximal value}.
-Basically, \emph{stress level} per day constructed a sequential measure during a stressful interval,
-recording stress values and fluctuation on each time point.
-As positive events might conduct impact on stressed adolescents,
-and postpone the beginning or promote the end of a stressful interval,
-we took \emph{length} as the second factor representing the interval stress change mode.
-To quantify the intensity of stress fluctuations,
-\emph{RMS} (root mean square) of stress values through the interval was adopted  as the third measure.
-\emph{Peak} value was adopted as the forth measure to show the maximal stress value in current interval.
-Next,
-based on the above measures,
-we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
-
-
-\subsubsection{Statistical Model of Stress-buffering Effects}
 In our problem,
 there were two sets of stressful intervals to compare:
 the SI set and the U-SI set.
@@ -220,6 +141,8 @@ then the hypothesis was denoted as:
 \begin{equation}
 H_0: F = G \quad versus \quad H_1: F \neq G.
 \end{equation}
+
+\subsubsection{Statistical Model of Stress-buffering}
 
 Under such hypothesis,
 $H_0$ indicated points in SI and U-SI were under similar distribution,
@@ -293,6 +216,119 @@ Thus we judged whether the positive events conducted significant stress bufferin
 if $f(SI,USI)=(nr)^{1/2}(T_{r,n}-\mu_{r})/{\mu_r}^2>\alpha$ ($\alpha = 1.96$ for $P=0.025$),
 then the hypothesis $H_1$ was true.
 
+%Linguistic expressions
+\subsubsection{Measures}
+\paragraph{Linguistic expressions}
+Positive and stressful expressions were extracted from the post content.
+The first linguistic measure was the frequency of \emph{positive emotional words},
+which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons ~\citep{Tausczik2010The}.
+The second measure was the frequency of \emph{positive event topic words} in six dimensions,
+reflecting the existence of positive events (see table \ref{tab:topicWords} for examples).
+Another important factor was wether existing \emph{self-mentioned words} (i.e., \emph{'I','we','my'}).
+\citep{Li2014Major} showed that self-mentioned words exhibited high probability that the current event
+was related to the author,
+rather than the opinion about a public event or life events about others.
+In addition to positive-related linguistic descriptions,
+the frequency of \emph{stressor event topic words} in five dimensions
+were adopted to represent the degree of attention for each type of stressor event.
+The frequency of \emph{stressful emotional words}, based on four categories (anger, anxiety, hate, sad) of LICW lexicons, represented general stressful emotion during the interval.
+For each student, we identified positive events in six dimensions applying the parser model in section \ref{sec:frame1}, and corresponding intervals based on algorithm in section \ref{subsec:interval}.
+For intervals in two groups U-SI and SI,
+Figure xx shows the distribution of above five measures in U-SI and SI.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
+\caption{\small{Comparing topic words of five types of stressor events during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:stopic}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/utopic.eps}
+\caption{\small{Comparing topic words of six types of positive events during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:utopic}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/topicAll.eps}
+\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:topicAll}
+\end{figure}
+
+
+%all, positive, stressful
+\paragraph{Posting behaviors}
+Stress could lead to abnormal posting behaviors,
+reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
+We considered three measures of posting behaviors in each time unit (day).
+The first measure was \emph{posting frequency},
+representing the total number of posts per day.
+Research in \cite{Li2017Analyzing} indicated that overwhelmed adolescents tended to post more to express their stress for releasing and seeking comfort from friends.
+The second measure was the \emph{positive posting frequency}, indicating the number of positive posts per day.
+The third measure \emph{stressful posting frequency} per day highlighted the stressful posts among all posts.
+Figure \ref{fig:post}shows the distribution of above three measures in U-SI and SI, respectively.
+
+%The forth measure \emph{original frequency} was the number of original posts,
+%which filtered out re-tweet and shared posts.
+%Compared to forwarded posts, original posts indicated higher probability that users were talking about themselves.
+%Thus in each interval, user's posting behavior was represented as a four-dimension vector.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/role.eps}
+\caption{\small{Comparing role expressions during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:role}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/post.eps}
+\caption{\small{Comparing posting behaviors during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:post}
+\end{figure}
+
+
+\paragraph{Stress change modes}
+Inspired by the pilot study,
+the global stress change modes during a stressful interval were depicted through four measures:
+\emph{sequential stress level, length of stressful interval, RMS value,} and \emph{maximal value}.
+Basically, \emph{stress level} per day constructed a sequential measure during a stressful interval,
+recording stress values and fluctuation on each time point.
+As positive events might conduct impact on stressed adolescents,
+and postpone the beginning or promote the end of a stressful interval,
+we took \emph{length} as the second factor representing the interval stress change mode.
+To quantify the intensity of stress fluctuations,
+\emph{RMS} (root mean square) of stress values through the interval was adopted  as the third measure.
+\emph{Peak} value was adopted as the forth measure to show the maximal stress value in current interval.
+Next,
+based on the above measures,
+we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
+Figure \ref{fig:stress1,fig:stress2} exhibits eight stress change modes during SI and U-SI.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stress1.eps}
+\caption{\small{Comparing stress change modes during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:stress1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stress2.eps}
+\caption{\small{Comparing stress change modes during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:stress2}
+\end{figure}
+
+
+
 \subsubsection{Monotonous Model of Stress-buffering}
 To verify the monotonous stress changes at both the early and late stress-buffering stages,
 for each stressful interval in SI (n=2,582) and U-SI (n=1,914),
@@ -330,3 +366,4 @@ Here we adopt $\alpha$ = 1.96, $P$ = 0.025.
 We conduct comparison for above four situations,
 to observe whether the occurrence of positive events relieve the monotonic negative effect of $g(SI,SI^{rear})$
 and the monotonic positive effect of $g(SI^{front},SI)$.
+

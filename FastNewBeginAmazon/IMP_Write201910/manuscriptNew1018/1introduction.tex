@@ -1,0 +1,134 @@
+\section{Introduction}
+\emph{Motivation}: Life is always full of ups and downs.
+Accumulated stress could drain inner resources,
+leading to psychological maladjustment, depression and even suicidal behaviours \citep{Nock2008Suicide}.
+Compared with adults, young people exhibit more exposure to stress
+due to the immature inner status and lack of experience \citep{older}.
+According to the latest report released by American Psychological Association in 2018,
+91\% of youngest adults had experienced physical or emotional symptoms due to stress in the past month compared to 74\% of adults \citep{APA2018}.
+More than 30 million Chinese adolescents are suffering from psychological stress,
+and nearly 30\% of them have a risk of depression \citep{ChinaTeen2019}.
+Stress-induced mental health problems are becoming an important social issue worldwide.
+%1.心理压力问题很严重
+
+%2.积极事件可以缓解心理压力。
+On the other hand, positive life events, such as satisfying social interactions,
+excellent academic performance and pleasant entertainment activities,
+could exert protective effects on emotional distress in both directly and indirectly ways by \emph{'buffering'} ~\citep{Shahar2002Positive, Cohen2010Positive},
+with respect to physiological, psychological, and social coping resources~\citep{Cohen1984Positive,Needles1990Positive}.
+Researchers indicated that positive events mitigated the relation between negative events and maladjustment in samples of adolescents experiencing family transitions \citep{Doyle2003Positive}.
+The written expression of positive feelings had also been proven to prompt increased cognitive re-organization among an undergraduate student group \citep{Coolidge2009A}.
+Positive events also have been linked to medical benefits, such as improving mood, serum cortisol levels, and lower levels of inflammation and hypercoagulability \citep{Caputo1998Influence,Jain2010Effects}.
+Thus, tracking the state of stress-buffering is important for understanding the mental status of stressed individuals.
+%------------
+
+\emph{Existing solutions}:
+Previous studies have been focusing on conducting measurement of positive events and stress-buffering state after events through questionnaires,
+including Hassles \& Uplifts Scales~~\citep{Kanner1981Comparison},
+Perceived Benefit Scales~~~~~\citep{Mcmillen1998The},
+Interpretation of Positive Events Scale~\citep{Alden2008Social}
+and Adolescent Self-Rating Life Events Checklist~~~\citep{Jun2008Influence}.
+Recent scholars have demonstrated the feasibility to sense and predict users' stress from social networks~\citep{XueUbicomp13,Xue2014Detecting,Lin2014User,Li2015When,Li2015Predicting,Li2015Using,
+Li2017Analyzing,Li2017Exploring}
+through content (linguistic text, emoticons, pictures)
+and behavioral (abnormal posting time, comment/response actions) measures.
+
+%静态的; 行为和内容是自发的，避免干扰;
+%-cause, period
+%-dynamic, behavioral
+If we view the aforementioned studies on positive events as static sensing of stress-buffering,
+this study approaches the problem from the dynamic process of stress-buffering
+and aims at a solution at both microblogging content and behavioral levels
+under the hypothesis that
+1)the occurrence of positive events can be reflected in adolescents' microblogs,
+and 2)positive events causes monotonous changes in stress.
+the moment in which a positive event occur is related to stress-buffering effects.
+Since the subjective self-report investigations are susceptible to many factors,
+such as social appreciation and pressures from measurement scenarios,
+microblogging characteristics at the behavioral level are objective expressions that can assist content characteristics.
+
+%1)stress与positive重叠，是双向的，所看到的并非看到的;for example2)是从感知到coping，也可以进一步预测
+Another difference from the previous studies lies in that,
+despite the unique advantages of social networks over traditional survey methods
+in offering self-expressed content and behavioral information,
+existing microblog-based researches stopped at the analysis of stress,
+and none went further to capture positive events that may play a key role in adolescents' stress coping mechanism.
+For example, it is ‘hiking tomorrow’ that buffers the stress of ‘losing the exam today’.
+Understanding stress-buffering patterns of positive events
+is helpful in predicting and guiding stressful adolescents coping with stress.
+
+\emph{Our work}:
+To this end,
+this paper proposes to study adolescent stress in a dual perspective of stress generation and stress-buffering,
+and view it as the superposition effect of stressors and positive events.
+By investigating the connection between positive events and stress changes
+reflected through adolescents' microblogging content and behaviors,
+we discover stress-buffering patterns of positive events and further predict future stress under such mitigation.
+Exploiting stress-buffering effects of positive events
+is also advantageous in handling the confusing situation
+whether an adolescent who doesn't express stressful information from microblogs is actually under stress.
+%say nothing
+
+However, capturing the stress-buffering process of positive events is not a trivial task.
+Three fundamental challenges need to be addressed:
+%2) What are counted as stress-buffering indicators?
+1) What is the latent connection between positive events and adolescents' stress-buffering reflections from microblogs?
+2) How to extract positive events and its impact interval from microblogs?
+3) What are the criteria to predict future stress under the impact of positive events?
+%原来的不算问题，要灵魂，而非技术！！！。原来问题是：a 和 b之间的correlation到底是什么?怎样算一个区间?提取规则是什么?
+%发生时刻与缓解有怎样的关联;correlation到底是怎样的?如何把positive和stress的混合效果分离开;
+
+%1
+A pilot study was firstly conducted on the microblog data (n=27,346) of a group of high school students (n=500)
+associated with the school's scheduled positive events (n=75) and stressor events (n=122).
+Stressful intervals were divided into two comparative categories:
+intervals impacted by scheduled positive events (denoted as U-SI, n=259)
+and intervals not impacted by scheduled positive events (denoted as SI, n=518).
+After observing the posting behaviors and contents of stressed students in both SI and U-SI groups,
+several implications were discussed to guide the next step study.
+
+%3
+Motivated by the implications from the pilot study,
+we model the connection between positive events and adolescents' stress-buffering reflections
+as the statistical difference in two comparative situations SI and U-SI.
+Three groups of measures were adopted to depict adolescent stress-buffering at period-level:
+posting behaviours, stress change modes, linguistic expressions.
+The monotonous changes of stress intensity caused by positive events were measured in temporal order.
+%4
+As an exploration,
+according to the occurrence of automatically extracted positive events,
+we covered its stress-buffering effects into each time unit
+and integrated such effect into stress prediction.
+
+%2
+In this paper,
+to realize automatically extraction of positive events,
+we stood upon and extended previous stress and event detection works.
+A Chinese linguistic parser model was applied to extract positive events in the linguistic structure
+\emph{[type, (act, doer, description)]}.
+We followed the categorization of adolescents' positive events in six dimensions (entertainment, school life, romantic, pear relationship, self-cognition, family life) and extended SC-LIWC lexicons to 2,606 phases.
+Stressful intervals (SI) and stressful intervals impacted by positive events(U-SI) were identified according to temporal orders.
+
+The rest of the paper is organized as follows.
+We review the literature in section \ref{sec:related},
+and introduce the pilot study in section \ref{sec:obs}.
+The procedure for extracting positive events is presented in section \ref{sec:frame1}.
+The connection between positive events and adolescents' stress-buffering from microblogs are discussed and modeled in section \ref{sec:frame2}.
+We extend the study to integrating stress-buffering patterns into future stress prediction in section \ref{subsec:predict},
+and present the experimental results in section \ref{subsec:experiment}.
+The future work is discussed in section \ref{sec:conclude}.
+
+
+%*********************IMP
+%Two hypotheses were tested.
+%\textbf{H1}: The stress-buffering effect of positive events is correlated with
+%a)posting behavior, b)stress change mode and c)microblog linguistic expressions.
+%\textbf{H2}: Positive events buffers monotonous stress changes at both the early stage (before stress beginning)
+%and late stage (after the end of stress).
+%In response to the theoretical hypothesis,
+%we propose new measurement methods in a non-invasion way based on public social network data.
+%Two research questions are proposed:
+%1) How to (a) automatically extract the positive events experienced by adolescents from microblogs,
+%and (b) identify the time interval impacted by a particular positive event.
+%2) How to quantify the stress-buffering effect of positive events based on above microblog characteristics.
+%**********************
