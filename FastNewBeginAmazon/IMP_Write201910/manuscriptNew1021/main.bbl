@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -65,6 +65,14 @@
 \newblock \bibinfo{title}{Ltp: A chinese language technology platform}.
 \newblock In: \bibinfo{booktitle}{Proc. of ACL}. \bibinfo{year}{2010}. p.
   \bibinfo{pages}{13--16}.
+%Type = Article
+\bibitem[{Cleveland and Devlin(1988)}]{Cleveland1988Locally}
+\bibinfo{author}{Cleveland\xfnm[ W.S.]}, \bibinfo{author}{Devlin\xfnm[ S.J.]}.
+\newblock \bibinfo{title}{Locally weighted regression: An approach to
+  regression analysis by local fitting}.
+\newblock \bibinfo{journal}{Publications of the American Statistical
+  Association}
+  \bibinfo{year}{1988};\bibinfo{volume}{83}(\bibinfo{number}{403}):\bibinfo{pages}{596--610}.
 %Type = Article
 \bibitem[{Cohen et~al.(1988)Cohen, Cohen, Cohen, Cohen, Cohen, Adad, Cohen,
   Cohen, Cohen and Cohen}]{Cohen1988Statistical}

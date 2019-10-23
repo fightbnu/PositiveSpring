@@ -1,5 +1,5 @@
 \section{Framework}
-We first introduce the procedure to extract positive event and its intervals from microblogs,
+We first introduce the procedure to extract positive event and its intervals from microblogs. 
 Based on this,
 we present a statistical model to depict
 the connection between positive events and adolescents' stress-buffering patterns through three groups of content and behavioral measures.
@@ -218,6 +218,22 @@ then the hypothesis $H_1$ was true.
 
 %Linguistic expressions
 \subsubsection{Measures}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
+\caption{\small{Comparing topic words of five types of stressor events during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:stopic}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/emotion.eps}
+\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:topicAll}
+\end{figure}
+
 \paragraph{Linguistic expressions}
 Positive and stressful expressions were extracted from the post content.
 The first linguistic measure was the frequency of \emph{positive emotional words},
@@ -238,29 +254,35 @@ Figure xx shows the distribution of above five measures in U-SI and SI.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
-\caption{\small{Comparing topic words of five types of stressor events during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:stopic}
-\end{figure}
-
-\begin{figure}[h]
-\centering
 \includegraphics[width=\linewidth]{figs/gray/utopic.eps}
 \caption{\small{Comparing topic words of six types of positive events during stressful intervals in two situations:
 1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
 \label{fig:utopic}
 \end{figure}
 
-
-\begin{figure}[h]
+\begin{figure*}
 \centering
-\includegraphics[width=\linewidth]{figs/gray/topicAll.eps}
-\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in two situations:
+\includegraphics[width=\linewidth]{figs/gray/stress.eps}
+\caption{\small{Comparing stress change modes during stressful intervals in two situations:
 1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:topicAll}
-\end{figure}
-
+\label{fig:stress}
+\end{figure*}
+\paragraph{Stress change modes}
+Inspired by the pilot study,
+the global stress change modes during a stressful interval were depicted through four measures:
+\emph{sequential stress level, length of stressful interval, RMS value,} and \emph{maximal value}.
+Basically, \emph{stress level} per day constructed a sequential measure during a stressful interval,
+recording stress values and fluctuation on each time point.
+As positive events might conduct impact on stressed adolescents,
+and postpone the beginning or promote the end of a stressful interval,
+we took \emph{length} as the second factor representing the interval stress change mode.
+To quantify the intensity of stress fluctuations,
+\emph{RMS} (root mean square) of stress values through the interval was adopted  as the third measure.
+\emph{Peak} value was adopted as the forth measure to show the maximal stress value in current interval.
+Next,
+based on the above measures,
+we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
+Figure \ref{fig:stress} exhibits eight stress change modes during SI and U-SI.
 
 %all, positive, stressful
 \paragraph{Posting behaviors}
@@ -277,14 +299,6 @@ Figure \ref{fig:post}shows the distribution of above three measures in U-SI and 
 %The forth measure \emph{original frequency} was the number of original posts,
 %which filtered out re-tweet and shared posts.
 %Compared to forwarded posts, original posts indicated higher probability that users were talking about themselves.
-%Thus in each interval, user's posting behavior was represented as a four-dimension vector.
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/role.eps}
-\caption{\small{Comparing role expressions during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:role}
-\end{figure}
 
 \begin{figure}[h]
 \centering
@@ -294,31 +308,28 @@ Figure \ref{fig:post}shows the distribution of above three measures in U-SI and 
 \label{fig:post}
 \end{figure}
 
-
-\paragraph{Stress change modes}
-Inspired by the pilot study,
-the global stress change modes during a stressful interval were depicted through four measures:
-\emph{sequential stress level, length of stressful interval, RMS value,} and \emph{maximal value}.
-Basically, \emph{stress level} per day constructed a sequential measure during a stressful interval,
-recording stress values and fluctuation on each time point.
-As positive events might conduct impact on stressed adolescents,
-and postpone the beginning or promote the end of a stressful interval,
-we took \emph{length} as the second factor representing the interval stress change mode.
-To quantify the intensity of stress fluctuations,
-\emph{RMS} (root mean square) of stress values through the interval was adopted  as the third measure.
-\emph{Peak} value was adopted as the forth measure to show the maximal stress value in current interval.
-Next,
-based on the above measures,
-we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
-Figure \ref{fig:stress1,fig:stress2} exhibits eight stress change modes during SI and U-SI.
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/stress.eps}
-\caption{\small{Comparing stress change modes during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:stress1}
-\end{figure}
-
+\begin{table*}
+\begin{center}
+\caption{\small{Monotonous stress intensity changes in U-SI and SI intervals compared with adjacent intervals.}}
+%\resizebox{\textwidth}{15mm}{
+\small{
+\begin{tabular}{l cccccc cccccc} \\\hline\hline
+\multirow{2}{1cm}{}
+&\multicolumn{2}{c}{school life}
+&\multicolumn{2}{c}{romantic}
+&\multicolumn{2}{c}{peer relationship}
+&\multicolumn{2}{c}{self-cognition}
+&\multicolumn{2}{c}{family life}
+&\multicolumn{2}{c}{all types}\\
+&U-SI	    &	SI	        &U-SI	    &SI	        &U-SI	   &SI	
+&U-SI	    &	SI	        &	U-SI	&SI	        &U-SI	   &SI\\  \hline
+\# interval         &   365	        &	514	        &	536	        &	587	        &128	    &	391	        &	564	           &	609	            &	321	        &	481	        &	1,914	    &2,582	 \\
+front $\rightarrow$ I &	72.60\% &	78.79\% &	69.03\% 	&77.51\%   &74.22\%    &81.59\%    &70.04\%    &77.67\%  &67.91\%     &77.96\%    &70.17\%    &78.51\% \\
+I $\rightarrow$ rear  &	75.89\% &	78.40\% &	74.63\% 	&79.05\%   &78.13\%    &82.61\%    &75.00\%    &79.15\%   &74.14\%    &79.42\%    &75.13\%    & 79.55\%\\ \hline \hline
+\end{tabular}}%}}
+\label{tab:fontrear}
+\end{center}
+\end{table*}
 
 \subsubsection{Monotonous Model of Stress-buffering}
 To verify the monotonous stress changes at both the early and late stress-buffering stages,

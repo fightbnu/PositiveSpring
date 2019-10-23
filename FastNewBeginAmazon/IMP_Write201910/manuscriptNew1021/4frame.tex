@@ -1,5 +1,5 @@
 \section{Framework}
-We first introduce the procedure to extract positive event and its intervals from microblogs,
+We first introduce the procedure to extract positive event and its intervals from microblogs. 
 Based on this,
 we present a statistical model to depict
 the connection between positive events and adolescents' stress-buffering patterns through three groups of content and behavioral measures.
@@ -86,14 +86,14 @@ Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\
 \subsubsection{Impact Intervals of Positive Events}
 \label{subsec:interval}
 We followed and extended ~\citep{Li2017Analyzing} to identify the impact interval of each positive event to further study its stress-buffering pattern.
-Splitting interval is a common time series problem, and here we identified the target interval in three steps.
+The target interval was identified in three steps.
 
 Step1:
 Extracted positive events, stressor events and filtered out candidate intervals.
 For each candidate interval,
 we set its length to more than 3 days and a maximum gap of 1 day between two neighboured stressed days.
 Since the stress series detected from microblogs were discrete points,
-loess method was adopted to highlight characteristics of the stress curve.
+locally weighted regression ~\citep{Cleveland1988Locally} method was adopted to highlight characteristics of the stress curve.
 
 Step2: Judged stressful intervals through hypothesis testing.
 A Poisson based probability model was adopted to measure how confidently the current interval was a stressful interval.
@@ -111,13 +111,13 @@ the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ 
 whether $I_1$ was a stressful interval.
 
 Step 3: Divided stressful intervals into SI set and U-SI set in temporal order.
-For a detected stressful interval $I = <t_1,\cdots,t_n>$, we considered the temporal order between $I$ and any detected positive event $u$ happening at time point $t_u$ in three cases:
+For a detected stressful interval $I = <t_1,\cdots,t_n>$, we considered the temporal order between $I$ and any detected positive event $u$ happening at time point $t_u$ in three cases:\\
 1) If the positive event $u$ happened during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ was judged as $I \in U-SI$.
-2) If the positive event happened nearby a stressful interval,
+2) If the positive event happened nearby a stressful interval,\\
 considering the probability that it conducted impact on current stressful interval.
 Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e.,
 if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in U-SI$.
-If a stressful interval satisfies none of the above conditions, we classify it into the SI set.
+If a stressful interval satisfies none of the above conditions, we classify it into the SI set.\\
 3) Other stressful intervals were divided into U-SI set.
 
 %M1: 理清楚各measure怎算，由此划分3块or4块
