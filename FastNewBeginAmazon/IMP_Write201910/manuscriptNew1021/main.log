@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  24 OCT 2019 17:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.9)  24 OCT 2019 06:21
 entering extended mode
 **main.tex
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\elsarticle\elsarticle.cls
@@ -80,8 +80,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.spl) (C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -89,8 +89,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count93
 )
 \splwrite=\write3
-
-(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+ (C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
@@ -1188,8 +1187,8 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count310
 \c@@ppsaveapp=\count311
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.aux
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.aux
 
 LaTeX Warning: Label `fig:frequency' multiply defined.
 
@@ -1351,25 +1350,24 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.out)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.out)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.out)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.out)
 \@outlinefile=\write4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
 File: standard.bdg 2008/12/29 4.8.2
-)
-(C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
+) (C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
 File: extended.enc 2008/12/29 4.8.2
 )
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\1introduction.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\1introduction.tex
 LaTeX Font Info:    Try loading font information for U+txmia on input line 1.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
@@ -1426,8 +1424,8 @@ buffering
  []
 
 [2])
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\2literature.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\2literature.tex
 Overfull \hbox (18.38005pt too wide) in paragraph at lines 5--14
 \OT1/txr/m/n/10 resilient in-di-vid-u-al-s to re-cov-er ef-fec-tive-ly from dai
 -ly stress. Through
@@ -1478,8 +1476,8 @@ Overfull \hbox (1.05011pt too wide) in paragraph at lines 49--70
  []
 
 [3])
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\3pilot.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\3pilot.tex
 Overfull \hbox (2.24005pt too wide) in paragraph at lines 87--1
 \OT1/txr/m/n/10 mum Mean Dis-crep-an-cy. ([], []) adopt-ed the $\OML/txmi/m/it/
 10 r$\OT1/txr/m/n/10 -nearest
@@ -1509,8 +1507,8 @@ Overfull \hbox (13.06006pt too wide) in paragraph at lines 100--121
 [5]
 File: figs/activity.eps Graphic file (type eps)
  <figs/activity.eps>)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\4frame.tex
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\4frame.tex
 Overfull \hbox (14.37944pt too wide) in paragraph at lines 9--24
 \OT1/txr/m/n/10 LIWC (ex-pec-ta-tion, joy, love, sur-prise) ([]).
  []
@@ -1529,67 +1527,80 @@ Events
 
 [7]
 File: figs/gray/stress.eps Graphic file (type eps)
- <figs/gray/stress.eps> [8]
-Overfull \hbox (24.05006pt too wide) in paragraph at lines 243--255
-\OT1/txr/m/n/10 even-t ($\OML/txmi/m/it/10 P$\OT1/txr/m/n/10 ='academic', 'ro-m
-an-tic', 'peer re-la-tion-ship', 'self-cognition',
+ <figs/gray/stress.eps>
+Overfull \hbox (0.28485pt too wide) in paragraph at lines 228--255
+$[][]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 s[]\OT1/txr/m/n/10 )\OML/txmi/m/it/10 ;
+ V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 ) = []\OML/txmi/m/it/10
+ V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 )$, $\OML/txmi/m/it/10 
+V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 ) = []$,
+ []
+
+[8]
+Overfull \hbox (2.67009pt too wide) in paragraph at lines 262--276
+\OT1/txr/m/n/10 peer re-la-tion-ship re-duced ado-les-cents' ro-man-tic stress 
+(sub-graph
  []
 
 
-Overfull \hbox (7.08006pt too wide) in paragraph at lines 261--265
-\OT1/txr/m/n/10 from 'self-cognition'. Fig-ure [][][][][][] ex-hibit-s eight st
-ress change modes
+Overfull \hbox (6.36005pt too wide) in paragraph at lines 262--276
+\OT1/txr/m/n/10 events. The above s-tatis-tic-s on stress and pos-i-tive e-mo-t
+ion change
  []
 
 
-Overfull \hbox (2.12006pt too wide) in paragraph at lines 268--282
-\OT1/txr/m/n/10 lex-i-con-s  ([]), rep-re-sent-ed gen-er-al stress-
+Overfull \hbox (3.50008pt too wide) in paragraph at lines 262--276
+\OT1/txr/m/n/10 modes ini-tial-ly re-flect-ed stress-buffering ef-fect-s of d-i
+f-fer-en-t type-
  []
 
 File: figs/gray/emotion.eps Graphic file (type eps)
 <figs/gray/emotion.eps>
 File: figs/gray/stopic.eps Graphic file (type eps)
- <figs/gray/stopic.eps> [9]
-File: figs/gray/post.eps Graphic file (type eps)
- <figs/gray/post.eps>
+ <figs/gray/stopic.eps>
+Overfull \hbox (13.51006pt too wide) in paragraph at lines 281--326
+\OT1/txr/m/n/10 al stress-ful e-mo-tion dur-ing the in-ter-val  ([]).
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (0.98392pt too wide) in paragraph at lines 334--349
+[9]
+File: figs/gray/post.eps Graphic file (type eps)
+ <figs/gray/post.eps>
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 355--370
  [][][] 
  []
 
 
-Overfull \hbox (3.06062pt too wide) in paragraph at lines 353--370
+Overfull \hbox (3.06062pt too wide) in paragraph at lines 374--391
 \OT1/txr/m/n/10 1) $\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; S
 I[]$\OT1/txr/m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when stress-
  []
 
+[10]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 379.
+LaTeX Font Warning: Command \small invalid in math mode on input line 400.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 380.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 401.
 
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 380--389
+Overfull \hbox (1.29259pt too wide) in paragraph at lines 401--410
 \OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
 \OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
 $
  []
 
-[10])
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\5experiment.tex
+)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\5experiment.tex
 File: figs/boxNew.eps Graphic file (type eps)
- <figs/boxNew.eps>
+ <figs/boxNew.eps> [11]
 Overfull \hbox (5.0801pt too wide) in paragraph at lines 65--80
 [][]\OT1/txr/m/n/10 Further more, to ver-i-fy the monotonous stress changes whe
 n
  []
 
-[11]
 File: figs/predictWindow2.eps Graphic file (type eps)
- <figs/predictWindow2.eps>
+<figs/predictWindow2.eps>
 Overfull \hbox (6.7489pt too wide) in paragraph at lines 185--197
 \OT1/txr/m/n/10 cient-ly (with MSE, RMSE, MAPE and MAD re-duced by 49.34%,
  []
@@ -1597,19 +1608,20 @@ Overfull \hbox (6.7489pt too wide) in paragraph at lines 185--197
 [12] [13]
 File: figs/threshNew.eps Graphic file (type eps)
  <figs/threshNew.eps>)
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\6conclude.tex [14]
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\6conclude.tex [14]
 Overfull \hbox (1.6301pt too wide) in paragraph at lines 58--68
 \OT1/txr/m/n/10 mi-croblog da-ta set col-lect-ed from so-cial net-work-s of hig
 h school
  []
 
 )
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.bbl [15]
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.bbl [15]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 168.
 
- (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Underfull \hbox (badness 1275) in paragraph at lines 162--171
@@ -1617,7 +1629,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 162--171
 par-i-son
  []
 
-
+[16]
 Underfull \hbox (badness 1939) in paragraph at lines 406--412
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1628,12 +1640,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--412
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-) [16]
+) [17
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
 
-(C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.aux)
+(C:\Users\PSYLAB_73\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Writ
+e201910\manuscriptNew1021\main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 
@@ -1650,12 +1664,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19082 strings out of 495355
- 285876 string characters out of 3183882
- 443715 words of memory out of 3000000
- 21810 multiletter control sequences out of 15000+200000
+ 19083 strings out of 495355
+ 286028 string characters out of 3183883
+ 442750 words of memory out of 3000000
+ 21811 multiletter control sequences out of 15000+200000
  55114 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,872b,766s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,872b,824s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (16 pages, 221676 bytes).
+Output written on main.dvi (17 pages, 226232 bytes).

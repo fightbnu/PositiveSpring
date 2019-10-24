@@ -141,7 +141,7 @@ H_0: F = G \quad versus \quad H_1: F \neq G.
 Under such hypothesis,
 $H_0$ indicated points in SI and U-SI were under similar distribution,
 while $H_1$ meant points in SI and U-SI were under statistically different distributions,
-namely positive events conducted obvious stress-buffering effect. 
+namely positive events conducted obvious stress-buffering effect.
 
 \subsubsection{Statistical Model of Stress-buffering Effect}
 We took the K-Nearest Neighbor based method (\cite{Schilling1986Multivariate}) to judge the existence of significant difference between set SI and set U-SI.
@@ -224,86 +224,107 @@ In this study, we set $a = b = c = 1/3$.
 
 \subsubsection{Measures}
 \label{subsubM}
-\paragraph{Stress change modes}
-Inspired by the pilot study, 
-to quantify the intensity of stress changes during a stressful interval, 
-four measures were adopted: 
-\emph{average value of stress, accumulated value of stress, RMS value of stress,} and \emph{maximal value of stress}. 
-For interval $I=<t_1,t_2,\cdots,t_n>$, $|I|=n$ (day), 
-its stress series was denoted as $S=<s_1,s_2,\cdots,s_n>$, 
-where $s_i \in S$ was the average stress value of microblogs posted in day $i$. 
-The four measures were denoted as $V_{average}(I)= \frac{1}{n}\sum_{i=1}^{n}(s_i)$, 
-$V_{accumulate}(I)= \sum_{i=1}^{n}(s_i)$, 
-$V_{RMS}(I) = \sqrt[2]{ \frac{1}{n}\sum_{i=1}^{n}{(s_i)^2}}$, 
-$V_{maximal}(I) = \{s_i |\forall s_j \in I \& j \neq i, s_i \geq s_j\}$. 
-Similarly, 
-we applied the four measures into the positive emotion fluctuations, 
-which might reflect the complementary changes to stress. 
-
-To show the occurrence of above mentioned measures, 
-we present a 7$\times$5 gray-scale map for each measure. 
-The x-axis (ranging from P1 to P6) represent each dimension of positive event 
-($P$={'academic', 'romantic', 'peer relationship', 'self-cognition', 'family life', 'entertainment'}),
-and the 7th column represent no positive event happened in the observation interval. 
+\paragraph{\textbf{Stress and positive emotion change modes}}
+Inspired by the pilot study,
+to quantify the intensity of stress changes during a stressful interval,
+4 measures were adopted:
+average value of stress, accumulated value of stress, RMS value of stress, and maximal value of stress.
+For interval $I=<t_1,t_2,\cdots,t_n>$, $|I|=n$ (day),
+its stress series was denoted as $S=<s_1,s_2,\cdots,s_n>$,
+where $s_i \in S$ was the average stress value of microblogs posted in day $i$.
+The four measures were denoted as
+$V_{accumulate}(I)= \sum_{i=1}^{n}(s_i), V_{average}(I)= \frac{1}{n}V_{accumulated}(I)$,
+$V_{RMS}(I) = \sqrt[2]{ \frac{1}{n}\sum_{i=1}^{n}{(s_i)^2}}$,
+$V_{maximal}(I) = \{s_i |\forall s_j \in I \& j \neq i, s_i \geq s_j\}$.
+Similarly,
+we applied the 4 measures into the positive emotion fluctuations,
+which might reflect the complementary changes to stress. %here to split
+To show the occurrence of above mentioned measures,
+we present a 7$\times$5 gray-scale map for each measure.
+The x-axis (ranging from P1 to P6) represent each dimension of positive event
+($P$={academic, romantic, peer relationship, self-cognition, family life, entertainment}),
+and the 7th column represent no positive event happened in the observation interval.
 The y-axis (ranging from S1 to S5) represent each dimension of stressor event
-($E$={'academic', 'romantic', 'peer relationship', 'self-cognition', 'family life'}). 
-The color of each point in gray-scale map depended on the average value of current measure 
-over the corresponding set of intervals. 
-For set of intervals $\textbf{I}_{<e,p>} = <I_1,I_2,\cdots,I_m>$, 
-where the stress was caused by stressor events in type $e \in E$ and impacted by positive events in type $p \in P$, 
-above measures were presented by: 
+($E$={academic, romantic, peer relationship, self-cognition, family life}).
+The color of each point in gray-scale map depended on the average value of current measure
+over the corresponding set of intervals.
+For set of intervals $\textbf{I}_{<e,p>} = <I_1,I_2,\cdots,I_m>$,
+where the stress was caused by stressor events $e \in E$ 
+and impacted by positive events $p \in P$, 
+above measures were presented by:
 \begin{equation}
 \begin{aligned}
-& V_{accumulated}(\textbf{I}_{<e,p>})=\frac{1}{m}\sum_{i=1}^m\frac{1}{n}\sum_{j=1}^n{s_j \in I_i}&
+& V_{accumulated}(\textbf{I}_{<e,p>})=\sum_{i=1}^m{V_{accumulated}I_i}&\\
+& V_{average}(\textbf{I}_{<e,p>})=\frac{1}{m}\sum_{i=1}^m\I_i&\\
+& V_{RMS}(\textbf{I}_{<e,p>})=\sqrt{\frac{1}{m}\sum_{i=1}^mI_i^2}&\\
+& V_{maximal}(\textbf{I}_{<e,p>}) = {max(V_{maximal}(I_i))|i\in[1,m]} &
  \end{aligned}
  \end{equation}
+For example, in figure \ref{fig:stress} a),
+point (P4,S1) was the value of average stress in all $\textbf{I}_{<1,4>}$ intervals,
+where stress was caused mainly by academic events (S1) and impacted by positive events related to self-cognition (P4).
+Figure \ref{fig:stress} exhibited 8 stress change modes (subgraph a) to d)) and positive emotion change modes (subgraph e) to h)) in both SI and U-SI sets.
+Statistical results showed that the occurrence of positive events significantly reduced accumulated stress (subgraph a)) and maximal stress (subgraph d)). 
+Positive events in dimensions of romantic and peer relationship reduced adolescents' romantic stress (subgraph b)). 
+The occurrence of positive events about peer relationship reduced the RMS value of stress (subgraph c)). 
+On the other hand, 
+occurrence of positive events caused obvious increase of all positive change modes (subgraph e) to h)),
+especially in stressful intervals caused by romantic and peer relationship events. 
+The above statistics on stress and positive emotion change modes 
+initially reflected stress-buffering effects of different types of positive events
+on each dimension of stressor events. 
 
-For example, in figure \ref{fig:stress} a), 
-point (4,1) was the value of average stress in all U-SI intervals,
-where stress caused mainly by 'academic' events was impacted by positive events come from 'self-cognition'. 
-Figure \ref{fig:stress} exhibits eight stress change modes during SI and U-SI. 
 
-
-\paragraph{Linguistic expressions} 
-Positive and stressful linguistic expressions were extracted from the microblog content. 
+\paragraph{\textbf{Linguistic expressions}}
+%Positive and stressful linguistic expressions were extracted from the microblog content.
 %stressful emotion
-The first linguistic measure was the frequency of \emph{stressful emotional words}, 
-based on four categories (anger, anxiety, hate, sad) of LICW lexicons ~\citep{Tausczik2010The}, 
-represented general stressful emotion during the interval.
+For each post, we identified following linguistic expressions
+applying the segmentation model and parser model in section \ref{sec:frame1}.
+The first measure was the frequency of stressful emotional words based on four categories (anger, anxiety, hate, sad) of LICW lexicons,
+represented general stressful emotion during the interval ~\citep{Tausczik2010The}.
 %positive emotion
-The second measure was the frequency of \emph{positive emotional words}, 
-which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons. 
-%stressor topic 
-The third measure was the frequency of \emph{stressor event topic words},
-representing the degree of attention for five dimensions of stressor events.
-Another important factor was wether \emph{self-mentioned words} (i.e., \emph{'I','we','my'}) existed, since self-mentioned words exhibited high probability that the current event was related to the author, 
-rather than the opinion about a public event or life events about others (\citep{Li2014Major}). 
-For each post, we identified above measures applying the segmentation model and parser model in section \ref{sec:frame1}.
-
-%mission 3, 分析图 
-Figure \ref{fig:topicAll} a) and b) shows the frequency of stressful emotional words and positive emotional words, respectively. 
+The second measure was the frequency of positive emotional words,
+which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons.
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{figs/gray/emotion.eps}
 \caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in SI sets and U-SI sets.}}
 \label{fig:topicAll}
-\end{figure} 
-
-
-Figure \ref{fig:stopic} 
-shows the distribution of topic words of stressor events in U-SI and SI, respectively. 
-%1) positive不出现使其变深 (应
-%2)相应行数变深;但s2,s4共同出现
-%3) P2,P3对S1缓解明显 a) b) 
+\end{figure}
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figs/gray/stopic.eps}
 \caption{\small{Comparing topic words of five dimensions of stressor events during stressful intervals in SI sets and U-SI sets.}}
 \label{fig:stopic}
 \end{figure}
+%stressor topic
+The third measure was the frequency of stressor event topic words,
+representing the degree of attention for five dimensions of stressor events.
+Another important factor was wether self-mentioned words (i.e., \emph{'I','we','my'}) existed, since self-mentioned words exhibited high probability that the current event was related to the author,
+rather than the opinion about a public event or life events about others (\citep{Li2014Major}). 
+Figure \ref{fig:topicAll} a) and b) showed the frequency of stressful emotional words 
+and positive emotional words, respectively. 
+The x-axis from P1 to P6 represented the occurrence of six dimensions of positive events, 
+and y-axis from S1 to S5 indicated the occurrence of five dimensions of stressor events. 
+Positive events from romantic, peer relationship and family life showed obvious 
+reduction in stressful emotional words caused by romantic and self-cognition stressor events (subgraph \ref{fig:topicAll} a)). 
+While the occurrence of positive emotions exhibited no increase 
+for stressful intervals in family life and peer relationship dimensions 
+(\ref{fig:topicAll} b)). 
+Figure \ref{fig:stopic} (a) to e)) 
+showed the distribution of stressful topic words when different positive events occurred. 
+Generally, the occurrence of positive events caused increase of stressor topics words. 
+We also observed that stressor topics in romantic and self-cognition dimensions 
+exhibited similar changing trends. 
+%1) positive不出现使其变深 (应
+%2)相应行数变深;但s2,s4共同出现
+%3) P2,P3对S1缓解明显 a) b)
+%to be modify 1!!! maybe add 1-6? 
+In addition, figure \ref{fig:stopic} f) showed reduction in stressful 
+intervals related to school life, 
+while the occurrence of positive events didn't exhibit obvious difference. 
 
-
-\paragraph{Posting behaviors}
+\paragraph{\textbf{Posting behaviors}}
 Stress could lead to abnormal posting behaviors,
 reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
 We considered three measures of posting behaviors in each time unit (day).
