@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  22 OCT 2019 11:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  24 OCT 2019 17:59
 entering extended mode
 **main.tex
 
@@ -1522,81 +1522,74 @@ al lan-
  []
 
 [6]
-
-Package natbib Warning: Citation `Cleveland1988Locally' on page 7 undefined on 
-input line 96.
-
-
-Overfull \hbox (2.46007pt too wide) in paragraph at lines 125--125
-[]\OT1/txr/m/it/10 Relationship Be-tween Pos-i-tive Events and Ado-les-cents' M
-i-
+Overfull \hbox (6.79005pt too wide) in paragraph at lines 127--127
+[]\OT1/txr/m/it/10 Hypothesis Test for the Re-la-tion-ship be-tween Pos-i-tive 
+Events
  []
 
 [7]
-Overfull \hbox (8.08406pt too wide) in paragraph at lines 159--170
-\OT1/txr/m/n/10 and $\OML/txmi/m/it/10 LNN[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 
-:\OT1/txr/m/n/10 )$, cor-re-spond-ing to us-er's lin-guis-tic ex-pres-sion-s, s
-tress
- []
-
-
-Overfull \hbox (1.87006pt too wide) in paragraph at lines 210--218
-\OT1/txr/m/n/10 obeys a s-tan-dard Gaus-sian dis-tri-bu-tion. Thus we judged wh
-ether
- []
-
-File: figs/gray/stopic.eps Graphic file (type eps)
-<figs/gray/stopic.eps>
-File: figs/gray/emotion.eps Graphic file (type eps)
- <figs/gray/emotion.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
-File: figs/gray/utopic.eps Graphic file (type eps)
- <figs/gray/utopic.eps>
 File: figs/gray/stress.eps Graphic file (type eps)
- <figs/gray/stress.eps> [9]
+ <figs/gray/stress.eps> [8]
+Overfull \hbox (24.05006pt too wide) in paragraph at lines 243--255
+\OT1/txr/m/n/10 even-t ($\OML/txmi/m/it/10 P$\OT1/txr/m/n/10 ='academic', 'ro-m
+an-tic', 'peer re-la-tion-ship', 'self-cognition',
+ []
+
+
+Overfull \hbox (7.08006pt too wide) in paragraph at lines 261--265
+\OT1/txr/m/n/10 from 'self-cognition'. Fig-ure [][][][][][] ex-hibit-s eight st
+ress change modes
+ []
+
+
+Overfull \hbox (2.12006pt too wide) in paragraph at lines 268--282
+\OT1/txr/m/n/10 lex-i-con-s  ([]), rep-re-sent-ed gen-er-al stress-
+ []
+
+File: figs/gray/emotion.eps Graphic file (type eps)
+<figs/gray/emotion.eps>
+File: figs/gray/stopic.eps Graphic file (type eps)
+ <figs/gray/stopic.eps> [9]
 File: figs/gray/post.eps Graphic file (type eps)
  <figs/gray/post.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (0.98392pt too wide) in paragraph at lines 316--331
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 334--349
  [][][] 
  []
 
 
-Overfull \hbox (3.06062pt too wide) in paragraph at lines 335--352
+Overfull \hbox (3.06062pt too wide) in paragraph at lines 353--370
 \OT1/txr/m/n/10 1) $\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; S
 I[]$\OT1/txr/m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when stress-
  []
 
-[10]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 361.
+LaTeX Font Warning: Command \small invalid in math mode on input line 379.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 362.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 380.
 
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 362--371
+Overfull \hbox (1.29259pt too wide) in paragraph at lines 380--389
 \OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
 \OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
 $
  []
 
-)
+[10])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1021\5experiment.tex
 File: figs/boxNew.eps Graphic file (type eps)
- <figs/boxNew.eps> [11]
+ <figs/boxNew.eps>
 Overfull \hbox (5.0801pt too wide) in paragraph at lines 65--80
 [][]\OT1/txr/m/n/10 Further more, to ver-i-fy the monotonous stress changes whe
 n
  []
 
+[11]
 File: figs/predictWindow2.eps Graphic file (type eps)
-<figs/predictWindow2.eps>
+ <figs/predictWindow2.eps>
 Overfull \hbox (6.7489pt too wide) in paragraph at lines 185--197
 \OT1/txr/m/n/10 cient-ly (with MSE, RMSE, MAPE and MAD re-duced by 49.34%,
  []
@@ -1624,7 +1617,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 162--171
 par-i-son
  []
 
-[16]
+
 Underfull \hbox (badness 1939) in paragraph at lines 406--412
 [][]\OT1/txr/m/n/8 Vitelli,  R..  Has-sles, u-p-lift-s and grow-ing old-er.  []
 [][][][][][][][][][]
@@ -1635,22 +1628,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--412
 [][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-) [17
-
-]
-
-Package natbib Warning: There were undefined citations.
-
+) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1021\main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+10\manuscriptNew1021\main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 
@@ -1660,19 +1643,19 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: C5F91624FB2640495A59BEDE59048CEE;6517
-(rerunfilecheck)             After:  490F1AE249B1C1C97C2E7602B6E59297;1625.
+(rerunfilecheck)             Before: 618FF9C19E131BC63B3354E4A2E22564;6661
+(rerunfilecheck)             After:  0239E45A77DFCCEB04B82480000F2299;1643.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19079 strings out of 495355
- 285844 string characters out of 3183882
- 443906 words of memory out of 3000000
- 21806 multiletter control sequences out of 15000+200000
+ 19082 strings out of 495355
+ 285876 string characters out of 3183882
+ 443715 words of memory out of 3000000
+ 21810 multiletter control sequences out of 15000+200000
  55114 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,872b,827s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,872b,766s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (17 pages, 219316 bytes).
+Output written on main.dvi (16 pages, 221676 bytes).

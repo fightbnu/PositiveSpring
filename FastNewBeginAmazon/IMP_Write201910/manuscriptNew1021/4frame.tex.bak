@@ -1,8 +1,8 @@
 \section{Framework}
-We first introduce the procedure to extract positive event and its intervals from microblogs. 
+We first introduce the procedure to extract positive event and its intervals from microblogs.
 Based on this,
 we present a statistical model to depict
-the connection between positive events and adolescents' stress-buffering patterns through three groups of content and behavioral measures.
+the relationship between positive events and adolescents' stress-buffering patterns through three groups of content and behavioral measures.
 %Finally, a none-liner time series model was proposed to combine stress-buffering patterns into future stress prediction.
 \subsection{Discovery of Positive Events from Microblogs}
 \label{sec:frame1}
@@ -86,14 +86,14 @@ Expecting Tomorrow' Adult Ceremony[Smile][Smile]~~\\
 \subsubsection{Impact Intervals of Positive Events}
 \label{subsec:interval}
 We followed and extended ~\citep{Li2017Analyzing} to identify the impact interval of each positive event to further study its stress-buffering pattern.
-Splitting interval is a common time series problem, and here we identified the target interval in three steps.
+The target interval was identified in three steps.
 
 Step1:
 Extracted positive events, stressor events and filtered out candidate intervals.
 For each candidate interval,
 we set its length to more than 3 days and a maximum gap of 1 day between two neighboured stressed days.
 Since the stress series detected from microblogs were discrete points,
-loess method was adopted to highlight characteristics of the stress curve.
+locally weighted regression ~\citep{Cleveland1988Locally} method was adopted to highlight characteristics of the stress curve.
 
 Step2: Judged stressful intervals through hypothesis testing.
 A Poisson based probability model was adopted to measure how confidently the current interval was a stressful interval.
@@ -110,81 +110,56 @@ Thus for current interval $I_1$ and historical normal interval $I_0$,
 the quantified probability $\beta = P(\lambda_1>\lambda_0|I_1,I_0)$ $\in (0,1)$ indicated the confidence
 whether $I_1$ was a stressful interval.
 
-Step 3: Divided stressful intervals into SI set and U-SI set in temporal order.
+Step 3: Divided stressful intervals into SI set and U-SI set.
 For a detected stressful interval $I = <t_1,\cdots,t_n>$, we considered the temporal order between $I$ and any detected positive event $u$ happening at time point $t_u$ in three cases:
-1) If the positive event $u$ happened during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ was judged as $I \in U-SI$.
-2) If the positive event happened nearby a stressful interval,
+\begin{itemize}
+\item[1)] If the positive event $u$ happened during the stressful interval, i.e., $t_u \in [t_1,t_n]$, the positive interval $I$ was judged as $I \in U-SI$.
+\vspace{-0.3cm}
+\item[2)] If the positive event happened nearby a stressful interval,
 considering the probability that it conducted impact on current stressful interval.
 Here the gap between $t_u$ and $I$ is limited to $\xi$, i.e.,
 if $t_u \in [t_{1}-\xi, t_1)\cup(t_{n},t_{n}+\xi]$, then $I \in U-SI$.
 If a stressful interval satisfies none of the above conditions, we classify it into the SI set.
-3) Other stressful intervals were divided into U-SI set.
+\vspace{-0.3cm}
+\item[3)] Other stressful intervals were divided into U-SI set.
+\end{itemize}
 
-%M1: 理清楚各measure怎算，由此划分3块or4块
-%M2: 是否有必要合并之前的详细的描述(累赘不)
-\subsection{Relationship Between Positive Events and Adolescents' Microblogging Characteristics}
+\subsection{Hypothesis Test for the Relationship between Positive Events and Adolescents' Stress-buffering}
 \label{sec:frame2}
-%加前后视角
-%加结果
-In our problem,
-there were two sets of stressful intervals to compare:
-the SI set and the U-SI set.
-We formulated this comparison problem as finding the correlation between the two sets of multi-dimension points.
-Each interval was modeled as a multi-dimensional vector according to the three groups of measures.
-Specifically, we adopted the multivariate two-sample hypothesis testing method
-\cite{Li2017Correlating,Johnson2012Applied} to model such correlation.
-In this two-sample hypothesis test problem,
-the basic idea is judging whether the multi-dimension points (i.e., stressful intervals)
-in set SI and set U-SI were under different statistical distribution.
+We formulated the relationship between positive events and adolescents' stress-buffering patterns
+as a comparison problem between two sets of stressful intervals: the SI set and the U-SI set.
+Each interval was modeled as a multi-dimensional vector depicted microblogging characteristics of current adolescent.
+Specifically, the multivariate two-sample hypothesis testing method
+\cite{Li2017Correlating,Johnson2012Applied} was adopted to model such relationship.
+The basic idea was judging whether the multi-dimension points (i.e., stressful intervals)
+in set SI and set U-SI were under different statistical distributions.
 Assuming the data points in SI and U-SI were randomly sampled from distribution $F$ and $G$, respectively,
 then the hypothesis was denoted as:
 \begin{equation}
 H_0: F = G \quad versus \quad H_1: F \neq G.
 \end{equation}
-
-\subsubsection{Statistical Model of Stress-buffering}
-
 Under such hypothesis,
 $H_0$ indicated points in SI and U-SI were under similar distribution,
-while $H_1$ means points in SI and U-SI were under statistically different distributions,
-namely positive events conducted obvious stress-buffering effect on current user.
-Since each point in the two sets (SI and U-SI) was depicted in multi-dimensions,
-here we took the KNN (K-Nearest Neighbor) based method \cite{Schilling1986Multivariate}
-to judge the existence of significant difference between SI and U-SI.
+while $H_1$ meant points in SI and U-SI were under statistically different distributions,
+namely positive events conducted obvious stress-buffering effect. 
+
+\subsubsection{Statistical Model of Stress-buffering Effect}
+We took the K-Nearest Neighbor based method (\cite{Schilling1986Multivariate}) to judge the existence of significant difference between set SI and set U-SI.
 For simplify, we used the symbol $A_1$ to represent set SI,
 and $A_2$ represent set U-SI.
-For each point $\ell_{x}$ in the two sets $A_1$ and $A_2$,
-we expected its nearest neighbors (\emph{the most similar points}) belonging to the same set of $\ell_x$.
-
-Three groups of behavioral measures (posting behavior,
-stress change mode and linguistic expressions)
-were indicated as \bm{${<D_p}$},\bm{${D_s}$},\bm{${D_l>}$}, respectively.
-The Euclidean distance was adopted to calculate the distance of structured points in $A_1$ and $A_2$.
+For each point $\ell_{x}$ in the two sets,
+we expected its top-k similar points belonging to the same set of $\ell_x$.
+The Euclidean distance was adopted to calculate the distance of structured points here.
 For each point $\ell x \in A=A_1\bigcup A_2$,
-let $NN_r(\ell_x,A)$ be the function to find the $r-$th nearest neighbor of $\ell_x$.
-Specifically, three sub-functions of $NN_r(.)$ are defined as $PNN_r(.)$, $SNN_r(.)$ and $LNN_r(.)$,
-corresponding to user's linguistic expressions, stress change modes and posting behaviors in each stressful interval.
-For point $\ell_x$ with linguistic expression matrix \bm{${D_l^x}$}, posting behavior matrix \bm{${D_p^x}$}
-and stress change mode matrix \bm{${D_s^x}$},
-the $r$-th nearest neighbor of $\ell_x$ in each measure was denoted as:
+let $\textbf{D}^y$ be the feature vector of $\ell_x$,
+and $NN_r(\ell_x,A)$ be the function to find the $r-$th nearest neighbor of $\ell_x$.
+The $r$-th nearest neighbor of $\ell_x$ was denoted as:
 \begin{equation}
 \begin{aligned}
-& PNN_r(\ell_x,A)
-= \{y | min\{||\textbf{D}_p^x-\textbf{D}_p^y ||_2\}, y\in(A/\ell_x)\} &\\
-& SNN_r(\ell_x,A)
-= \{z | min\{||\textbf{D}_s^x-\textbf{D}_s^z ||_2\}, z\in(A/\ell_x)\} \\
-& LNN_r(\ell_x,A)
-= \{w | min\{||\textbf{D}_l^x-\textbf{D}_l^w ||_2\}, w\in(A/\ell_x)\} &
- \end{aligned}
- \end{equation}
-The $r$-th nearest neighbor considering all three groups of measures was denoted as:
-\begin{align}
-&NN_r(\ell_x,A) = \{v | min\{a \times ||\textbf{D}_p^x-\textbf{D}_p^v||_2+\\
-&b \times ||\textbf{D}_s^x-\textbf{D}_s^v||_2+
-c \times ||\textbf{D}_l^x-\textbf{D}_l^v||_2\}, v\in(A/\ell_x) \}
-\end{align}
-In this study, we set $a = b = c = 1/3$.
-Next, let $I_r(\ell_x,A1,A2)$ be the function denoting whether the $r$-th nearest neighbor was in the same set with $\ell_x$:
+& NN_r(\ell_x,A) = \{y | min\{||\textbf{D}^x-\textbf{D}^y ||_2\}, y\in(A/\ell_x)\} &
+\end{aligned}
+\end{equation}
+Let $I_r(\ell_x,A1,A2)$ be the function denoting whether the $r$-th nearest neighbor was in the same set with $\ell_x$:
 \begin{equation}
 I_r(\ell_x,A_1,A_2) =
 \left\{ \begin{array}{ll}
@@ -193,8 +168,7 @@ I_r(\ell_x,A_1,A_2) =
 \end{array}
 \right.
 \end{equation}
-Let $T_{r,n}$ denote the proportion that pairs containing two points from the same set among all pairs formed by $\ell_x \in A$
-and its $k$ nearest neighbors:
+Let $T_{r,n}$ denote the proportion that pairs containing two points from the same set among all pairs formed by $\ell_x \in A$ and its $k$ nearest neighbors:
 \begin{equation}
 T_{k,n}= \frac{1}{n\times k}\sum_{i=1}^{n}\sum_{j=1}^{k}I_j(x,A_1,A_2)
 \end{equation}
@@ -209,64 +183,39 @@ Let $\lambda_1=|A_1|$ and $\lambda_2=|A_2|$, the statistic value $Z$ was denoted
 &{\sigma_r}^2=\lambda_1\lambda_2+4{\lambda_1}^2{\lambda_2}^2
 \end{align}
 where $\mu_r$ was the expectation and ${\sigma_r}^2$ was the variance of $Z$.
-Based on hypothesis test theory \cite{Johnson2012Applied},
-when the size of the testing set ($\lambda_1$ and $\lambda_2$) were large enough,
-$Z$ obeys a standard Gaussian distribution.
-Thus we judged whether the positive events conducted significant stress buffering impact on the teen's stress series as follows:
+Based on hypothesis test theory (\cite{Johnson2012Applied}),
+when the size of the testing set was large enough,
+$Z$ obeyed a standard Gaussian distribution.
+Thus we judged whether the positive events conducted significant stress buffering impact as follows:
 if $f(SI,USI)=(nr)^{1/2}(T_{r,n}-\mu_{r})/{\mu_r}^2>\alpha$ ($\alpha = 1.96$ for $P=0.025$),
 then the hypothesis $H_1$ was true.
 
-%Linguistic expressions
+In section \ref{subsubM},
+three groups of mircoblogging measures
+were introduced to depict multi-dimension characteristics of each stressful interval $\ell_x$ $\in A$,
+indicated as linguistic expression matrix \bm{${D_l^x}$}, posting behavior matrix \bm{${D_p^x}$}
+and stress change mode matrix \bm{${D_s^x}$}.
+Correspondingly, three sub-functions of $NN_r(.)$ were defined as $PNN_r(.)$, $SNN_r(.)$ and $LNN_r(.)$.
+\begin{equation}
+\begin{aligned}
+& PNN_r(\ell_x,A)
+= \{y | min\{||\textbf{D}_p^x-\textbf{D}_p^y ||_2\}, y\in(A/\ell_x)\} &\\
+& SNN_r(\ell_x,A)
+= \{z | min\{||\textbf{D}_s^x-\textbf{D}_s^z ||_2\}, z\in(A/\ell_x)\} \\
+& LNN_r(\ell_x,A)
+= \{w | min\{||\textbf{D}_l^x-\textbf{D}_l^w ||_2\}, w\in(A/\ell_x)\} &
+ \end{aligned}
+ \end{equation}
+The $r$-th nearest neighbor was re-calculated as:
+\begin{align}
+&NN_r(\ell_x,A) = \{v | min\{a \times ||\textbf{D}_p^x-\textbf{D}_p^v||_2+\\
+&b \times ||\textbf{D}_s^x-\textbf{D}_s^v||_2+
+c \times ||\textbf{D}_l^x-\textbf{D}_l^v||_2\}, v\in(A/\ell_x) \}
+\end{align}
+In this study, we set $a = b = c = 1/3$.
+
 \subsubsection{Measures}
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
-\caption{\small{Comparing topic words of five types of stressor events during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:stopic}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/emotion.eps}
-\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:topicAll}
-\end{figure}
-
-\paragraph{Linguistic expressions}
-Positive and stressful expressions were extracted from the post content.
-The first linguistic measure was the frequency of \emph{positive emotional words},
-which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons ~\citep{Tausczik2010The}.
-The second measure was the frequency of \emph{positive event topic words} in six dimensions,
-reflecting the existence of positive events (see table \ref{tab:topicWords} for examples).
-Another important factor was wether existing \emph{self-mentioned words} (i.e., \emph{'I','we','my'}).
-\citep{Li2014Major} showed that self-mentioned words exhibited high probability that the current event
-was related to the author,
-rather than the opinion about a public event or life events about others.
-In addition to positive-related linguistic descriptions,
-the frequency of \emph{stressor event topic words} in five dimensions
-were adopted to represent the degree of attention for each type of stressor event.
-The frequency of \emph{stressful emotional words}, based on four categories (anger, anxiety, hate, sad) of LICW lexicons, represented general stressful emotion during the interval.
-For each student, we identified positive events in six dimensions applying the parser model in section \ref{sec:frame1}, and corresponding intervals based on algorithm in section \ref{subsec:interval}.
-For intervals in two groups U-SI and SI,
-Figure xx shows the distribution of above five measures in U-SI and SI.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/utopic.eps}
-\caption{\small{Comparing topic words of six types of positive events during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:utopic}
-\end{figure}
-
-\begin{figure*}
-\centering
-\includegraphics[width=\linewidth]{figs/gray/stress.eps}
-\caption{\small{Comparing stress change modes during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:stress}
-\end{figure*}
+\label{subsubM}
 \paragraph{Stress change modes}
 Inspired by the pilot study,
 the global stress change modes during a stressful interval were depicted through four measures:
@@ -282,9 +231,69 @@ To quantify the intensity of stress fluctuations,
 Next,
 based on the above measures,
 we quantified the difference between SI and U-SI sets, thus to track the stress-buffering pattern of positive events.
-Figure \ref{fig:stress} exhibits eight stress change modes during SI and U-SI.
 
-%all, positive, stressful
+To show the occurrence of above mentioned characteristics,
+we present a 7$\times$5 gray-scale map for each measure.
+The x-axis (ranging from 1 to 6) represent each dimension of positive event ('academic',
+'romantic', 'peer relationship', 'self-cognition', 'family life', 'entertainment'),
+and the 7th column represent no positive event happened in the observation interval.
+The y-axis (ranging from 1 to 5) represent each dimension of stressor event
+('academic', 'romantic', 'peer relationship', 'self-cognition', 'family life').
+The color of each point in gray-scale depended on the average value of current measure in corresponding intervals.
+For example,
+in figure \ref{fig:stress} a),
+point (4,1) present the value of average stress in all U-SI intervals,
+where stress caused mainly by 'academic' events was impacted by positive events come from 'self-cognition'. 
+
+Figure \ref{fig:stress} exhibits eight stress change modes during SI and U-SI. 
+\begin{figure*}
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stress.eps}
+\caption{\small{Comparing stress change modes during stressful intervals in two situations:
+1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
+\label{fig:stress}
+\end{figure*}
+
+
+\paragraph{Linguistic expressions}
+Positive and stressful linguistic expressions were extracted from the microblog content. 
+%stressful emotion
+The first linguistic measure was the frequency of \emph{stressful emotional words}, 
+based on four categories (anger, anxiety, hate, sad) of LICW lexicons ~\citep{Tausczik2010The}, 
+represented general stressful emotion during the interval.
+%positive emotion
+The second measure was the frequency of \emph{positive emotional words}, 
+which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons. 
+%stressor topic 
+The third measure was the frequency of \emph{stressor event topic words},
+representing the degree of attention for five dimensions of stressor events.
+Another important factor was wether \emph{self-mentioned words} (i.e., \emph{'I','we','my'}) existed, since self-mentioned words exhibited high probability that the current event was related to the author, 
+rather than the opinion about a public event or life events about others (\citep{Li2014Major}). 
+For each post, we identified above measures applying the segmentation model and parser model in section \ref{sec:frame1}.
+
+%mission 3, 分析图 
+Figure \ref{fig:topicAll} a) and b) shows the frequency of stressful emotional words and positive emotional words, respectively. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/emotion.eps}
+\caption{\small{Comparing stressful emotions and positive emotions during stressful intervals in SI sets and U-SI sets.}}
+\label{fig:topicAll}
+\end{figure} 
+
+
+Figure \ref{fig:stopic} 
+shows the distribution of topic words of stressor events in U-SI and SI, respectively. 
+%1) positive不出现使其变深 (应
+%2)相应行数变深;但s2,s4共同出现
+%3) P2,P3对S1缓解明显 a) b) 
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figs/gray/stopic.eps}
+\caption{\small{Comparing topic words of five dimensions of stressor events during stressful intervals in SI sets and U-SI sets.}}
+\label{fig:stopic}
+\end{figure}
+
+
 \paragraph{Posting behaviors}
 Stress could lead to abnormal posting behaviors,
 reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
