@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  29 OCT 2019 22:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  31 OCT 2019 10:05
 entering extended mode
 **main.tex
 
@@ -1577,9 +1577,9 @@ f-fer-en-t type-
 
 File: figs/gray/emotion.eps Graphic file (type eps)
 <figs/gray/emotion.eps>
-File: figs/gray/topic.eps Graphic file (type eps)
- <figs/gray/topic.eps>
-Overfull \hbox (13.51006pt too wide) in paragraph at lines 281--326
+File: figs/gray/topicOffset.eps Graphic file (type eps)
+ <figs/gray/topicOffset.eps>
+Overfull \hbox (13.51006pt too wide) in paragraph at lines 281--327
 \OT1/txr/m/n/10 al stress-ful e-mo-tion dur-ing the in-ter-val  ([]).
  []
 
@@ -1628,8 +1628,8 @@ Overfull \hbox (6.7489pt too wide) in paragraph at lines 185--197
  []
 
 [12] [13]
-File: figs/threshNew.eps Graphic file (type eps)
- <figs/threshNew.eps>)
+File: figs/thresh.eps Graphic file (type eps)
+ <figs/thresh.eps>)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1029\6conclude.tex [14]
 Overfull \hbox (1.6301pt too wide) in paragraph at lines 58--68
@@ -1686,11 +1686,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  19104 strings out of 495355
- 286198 string characters out of 3183882
+ 286204 string characters out of 3183882
  442716 words of memory out of 3000000
  21829 multiletter control sequences out of 15000+200000
  55114 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,14n,74p,872b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (17 pages, 225704 bytes).
+Output written on main.dvi (17 pages, 225608 bytes).

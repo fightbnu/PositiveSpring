@@ -19,7 +19,7 @@ and total improvement to 6.00\%.
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figs/boxNew.eps}%figs/correlation2.eps
+\includegraphics[width=\linewidth]{figs/cor.eps}%figs/correlation2.eps
 \caption{\small{Stress-buffering pattern of positive events. Figure a) shows correlation of each microblog measure,
 and figure b) shows stress-buffering effect on five dimensions of stress. 'KTS' means KNN-based correlation method.}}
 \label{fig:correlation}

@@ -323,6 +323,7 @@ exhibited similar changing trends.
 In addition, figure \ref{fig:stopic} f) showed reduction in stressful
 intervals related to school life,
 while the occurrence of positive events didn't exhibit obvious difference.
+... (new: offset is more meaningful)
 
 \paragraph{\textbf{Posting behaviors}}
 Stress could lead to abnormal posting behaviors,
@@ -334,10 +335,9 @@ The second measure was the \emph{positive posting frequency}, indicating the num
 The third measure \emph{stressful posting frequency} highlighted the stressful microblogs among all posts.
 Research in \cite{Li2017Analyzing} indicated that overwhelmed adolescents
 tended to post more microblogs expressing their stress for releasing and seeking comfort from friends.
-The forth measure \emph{original frequency} was the number of original microblogs,
-which filtered out re-tweet and shared microblogs.
-Original posts indicated higher probability that users were talking about themselves.
-Figure \ref{fig:post} showed the distribution of above 4 measures in U-SI and SI, respectively.
+The forth measure \emph{forwarded frequency} was the number of re-tweet and shared microblogs. 
+Figure \ref{fig:post} showed the distribution of above 4 measures in U-SI and SI, respectively. 
+......
 
 \begin{figure}[h]
 \centering
