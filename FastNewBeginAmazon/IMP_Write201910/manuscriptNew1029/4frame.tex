@@ -1,4 +1,5 @@
 \section{Framework}
+\label{sec:frame}
 We first introduce the procedure to extract positive event and its intervals from microblogs.
 Based on this,
 we present a statistical model to depict
@@ -224,67 +225,63 @@ In this study, we set $a = b = c = 1/3$.
 
 \subsubsection{Measures}
 \label{subsubM}
-\paragraph{\textbf{Stress and positive emotion change modes}}
+\paragraph{\textbf{Stress change modes}}
 Inspired by the pilot study,
-to quantify the intensity of stress changes during a stressful interval,
-4 measures were adopted:
+four measures were adopted to quantify the intensity of stress changes during a stressful interval:
 average value of stress, accumulated value of stress, RMS value of stress, and maximal value of stress.
-For interval $I=<t_1,t_2,\cdots,t_n>$, $|I|=n$ (day),
-its stress series was denoted as $S=<s_1,s_2,\cdots,s_n>$,
+For an interval $I=<t_1,t_2,\cdots,t_n>$ with length $|I|=n$ (day),
+the stress series was denoted as $S=<s_1,s_2,\cdots,s_n>$,
 where $s_i \in S$ was the average stress value of microblogs posted in day $i$.
 The four measures were denoted as
 $V_{accumulate}(I)= \sum_{i=1}^{n}(s_i), V_{average}(I)= \frac{1}{n}V_{accumulated}(I)$,
 $V_{RMS}(I) = \sqrt[2]{ \frac{1}{n}\sum_{i=1}^{n}{(s_i)^2}}$,
-$V_{maximal}(I) = \{s_i |\forall s_j \in I \& j \neq i, s_i \geq s_j\}$.
+$V_{maximal}(I) = max(I) = \{s_i |\forall s_j \in I \& j \neq i, s_i \geq s_j\}$.
 Similarly,
-we applied the 4 measures into the positive emotion fluctuations,
-which might reflect the complementary changes to stress. %here to split
+we applied the four measures into positive emotion fluctuations during an interval,
+which might reflect the complementary changes to stress.
 To show the occurrence of above mentioned measures,
-we present a 7$\times$5 gray-scale map for each measure.
-The x-axis (ranging from P1 to P6) represent each dimension of positive event
+we present a 7$\times$5 gray-scale map for each measure in Figure \ref{fig:stress}.
+The x-axis (ranging from P1 to P6) represent each dimension of positive events
 ($P$=\{academic, romantic, peer relationship, self-cognition, family life, entertainment\}),
-and the 7th column represent no positive event happened in the observation interval.
-The y-axis (ranging from S1 to S5) represent each dimension of stressor event
+and the last column represent no positive event happening in the observation interval.
+The y-axis (ranging from S1 to S5) represent each dimension of stressor events
 ($E$=\{academic, romantic, peer relationship, self-cognition, family life\}).
-The color of each point in gray-scale map depended on the average value of current measure
+The color of each point in a gray-scale map depended on the average value of current measure
 over the corresponding set of intervals.
-For set of intervals $\textbf{I}_{<e,p>} = <I_1,I_2,\cdots,I_m>$,
+For a set of intervals $\textbf{I}_{<e,p>} = <I_1,I_2,\cdots,I_m>$,
 where the stress was caused by stressor events $e \in E$
 and impacted by positive events $p \in P$,
-above measures were presented by:
+the measures were presented by:
 \begin{equation}
 \begin{aligned}
 & V_{accumulated}(\textbf{I}_{<e,p>})=\sum_{i=1}^m{V_{accumulated}I_i}&\\
 & V_{average}(\textbf{I}_{<e,p>})=\frac{1}{m}\sum_{i=1}^m\I_i&\\
 & V_{RMS}(\textbf{I}_{<e,p>})=\sqrt{\frac{1}{m}\sum_{i=1}^mI_i^2}&\\
-& V_{maximal}(\textbf{I}_{<e,p>}) = {max(V_{maximal}(I_i))|i\in[1,m]} &
+& V_{maximal}(\textbf{I}_{<e,p>}) = \{max(V_{maximal}(I_i))|i\in[1,m]\} &
  \end{aligned}
  \end{equation}
-For example, in figure \ref{fig:stress} a),
+For example, in figure \ref{fig:stress} (a),
 point (P4,S1) was the value of average stress in all $\textbf{I}_{<1,4>}$ intervals,
 where stress was caused mainly by academic events (S1) and impacted by positive events related to self-cognition (P4).
-Figure \ref{fig:stress} exhibited 8 stress change modes (subgraph a) to d)) and positive emotion change modes (subgraph e) to h)) in both SI and U-SI sets.
-Statistical results showed that the occurrence of positive events significantly reduced accumulated stress (subgraph a)) and maximal stress (subgraph d)).
-Positive events in dimensions of romantic and peer relationship reduced adolescents' romantic stress (subgraph b)).
-The occurrence of positive events about peer relationship reduced the RMS value of stress (subgraph c)).
+Figure \ref{fig:stress} exhibited four stress change modes (subgraph (a) to (d))
+and four corresponding positive emotion change modes (subgraph (e) to (h)) in both SI and U-SI sets.
+Statistical results showed that the occurrence of positive events significantly
+reduced accumulated stress (subgraph (a)), accumulated stress (subgraph (b)) and maximal stress (subgraph (d)),
+and caused more fluctuations (subgraph (c)) during stressful intervals.
 On the other hand,
-occurrence of positive events caused obvious increase of all positive change modes (subgraph e) to h)),
+occurrence of positive events caused obvious increase of all positive change modes (subgraph (e) to (h)),
 especially in stressful intervals caused by romantic and peer relationship events.
 The above statistics on stress and positive emotion change modes
 initially reflected stress-buffering effects of different types of positive events
 on each dimension of stressor events.
-
+%To be modify 2: title ().
 
 \paragraph{\textbf{Linguistic expressions}}
-%Positive and stressful linguistic expressions were extracted from the microblog content.
-%stressful emotion
-For each post, we identified following linguistic expressions
+For each microblog, we identified its linguistic expressions
 applying the segmentation model and parser model in section \ref{sec:frame1}.
-The first measure was the frequency of stressful emotional words based on four categories (anger, anxiety, hate, sad) of LICW lexicons,
-represented general stressful emotion during the interval ~\citep{Tausczik2010The}.
-%positive emotion
+The first measure was the frequency of stressful emotional words based on four categories (anger, anxiety, hate, sad) of LICW lexicons, represented general stress during a interval ~\citep{Tausczik2010The}.
 The second measure was the frequency of positive emotional words,
-which were identified based on four categories (surprise, joy, expectation, love) of LICW lexicons.
+which were identified based on surprise, joy, expectation and love categories of LICW lexicons.
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{figs/gray/emotion.eps}
@@ -294,65 +291,74 @@ which were identified based on four categories (surprise, joy, expectation, love
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figs/gray/topicOffset.eps}
-\caption{\small{Comparing topic words of five dimensions of stressor events during stressful intervals in SI sets and U-SI sets.}}
+\caption{\small{Offset frequency of topic words during stressful intervals in SI sets and U-SI sets.}}
 \label{fig:stopic}
 \end{figure}
-%stressor topic
-The third measure was the frequency of stressor event topic words,
-representing the degree of attention for five dimensions of stressor events.
-Another important factor was wether self-mentioned words (i.e., \emph{'I','we','my'}) existed, since self-mentioned words exhibited high probability that the current event was related to the author,
+The third measure was the frequency of topic words in five dimensions of stressor events,
+representing the degree of attention for each dimension of stressor events.
+Another important measure was wether self-mentioned words (i.e., 'I','we','my') existed,
+since self-mentioned words exhibited high probability that the current event was related to the author,
 rather than the opinion about a public event or life events about others (\citep{Li2014Major}).
-Figure \ref{fig:topicAll} a) and b) showed the frequency of stressful emotional words
-and positive emotional words, respectively.
+Figure \ref{fig:topicAll} (a) and (b) showed the frequency of
+stressful emotional words and positive emotional words, respectively.
 The x-axis from P1 to P6 represented the occurrence of six dimensions of positive events,
 and y-axis from S1 to S5 indicated the occurrence of five dimensions of stressor events.
-Positive events from romantic, peer relationship and family life showed obvious
-reduction in stressful emotional words caused by romantic and self-cognition stressor events (subgraph \ref{fig:topicAll} a)).
-While the occurrence of positive emotions exhibited no increase
-for stressful intervals in family life and peer relationship dimensions
-(\ref{fig:topicAll} b)).
-Figure \ref{fig:stopic} (a) to e))
-showed the distribution of stressful topic words when different positive events occurred.
-Generally, the occurrence of positive events caused increase of stressor topics words.
-We also observed that stressor topics in romantic and self-cognition dimensions
-exhibited similar changing trends.
-%1) positive不出现使其变深 (应
-%2)相应行数变深;但s2,s4共同出现
-%3) P2,P3对S1缓解明显 a) b)
-%to be modify1 !!!
-In addition, figure \ref{fig:stopic} f) showed reduction in stressful
-intervals related to school life,
-while the occurrence of positive events didn't exhibit obvious difference.
-... (new: offset is more meaningful)
-
+Generally, positive events showed stress-buffering effects in these two measures,
+since the last column in subgraph (a) and (b) was different compared to column P1 to P6.
+Specifically, positive events from romantic, peer relationship and family life showed obvious
+reduction in stressful emotional words caused by
+romantic and self-cognition stressor events (subgraph \ref{fig:topicAll} (a)).
+While the frequency of positive emotions exhibited no increase
+during stressful intervals in family life and peer relationship dimensions (subgraph \ref{fig:topicAll} (b)).
+Figure \ref{fig:stopic} showed the distribution of stressful topic words when different positive events occurred.
+Here we showed the statistical results during stressful intervals caused by academic and self-cognition stressor events.
+The frequency of academic stress topic words (subgraph (a1) and (b1))
+and academic positive topic words (subgraph (a2) and (b2)) showed not clear regular.
+Further we explored the offset result for each dimension of stressful and positive topic words,
+as shown in subgraph (a3) and (b3).
+The offset results showed obvious stress-buffering results,
+since stressful topic words showed decrease in column P1 to P5 in subgraph (a3),
+and positive topic words exhibited increase in column P1 to P5 in subgraph (b3).
+These revealed our hypothesis
+that the occurrence of positive events didn't reduce the post of positive events,
+while they offset the impact of stressor events through talking about positive topics at the same time.
+%To be modify1: the title and () in figure 6.
+%To be modify 3: role好像丢了
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/gray/post.eps}
+\caption{\small{Comparing posting behaviors during stressful intervals in SI and U-SI sets.}}
+\label{fig:post}
+\end{figure}
 \paragraph{\textbf{Posting behaviors}}
 Stress could lead to abnormal posting behaviors,
 reflecting user's changes in social engagement activity ~\citep{Liang2015Teenagers}.
 We considered 4 measures of posting behaviors here.
-The first measure was \emph{posting frequency},
-representing the total number of posts per day.
-The second measure was the \emph{positive posting frequency}, indicating the number of positive microblogs per day.
-The third measure \emph{stressful posting frequency} highlighted the stressful microblogs among all posts.
+The first measure was frequency of stressful microblogs,
+highlighting stressful microblogs among all microblogs.
 Research in \cite{Li2017Analyzing} indicated that overwhelmed adolescents
 tended to post more microblogs expressing their stress for releasing and seeking comfort from friends.
-The forth measure \emph{forwarded frequency} was the number of re-tweet and shared microblogs.
-Figure \ref{fig:post} showed the distribution of above 4 measures in U-SI and SI, respectively.
-......
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{figs/gray/post.eps}
-\caption{\small{Comparing posting behaviors during stressful intervals in two situations:
-1) intervals affected by neighboring positive events (U-SI), 2) no positive events occurred nearby (SI).}}
-\label{fig:post}
-\end{figure}
+The second measure was frequency of positive microblogs,
+indicating the number of positive microblogs per day.
+The third measure was the total number of all microblogs per day.
+The forth measure was frequency of forwarded microblogs,
+showing the number of re-tweet and shared microblogs.
+Figure \ref{fig:post} summarized the distribution of above four measures in U-SI and SI sets.
+Results in subgraph (a) and (b) showed decrease of stressful microblogs and
+increase of positive microblogs when positive events occurred. %???To be modify? 查看原图确定。
+Subgraph (d) indicated the increase of forwarded microblogs when positive events happened,
+while subgraph (c) showed that the frequency of all microblogs didn't appear obvious change
+under the impact of positive events.
 
 \begin{table*}
 \begin{center}
-\caption{\small{Monotonous stress intensity changes in U-SI and SI intervals compared with adjacent intervals.}}
+\caption{\small{Monotonous stress intensity changes in U-SI and SI intervals compared with adjacent intervals.
+ \emph{front$ \rightarrow$ I} represented monotonous increase from the front interval to current stressful interval $I$.
+\emph{I $\rightarrow$ rear} represented monotonous decrease from interval $I$ to its rear interval.
+}}
 %\resizebox{\textwidth}{15mm}{
 \small{
-\begin{tabular}{l cccccc cccccc} \\\hline\hline
+\begin{tabular}{l cccccc cccccc} \\\hline
 \multirow{2}{1cm}{}
 &\multicolumn{2}{c}{school life}
 &\multicolumn{2}{c}{romantic}
@@ -364,47 +370,46 @@ Figure \ref{fig:post} showed the distribution of above 4 measures in U-SI and SI
 &U-SI	    &	SI	        &	U-SI	&SI	        &U-SI	   &SI\\  \hline
 \# interval         &   365	        &	514	        &	536	        &	587	        &128	    &	391	        &	564	           &	609	            &	321	        &	481	        &	1,914	    &2,582	 \\
 front $\rightarrow$ I &	72.60\% &	78.79\% &	69.03\% 	&77.51\%   &74.22\%    &81.59\%    &70.04\%    &77.67\%  &67.91\%     &77.96\%    &70.17\%    &78.51\% \\
-I $\rightarrow$ rear  &	75.89\% &	78.40\% &	74.63\% 	&79.05\%   &78.13\%    &82.61\%    &75.00\%    &79.15\%   &74.14\%    &79.42\%    &75.13\%    & 79.55\%\\ \hline \hline
+I $\rightarrow$ rear  &	75.89\% &	78.40\% &	74.63\% 	&79.05\%   &78.13\%    &82.61\%    &75.00\%    &79.15\%   &74.14\%    &79.42\%    &75.13\%    & 79.55\%\\ \hline
 \end{tabular}}%}}
 \label{tab:fontrear}
 \end{center}
 \end{table*}
 
 \subsubsection{Monotonous Model of Stress-buffering}
-To verify the monotonous stress changes at both the early and late stress-buffering stages,
-for each stressful interval in SI (n=2,582) and U-SI (n=1,914),
-we compared its stress intensity with the front and rear adjacent intervals.
+\label{sec:mono}
+To further verify the monotonous changes of stress intensity under the impact of positive events,
+for each stressful interval in SI (n=2,582) and U-SI (n=1,914) sets,
+we compared its stress intensity with the front and rear adjacent intervals respectively.
 For a stressful interval $I = <t_i,t_{i+1},\cdots,t_j>$,
 let $I^{front} = <t_m,\cdots,t_{i-1}>$ be the adjacent interval before $I$,
 and $I^{rear} = <t_{j+1},\cdots,t_n>$ be the rear adjacent interval of $I$.
-The length of $I^{front}$ and $I^{rear}$ are set to $|I|$.
+The length of $I^{front}$ and $I^{rear}$ were set to $|I|$.
 For the set of stressful intervals $SI$ composed of $<I_1,I_2,\cdots,I_N>$,
-the corresponding sets of adjacent front and rear intervals are denoted as $SI^{front}$ and $SI^{rear}$.
+the corresponding sets of adjacent front and rear intervals were denoted as $SI^{front}$ and $SI^{rear}$.
 Similarly, for the set of stressful intervals $USI$ = $<UI_1,UI_2,\cdots, UI_M>$ impacted by positive events,
-the corresponding sets of adjacent front and rear intervals are denoted as $USI^{front}$ and $USI^{rear}$.
-We compare the intensity of stress changes in following four situations,
-where $g(.)$ is the function comparing two sets: \\
-1) $g(SI,SI^{front}$) returns if intensive change happens when stressful intervals begin.\\
-2) $g(SI,SI^{rear}$) returns if stress changes intensively after the stressful intervals end.\\
-3) $g(USI,USI^{front}$) returns if intensive change happens when stressful intervals affected by positive events appears.\\
-4) $g(USI,USI^{rear}$) returns if stress changes intensively after stressful intervals affected by positive events end.
+the corresponding sets of adjacent front intervals and adjacent rear intervals were denoted as $USI^{front}$ and $USI^{rear}$.
+We compared the intensity of stress changes in following four situations,
+where $g(.)$ was the function comparing two sets: \\
+1) $g(SI,SI^{front}$) returned if intensive change happened when stressful intervals begin.\\
+2) $g(SI,SI^{rear}$) returned if stress changes intensively after the stressful intervals end.\\
+3) $g(USI,USI^{front}$) returns if intensive change happened when stressful intervals affected by positive events.\\
+4) $g(USI,USI^{rear}$) returns if stress changed intensively after stressful intervals affected by positive events.
 
 In our problem, taking the comparison between $SI$ and $SI^{rear}$ for example,
-the basic computation element $I_k \in SI \cup SI^{rear}$ in both sets is a multi-dimension interval.
+the basic computation element $I_k \in SI \cup SI^{rear}$ in both sets was an interval, denoted as a multi-dimension point.
 Here we adopt the t-test method as the intensity computation function $g(.)$.
-%The t-test algorithm measures if intensive positive or negative monotonous correlation
-%exists between two sample sets.
-The function $g(.) = t_{score}$ $\in$ (-1,1) is represented as:
+The function $g(.) = t_{score}$ $\in$ (-1,1) was represented as:
 
 \begin{equation}
 \small{g(SI,SI^{rear})}= \frac{\mu_{SI}-\mu_{SI^{rear}}}{\sqrt{\frac{(n_1-1)\sigma^2_{SI}+(n_2-1)\sigma^2_{SI^{rear}}}{n_1+n_2-2}(\frac{1}{n_1}-\frac{1}{n_2})}}
 \end{equation}
-where $\mu_{SI}$ and $\mu_{SI^{rear}}$ are the mean stress values of intervals in sets $SI$ and $SI^{rear}$,
-and $\sigma_{SI}$ and $\sigma_{SI^{rear}}$ are the variance stress values of intervals in sets $SI$ and $SI^{rear}$, respectively.
-If $g(SI,SI^{rear})$ $> \alpha$, stress intensity in $SI^{rear}$ show significant decrease compared with $SI$ (monotonic negative effect).
-If $g(SI^{front},SI)$ $< -\alpha$, stress intensity in $SI$ show significant increase compared with $SI^{front}$ (monotonic positive effect).
-Here we adopt $\alpha$ = 1.96, $P$ = 0.025.
-We conduct comparison for above four situations,
-to observe whether the occurrence of positive events relieve the monotonic negative effect of $g(SI,SI^{rear})$
+where $\mu_{SI}$ and $\mu_{SI^{rear}}$ were the mean stress values of intervals in sets $SI$ and $SI^{rear}$,
+and $\sigma_{SI}$ and $\sigma_{SI^{rear}}$ were the variance stress values of intervals in sets $SI$ and $SI^{rear}$, respectively.
+If $g(SI,SI^{rear})$ $> \alpha$, stress intensity in $SI^{rear}$ showed significant decrease compared with $SI$ (monotonic negative effect).
+If $g(SI^{front},SI)$ $< -\alpha$, stress intensity in $SI$ showed significant increase compared with $SI^{front}$ (monotonic positive effect).
+Here we adopted $\alpha$ = 1.96, $P$ = 0.025.
+We conducted comparison for above four situations
+to observe whether the occurrence of positive events relieved the monotonic negative effect of $g(SI,SI^{rear})$
 and the monotonic positive effect of $g(SI^{front},SI)$.
 

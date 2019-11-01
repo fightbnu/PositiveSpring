@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  31 OCT 2019 10:05
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2019.5.17)  1 NOV 2019 18:25
 entering extended mode
 **main.tex
 
@@ -1425,6 +1425,18 @@ Overfull \hbox (10.61005pt too wide) in paragraph at lines 60--71
 buffering
  []
 
+
+Overfull \hbox (7.68001pt too wide) in paragraph at lines 91--103
+\OT1/txr/m/n/10 post-ing be-haviours. Pos-i-tive events buffered monotonous cha
+nges
+ []
+
+
+Overfull \hbox (8.98007pt too wide) in paragraph at lines 91--103
+\OT1/txr/m/n/10 of stress in-ten-si-ty Monotonous changes of stress in-ten-si-t
+y buffered
+ []
+
 [2])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1029\2literature.tex
@@ -1511,18 +1523,18 @@ File: figs/activity.eps Graphic file (type eps)
  <figs/activity.eps>)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1029\4frame.tex
-Overfull \hbox (14.37944pt too wide) in paragraph at lines 9--24
+Overfull \hbox (14.37944pt too wide) in paragraph at lines 10--25
 \OT1/txr/m/n/10 LIWC (ex-pec-ta-tion, joy, love, sur-prise) ([]).
  []
 
 
-Overfull \hbox (2.14006pt too wide) in paragraph at lines 47--60
+Overfull \hbox (2.14006pt too wide) in paragraph at lines 48--61
 [][]\OT1/txr/m/n/10 Positive events were i-den-ti-fied through Chi-nese nat-u-r
 al lan-
  []
 
 [6]
-Overfull \hbox (6.79005pt too wide) in paragraph at lines 127--127
+Overfull \hbox (6.79005pt too wide) in paragraph at lines 128--128
 []\OT1/txr/m/it/10 Hypothesis Test for the Re-la-tion-ship be-tween Pos-i-tive 
 Events
  []
@@ -1538,96 +1550,73 @@ File: omstxr.fd 2000/12/15 v3.1
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 245.
 
-Overfull \hbox (0.28485pt too wide) in paragraph at lines 228--255
+Overfull \hbox (0.28485pt too wide) in paragraph at lines 229--255
 $[][]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 s[]\OT1/txr/m/n/10 )\OML/txmi/m/it/10 ;
  V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 ) = []\OML/txmi/m/it/10
  V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 )$, $\OML/txmi/m/it/10 
 V[]\OT1/txr/m/n/10 (\OML/txmi/m/it/10 I\OT1/txr/m/n/10 ) = []$,
  []
 
-
-Overfull \hbox (1.96005pt too wide) in paragraph at lines 228--255
-\OT1/txr/m/n/10 to P6) rep-re-sen-t each di-men-sion of pos-i-tive even-t ($\OM
-L/txmi/m/it/10 P$\OT1/txr/m/n/10 =\OMS/txsy/m/n/10 f\OT1/txr/m/n/10 academic,
- []
-
-
-Overfull \hbox (1.72008pt too wide) in paragraph at lines 228--255
-\OT1/txr/m/n/10 to S5) rep-re-sen-t each di-men-sion of stres-sor even-t ($\OML
-/txmi/m/it/10 E$\OT1/txr/m/n/10 =\OMS/txsy/m/n/10 f\OT1/txr/m/n/10 academic,
- []
-
 [8]
-Overfull \hbox (2.67009pt too wide) in paragraph at lines 262--276
-\OT1/txr/m/n/10 peer re-la-tion-ship re-duced ado-les-cents' ro-man-tic stress 
-(sub-graph
- []
-
-
-Overfull \hbox (6.36005pt too wide) in paragraph at lines 262--276
-\OT1/txr/m/n/10 events. The above s-tatis-tic-s on stress and pos-i-tive e-mo-t
-ion change
- []
-
-
-Overfull \hbox (3.50008pt too wide) in paragraph at lines 262--276
-\OT1/txr/m/n/10 modes ini-tial-ly re-flect-ed stress-buffering ef-fect-s of d-i
-f-fer-en-t type-
+Overfull \hbox (0.6901pt too wide) in paragraph at lines 262--278
+\OT1/txr/m/n/10 ac-cu-mu-lat-ed stress (sub-graph (b)) and max-i-mal stress (su
+b-graph
  []
 
 File: figs/gray/emotion.eps Graphic file (type eps)
 <figs/gray/emotion.eps>
 File: figs/gray/topicOffset.eps Graphic file (type eps)
  <figs/gray/topicOffset.eps>
-Overfull \hbox (13.51006pt too wide) in paragraph at lines 281--327
-\OT1/txr/m/n/10 al stress-ful e-mo-tion dur-ing the in-ter-val  ([]).
- []
-
+File: figs/gray/post.eps Graphic file (type eps)
+ <figs/gray/post.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9]
-File: figs/gray/post.eps Graphic file (type eps)
- <figs/gray/post.eps>
-Overfull \hbox (0.98392pt too wide) in paragraph at lines 355--370
+Overfull \hbox (11.39006pt too wide) in paragraph at lines 334--352
+\OT1/txr/m/n/10 croblogs. Re-search in [] ([]) in-di-cat-ed that over-whelmed
+ []
+
+[10]
+Overfull \hbox (0.98392pt too wide) in paragraph at lines 361--376
  [][][] 
  []
 
 
-Overfull \hbox (3.06062pt too wide) in paragraph at lines 374--391
-\OT1/txr/m/n/10 1) $\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; S
-I[]$\OT1/txr/m/n/10 ) re-turn-s if in-ten-sive change hap-pen-s when stress-
- []
+LaTeX Font Warning: Command \small invalid in math mode on input line 405.
 
-[10]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 400.
-
-LaTeX Font Info:    Calculating math sizes for size <> on input line 401.
-
-Overfull \hbox (1.29259pt too wide) in paragraph at lines 401--410
-\OT1/txr/m/n/10 i-tive events re-lieve the mono-ton-ic neg-a-tive ef-fec-t of $
-\OML/txmi/m/it/10 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 SI; SI[]\OT1/txr/m/n/10 )
-$
- []
-
+LaTeX Font Info:    Calculating math sizes for size <> on input line 406.
 )
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1029\5experiment.tex
 File: figs/cor.eps Graphic file (type eps)
  <figs/cor.eps> [11]
-Overfull \hbox (5.0801pt too wide) in paragraph at lines 65--80
-[][]\OT1/txr/m/n/10 Further more, to ver-i-fy the monotonous stress changes whe
-n
+Overfull \hbox (4.94008pt too wide) in paragraph at lines 57--71
+[][]\OT1/txr/m/n/10 Next, to ver-i-fy monotonous changes of stress in-ten-si-ty
+ when
  []
 
+
+Overfull \hbox (1.9101pt too wide) in paragraph at lines 147--150
+[][]\OT1/txr/m/n/10 To fur-ther ex-plore the ef-fec-tive-ness of our method for
+ quan-
+ []
+
+
+Overfull \hbox (1.49944pt too wide) in paragraph at lines 153--166
+ []\OT1/txr/m/it/10 Stress pre-dic-tion mod-el.[] []\OT1/txr/m/n/10 The S-VARI-
+MA (Sea-son-al Au-tore-gres-
+ []
+
+
+Overfull \hbox (13.48009pt too wide) in paragraph at lines 153--166
+\OT1/txr/m/n/10 suit-able for ado-les-cents' stress pre-dic-tion prob-lem ([], 
+[];
+ []
+
+[12]
 File: figs/predictWindow2.eps Graphic file (type eps)
-<figs/predictWindow2.eps>
-Overfull \hbox (6.7489pt too wide) in paragraph at lines 185--197
-\OT1/txr/m/n/10 cient-ly (with MSE, RMSE, MAPE and MAD re-duced by 49.34%,
- []
-
-[12] [13]
+ <figs/predictWindow2.eps> [13]
 File: figs/thresh.eps Graphic file (type eps)
  <figs/thresh.eps>)
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
@@ -1637,9 +1626,9 @@ Overfull \hbox (1.6301pt too wide) in paragraph at lines 58--68
 h school
  []
 
-)
+[15])
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
-10\manuscriptNew1029\main.bbl [15]
+10\manuscriptNew1029\main.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 168.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
@@ -1664,13 +1653,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--412
 ) [17
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
 
 (C:\Users\liqi\Documents\GitHub\PositiveSpring\FastNewBeginAmazon\IMP_Write2019
 10\manuscriptNew1029\main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -1678,19 +1667,19 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 618FF9C19E131BC63B3354E4A2E22564;6661
-(rerunfilecheck)             After:  0239E45A77DFCCEB04B82480000F2299;1643.
+(rerunfilecheck)             Before: 5CE8363DBB8E95B22D4262A0335EFF3E;7077
+(rerunfilecheck)             After:  70C666FB5D01E169918898EAE084E878;1695.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19104 strings out of 495355
- 286204 string characters out of 3183882
- 442716 words of memory out of 3000000
- 21829 multiletter control sequences out of 15000+200000
+ 19106 strings out of 495355
+ 286225 string characters out of 3183882
+ 445308 words of memory out of 3000000
+ 21831 multiletter control sequences out of 15000+200000
  55114 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,74p,872b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,74p,889b,806s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (17 pages, 225608 bytes).
+Output written on main.dvi (17 pages, 229120 bytes).

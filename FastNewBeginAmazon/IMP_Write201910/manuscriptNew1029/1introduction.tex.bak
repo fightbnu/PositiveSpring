@@ -38,19 +38,22 @@ and behavioral (abnormal posting time, comment/response actions) measures.
 %-dynamic, behavioral
 If we view the aforementioned studies on positive events as static sensing of stress-buffering,
 this study approaches the problem from the dynamic process of stress-buffering
-and aims at a solution considering adolescents' both microblogging content and behavioral levels
-under the hypothesis that the moment in which a positive event occur is related to stress-buffering effects.
+and aims at a solution at both microblogging content and behavioral levels
+under the hypothesis that
+1) the occurrence of positive events can be reflected in adolescents' microblogs,
+and 2) positive events causes monotonous changes in stress.
+the moment in which a positive event occur is related to stress-buffering effects.
 Since the subjective self-report investigations are susceptible to many factors,
 such as social appreciation and pressures from measurement scenarios,
 microblogging characteristics at the behavioral level are objective expressions that can assist content characteristics.
 
 %1)stress与positive重叠，是双向的，所看到的并非看到的;for example2)是从感知到coping，也可以进一步预测
 Another difference from the previous studies lies in that,
-despite the unique advantages of social networks over the survey methods
+despite the unique advantages of social networks over traditional survey methods
 in offering self-expressed content and behavioral information,
 existing microblog-based researches stopped at the analysis of stress,
 and none went further to capture positive events that may play a key role in adolescents' stress coping mechanism.
-For example, it is hiking tomorrow that buffers the stress of losing the exam today.
+For example, it is ‘hiking tomorrow’ that buffers the stress of ‘losing the exam today’.
 Understanding stress-buffering patterns of positive events
 is helpful in predicting and guiding stressful adolescents coping with stress.
 
@@ -76,7 +79,7 @@ Three fundamental challenges need to be addressed:
 %发生时刻与缓解有怎样的关联;correlation到底是怎样的?如何把positive和stress的混合效果分离开;
 
 %1
-A pilot study was firstly conducted on the microblog data (n=29,232) of a group of high school students (n=500)
+A pilot study was firstly conducted on the microblog data (n=27,346) of a group of high school students (n=500)
 associated with the school's scheduled positive events (n=75) and stressor events (n=122).
 Stressful intervals were divided into two comparative categories:
 intervals impacted by scheduled positive events (denoted as U-SI, n=259)
@@ -109,11 +112,11 @@ Stressful intervals (SI) and stressful intervals impacted by positive events(U-S
 The rest of the paper is organized as follows.
 We review the literature in section \ref{sec:related},
 and introduce the pilot study in section \ref{sec:obs}.
-The procedure for extracting positive events and identifying its impact interval is presented in section \ref{sec:frame1}.
+The procedure for extracting positive events is presented in section \ref{sec:frame1}.
 The connection between positive events and adolescents' stress-buffering from microblogs are discussed and modeled in section \ref{sec:frame2}.
-We extend the study to integrating stress-buffering patterns into future stress prediction in section \ref{subsec:predict}.
-We present the experimental results in section \ref{subsec:experiment},
-and discuss the future work in section \ref{sec:conclude}.
+We extend the study to integrating stress-buffering patterns into future stress prediction in section \ref{subsec:predict},
+and present the experimental results in section \ref{subsec:experiment}.
+The future work is discussed in section \ref{sec:conclude}.
 
 
 %*********************IMP

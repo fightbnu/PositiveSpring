@@ -1,27 +1,43 @@
-
-
-
 \section{Experiments}
 \subsection{Experimental results}
 \label{subsec:experiment}
-Basically, we focused on four scheduled positive events:
-\emph{practical activity}, \emph{holiday}, \emph{new year party} and \emph{sports meeting}.
-For each of the four scheduled positive events,
-we quantified the stress-buffering effect based on corresponding SI and U-SI interval sets of the 124 students.
-Table \ref{tab:schedule} shows the experimental results,
-where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant stress-buffering effect were detected for the four specific scheduled positive events,
-with the total ratio to 69.52\% ($\alpha$ =1.96 for p=0.025).
-We adopted the commonly used Pearson correlation algorithm to compare with the two sample statistical method in this study.
+\begin{table}[h]
+\begin{center}
+\caption{\small{Quantify the stress-buffering effect of scheduled positive events applying KTS model (the KNN-based two sample method adopted in this research) and baseline method.}}
+\label{tab:schedule}
+\resizebox{0.45\textwidth}{13mm}{
+\small{
+\begin{tabular}{lccccc}
+\toprule
+&	practical	&	         	&	new year	&	sports	&	\\
+&	activity	&	holiday	&	party	&	meeting	&	all	\\
+\midrule
+size of U-SI	&	219 	&	339 	&	235 	&	226 	&	1,019 	\\
+Pearson         &55.65\%	&	70.97\%	&	56.45\%	&	54.84\%	&	65.32\% \\
+KTS             &54.52\%	&	78.39\%	&	63.39\%	&	58.74\%	&	69.52\% \\
+\bottomrule
+\end{tabular}
+}
+}
+\end{center}
+\end{table}
+Basically, we explored the stress-buffering effect of specific positive events based on the framework in section \ref{sec:frame}.
+Four scheduled positive events were adopted:
+practical activity, holiday, new year party and sports meeting.
+Table \ref{tab:schedule} showed the experimental results,
+where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant stress-buffering effect were detected for
+each of the four scheduled positive events, with the total ratio to 69.52\% ($\alpha$ =1.96 for p=0.025).
+Here Pearson correlation algorithm was applied to compare with the statistical model in section \ref{sec:frame2}.
 The Euclidean metric was used to calculate the distance between two $n$ dimension points $X$ and $Y$.
-Experimental results show that our KNN-based two sample method (denoted as KTS) outperformed the baseline method
-with the best improvement in \emph{new year party} to 10.94\%,
-and total improvement to 6.00\%.
+Experimental results showed that our KNN-based two sample method (denoted as KTS) outperformed the baseline method
+with the best improvement in event \emph{new year party} to 10.94\%, and total improvement to 6.00\%.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{figs/cor.eps}%figs/correlation2.eps
-\caption{\small{Stress-buffering pattern of positive events. Figure a) shows correlation of each microblog measure,
-and figure b) shows stress-buffering effect on five dimensions of stress. 'KTS' means KNN-based correlation method.}}
+\caption{\small{ Subgraph (a) showed statistical value $\alpha$ of each group of measures in linguistic expressions, stress change modes and post behaviors.
+Subgraph (b) showed stress-buffering effect on five dimensions of stress.
+'KTS' represented KNN-based correlation method.}}
 \label{fig:correlation}
 \end{figure}
 
@@ -40,43 +56,20 @@ Comparing the hypothesis test results on scheduled positive events (ratio = 69.5
 and automatically extracted positive events (ratio = 74.21\%),
 the result indicated the feasibility of automatically extracting positive events from microblogs.
 
-
-\begin{table}
-\begin{center}
-\caption{\small{Quantify the impact of scheduled positive school events using KTS (the KNN-based two sample method adopted in this research) and baseline method.}}
-\label{tab:schedule}
-\resizebox{0.45\textwidth}{13mm}{
-\small{
-\begin{tabular}{lccccc}
-\toprule
-&	\emph{practical}	&	         	&	\emph{new year}	&	\emph{sports}	&	\emph{}	\\
-&	\emph{activity}	&	\emph{holiday}	&	\emph{party}	&	\emph{meeting}	&	\emph{all}	\\
-\midrule
-size of U-SI	&	219 	&	339 	&	235 	&	226 	&	1,019 	\\
-Pearson         &55.65\%	&	70.97\%	&	56.45\%	&	54.84\%	&	65.32\% \\
-KTS             &54.52\%	&	78.39\%	&	63.39\%	&	58.74\%	&	69.52\% \\
-\bottomrule
-\end{tabular}
-}
-}
-\end{center}
-\end{table}
-
-Further more,
-to verify the monotonous stress changes when an positive event impacts a stressful interval,
-for each stressful interval in SI and U-SI,
-we quantify its stress intensity by comparing with the front and rear adjacent intervals, respectively.
-Here four situations were considered and compared,
-as shown in table \ref{tab:fontrear}.
-The \emph{ratio of intervals} detected with monotonous increase from the \emph{front interval} to \emph{stressful interval} (denoted as \emph{front$ \rightarrow$ I}),
-and monotonous decrease from the \emph{stressful interval} to the \emph{rear interval} (denoted as \emph{I $\rightarrow$ rear}) were listed.
+Next,
+to verify monotonous changes of stress intensity when an positive event impacted a stressful interval,
+for each interval in SI and U-SI sets,
+we quantified its monotonous stress changes by comparing with the front and rear adjacent intervals, respectively.
+Four situations proposed in section \ref{sec:mono} were considered and compared in table \ref{tab:fontrear}.
+The ratio of intervals detected with monotonous increase from the front interval to current stressful interval $I$ (denoted as \emph{front$ \rightarrow$ I}),
+and ratio of monotonous decrease from $I$ to its rear interval (denoted as \emph{I $\rightarrow$ rear}) were summarized.
 Under the effect of positive events,
 the ratio of intensive stress increase in \emph{front$ \rightarrow$ I} was decreased from 78.51\% to 70.17\%;
 and the ratio of intensive stress decrease in \emph{I $\rightarrow$ rear} was decreased from 79.55\% to 75.13\%.
-The most obvious monotonous decrease in \emph{front$ \rightarrow$ I} were conducted by positive events in family life dimension (12.89\% reduction);
-and the most obvious monotonous decrease in \emph{front$ \rightarrow$ I} were also conducted by positive events in family life dimension (6.65\% reduction).
+The most obvious monotonous decrease in \emph{front$ \rightarrow$ I} was conducted by positive events in family life dimension (12.89\% reduction);
+and the most obvious monotonous decrease in \emph{front$ \rightarrow$ I} was also conducted by positive events in family life dimension (6.65\% reduction).
 The experimental results indicated the effectiveness of the two sample method for quantifying the effect of positive events,
-and the rationality of the assumption that positive events could help ease stress of overwhelmed teens.
+and the rationality of the assumption that positive events could help ease stress of overwhelmed adolescents.
 
 
 \begin{table*}
@@ -233,7 +226,7 @@ showing the effectiveness of considering all the three correlations.
 \begin{figure}
 \centering
 \caption{Stress forecast performance under the L\&S\&P pattern of positive events.}
-\includegraphics[width=\linewidth]{figs/threshNew.eps}
+\includegraphics[width=\linewidth]{figs/thresh.eps}
 \label{fig:thresh}
 \end{figure}
 
