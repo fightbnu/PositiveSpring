@@ -1,0 +1,81 @@
+\documentclass[5p,times,numbers,authoryear]{elsarticle}
+
+\usepackage{ctex}
+\usepackage{lineno}%,hyperref}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage[justification=centering]{caption}
+\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{bm}
+\usepackage[normalem]{ulem} % use normalem to protect \emph
+\newcommand\hl{\bgroup\markoverwith
+  {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\newtheorem{definition}{Definition}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+\renewcommand{\multirowsetup}{\centering}
+
+\journal{Computers in Human Behavior}
+
+\usepackage{appendix}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Stress-Buffering Pattern of Positive Events on Adolescents: \\
+An Exploratory Study based on Social Networks}
+
+
+\begin{abstract}
+Stress was viewed as the leading cause of public mental health issues. Positive events, however, could act as a buffer against stress. Since stress-buffering effects of positive events in previous studies were mainly examined by subjective self-reporting, continuous tracking research at individual behavioral levels still remains to be explored. In this study, we collected microblogs (n=27,346) from a group of high school students  (n=500) to examine the relationship between positive events and stress-buffering patterns at both content and behavioral levels. Through a pilot study of scheduled exam intervals under the two situations:
+1) existing neighbouring scheduled positive events (n=75) and 2) no neighbouring positive events,
+we found that students during exams with neighbouring positive events appeared exhibited less stress intensity and more stable stress fluctuations.
+Most students talked less about exams when positive events happened nearby, with lower frequency and lower ratio. 
+Hypothetical tests for stress-buffering effects of positive events and monotonous changes of stress intensity under the impact of positive events were further conducted based on automatically extracted positive events (n=1,914) from microblogs. 
+Results showed stress-buffering effects of positive events were closely correlated with adolescents¡¯ stress change modes, microblog linguistic expressions, and posting behaviors. 
+The occurrence of positive events was verified to offset the impact of stressor events through talking about positive topics at the same time. 
+Adolescents tended to post more forwarded microblogs, more positive microblogs and less stressful microblogs when positive events appeared, 
+while the total frequency of microblogs didn't appear obvious change under the impact of positive events. 
+The study also showed that positive events buffered monotonous changes of stress intensity caused by stressor events. 
+Based on these theoretical findings, stress-buffering patterns of positive events were further incorporated into the problem of adolescent stress prediction and improved predictive performance.  
+This study could inform the use of social network to reach and track the mental status transition of adolescents under stress. The theoretical and practical implications, limitations of this study and future work were discussed. 
+\end{abstract}
+
+\begin{keyword}
+stress-buffering, positive events, microblogs, adolescents
+\end{keyword}
+\end{frontmatter}
+
+
+\input{1introduction}
+\input{2literature}
+\input{3pilot}
+\input{4frame}
+\input{5experiment}
+\input{6conclude}
+\section{Reference}
+\bibliographystyle{model4-names}
+\bibliography{reference-new}
+\end{document}
