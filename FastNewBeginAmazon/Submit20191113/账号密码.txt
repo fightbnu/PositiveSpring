@@ -1,0 +1,45 @@
+提交页面 
+https://ees.elsevier.com/chb/default.asp
+说明页面
+https://www.elsevier.com/journals/computers-in-human-behavior/0747-5632/guide-for-authors
+
+11112018083@bnu.edu.cn
+Liqi868854
+
+ORCID
+qili0308@163.com
+liqi868854
+
+-China Transport Telecommunications & Information Center
+-xyy0091@sina.com
+
+gari@physionet.org
+
+-1. 加fundings在acknowledge部分
+-2. 要匿名
+-3. corresponding author
+-4. 图片不要放在top或者bottom，要跟随文字
+
+-Title page (with author details): 
+-This should include the title, authors' names, affiliations, 
+-acknowledgements and 
+any Declaration of Interest statement, （ 'Declarations of interest: none'.）
+（2. Detailed disclosures as part of a separate Declaration of Interest form, 
+which forms part of the journal's official records. 
+It is important for potential interests to be declared in both places and that the information matches）
+and a complete address for the corresponding author including an e-mail address.
+
+The authors would like to thank anonymous reviewers for
+the constructive comments and suggestions, enabling the great
+improvement of the manuscript.
+
+
+
+-The corresponding caption should be placed directly below the figure or table.
+
+-Blinded manuscript (no author details): 
+The main body of the paper (including the references, figures, tables and any acknowledgements) 
+should not include any identifying information, such as the authors' names or affiliations.
+
+- 部门号/项目号
+01900/310422115
