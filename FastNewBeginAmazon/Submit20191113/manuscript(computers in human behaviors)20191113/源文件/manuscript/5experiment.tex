@@ -9,12 +9,6 @@ Table \ref{tab:schedule} shows the experimental results,
 where 54.52\%, 78.39\%, 63.39\%, 58.74\% significant stress-buffering effects were detected for
 each of the four positive scheduled events, respectively,
 with a total ratio of 69.52\% ($\alpha$ =1.96 for P=0.025).
-Here, the Pearson correlation coefficient was calculated to compare with the statistical model in section \ref{sec:frame2}.
-The Euclidean distance was used to calculate the distance between two $n$-dimensional points $X$ and $Y$.
-The experimental results showed that our KNN-based two-sample method (called KTS)
-outperformed the baseline method with the best improvement in event \emph{New Year parties} to 10.94\%,
-and the total improvement by 6.00\%.
-
 \begin{table}
 \begin{center}
 \caption{\small{Quantification of the stress-buffering effect of positive scheduled events applying
@@ -36,6 +30,12 @@ KTS             &54.52\%	&	78.39\%	&	63.39\%	&	58.74\%	&	69.52\% \\
 }
 \end{center}
 \end{table}
+Here, the Pearson correlation coefficient was calculated to compare with the statistical model in section \ref{sec:frame2}.
+The Euclidean distance was used to calculate the distance between two $n$-dimensional points $X$ and $Y$.
+The experimental results showed that our KNN-based two-sample method (called KTS)
+outperformed the baseline method with the best improvement in event \emph{New Year parties} to 10.94\%,
+and the total improvement by 6.00\%. 
+
 
 The stress-buffering effects measured by three groups of microblogging characteristics
 and towards the five dimensions of stressor events are shown in box plots \ref{fig:correlation},
@@ -67,13 +67,10 @@ Four situations proposed in section \ref{sec:mono} were considered and are compa
 The ratio of intervals detected with the monotonic increase from the front interval to the current stressful interval $I$
 (denoted by \emph{front$ \rightarrow$ I}),
 and the ratio of the monotonic decrease from $I$ to its rear-adjacent interval (denoted by \emph{I $\rightarrow$ rear}) are summarized.
-Under the effect of positive events,
+Under the effect of positive events, 
 the ratio of intensive stress increase in \emph{front$ \rightarrow$ I} was reduced from 78.51\% to 70.17\%;
-the ratio of intensive stress decrease in \emph{I $\rightarrow$ rear} was reduced from 79.55\% to 75.13\%.
-The most obvious monotonic decrease in \emph{front$ \rightarrow$ I} was related to positive events
-in the 'family life' dimension (12.89\% reduction),
-and the most obvious monotonic decrease in \emph{front$ \rightarrow$ I} was also related to positive events in the 'family life' dimension (6.65\% reduction).
-The experimental results indicate the effectiveness of the two-sample methods for quantifying the effect of positive events
+the ratio of intensive stress decrease in \emph{I $\rightarrow$ rear} was reduced from 79.55\% to 75.13\%. 
+The experimental results indicate the effectiveness of the two-sample methods for quantifying the effect of positive events 
 and the rationality of the assumption that positive events could help ease the stress of overwhelmed adolescents.
 
 
@@ -151,12 +148,10 @@ All
 
 \subsection{Predicting Future Stress Under the Stress-buffering Effects of Positive Events}
 \label{subsec:predict}
+\paragraph{Stress prediction model} 
 To further explore the effectiveness of our method for quantifying the stress-buffering effects of positive events,
 we integrate the impact of positive events into a stress prediction problem
-and verify whether considering the stress-buffering effects of positive events could help improve the stress prediction performance.
-
-
-\paragraph{Stress prediction model}
+and verify whether considering the stress-buffering effects of positive events could help improve the stress prediction performance. 
 The SVARIMA (seasonal autoregressive integrated moving average) algorithm was proven to be suitable for the adolescents' stress prediction problem \citep{Li2015Predicting, Shumway2006Time},
 due to the seasonality and nonstationarity of the stress series.
 Since stressor events cause the fluctuation in the stress series from normal states,
@@ -183,9 +178,10 @@ After modification,
 the prediction performance achieved an MSE of 0.0649, an RMSE of 0.2548, a MAPE of 0.2638 and a MAD of 0.0858,
 reducing the prediction errors efficiently (the MSE, RMSE, MAPE and MAD were reduced by 49.34\%, 28.81\%, 26.80\% and 42.11\%, respectively).
 
+
 \paragraph{Contribution of each group of measures}
 Further,
-we conducted experiments with different stress-buffering patterns included to show each pattern's contribution to stress prediction.
+we conducted experiments with different stress-buffering patterns included to show each pattern's contribution to stress prediction. 
 Four groups of situations were considered here, as shown in Table \ref{tab:forecast},
 considering
 1) all three groups of measures, namely, stress-change modes, linguistic expressions and posting behaviors (the L\&S\&P pattern),
@@ -196,17 +192,12 @@ We integrated the effect of positive events under the four situations for stress
 by the overlapping parameter $\alpha \times S_{historical}$,
 where $S_{historical}$ is the average stress value in the historical U-SI intervals.
 Here, we present the prediction result when $\beta = 0.5$ in each dimension of stress.
-The results showed that the stress-buffering pattern in the L\&S\&P pattern outperformed the other patterns
+The results showed that the stress-buffering pattern in the L\&S\&P pattern outperformed the other patterns 
 (MSE = 0.0649, RMSE = 0.2548, MAPE = 0.2638 and MAD = 0.0858),
-showing the effectiveness of all three groups of measures.
-\begin{figure*}
-\centering
-\caption{\small{Adolescents' stress prediction performance under different observation window lengths.}}
-\includegraphics[width=\linewidth]{figs/predictWindow2.eps}
-\label{fig:length}
-\end{figure*}
+showing the effectiveness of all three groups of measures. 
 
-\paragraph{Stress prediction performance under different observation window lengths}
+
+\paragraph{Stress prediction performance under different observation window lengths} 
 We further explored combing stress-buffering effects into future stress prediction under different lengths of observation windows,
 ranging from 1 to 10 days, as shown in Figure \ref{fig:length}.
 With increasing window length,
@@ -214,13 +205,18 @@ the prediction errors showed an increasing trend across all the metrics.
 The reason might be that a longer prediction window resulted in more previously predicted results
 and errors accumulating with more predicted values are taken into the next step of prediction.
 Among the five dimensions of stressor events,
-the prediction for school-life stress achieved the best performance.
-One reason might be that more positive events and stressors about school-life events were detected from adolescents' microblogs,
-providing sufficient data in the prediction process.
-On the other hand,
-stress coming from school life was the most common source of stress in the student group with relatively stable periodicity,
-which was more suitable for the current prediction model.
+the prediction for self-cognition stress achieved the best performance.
+One reason might be that more positive events and stressors about self-cognition events were detected from adolescents' microblogs, 
+providing sufficient data in the prediction process. 
+Stress coming from self-cognition was the most common source of stress in the student group with relatively stable periodicity, 
+which was more suitable for the current prediction model. 
 
+\begin{figure}
+\centering
+\caption{\small{Adolescents' stress prediction performance under different observation window lengths.}}
+\includegraphics[width=\linewidth]{figs/predictWindow3.eps}
+\label{fig:length}
+\end{figure}
 
 \begin{figure}
 \centering

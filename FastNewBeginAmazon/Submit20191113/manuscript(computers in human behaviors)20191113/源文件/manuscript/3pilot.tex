@@ -3,15 +3,15 @@
 \paragraph{Microblogs} Microblogs of students from Taicang High School were collected from January 1, 2014, to September 1, 2017.
 We filtered out 121 active students out of over 500 students according to their posting frequency
 and collected their microblogs throughout their whole high school career.
-In total, 27,346 microblogs were collected in this study,
+In total, 27,346 microblogs were collected, 
 where each student post an average of 226 microblogs, and maximum of 1,421 microblogs and a minimum of 102 microblogs.
 To protect the privacy, all the usernames were anonymized during the experiment.
 
-\paragraph{Scheduled events} The list of weekly scheduled school events,
-with a detailed description of the event (grade and exact start and end time),
+\paragraph{Scheduled events} The list of weekly scheduled school events, 
+with a detailed description of the event (grade and exact start and end time), 
 were collected from the school's official website\footnote{http://stg.tcedu.com.cn/col/col82722/index.html}
-from February 1, 2014 to August 1 2017.
-There were 126 stressor events and 75 positive events in total.
+from February 1, 2014 to August 1 2017. 
+There were 126 stressor events and 75 positive events. 
 Examples of positive scheduled and stressor events in high school life are listed in Table~\ref{tab:example}.
 There were 2-3 stressor events and 1-2 positive events scheduled per month in the current study.
 Figure~\ref{fig:example} shows three examples of a student's stress fluctuations around three midterm exams,
@@ -82,29 +82,7 @@ nervous, mistake, question, puzzle, difficult, lesson, careless\\
 \bottomrule
 \end{tabular}
 }
-\end{table}
-
-\paragraph{Results}
-As shown in Figure~\ref{fig:frequencyBar},
-comparing each measure of scheduled exam intervals under the two situations
-(1) existing positive neighbouring events (U-SI) and 2) no neighbouring positive scheduled events (SI)),
-we found that students
-with exams and positive neighbouring events appeared exhibited less stress intensity
-(78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress, and 57.20\%  reduction in maximal stress)
-and more stable stress fluctuations (47.93\% reduction in the RMS values of stress).
-Furthermore, the frequency of academic topic words (see Table \ref{tab:studyWords} for examples)
-and the ratio of academic stress in each interval were calculated.
-Most students talked less about exams when positive events occurred nearby with lower frequency (84.65\% reduction) and lower ratio (89.53\% reduction).
-The statistical results show clues about the impact of positive scheduled events,
-which is consistent with psychological theory ~\citep{Cohen1984Positive, Cohen2010Positive, Needles1990Positive},
-indicating the reliability and feasibility of the microblog dataset.
-However,
-this observation is based on specific scheduled events,
-and cannot satisfy the need for automatic, timely, and continuous perception of the stress-buffering process.
-Therefore we propose a framework to automatically detect positive events and their impact intervals.
-Based on this framework,
-the relationship between the impact of automatically extracted positive events
-and adolecents' microblogging characteristics will be discussed.
+\end{table} 
 
 \begin{figure}[h]
 \centering
@@ -116,9 +94,53 @@ Comparing average stress value for all students during exam intervals in two sit
 \label{fig:frequencyBar}
 \end{figure}
 
+
+\paragraph{Results}
+As shown in Figure~\ref{fig:frequencyBar},
+comparing each measure of scheduled exam intervals under the two situations
+(1) existing positive neighbouring events (U-SI) and 2) no neighbouring positive scheduled events (SI)),
+we found that students
+with exams and positive neighbouring events appeared exhibited less stress intensity
+(78.13\% reduction in average stress, 95.58\%  reduction in cumulative stress, and 57.20\%  reduction in maximal stress)
+and more stable stress fluctuations (47.93\% reduction in the RMS values of stress).
+Furthermore, the frequency of academic topic words (see Table \ref{tab:studyWords} for examples)
+and the ratio of academic stress in each interval were calculated.
+Most students talked less about exams when positive events occurred nearby with lower frequency (84.65\% reduction) and lower ratio (89.53\% reduction). 
+The statistical results show clues about the impact of positive scheduled events,
+which is consistent with psychological theory ~\citep{Cohen1984Positive, Cohen2010Positive, Needles1990Positive},
+indicating the reliability and feasibility of the microblog dataset.
+However,
+this observation is based on specific scheduled events,
+and cannot satisfy the need for automatic, timely, and continuous perception of the stress-buffering process.
+Therefore we propose a framework to automatically detect positive events and their impact intervals.
+Based on this framework,
+the relationship between the impact of automatically extracted positive events
+and adolecents' microblogging characteristics will be discussed. 
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{figs/activity.eps}
+\includegraphics[width=0.9\linewidth]{figs/activity.eps}
 \caption{\small{Comparing students' stress fluctuations during exam intervals in the SI and U-SI sets.}}
 \label{fig:frequency}
-\end{figure}
+\end{figure} 
+
+\begin{table*}
+\centering
+\caption{\small{Examples and statistics for topic phrases in the six-dimensional lexicons of positive events.}}
+\label{tab:topicWords}
+\small{
+\begin{tabular}{lll}
+\toprule
+Dimension & Example words & total \\ \midrule
+entertainment  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
+                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
+school life    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
+				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
+romantic  relationships&  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
+				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
+peer relationships  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
+self-cognition & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
+family life    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
+\bottomrule
+\end{tabular}}
+\end{table*}

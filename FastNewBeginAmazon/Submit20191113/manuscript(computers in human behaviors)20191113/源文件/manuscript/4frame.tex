@@ -27,26 +27,20 @@ Examples are shown in Table \ref{tab:topicWords}.
 Additionally, we labeled \emph{doer} words (i.e., \emph{teacher}, \emph{mother},
 \emph{I} and \emph{we}) in positive lexicons.
 
-\begin{table*}
-\centering
-\caption{\small{Examples and statistics for topic phrases in the six-dimensional lexicons of positive events.}}
-\label{tab:topicWords}
-\small{
-\begin{tabular}{lll}
-\toprule
-Dimension & Example words & total \\ \midrule
-entertainment  & hike, travel, celebrate, dance, swimming, ticket, shopping, air ticket, theatre, party, Karaoke,& 452\\
-                      & self-driving tour, game, idol, concert, movie, show, opera, baseball, running, fitness, exercise & \\
-school life    & reward, come on, progress, scholarship,admission, winner, diligent, first place, superior & 273\\
-				      & hardworking, full mark,  praise, goal, courage, progress, advance, honor, collective honor& \\
-romantic  relationships&  beloved, favor, guard, anniversary,  concern, tender, deep feeling, care, true love, promise, & 138\\
-				      & cherish, kiss, embrace, dating, reluctant, honey, sweetheart, swear, love, everlasting, goddess &\\
-peer relationships  & listener, company, pour out, make friends with, friendship, intimate, partner, team-mate, brotherhood& 91\\
-self-cognition & realize, achieve, applause, fight, exceed, faith, confidence, belief, positive, active, purposeful & 299\\
-family life    & harmony, filial, reunite, expecting, responsible, longevity, affable, amiability, family, duty & 184\\
-\bottomrule
-\end{tabular}}
-\end{table*}
+\subsubsection{Linguistic Parser Model}
+Positive events were identified through a Chinese natural language processing platform \citep{Che2010}.
+For each post, after word segmentation, we parsed each sentence to find its linguistic structure
+and then matched the main linguistic components with positive topic lexicons in each dimension.
+A linguistic parser model was applied to identify the central verb of the current sentence, namely, the \emph{act}.
+It constructed the relationship between the central verb and corresponding \emph{doer} and \emph{description} elements.
+By searching these elements in positive topic lexicons,
+the existence of positive events was identified.
+Due to the sparsity of posts, the element \emph{act} might be empty.
+\emph{Descriptions} were collected by searching all nouns, adjectives and adverbs.
+Examples of positive events extracted from the adolescents' microblogs are listed in Table \ref{tab:uplifts}.
+For example, the post 'Thanks all my dear friends for hosting the party. Happiest birthday!!!'
+was processed as \emph{doer='friends', act = 'expecting', description = 'party'},
+and \emph{type = 'entertainment'}. 
 
 \begin{table}[h]
 \begin{center}
@@ -71,21 +65,6 @@ Expecting tomorrow' Adult Ceremony[Smile][Smile]~~\\
 \label{tab:uplifts}
 \end{center}
 \end{table}
-
-\subsubsection{Linguistic Parser Model}
-Positive events were identified through a Chinese natural language processing platform \citep{Che2010}.
-For each post, after word segmentation, we parsed each sentence to find its linguistic structure
-and then matched the main linguistic components with positive topic lexicons in each dimension.
-A linguistic parser model was applied to identify the central verb of the current sentence, namely, the \emph{act}.
-It constructed the relationship between the central verb and corresponding \emph{doer} and \emph{description} elements.
-By searching these elements in positive topic lexicons,
-the existence of positive events was identified.
-Due to the sparsity of posts, the element \emph{act} might be empty.
-\emph{Descriptions} were collected by searching all nouns, adjectives and adverbs.
-Examples of positive events extracted from the adolescents' microblogs are listed in Table \ref{tab:uplifts}.
-For example, the post 'Thanks all my dear friends for hosting the party. Happiest birthday!!!'
-was processed as \emph{doer='friends', act = 'expecting', description = 'party'},
-and \emph{type = 'entertainment'}.
 
 \subsubsection{Impact Intervals of Positive Events}
 \label{subsec:interval}
@@ -403,15 +382,15 @@ Similarly, for the set of stressful intervals $USI$ = $<UI_1,UI_2,\cdots, UI_M>$
 the corresponding sets of front-adjacent intervals and rear-adjacent intervals are denoted by $USI^{front}$ and $USI^{rear}$, respectively.
 We compared the intensity of stress changes in the following four situations,
 where $g(.)$ is the function comparing two sets: \\
-1) \small{$g(SI,SI^{front})$} is returned if a stress-intensity change occurred when a stressful interval began.\\
-2) \small{$g(SI,SI^{rear})$} is returned if a stress-intensity change occurred after a stressful interval ended.\\
-3) \small{$g(USI,USI^{front})$} is returned if a stress-intensity change occurred when a stressful interval affected by positive events began.\\
-4) \small{$g(USI,USI^{rear})$} is returned if a stress-intensity change occurred after a stressful interval affected by positive events ended.
+1) $g(SI,SI^{front})$ returns if a stress-intensity change occurred when a stressful interval began.\\
+2) $g(SI,SI^{rear})$ returns if a stress-intensity change occurred after a stressful interval ended.\\
+3) $g(USI,USI^{front})$ returns if a stress-intensity change occurred when a stressful interval affected by positive events began.\\
+4) $g(USI,USI^{rear})$ returns if a stress-intensity change occurred after a stressful interval affected by positive events ended.
 
 In our problem, taking the comparison between $SI$ and $SI^{rear}$ as an example,
 the basic computation element $I_k \in SI \cup SI^{rear}$ in both sets was an interval,
 represented by a multidimensional point.
-Here, we adopt a t-test as the intensity computation function $g(.)$.
+Here, we adopt a t-test as the intensity computation function $g(.)$. 
 The function $g(.) = t_{score}$ $\in$ (-1,1) is represented as:
 \begin{equation}
 \small{g(SI,SI^{rear})}= \frac{\mu_{SI}-\mu_{SI^{rear}}}{\sqrt{\frac{(n_1-1)\sigma^2_{SI}+(n_2-1)\sigma^2_{SI^{rear}}}{n_1+n_2-2}(\frac{1}{n_1}-\frac{1}{n_2})}}
